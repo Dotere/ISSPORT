@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c39c0afe-6611-40b8-be65-a1569f16434a">
+  <name>СпортивныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивные объекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.МестаЗанятий</content>
+  <content>Report.ОтчетПоСпортсменамНаСпортивныхОбъектах</content>
+  <parentSubsystem>Subsystem.Методист.Subsystem.СпортивныеУчреждения</parentSubsystem>
+</mdclass:Subsystem>

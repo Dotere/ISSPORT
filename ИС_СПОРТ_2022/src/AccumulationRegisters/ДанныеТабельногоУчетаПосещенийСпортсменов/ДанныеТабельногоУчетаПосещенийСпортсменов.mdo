@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e7f85c1-e09f-48ca-9567-5e38d7088338">
+  <producedTypes>
+    <selectionType typeId="32a03fc8-9ec1-492a-a0ee-e98c4dba7b8c" valueTypeId="6380d175-8113-4f75-b846-5da697719024"/>
+    <listType typeId="89178f96-e1c8-42dd-8a46-cca6a1e06dec" valueTypeId="9969222c-0fcd-417c-96ee-8b586cc6b15d"/>
+    <managerType typeId="c171414b-fd04-4038-8548-111d4b178f59" valueTypeId="0a3c3a24-bfa8-4579-8015-050f35deaff2"/>
+    <recordSetType typeId="ef88cd49-627c-4840-b12e-e95331818cff" valueTypeId="111f68a7-288a-4dac-ac16-aec8715bbbee"/>
+    <recordKeyType typeId="7d08c047-5e48-4fa3-a865-fef3928d4ba7" valueTypeId="c1a2c581-eb0b-451c-9f4c-f40ec68e9b5e"/>
+    <recordType typeId="e3ffe543-654a-44f5-a5fa-a9d63685bc97" valueTypeId="01ce16c1-c9f9-4cd1-8e90-f7097fddcff8"/>
+  </producedTypes>
+  <name>ДанныеТабельногоУчетаПосещенийСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные табельного учета посещений спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="2faddf36-cb69-4e3c-87e3-57730590252f">
+    <name>Дни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дни</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="efd5d30e-dc6a-4995-a9e5-ccc47154256f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="27565325-35f8-4162-9f61-1f9cb07a53c4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="990ea916-a8a2-49ef-b0e8-cddc8cb91650">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b4f2d070-ddd6-4371-89cc-329ece1c4358">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыСпортивнойПодготовки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="724261fe-71c1-43e3-8464-2fc0cdd07f68">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="99bab584-a6cc-4e03-8f0f-30c48b9f84bf">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="9a702e2a-74db-412d-a40a-92163d47a74f">
+    <name>СтатусПосещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус посещения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыПосещений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>

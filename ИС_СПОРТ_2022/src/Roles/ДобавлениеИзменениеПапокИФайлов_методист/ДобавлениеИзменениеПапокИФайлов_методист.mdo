@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a3025e1-8106-4e64-8769-e95c11d91b5d">
+  <name>ДобавлениеИзменениеПапокИФайлов_методист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение папок и файлов (методист)</value>
+  </synonym>
+</mdclass:Role>

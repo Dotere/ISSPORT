@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b1fde40-97ab-44e3-9803-9c5531199137">
+  <name>ПодсистемаПроведениеСоревнований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистема проведение соревнований</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Command.ЗаявкиНаСоревнованияПоОбщейФизическойПодготовке</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.Нормативы.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ПротоколОФПСдачаНормативов.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ПротоколОФПСдачаНормативов.Command.ПротоколыСоревнованийПоОбщейФизическойПодготовке</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.СоревнованиеОФПСдачаНормативов.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.СоревнованиеОФПСдачаНормативов.Command.СоревнованияПоОбщейФизическойПодготовке</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>InformationRegister.ШкалаСоответствияОчковРезультатовСоревнованияОФП.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+</cmi:CommandInterface>

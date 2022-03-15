@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5121d8c7-1642-4169-9b1e-f05100f58691">
+  <producedTypes>
+    <objectType typeId="3bc8c6cc-f8ed-47b4-933b-9607d13a48a5" valueTypeId="a0c5202b-abba-4198-b6e4-c8e5b166cfe8"/>
+    <managerType typeId="e8aa2aa1-d1ec-4fd4-bea4-5381ce9ffbfb" valueTypeId="64f29b05-316a-4c8e-9f09-c3d2f03e4d4c"/>
+  </producedTypes>
+  <name>РабочийСтолТренера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочий стол тренера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РабочийСтолТренера.Form.Форма</defaultForm>
+  <forms uuid="4cc92e2c-2f48-4baf-8f59-abc3fe157220">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4ee87e01-ba5f-481f-a00d-226aebbbe63f">
+    <name>ПодатьЗаявку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подать заявку</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

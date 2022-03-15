@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eab6427d-66ff-4457-8ba2-474edef20f5b">
+  <name>УчетСпортсменовАвтоматическоеСозданиеНапоминанийПользователю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет спортсменов автоматическое создание напоминаний пользователю</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

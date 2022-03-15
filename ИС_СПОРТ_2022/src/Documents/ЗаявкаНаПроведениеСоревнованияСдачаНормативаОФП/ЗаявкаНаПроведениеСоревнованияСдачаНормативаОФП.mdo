@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f1ef3f8-f747-4c18-a01a-7fe4bd4aa393">
+  <producedTypes>
+    <objectType typeId="da4f4830-b434-447a-b937-4d5c988237d6" valueTypeId="c1951a66-5dc2-4a6c-b0df-6824ee70ad3c"/>
+    <refType typeId="f7c43984-77b9-45d7-94c4-498e7e9b48aa" valueTypeId="612b3b5f-266a-40a2-9ea4-2a9747369197"/>
+    <selectionType typeId="e92bcbdf-0807-43c5-9020-10f8bc942e65" valueTypeId="f0f3a96a-b6b8-4be8-b4a9-8f8fcb86f39c"/>
+    <listType typeId="5b971147-b664-41f0-9f39-4c1b1f532f71" valueTypeId="6e3694c8-2571-4150-9058-0dc58ba8dd33"/>
+    <managerType typeId="4c7a097b-2764-4ddc-bd5b-be89ac256dd2" valueTypeId="6d6f359f-ecbf-466e-97f0-6b237a37b383"/>
+  </producedTypes>
+  <name>ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявка на проведение соревнования/сдача норматива ОФП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Form.ФормаВыбора</defaultChoiceForm>
+  <registerRecords>InformationRegister.ЗаявкиНаПроведениеСоревнованияОФПСдачаНормативов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="7644b7d9-05f3-4588-afe3-33c29400a8af">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62605b64-c939-45c4-a0cd-5c7d21fdc7d0">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0037f9b2-ac8a-4b9f-b7d2-e2f07f147ab0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное учреждение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5822104e-e522-41ea-8d72-8507b5685de4">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2cad870b-6d93-4d68-a3df-b15503e427f0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d8bb5b52-ab9e-4204-b5f2-a387c1f116e0">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b1ac5b6c-102d-4ca7-8980-f46f7bc65e91">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="452c77eb-ebd4-4bdf-b009-f46ea8f3817b">
+    <name>ТипСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип соревнования</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыСдачиНормативов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9b36b0b9-ed60-426d-842a-a5b8edb579cc">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c604718e-ee5b-42af-a971-e0dc0fd3a295">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b5435cc0-8ae8-465f-8ded-a88ce8702e00">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="64b633ee-149b-4a31-ac80-3a3e9147b84a">
+    <producedTypes>
+      <objectType typeId="bfe46010-d816-4644-9f1c-9898a66c5d38" valueTypeId="105acbf3-9d32-455c-b689-323baf2546fa"/>
+      <rowType typeId="af32d482-de21-4a68-9df5-fd27427d57f6" valueTypeId="64df2108-2aa9-4215-a462-9f143296c38d"/>
+    </producedTypes>
+    <name>СоставУчастников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав участников</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2024db19-8a68-4f0f-a93d-6e2a347a8a7f">
+      <name>Спортсмен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спортсмен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Спортсмены</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.СтатусСпортсмена</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусыСпортсменов.EnumValue.Спортсмен</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2d5384ee-8c52-4202-bf14-1aa90ac8d27e">
+      <name>МеждународнаяВозрастнаяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Возрастная группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="65301d3c-0775-43cd-9273-557f3a704750">
+      <name>Норматив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норматив</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Нормативы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="078288b0-9e5c-41d7-bd3b-cd8d54ae4c4e">
+      <name>УникальныйИдентификаторНорматива</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уникальный идентификатор норматива</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="9a8e64c7-e587-44b1-a284-7eef5f792e9c">
+    <producedTypes>
+      <objectType typeId="ed919d50-f644-4567-81fd-cda936adb8f3" valueTypeId="560a6a25-5796-4691-b27a-9942de3b6bb0"/>
+      <rowType typeId="71c9c3b9-4c4a-4b7d-b18e-f46425d64da6" valueTypeId="3a42de90-b16e-4b91-986c-32b5f06e3273"/>
+    </producedTypes>
+    <name>ЗаявленныеНормативы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявленные нормативы</value>
+    </synonym>
+    <attributes uuid="82b59483-d9ff-4328-b465-84abd515a4ea">
+      <name>Норматив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норматив</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Нормативы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b606204f-c6ce-4dc9-b73c-1a411beb364f">
+      <name>УникальныйИдентификаторНорматива</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уникальный идентификатор норматива</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="7fd33cfd-f91d-462d-96dd-bd9b6590f9e6">
+    <name>ЗаявкиНаСдачуНормативовПоФизическойПодготовке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки на сдачу нормативов по физической подготовке</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="b752361c-ea54-4f22-94da-1c9e19e9ee59">
+    <name>ЗаявкиНаСоревнованияПоОбщейФизическойПодготовке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки на соревнования по общей физической подготовке</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

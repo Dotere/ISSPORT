@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7bec451b-2558-454c-8cd0-13a2362dcb18">
+  <producedTypes>
+    <refType typeId="f93f14d4-466c-461c-9297-8c319aed9adc" valueTypeId="eec6f572-abee-4f76-9f44-93760a550ca9"/>
+    <listType typeId="50cfcf38-6c7c-4f58-8eac-a42d8896e719" valueTypeId="8aa9c5df-41a4-4dfe-9b7f-8aaa9fa42798"/>
+    <managerType typeId="7abbe5d7-755b-4bf8-958e-7373cf8390ec" valueTypeId="9db2ac0b-ed38-4301-9aa8-2c22ca263508"/>
+  </producedTypes>
+  <name>ТипыСдачиНормативов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы сдачи нормативов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="84d3995c-aae7-415a-bfb4-5adb7b50aebd">
+    <name>Норматив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норматив</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="46413c7a-8bc4-4528-be11-070e4b42553f">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

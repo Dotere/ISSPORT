@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34926eb8-beb3-437c-b414-e57e6e9c38f5">
+  <producedTypes>
+    <selectionType typeId="a248b6f5-0762-46e8-b2fc-036f8bedcd61" valueTypeId="b773ad2a-e9b2-4a48-967c-6bed9216e0e2"/>
+    <listType typeId="fc4d1ac6-9874-42e3-9b38-abaa1198bf2c" valueTypeId="44c9d525-ecc1-4664-aef4-407ccd456432"/>
+    <managerType typeId="50180e07-5aa6-4809-a61c-b93af1517ac5" valueTypeId="4d104995-cd52-447b-9f94-09e4c9329a23"/>
+    <recordSetType typeId="e71c58c4-8a6d-4bfa-b02b-b7ee8910c971" valueTypeId="5d523f37-4b8c-4e34-9425-26b1d44fc492"/>
+    <recordKeyType typeId="36dc4c15-5093-4ddc-b574-76b257779f44" valueTypeId="63fbacb6-d382-48e2-894d-5895b528cc56"/>
+    <recordType typeId="3e3f3943-a80c-4ac7-af19-bc1f7907ebf8" valueTypeId="e6cde269-b952-47e0-9890-02c7e450b8d9"/>
+    <recordManagerType typeId="30420ead-b7bd-4ec0-8332-ce6f007dd679" valueTypeId="ae0119bd-ff82-430e-9d2e-0a3102255339"/>
+  </producedTypes>
+  <name>КадровыеИсторииТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадровые истории тренеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КадровыеИсторииТренеров.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КадровыеИсторииТренеров.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Кадровая история тренера</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Кадровые истории тренеров</value>
+  </listPresentation>
+  <resources uuid="670baf67-47c5-43d5-a468-82ee45c503c0">
+    <name>ВидСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид события</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыКадровыхСобытий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="30f93acf-995d-4120-b632-85cbc6a32da1">
+    <name>ВидЗанятости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид занятости</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидЗанятости</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="97778c79-c736-4740-b563-37e9c1aa8176">
+    <name>ТренерПреподователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер преподаватель</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9caf0d80-2283-48a8-a247-5b53c29ea111">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dbdb3ea5-aef1-4dfd-86d7-86e7625fed10">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7f3be3e3-80db-48ea-be32-e44098a39e88">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ac716be-218d-4ab7-90c9-179401bf5cdf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

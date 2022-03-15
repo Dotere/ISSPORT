@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd533669-2a59-4a75-96ba-48355bd5bd7e">
+  <producedTypes>
+    <selectionType typeId="590bc324-31b7-4eb3-bf56-f1c1bd0c01eb" valueTypeId="dcbc9513-42ae-4664-a950-fefde72b4445"/>
+    <listType typeId="af165c82-6c33-4782-9615-fe8acec1ed4c" valueTypeId="5f3c15a2-130e-4c0a-97b8-c2b1248e6563"/>
+    <managerType typeId="3ea4cde3-d854-4b40-b1d0-78d50a6c83dc" valueTypeId="8a8d27e8-3d2f-4098-ab00-354f9e26a872"/>
+  </producedTypes>
+  <name>СогласияНаОбработкуПД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласия на обработку ПД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.СогласиеНаОбработкуПерсональныхДанных</registeredDocuments>
+  <registeredDocuments>Document.ОтзывСогласияНаОбработкуПерсональныхДанных</registeredDocuments>
+  <columns uuid="fac963a2-8b32-45b8-8488-ce4b8c8e18b2">
+    <name>Субъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <references>Document.ОтзывСогласияНаОбработкуПерсональныхДанных.Attribute.Субъект</references>
+    <references>Document.СогласиеНаОбработкуПерсональныхДанных.Attribute.Субъект</references>
+  </columns>
+  <columns uuid="7e971115-c0e8-462f-9691-ea7c72ca0e50">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ОтзывСогласияНаОбработкуПерсональныхДанных.Attribute.Организация</references>
+    <references>Document.СогласиеНаОбработкуПерсональныхДанных.Attribute.Организация</references>
+  </columns>
+</mdclass:DocumentJournal>

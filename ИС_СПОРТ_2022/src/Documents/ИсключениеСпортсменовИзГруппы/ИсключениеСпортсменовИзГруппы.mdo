@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad4994db-4345-45fd-a6c4-29e12f9d9ce8">
+  <producedTypes>
+    <objectType typeId="3524d416-4ac5-4ef4-95e3-4d253c548a5d" valueTypeId="4f2888df-dd55-4134-8dc8-7bed59f46115"/>
+    <refType typeId="5d280ce2-34f0-4c7f-8fce-208e9aebaa3b" valueTypeId="aa43a40b-d1ca-471b-a913-bbce6cc8e638"/>
+    <selectionType typeId="df347d92-e2eb-4321-8393-335b59ca84d1" valueTypeId="d4c5b17a-ccf5-4de8-a366-3790184abd38"/>
+    <listType typeId="bdba4888-818e-4274-aa39-b4cd53aa7009" valueTypeId="d9d3ff57-1eea-4625-aeb7-8563ee82be5e"/>
+    <managerType typeId="8d911649-e655-43cb-8783-64774e3769c8" valueTypeId="1d71e2ef-1fe2-4650-b8f9-ea5629e99177"/>
+  </producedTypes>
+  <name>ИсключениеСпортсменовИзГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчисление спортсменов из группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИсключениеСпортсменовИзГруппы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Отчисление спортсменов из группы</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Отчисление спортсменов из группы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИсключениеСпортсменовИзГруппы.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.СоставГруппы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="6edbe7be-77f5-471f-b097-46e7984e15fd">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Группа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ИсключениеСпортсменовИзГруппы.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9ca19bfd-1bc4-493b-84de-41917f82bd9d">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb734aba-9f88-4725-9426-48c36d8ef552">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное учреждение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2343cb0d-f8d3-41f7-b57f-8535f79fe588">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ИсключениеСпортсменовИзГруппы.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d048d6f3-2fd4-450c-96ae-9816ed9b5ec0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b994ca44-96a7-40e1-8a86-c5edb0f0b427">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61be05a7-8ac9-4f8a-993f-d699b2708704">
+    <name>ТренерСборной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер группы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6a12f347-ab3a-4fe4-b120-adb72a005dcc">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОснованияДляОтчисленияСпортсменов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f0c57fcb-16ac-4cb0-b23b-5fb79c44449b">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="b8e3ea96-09f8-46e8-a26d-3259355930a6">
+    <producedTypes>
+      <objectType typeId="e47947fc-0af5-4d2c-8534-f85fd31f7079" valueTypeId="5a0a68de-c0ea-46ee-a188-5a59f631693a"/>
+      <rowType typeId="c29c7eb5-813a-4cc3-b52b-0d51934ab135" valueTypeId="7bed9a4f-83cf-454c-8c01-257fd221277f"/>
+    </producedTypes>
+    <name>Спортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <attributes uuid="5facfadb-d2e3-46d3-ad37-b7a98fc2277a">
+      <name>Спортсмен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спортсмен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Спортсмены</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.СтатусСпортсмена</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусыСпортсменов.EnumValue.Спортсмен</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="691fa3a4-be03-4278-a276-de920c51bc78">
+      <name>ДатаИсключенияИзГруппы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата отчисления из группы</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="7137b9f2-c617-4c22-a729-6e13b95f2d2a">
+    <name>ПФ_DOC_ИсключениеИзКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ об исключении из команды Word</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f8fa4495-66df-4a61-b39d-3c67c453d53d">
+    <name>ПФ_DOC_СлужебнаяЗаписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебная записка Word</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="572605d7-8277-45a7-9d57-0ad273c93540">
+    <name>ПФ_MXL_ИсключениеИзКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ об исключении из команды</value>
+    </synonym>
+  </templates>
+  <templates uuid="d9ee66aa-3790-4f4b-863b-6f805947ddee">
+    <name>ПФ_MXL_СлужебнаяЗаписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебная записка</value>
+    </synonym>
+  </templates>
+  <commands uuid="1b3bc507-d40d-4f4c-8517-94310653d27c">
+    <name>ПриказИсключениеИзГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчисление из группы</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>DocumentRef.ИсключениеСпортсменовИзГруппы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="acde37cd-892a-40a4-ac11-acf5936a76f4">
+    <name>СлужебнаяЗапискаИсключение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебная записка</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>DocumentRef.ИсключениеСпортсменовИзГруппы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

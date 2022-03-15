@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="013e8810-f54d-4d0e-a89c-4c78b0de4820">
+  <producedTypes>
+    <objectType typeId="d4ea97c1-6b28-4ba5-b22b-04765c4bf124" valueTypeId="6aec65c5-134b-400f-ac0b-664f5dd0c9f9"/>
+    <refType typeId="0691b7b5-5c63-4c52-8721-4c397d2c023d" valueTypeId="6a16a91e-e249-4411-baaa-fdb77efb80ff"/>
+    <selectionType typeId="0e61c32d-4ff5-45c9-a3d8-e7559ac6c52f" valueTypeId="32461b75-1069-43d1-bcf4-c4ec4b8b5910"/>
+    <listType typeId="2a6a0a19-ed3e-46aa-adff-fc2fa067b2a9" valueTypeId="5ce27995-59a8-449e-a932-303e5713f39a"/>
+    <managerType typeId="ec051523-6574-4d8b-b9eb-6418d1cfeecf" valueTypeId="8e3db828-81cb-4e12-81e5-1e423feb3c7f"/>
+    <containerType typeId="0d1cd2b0-9ed5-4214-ac85-2dab13e96aa2" valueTypeId="61a02e1a-0193-4bd9-9c61-ef02f849b552"/>
+  </producedTypes>
+  <name>СвойстваПоказателейФизическогоЗдоровья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свойства показателей физического здоровья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.СвойстваПоказателейФизическогоЗдоровья.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.СвойстваПоказателейФизическогоЗдоровья.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.ЗначениияСвойствПоказателейФизическогоЗдоровья</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="08b83a64-0a09-43de-98ec-a3d922f935cb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCharacteristicTypes>

@@ -1,0 +1,3887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид спорта (основной)</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спортивное учреждение</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрядУдалить</dataPath>
+			<field>РазрядУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сборная</dataPath>
+			<field>Сборная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спортивная сборная команда</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этап</dataPath>
+			<field>Этап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап спортивной подготовки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разряд</dataPath>
+			<field>Разряд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РангСборной</dataPath>
+			<field>РангСборной</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ранг сборной</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата рождения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаПоРеестру</dataPath>
+			<field>ВидСпортаПоРеестру</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид спорта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(, Спортсмен.СтатусСпортсмена &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСпортсменов.СпортсменДругогоСпортивногоУчреждения)) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения &gt; &amp;Период
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1))
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация КАК Организация,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Разряд КАК Разряд,
+	МАКСИМУМ(ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения) КАК ДатаПрисвоения
+ПОМЕСТИТЬ ВТ_Разряды
+ИЗ
+	РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних(
+			&amp;Период {(&amp;Период)},
+			Разряд &lt;&gt; ЗНАЧЕНИЕ(Справочник.СпортивнаяКлассификация.ПустаяСсылка)
+				И Спортсмен В
+					(ВЫБРАТЬ
+						ВТ_СоставУчащихся.Спортсмен КАК Спортсмен
+					ИЗ
+						ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+
+СГРУППИРОВАТЬ ПО
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Разряд
+
+ИНДЕКСИРОВАТЬ ПО
+	Разряд,
+	Организация,
+	Спортсмен,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Организация КАК Организация,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер КАК Тренер,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап КАК Этап
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(
+			&amp;Период {(&amp;Период)},
+			Спортсмен В
+				(ВЫБРАТЬ
+					ВТ_СоставУчащихся.Спортсмен КАК Спортсмен
+				ИЗ
+					ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+
+ИНДЕКСИРОВАТЬ ПО
+	Тренер,
+	Этап,
+	Организация,
+	Спортсмен,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СборныеСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	СборныеСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	СборныеСпортсменовСрезПоследних.Сборная КАК Сборная,
+	ВТ_Этапы.Этап КАК Этап,
+	ВТ_Этапы.Тренер КАК Тренер,
+	ВТ_Разряды.Разряд КАК Разряд,
+	СборныеСпортсменовСрезПоследних.Сборная.РангСборной КАК РангСборной,
+	СборныеСпортсменовСрезПоследних.Организация КАК Организация,
+	СборныеСпортсменовСрезПоследних.Спортсмен.ФизическоеЛицо.ДатаРождения КАК ДатаРождения
+ПОМЕСТИТЬ ВТ_Сборные
+ИЗ
+	РегистрСведений.СборныеСпортсменов.СрезПоследних(
+			&amp;Период {(&amp;Период)},
+			(Спортсмен, ВидСпорта) В
+				(ВЫБРАТЬ
+					ВТ_СоставУчащихся.Спортсмен КАК Спортсмен,
+					ВТ_СоставУчащихся.ВидСпорта КАК ВидСпорта
+				ИЗ
+					ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК СборныеСпортсменовСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Этапы КАК ВТ_Этапы
+		ПО СборныеСпортсменовСрезПоследних.Спортсмен = ВТ_Этапы.Спортсмен
+			И СборныеСпортсменовСрезПоследних.Организация = ВТ_Этапы.Организация
+			И СборныеСпортсменовСрезПоследних.ВидСпорта = ВТ_Этапы.ВидСпорта
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Разряды КАК ВТ_Разряды
+		ПО СборныеСпортсменовСрезПоследних.Спортсмен = ВТ_Разряды.Спортсмен
+			И СборныеСпортсменовСрезПоследних.Организация = ВТ_Разряды.Организация
+			И СборныеСпортсменовСрезПоследних.ВидСпорта = ВТ_Разряды.ВидСпорта
+ГДЕ
+	СборныеСпортсменовСрезПоследних.ВключитьВСборную = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	СборныеСпортсменовСрезПоследних.Спортсмен,
+	СборныеСпортсменовСрезПоследних.ВидСпорта,
+	СборныеСпортсменовСрезПоследних.Сборная,
+	ВТ_Этапы.Этап,
+	ВТ_Этапы.Тренер,
+	ВТ_Разряды.Разряд,
+	СборныеСпортсменовСрезПоследних.Сборная.РангСборной,
+	СборныеСпортсменовСрезПоследних.Организация,
+	СборныеСпортсменовСрезПоследних.Спортсмен.ФизическоеЛицо.ДатаРождения
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	Спортсмен,
+	ВидСпорта,
+	Сборная,
+	Этап
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сборные.Спортсмен КАК Спортсмен,
+	ВТ_Сборные.Сборная КАК Сборная,
+	ВТ_Сборные.Этап КАК Этап,
+	ВТ_Сборные.Тренер КАК Тренер,
+	ЕСТЬNULL(ВТ_Сборные.Разряд, "б/р") КАК Разряд,
+	ВТ_Сборные.РангСборной КАК РангСборной,
+	ВТ_Сборные.Организация КАК Организация,
+	ВТ_Сборные.ДатаРождения КАК ДатаРождения,
+	РеестрВидовСпорта.Ссылка КАК ВидСпортаПоРеестру,
+	ВТ_Сборные.ВидСпорта КАК ВидСпорта
+ИЗ
+	ВТ_Сборные КАК ВТ_Сборные
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.РеестрВидовСпорта КАК РеестрВидовСпорта
+		ПО ВТ_Сборные.ВидСпорта.ВидСпортаПоРеестру = РеестрВидовСпорта.Ссылка
+{ГДЕ
+	(ВТ_Сборные.Этап В ИЕРАРХИИ (&amp;Этап))}</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>КоличествоСпортсменов</dataPath>
+		<expression>Спортсмен</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество спортсменов</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоОрганизаций</dataPath>
+		<expression>Организация</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество организаций</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоСборных</dataPath>
+		<expression>Сборная</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество сборных</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоСпортсменовПоСборным</dataPath>
+		<expression>Спортсмен</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество спортсменов по сборным</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоСпортсменовПоВидамСпорта</dataPath>
+		<expression>Спортсмен</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество спортсменов по видам спорта</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВыбранныйВидСпорта</dataPath>
+		<expression>Выбор Когда РольДоступна("Методист") Тогда ВидСпорта
+Когда РольДоступна("Руководитель") ИЛИ РольДоступна("ПолныеПрава") Тогда ВидСпортаПоРеестру
+Конец
+</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выбранный вид спорта</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоСпортсменов</dataPath>
+		<expression>Количество(Различные КоличествоСпортсменов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоОрганизаций</dataPath>
+		<expression>Количество(Различные КоличествоОрганизаций)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСборных</dataPath>
+		<expression>Количество(Различные КоличествоСборных)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСпортсменовПоВидамСпорта</dataPath>
+		<expression>Количество(Различные КоличествоСпортсменовПоВидамСпорта)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСпортсменовПоСборным</dataPath>
+		<expression>Количество(Различные КоличествоСпортсменовПоСборным)</expression>
+		<group>Сборная</group>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Этап</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭтапыСпортивнойПодготовки</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Всего спортивных учреждений</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КоличествоОрганизаций</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Общее количество спортсменов</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КоличествоСпортсменов</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество спортивных сборных команд</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КоличествоСборных</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КоличествоОрганизаций</dcsat:name>
+			<dcsat:expression>Представление(КоличествоОрганизаций)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КоличествоСпортсменов</dcsat:name>
+			<dcsat:expression>Представление(КоличествоСпортсменов)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КоличествоСборных</dcsat:name>
+			<dcsat:expression>Представление(КоличествоСборных)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">НомерСроки</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">7.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">7.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Спортсмен</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">31.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">31.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">СпортсменРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаРождения</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ДатаРожденияРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпорта</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ВидСпортаРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Тренер</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ТренерРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Этап</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ЭтапРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Разряд</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РазрядРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Организация</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">26.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">26.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ОрганизацияРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>НомерСроки</dcsat:name>
+			<dcsat:expression>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Спортсмен</dcsat:name>
+			<dcsat:expression>Спортсмен</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>СпортсменРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Спортсмен</dcsat:field>
+				<dcsat:expression>Спортсмен</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаРождения</dcsat:name>
+			<dcsat:expression>ДатаРождения</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ДатаРожденияРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>ДатаРождения</dcsat:field>
+				<dcsat:expression>ДатаРождения</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Тренер</dcsat:name>
+			<dcsat:expression>Тренер</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ТренерРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Тренер</dcsat:field>
+				<dcsat:expression>Тренер</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Этап</dcsat:name>
+			<dcsat:expression>Этап</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ЭтапРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Этап</dcsat:field>
+				<dcsat:expression>Этап</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Разряд</dcsat:name>
+			<dcsat:expression>Разряд</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РазрядРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Разряд</dcsat:field>
+				<dcsat:expression>Разряд</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Организация</dcsat:name>
+			<dcsat:expression>Организация</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ОрганизацияРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Организация</dcsat:field>
+				<dcsat:expression>Организация</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ВидСпортаРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>ВидСпорта</dcsat:field>
+				<dcsat:expression>ВидСпорта</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпорта</dcsat:name>
+			<dcsat:expression>Представление(ВыбранныйВидСпорта)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№ п/п</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">7.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">7.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование спортивной сборной команды</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ранг сборной</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсмен</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">31.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">31.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата рождения</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид спорта</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тренер</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Этап спортивной подготовки</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Разряд/Звание</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортивное учреждение спортсмена</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">26.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">26.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">46.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортивная сборная команда</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид спорта</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсменов</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет5</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Сборная</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">СборнаяРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпорта</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КоличествоСпортсменовПоСборным</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Сборная</dcsat:name>
+			<dcsat:expression>Представление(Сборная)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>СборнаяРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Сборная</dcsat:field>
+				<dcsat:expression>Сборная</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КоличествоСпортсменовПоСборным</dcsat:name>
+			<dcsat:expression>Представление(КоличествоСпортсменовПоСборным)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпорта</dcsat:name>
+			<dcsat:expression>Представление(ВыбранныйВидСпорта)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет6</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид спорта</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсменов</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет7</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпортаПоРеестру</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ВидСпортаРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КоличествоСпортсменовПоВидамСпорта</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ВидСпортаРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>ВидСпортаПоРеестру</dcsat:field>
+				<dcsat:expression>ВидСпортаПоРеестру</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КоличествоСпортсменовПоВидамСпорта</dcsat:name>
+			<dcsat:expression>Представление(КоличествоСпортсменовПоВидамСпорта)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпортаПоРеестру</dcsat:name>
+			<dcsat:expression>Представление(ВидСпортаПоРеестру)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет8</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортивная сборная команда</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид спорта</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ранг сборной</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет9</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Сборная</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">32</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">СборнаяРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпорта</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">29.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РангРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">РангСборной</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РангРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Сборная</dcsat:name>
+			<dcsat:expression>Представление(Сборная)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>СборнаяРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Сборная</dcsat:field>
+				<dcsat:expression>Сборная</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>РангСборной</dcsat:name>
+			<dcsat:expression>Представление(РангСборной)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РангРасшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>РангСборной</dcsat:field>
+				<dcsat:expression>РангСборной</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>DrillDown</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпорта</dcsat:name>
+			<dcsat:expression>Представление(ВыбранныйВидСпорта)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет10</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Сборная</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">8.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">8.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">СборнаяРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">РангСборной</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РангРасшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item>
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Сборная</dcsat:name>
+			<dcsat:expression>Представление(Сборная)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>СборнаяРасшифровка</dcsat:name>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>РангСборной</dcsat:name>
+			<dcsat:expression>Представление(РангСборной)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РангРасшифровка</dcsat:name>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет11</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Организация</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Организация</dcsat:name>
+			<dcsat:expression>Представление(Организация)</dcsat:expression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupName>ОбщаяСтатистика</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>СтрДанные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>СтатистикаПоСборным</groupName>
+		<templateType>Header</templateType>
+		<template>Макет5</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>СтатистикаПоВидамСпорта</groupName>
+		<templateType>Header</templateType>
+		<template>Макет7</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>СтатистикаПоРангам</groupName>
+		<templateType>Header</templateType>
+		<template>Макет9</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ГруппировкаСборная</groupName>
+		<templateType>Header</templateType>
+		<template>Макет10</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ГруппировкаОрганизация</groupName>
+		<templateType>Header</templateType>
+		<template>Макет11</template>
+	</groupTemplate>
+	<groupHeaderTemplate>
+		<groupName>Шапка</groupName>
+		<templateType>Header</templateType>
+		<template>Макет3</template>
+	</groupHeaderTemplate>
+	<groupHeaderTemplate>
+		<groupName>ШапкаСборные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет4</template>
+	</groupHeaderTemplate>
+	<groupHeaderTemplate>
+		<groupName>ШапкаВидыСпорта</groupName>
+		<templateType>Header</templateType>
+		<template>Макет6</template>
+	</groupHeaderTemplate>
+	<groupHeaderTemplate>
+		<groupName>ШапкаРанги</groupName>
+		<templateType>Header</templateType>
+		<template>Макет8</template>
+	</groupHeaderTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сборные команды спортсменов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>2eecb7de-1479-487a-8736-2e8fb803f114</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Спортсмен</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ced25171-f247-4ee3-8820-a9242ca9af21</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сборная</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>e5b03658-ebf3-4688-b6e4-9be44c3456ba</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Тренер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9fb141dc-0f01-4f07-b9bf-76d2ac115dd6</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидСпорта</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>2845d59d-b898-45fd-820a-7948a98022d1</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид спорта</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидСпортаПоРеестру</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>5f736853-513b-4fff-bb35-a80341faaeec</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид спорта</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>be0cbc17-0cba-48e3-b8e6-392f6dbb7191</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Этап</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>dbed0fe0-9fca-403f-84f5-a46131d17b12</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сборная</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Спортсмен</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БезОформления</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сборные команды спортсменов</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ФиксацияСверху</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionFixation">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ОбщаяСтатистика</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоОрганизаций</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоСпортсменов</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоСборных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ШапкаСборные</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>СтатистикаПоСборным</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сборная</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВыбранныйВидСпорта</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВидСпортаПоРеестру</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ШапкаВидыСпорта</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>СтатистикаПоВидамСпорта</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВидСпортаПоРеестру</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВидСпортаПоРеестру</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоСпортсменовПоВидамСпорта</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ШапкаРанги</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>СтатистикаПоРангам</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сборная</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РангСборной</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВыбранныйВидСпорта</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Сборная</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РангСборной</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВидСпортаПоРеестру</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Шапка</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>ГруппировкаОрганизация</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Организация</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:name>ГруппировкаСборная</dcsset:name>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сборная</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>РангСборной</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:name>СтрДанные</dcsset:name>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Сборная</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>РангСборной</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Спортсмен</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаРождения</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Тренер</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Этап</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Разряд</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Организация</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ВыбранныйВидСпорта</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

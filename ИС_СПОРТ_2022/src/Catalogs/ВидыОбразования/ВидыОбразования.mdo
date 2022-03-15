@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b205a1ea-891b-4d74-8547-caf8f53ef30a">
+  <producedTypes>
+    <objectType typeId="f3df122a-d67e-42bd-83e4-0eed4ed1559e" valueTypeId="de0c4051-fd27-4826-9d03-7ea44bc66c77"/>
+    <refType typeId="d3128e30-f674-472f-bfad-9dd8453c3a6b" valueTypeId="724b8d3e-4744-439e-bc09-8573a2dbf5dd"/>
+    <selectionType typeId="f9626512-f553-49ea-a7fc-1a7891b4d5ce" valueTypeId="db5d3e63-46e0-4333-a282-23d37219955b"/>
+    <listType typeId="5ff555d2-ca27-4072-9b57-4949510404f6" valueTypeId="23d87204-226e-4890-8f9a-8d539d43d2fe"/>
+    <managerType typeId="3568b6ab-1eab-450c-abb9-a6d45227eb54" valueTypeId="bd045322-3fe2-4e81-acf9-f0b281166b49"/>
+  </producedTypes>
+  <name>ВидыОбразования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды образования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОбразования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОбразования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид образования</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>2</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="6bfd8f2c-bebd-4f1e-9be7-29d15cd13724">
+      <name>ВысшееОбразованиеГруппа</name>
+      <description>Высшее образование группа</description>
+      <code xsi:type="core:StringValue">
+        <value>50</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="e2353cb3-d9d3-47bb-a67e-ffc0c653e227">
+        <name>Адъюнктура</name>
+        <description>Адъюнктура</description>
+        <code xsi:type="core:StringValue">
+          <value>21</value>
+        </code>
+      </content>
+      <content id="b1aacb5b-4b77-4f08-aa9b-dad2df5dfd40">
+        <name>Аспирантура</name>
+        <description>Аспирантура</description>
+        <code xsi:type="core:StringValue">
+          <value>02</value>
+        </code>
+      </content>
+      <content id="cb25f10e-4400-409f-9aca-2e0f650c8f8a">
+        <name>ВысшееОбразование</name>
+        <description>Высшее образование</description>
+        <code xsi:type="core:StringValue">
+          <value>18</value>
+        </code>
+      </content>
+      <content id="66ae92b9-30a0-4357-921f-786b0f79f3a9">
+        <name>ВысшееОбразование_бакалавариат</name>
+        <description>Высшее образование - бакалавариат</description>
+        <code xsi:type="core:StringValue">
+          <value>05</value>
+        </code>
+      </content>
+      <content id="3f7c88ae-e9aa-4d38-9089-6d1330d59252">
+        <name>ВысшееОбразование_Магистратура</name>
+        <description>Высшее образование - магистратура</description>
+        <code xsi:type="core:StringValue">
+          <value>04</value>
+        </code>
+      </content>
+      <content id="708c8a1b-dfc4-473e-bffb-6222dc1fa489">
+        <name>ВысшееОбразование_специалитет</name>
+        <description>Высшее образование - специалитет</description>
+        <code xsi:type="core:StringValue">
+          <value>06</value>
+        </code>
+      </content>
+      <content id="5b2b8f0f-0c5d-4769-9a34-b4d07dc96481">
+        <name>Докторантура</name>
+        <description>Докторантура</description>
+        <code xsi:type="core:StringValue">
+          <value>01</value>
+        </code>
+      </content>
+      <content id="5c707293-25d4-4032-be49-0fb6017bd08b">
+        <name>Интернатура</name>
+        <description>Интернатура</description>
+        <code xsi:type="core:StringValue">
+          <value>22</value>
+        </code>
+      </content>
+      <content id="6e847178-4d6f-4100-9528-3bc7ef03a8cb">
+        <name>НеполноеВысшееОбразование</name>
+        <description>Неполное высшее образование</description>
+        <code xsi:type="core:StringValue">
+          <value>15</value>
+        </code>
+      </content>
+      <content id="940b6f98-ebea-4ee3-a0f0-89edf8b62de9">
+        <name>Ординатура</name>
+        <description>Ординатура</description>
+        <code xsi:type="core:StringValue">
+          <value>20</value>
+        </code>
+      </content>
+    </items>
+    <items id="40f31ce9-3d0a-4452-a314-fbfacf8f142f">
+      <name>СреднееОбразованиеГруппа</name>
+      <description>Среднее образование группа</description>
+      <code xsi:type="core:StringValue">
+        <value>51</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="0338c3bd-a274-49ea-bc1e-044821c062a4">
+        <name>НачальноеПрофессиональноеОбразование</name>
+        <description>Начальное профессиональное образование</description>
+        <code xsi:type="core:StringValue">
+          <value>10</value>
+        </code>
+      </content>
+      <content id="5eb570e9-ae40-40c2-824c-e5d69e180e51">
+        <name>ОсновноеОбщееОбразование</name>
+        <description>Основное общее образование</description>
+        <code xsi:type="core:StringValue">
+          <value>03</value>
+        </code>
+      </content>
+      <content id="127bd969-5c3b-4091-b34b-c3f511d5b97b">
+        <name>СреднееПолноеОбщееОбразование</name>
+        <description>Среднее (полное) общее образование</description>
+        <code xsi:type="core:StringValue">
+          <value>07</value>
+        </code>
+      </content>
+      <content id="7e0a718d-b13c-4648-b6f2-78ded3ee96d0">
+        <name>СреднееПрофессиональноеОбразование</name>
+        <description>Среднее профессиональное образование</description>
+        <code xsi:type="core:StringValue">
+          <value>11</value>
+        </code>
+      </content>
+    </items>
+    <items id="a088c170-0033-4fd8-ad36-5f62cef9576b">
+      <name>ПослевузовскоеОбразование</name>
+      <description>Послевузовское образование</description>
+      <code xsi:type="core:StringValue">
+        <value>19</value>
+      </code>
+    </items>
+    <items id="2422d387-dab1-4c79-a735-b7c5cdbd161e">
+      <name>ПрофессиональноеОбразование</name>
+      <description>Профессиональное образование</description>
+      <code xsi:type="core:StringValue">
+        <value>07</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>BothWays</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыОбразования.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыОбразования.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыОбразования.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="1aca5263-d029-4f56-8985-4e72d3e2d47e">
+    <name>ФасетОКИН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фасет ОКИН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab4fa7c8-5f35-42fd-8e1a-21a8284a363c">
+    <name>КодОКИН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОКИН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5a218d80-5bf4-4e01-9c10-80be12e526f3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1dfca250-bc5e-4485-8c45-b4b84a3681f4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

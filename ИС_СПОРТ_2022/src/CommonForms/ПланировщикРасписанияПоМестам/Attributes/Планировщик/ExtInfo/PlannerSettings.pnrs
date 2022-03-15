@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planner:PlannerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:planner="http://g5.1c.ru/v8/dt/planner/model">
+  <items>
+    <value xsi:type="core:UndefinedValue"/>
+    <begin>2021-03-14T01:00:00</begin>
+    <end>2021-03-14T04:00:00</end>
+    <text>Встреча</text>
+    <font xsi:type="core:AutoFont"/>
+    <replacementDate>0001-01-01T00:00:00</replacementDate>
+    <itemId>44a59832-7e88-4956-8694-e6f13e1a6c01</itemId>
+  </items>
+  <showWrappedHeaders>true</showWrappedHeaders>
+  <showCurrentDate>true</showCurrentDate>
+  <wrappedTimeScaleHeaderFormat>
+    <key>#</key>
+    <value>DLF=&quot;DD&quot;</value>
+  </wrappedTimeScaleHeaderFormat>
+  <timeScaleWrapBeginIndent>6</timeScaleWrapBeginIndent>
+  <periodicVariantRepetition>24</periodicVariantRepetition>
+  <periodicVariantUnit>Hour</periodicVariantUnit>
+  <border xsi:type="core:BorderDef">
+    <style>Single</style>
+    <width>1</width>
+  </border>
+  <font xsi:type="core:AutoFont"/>
+  <beginOfRepresentationPeriod>0001-01-01T00:00:00</beginOfRepresentationPeriod>
+  <endOfRepresentationPeriod>0001-01-01T00:00:00</endOfRepresentationPeriod>
+  <timeScale>
+    <placement>Left</placement>
+    <levels>
+      <measure>Hour</measure>
+      <interval>1</interval>
+      <show>true</show>
+      <line>
+        <width>1</width>
+        <style>Solid</style>
+      </line>
+      <dayFormatRule>WeekDay</dayFormatRule>
+      <format>
+        <key>#</key>
+        <value>DF=&quot;HH:mm&quot;</value>
+      </format>
+      <labels/>
+      <showPereodicalLabels>true</showPereodicalLabels>
+    </levels>
+  </timeScale>
+  <periods>
+    <begin>2022-01-31T00:00:00</begin>
+    <end>2022-01-31T23:59:59</end>
+  </periods>
+  <itemsBehaviorWhenSpaceInsufficient>ShowAllItems</itemsBehaviorWhenSpaceInsufficient>
+  <minColumnWidth>10</minColumnWidth>
+</planner:PlannerSettings>

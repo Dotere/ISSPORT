@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7229be7-919f-44f7-989a-7c599d9b1d2b">
+  <producedTypes>
+    <objectType typeId="dd5e1825-d7d5-445e-ac16-5d6f819cea84" valueTypeId="ff5d4635-ebce-49fe-8c56-138ddca46be6"/>
+    <managerType typeId="1c85344c-8cff-4900-82c8-71de50e05f50" valueTypeId="599b2ef2-f5c5-46de-a6e0-128b4d03834b"/>
+  </producedTypes>
+  <name>ЧисленностьЗанимающихсяПоПрограммамСпортивнойПодготовки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Численность занимающихся по программам спортивной подготовки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЧисленностьЗанимающихсяПоПрограммамСпортивнойПодготовки.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ЧисленностьЗанимающихсяПоПрограммамСпортивнойПодготовки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="1d673866-76cd-49e8-885f-39ed726877af">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ddb8f00d-bf5d-45a8-aa34-a97cd624fd1a">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b02c1b9b-3aa1-4986-9c5a-ef686aced291">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="15b928a2-b49b-43c1-bf6d-73fc1b947feb">
+    <name>РасшифровкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

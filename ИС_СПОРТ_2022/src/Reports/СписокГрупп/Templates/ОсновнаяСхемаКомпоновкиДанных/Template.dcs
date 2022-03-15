@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Данные</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Группа</dataPath>
+			<field>Группа</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тренер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсменов</dataPath>
+			<field>Спортсменов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спортсменов</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументРегистрацииСтраховогоПолиса</dataPath>
+			<field>ДокументРегистрацииСтраховогоПолиса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ регистрации страхового полиса</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументФормированияГруппы</dataPath>
+			<field>ДокументФормированияГруппы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ формирования группы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументРегистрацииДопуска</dataPath>
+			<field>ДокументРегистрацииДопуска</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ регистрации допуска</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Мужчины</dataPath>
+			<field>Мужчины</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мужчины</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Женщины</dataPath>
+			<field>Женщины</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Женщины</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмеютДопуск</dataPath>
+			<field>ИмеютДопуск</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имеют допуск</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействуетСтраховка</dataPath>
+			<field>ДействуетСтраховка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действует страховка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разряд</dataPath>
+			<field>Разряд</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокРазряда</dataPath>
+			<field>ПорядокРазряда</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок разряда</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДопуска</dataPath>
+			<field>ВидДопуска</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этап</dataPath>
+			<field>Этап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап подготовки</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйГод</dataPath>
+			<field>УчебныйГод</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрядУдалить</dataPath>
+			<field>РазрядУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаУдалить</dataPath>
+			<field>ГруппаУдалить</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация КАК Организация,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	МАКСИМУМ(ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения) КАК ДатаПрисвоения
+ПОМЕСТИТЬ ВТ_Разряды
+ИЗ
+	РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних(&amp;Период, ) КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+
+СГРУППИРОВАТЬ ПО
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен,
+	Организация,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация КАК Организация,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Разряд КАК Разряд
+ПОМЕСТИТЬ ВТ_РазрядыАктуальные
+ИЗ
+	РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних(&amp;Период, ) КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_Разряды КАК ВТ_Разряды
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация = ВТ_Разряды.Организация
+			И ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта = ВТ_Разряды.ВидСпорта
+			И ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен = ВТ_Разряды.Спортсмен
+			И ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения = ВТ_Разряды.ДатаПрисвоения
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен,
+	Организация,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаНачалаОбучения КАК ДатаНачалаОбучения
+ПОМЕСТИТЬ ВТ_СоставУчереждения
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(&amp;Период, ) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СоставГруппы.УчебныйГод КАК УчебныйГод,
+	СоставГруппы.Спортсмен КАК Спортсмен,
+	СоставГруппы.Группа КАК Группа,
+	СоставГруппы.ТренерСборной КАК Тренер,
+	СоставГруппы.Регистратор КАК ДокументФормированияГруппы,
+	РегистрацияДопусков.Регистратор КАК ДокументРегистрацииДопуска,
+	РегистрацияСтраховыхПолисов.Регистратор КАК ДокументРегистрацииСтраховогоПолиса,
+	1 КАК Спортсменов,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(РегистрацияДопусков.Период, ДАТАВРЕМЯ(1, 1, 1)) &lt;= &amp;Период
+				И ЕСТЬNULL(РегистрацияДопусков.ДействуетДо, ДАТАВРЕМЯ(1, 1, 1)) &gt; &amp;Период
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИмеютДопуск,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(РегистрацияСтраховыхПолисов.ДатаНачала, ДАТАВРЕМЯ(1, 1, 1)) &lt;= &amp;Период
+				И ЕСТЬNULL(РегистрацияСтраховыхПолисов.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)) &gt; &amp;Период
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДействуетСтраховка,
+	ВЫБОР
+		КОГДА СоставГруппы.Спортсмен.ФизическоеЛицо.Пол = ЗНАЧЕНИЕ(Перечисление.ПолФизическогоЛица.Женский)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Женщины,
+	ВЫБОР
+		КОГДА СоставГруппы.Спортсмен.ФизическоеЛицо.Пол = ЗНАЧЕНИЕ(Перечисление.ПолФизическогоЛица.Мужской)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Мужчины,
+	ЕСТЬNULL(ВТ_РазрядыАктуальные.Разряд, ЗНАЧЕНИЕ(Справочник.СпортивнаяКлассификация.ПустаяСсылка)) КАК Разряд,
+	ВЫБОР
+		КОГДА ВТ_РазрядыАктуальные.Разряд ЕСТЬ NULL
+			ТОГДА 999
+		ИНАЧЕ ВТ_РазрядыАктуальные.Разряд.Порядок
+	КОНЕЦ КАК ПорядокРазряда,
+	СоставГруппы.Организация КАК Организация,
+	СоставГруппы.ВидСпорта КАК ВидСпорта,
+	ВТ_СоставУчереждения.ДатаНачалаОбучения КАК ДатаНачалаОбучения
+ПОМЕСТИТЬ ВТ_Данные
+{ВЫБРАТЬ
+	УчебныйГод.*,
+	Спортсмен.*,
+	Группа.*,
+	Тренер.*,
+	ДокументФормированияГруппы.*,
+	ДокументРегистрацииДопуска.*,
+	ДокументРегистрацииСтраховогоПолиса.*,
+	Спортсменов,
+	ИмеютДопуск,
+	ДействуетСтраховка,
+	Мужчины,
+	Женщины,
+	Разряд.*}
+ИЗ
+	ВТ_СоставУчереждения КАК ВТ_СоставУчереждения
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставГруппы.СрезПоследних(&amp;Период, {(УчебныйГод = &amp;УчебныйГод)}) КАК СоставГруппы
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РегистрацияДопусковКСпортивнымСоревнованиям.СрезПоследних(&amp;Период, ) КАК РегистрацияДопусков
+			ПО СоставГруппы.Организация = РегистрацияДопусков.Организация
+				И СоставГруппы.ВидСпорта = РегистрацияДопусков.ВидСпорта
+				И СоставГруппы.Спортсмен = РегистрацияДопусков.Спортсмен
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РегистрацияСтраховыхПолисовСпортсменов.СрезПоследних(&amp;Период, ) КАК РегистрацияСтраховыхПолисов
+			ПО СоставГруппы.Организация = РегистрацияСтраховыхПолисов.Организация
+				И СоставГруппы.ВидСпорта = РегистрацияСтраховыхПолисов.ВидСпорта
+				И СоставГруппы.Спортсмен = РегистрацияСтраховыхПолисов.Спортсмен
+			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазрядыАктуальные КАК ВТ_РазрядыАктуальные
+			ПО СоставГруппы.Организация = ВТ_РазрядыАктуальные.Организация
+				И СоставГруппы.ВидСпорта = ВТ_РазрядыАктуальные.ВидСпорта
+				И СоставГруппы.Спортсмен = ВТ_РазрядыАктуальные.Спортсмен
+		ПО ВТ_СоставУчереждения.Спортсмен = СоставГруппы.Спортсмен
+			И ВТ_СоставУчереждения.ВидСпорта = СоставГруппы.ВидСпорта
+			И ВТ_СоставУчереждения.ДатаНачалаОбучения &lt; СоставГруппы.Период
+ГДЕ
+	ВЫБОР
+			КОГДА СоставГруппы.ДатаИсключенияИзГруппы = ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА ИСТИНА
+			ИНАЧЕ СоставГруппы.ДатаИсключенияИзГруппы &gt; &amp;Период
+		КОНЕЦ
+{ГДЕ
+	СоставГруппы.УчебныйГод.*,
+	СоставГруппы.Спортсмен.*,
+	СоставГруппы.Группа.*,
+	СоставГруппы.ТренерСборной.* КАК Тренер,
+	СоставГруппы.Регистратор.*,
+	РегистрацияДопусков.Регистратор.*,
+	РегистрацияСтраховыхПолисов.Регистратор.*,
+	(1) КАК Спортсменов,
+	(ВЫБОР
+			КОГДА ЕСТЬNULL(РегистрацияДопусков.Период, ДАТАВРЕМЯ(1, 1, 1)) &lt;= &amp;Период
+					И ЕСТЬNULL(РегистрацияДопусков.ДействуетДо, ДАТАВРЕМЯ(1, 1, 1)) &gt; &amp;Период
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ИмеютДопуск,
+	(ВЫБОР
+			КОГДА ЕСТЬNULL(РегистрацияСтраховыхПолисов.ДатаНачала, ДАТАВРЕМЯ(1, 1, 1)) &lt;= &amp;Период
+					И ЕСТЬNULL(РегистрацияСтраховыхПолисов.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)) &gt; &amp;Период
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДействуетСтраховка,
+	(ВЫБОР
+			КОГДА СоставГруппы.Спортсмен.ФизическоеЛицо.Пол = ЗНАЧЕНИЕ(Перечисление.ПолФизическогоЛица.Женский)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Женщины,
+	(ВЫБОР
+			КОГДА СоставГруппы.Спортсмен.ФизическоеЛицо.Пол = ЗНАЧЕНИЕ(Перечисление.ПолФизическогоЛица.Мужской)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Мужчины,
+	ВТ_РазрядыАктуальные.Разряд.*}
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ.УчебныйГод КАК УчебныйГод,
+	ВТ.Спортсмен КАК Спортсмен,
+	ВТ.Группа КАК Группа,
+	ВТ.Тренер КАК Тренер,
+	ВТ.ДокументФормированияГруппы КАК ДокументФормированияГруппы,
+	ВТ.ДокументРегистрацииДопуска КАК ДокументРегистрацииДопуска,
+	ВТ.ДокументРегистрацииСтраховогоПолиса КАК ДокументРегистрацииСтраховогоПолиса,
+	0 КАК Спортсменов,
+	0 КАК ИмеютДопуск,
+	0 КАК ДействуетСтраховка,
+	0 КАК Мужчины,
+	0 КАК Женщины,
+	СпортивнаяКлассификация.Ссылка КАК Разряд,
+	СпортивнаяКлассификация.Ссылка.Порядок КАК ПорядокРазряда
+ПОМЕСТИТЬ ВТ_ПустыеСтроки
+ИЗ
+	ВТ_Данные КАК ВТ
+		ПОЛНОЕ СОЕДИНЕНИЕ Справочник.СпортивнаяКлассификация КАК СпортивнаяКлассификация
+		ПО (СпортивнаяКлассификация.Ссылка &lt;&gt; ВТ.Разряд)
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Данные.УчебныйГод КАК УчебныйГод,
+	ВТ_Данные.Спортсмен КАК Спортсмен,
+	ВТ_Данные.Группа КАК Группа,
+	ВТ_Данные.Тренер КАК Тренер,
+	ВТ_Данные.ДокументФормированияГруппы КАК ДокументФормированияГруппы,
+	ВТ_Данные.ДокументРегистрацииДопуска КАК ДокументРегистрацииДопуска,
+	ВТ_Данные.ДокументРегистрацииСтраховогоПолиса КАК ДокументРегистрацииСтраховогоПолиса,
+	ВТ_Данные.Спортсменов КАК Спортсменов,
+	ВТ_Данные.ИмеютДопуск КАК ИмеютДопуск,
+	ВТ_Данные.ДействуетСтраховка КАК ДействуетСтраховка,
+	ВТ_Данные.Мужчины КАК Мужчины,
+	ВТ_Данные.Женщины КАК Женщины,
+	ВТ_Данные.Разряд КАК Разряд,
+	ВТ_Данные.ПорядокРазряда КАК ПорядокРазряда,
+	ВТ_Данные.Организация КАК Организация,
+	ВТ_Данные.ВидСпорта КАК ВидСпорта,
+	ВТ_Данные.ДатаНачалаОбучения КАК ДатаНачалаОбучения
+ПОМЕСТИТЬ ВТ_Итог
+ИЗ
+	ВТ_Данные КАК ВТ_Данные
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ПустыеСтроки.УчебныйГод,
+	ВТ_ПустыеСтроки.Спортсмен,
+	ВТ_ПустыеСтроки.Группа,
+	ВТ_ПустыеСтроки.Тренер,
+	ВТ_ПустыеСтроки.ДокументФормированияГруппы,
+	ВТ_ПустыеСтроки.ДокументРегистрацииДопуска,
+	ВТ_ПустыеСтроки.ДокументРегистрацииСтраховогоПолиса,
+	ВТ_ПустыеСтроки.Спортсменов,
+	ВТ_ПустыеСтроки.ИмеютДопуск,
+	ВТ_ПустыеСтроки.ДействуетСтраховка,
+	ВТ_ПустыеСтроки.Мужчины,
+	ВТ_ПустыеСтроки.Женщины,
+	ВТ_ПустыеСтроки.Разряд,
+	ВТ_ПустыеСтроки.ПорядокРазряда,
+	NULL,
+	NULL,
+	NULL
+ИЗ
+	ВТ_ПустыеСтроки КАК ВТ_ПустыеСтроки
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Итог.УчебныйГод КАК УчебныйГод,
+	ВТ_Итог.Спортсмен КАК Спортсмен,
+	ВТ_Итог.Группа КАК Группа,
+	ВТ_Итог.Тренер КАК Тренер,
+	ВТ_Итог.ДокументФормированияГруппы КАК ДокументФормированияГруппы,
+	ВТ_Итог.ДокументРегистрацииДопуска КАК ДокументРегистрацииДопуска,
+	ВТ_Итог.ДокументРегистрацииСтраховогоПолиса КАК ДокументРегистрацииСтраховогоПолиса,
+	ВТ_Итог.Спортсменов КАК Спортсменов,
+	ВТ_Итог.ИмеютДопуск КАК ИмеютДопуск,
+	ВТ_Итог.ДействуетСтраховка КАК ДействуетСтраховка,
+	ВТ_Итог.Мужчины КАК Мужчины,
+	ВТ_Итог.Женщины КАК Женщины,
+	ВТ_Итог.Разряд КАК Разряд,
+	ВТ_Итог.ПорядокРазряда КАК ПорядокРазряда,
+	ЭтапыСпортивнойПодготовкиСпортсменов.Этап КАК Этап,
+	ВТ_Итог.Организация КАК Организация,
+	ВТ_Итог.ВидСпорта КАК ВидСпорта
+ИЗ
+	ВТ_Итог КАК ВТ_Итог
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов КАК ЭтапыСпортивнойПодготовкиСпортсменов
+		ПО ВТ_Итог.Спортсмен = ЭтапыСпортивнойПодготовкиСпортсменов.Спортсмен
+			И ВТ_Итог.Тренер = ЭтапыСпортивнойПодготовкиСпортсменов.Тренер
+			И ВТ_Итог.Организация = ЭтапыСпортивнойПодготовкиСпортсменов.Организация
+			И ВТ_Итог.ВидСпорта = ЭтапыСпортивнойПодготовкиСпортсменов.ВидСпорта
+			И ВТ_Итог.ДатаНачалаОбучения &lt; ЭтапыСпортивнойПодготовкиСпортсменов.Период</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ИмеютДопуск</dataPath>
+		<expression>Сумма(ИмеютДопуск)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДействуетСтраховка</dataPath>
+		<expression>Сумма(ДействуетСтраховка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Мужчины</dataPath>
+		<expression>Сумма(Мужчины)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Женщины</dataPath>
+		<expression>Сумма(Женщины)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Спортсменов</dataPath>
+		<expression>Сумма(Спортсменов)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>ТекущаяДата()</expression>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>УчебныйГодДокумент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учебный год</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.УправлениеУчебнымГодом</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УчебныйГод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учебный год</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Разряд</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Разряд</dcsat:name>
+			<dcsat:expression>ВЫБОР КОГДА Разряд = ЗНАЧЕНИЕ(Справочник.СпортивнаяКлассификация.ПустаяСсылка) ТОГДА "б/р" ИНАЧЕ Разряд.Наименование КОНЕЦ</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Разряды</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<groupTemplate>
+		<groupField>Разряд</groupField>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>РазрядыЗаголовок</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список групп</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Спортсменов</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего спортсменов</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИмеютДопуск</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДействуетСтраховка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Мужчины</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Женщины</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Тренер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>e7880acd-782e-4857-8bcf-5413034336a9</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидСпорта</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>f562ad81-c45b-4775-9100-cc16c002de10</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Группа</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>de283f90-0c82-4d0c-aca1-4a8439795fbc</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Разряд</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>1435400d-c010-4066-b98e-49622c90a35a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Этап</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>c8778edd-8368-40bb-90ac-aef8595a4c44</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>2bfbfeb8-43cc-4c44-a263-3a60f411b2c2</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчебныйГодДокумент</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>6f747a71-b3a8-4817-be68-87a4f29873ee</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчебныйГод</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>0f3fc2c4-9b4b-4899-a4f3-a3d470482a0e</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>УчебныйГод</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Тренер</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Группа</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Спортсмен</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Разряд</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto">
+								<dcsset:use>false</dcsset:use>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:OrderItemField">
+								<dcsset:field>ПорядокРазряда</dcsset:field>
+								<dcsset:orderType>Asc</dcsset:orderType>
+							</dcsset:item>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+								<dcsset:use>false</dcsset:use>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Спортсменов</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>Заголовок</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType"/>
+							</dcscor:item>
+						</dcsset:outputParameters>
+					</dcsset:item>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>УчебныйГод</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Тренер</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Этап</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Группа</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

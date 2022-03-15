@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e857a109-f14d-401e-87e7-3247d125057a">
+  <name>Планировщик</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планировщик</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.БронированиеПомещенийКлиентСервер</content>
+  <content>CommonModule.БронированиеПомещенийКлиент</content>
+  <content>CommonModule.БронированиеПомещенийВызовСервера</content>
+  <content>CommonModule.БронированиеПомещений</content>
+  <content>CommonModule.РаботаСРабочимКалендаремСервер</content>
+  <content>CommonModule.РаботаСРабочимКалендаремКлиентСервер</content>
+  <content>CommonModule.РаботаСРабочимКалендаремКлиент</content>
+  <content>CommonForm.ВыборЦвета</content>
+  <content>CommonForm.ПланировщикРасписанияПоМестам</content>
+  <content>Document.БроньСпортивногоОбъекта</content>
+  <content>Enum.ЭлементыРабочегоКалендаря</content>
+  <content>Enum.СпособыСозданияБрони</content>
+  <content>Enum.ВариантРасписания</content>
+  <content>Enum.ПериодОтображенияРабочегоКалендаря</content>
+  <content>Enum.ПравилаОкончанияПовторения</content>
+  <content>Enum.ЧастотаПовторения</content>
+  <content>Enum.ТипЗаписиКалендаря</content>
+  <content>StyleItem.ЗаголовокКалендаряБроньФон</content>
+  <content>StyleItem.ЗаголовокКалендаряБроньЦветТекста</content>
+  <content>StyleItem.ЗаголовокКалендаряБроньШрифт</content>
+  <content>StyleItem.БроньЦветТекстаЭлемента</content>
+  <content>StyleItem.ЦветФонаАктивнойКнопкиКалендаряБрони</content>
+  <content>StyleItem.ЦветФонаКнопкиКалендаряБрони</content>
+  <content>StyleItem.ЦвеФонаКнопкиОбщая</content>
+  <content>StyleItem.ЦвеФонаАктивнойКнопкиОбщая</content>
+  <content>Report.ПечатьРасписания</content>
+</mdclass:Subsystem>

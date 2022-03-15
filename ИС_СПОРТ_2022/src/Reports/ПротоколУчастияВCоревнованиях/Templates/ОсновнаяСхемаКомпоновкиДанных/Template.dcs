@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разряд</dataPath>
+			<field>Разряд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МеждународнаяВозрастнаяГруппа</dataPath>
+			<field>МеждународнаяВозрастнаяГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Группа</dataPath>
+			<field>Группа</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соревнование</dataPath>
+			<field>Соревнование</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Команда</dataPath>
+			<field>Команда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОснование</dataPath>
+			<field>ДокументОснование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Место</dataPath>
+			<field>Место</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГодРождения</dataPath>
+			<field>ГодРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистратор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РегистраторИтоговые</dataPath>
+			<field>РегистраторИтоговые</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистратор итоговые</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Результат</dataPath>
+			<field>Результат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрядУдалить</dataPath>
+			<field>РазрядУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйГод</dataPath>
+			<field>УчебныйГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизаторСоревнования</dataPath>
+			<field>ОрганизаторСоревнования</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	УчастникиСоревнованийСрезПоследних.Соревнование КАК Соревнование,
+	УчастникиСоревнованийСрезПоследних.Организация КАК Организация,
+	УчастникиСоревнованийСрезПоследних.УчебныйГод КАК УчебныйГод,
+	УчастникиСоревнованийСрезПоследних.ВидСпорта КАК ВидСпорта,
+	УчастникиСоревнованийСрезПоследних.Тренер КАК Тренер,
+	СоставГруппыСрезПоследних.Группа КАК Группа,
+	УчастникиСоревнованийСрезПоследних.ДатаНачалаСоревнования КАК ДатаНачалаСоревнования,
+	ФизическиеЛица.Ссылка КАК Спортсмен,
+	ФизическиеЛица.ГодРождения КАК ГодРождения
+ПОМЕСТИТЬ ВТ_УчастникиСоревнований
+ИЗ
+	РегистрСведений.УчастникиСоревнований.СрезПоследних(
+			,
+			ДатаНачалаСоревнования &gt;= &amp;ДатаНачала
+				И ДатаНачалаСоревнования &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ДатаНачалаСоревнования &lt;= &amp;ДатаОкончания) КАК УчастникиСоревнованийСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставГруппы.СрезПоследних КАК СоставГруппыСрезПоследних
+		ПО УчастникиСоревнованийСрезПоследних.Спортсмен = СоставГруппыСрезПоследних.Спортсмен
+			И УчастникиСоревнованийСрезПоследних.Организация = СоставГруппыСрезПоследних.Организация
+			И УчастникиСоревнованийСрезПоследних.УчебныйГод = СоставГруппыСрезПоследних.УчебныйГод
+			И УчастникиСоревнованийСрезПоследних.ВидСпорта = СоставГруппыСрезПоследних.ВидСпорта
+			И УчастникиСоревнованийСрезПоследних.Тренер = СоставГруппыСрезПоследних.ТренерСборной
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО УчастникиСоревнованийСрезПоследних.Спортсмен.ФизическоеЛицо = ФизическиеЛица.Ссылка
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен,
+	Соревнование,
+	Организация,
+	УчебныйГод,
+	ВидСпорта,
+	Тренер,
+	Группа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_УчастникиСоревнований.Соревнование КАК Соревнование,
+	ВТ_УчастникиСоревнований.Организация КАК Организация,
+	ВТ_УчастникиСоревнований.УчебныйГод КАК УчебныйГод,
+	ВТ_УчастникиСоревнований.ВидСпорта КАК ВидСпорта,
+	ВТ_УчастникиСоревнований.Тренер КАК Тренер,
+	ВТ_УчастникиСоревнований.Группа КАК Группа,
+	ВТ_УчастникиСоревнований.ДатаНачалаСоревнования КАК ДатаНачалаСоревнования,
+	ВТ_УчастникиСоревнований.Спортсмен КАК Спортсмен,
+	МАКСИМУМ(ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения) КАК ДатаПрисвоения,
+	МАКСИМУМ(ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПодтверждения) КАК ДатаПодтверждения,
+	ВТ_УчастникиСоревнований.ГодРождения КАК ГодРождения
+ПОМЕСТИТЬ ВТ_Разряды
+ИЗ
+	ВТ_УчастникиСоревнований КАК ВТ_УчастникиСоревнований
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних(, ) КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+		ПО ВТ_УчастникиСоревнований.Спортсмен = ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен.ФизическоеЛицо
+			И ВТ_УчастникиСоревнований.Организация = ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация
+			И ВТ_УчастникиСоревнований.ВидСпорта = ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта
+ГДЕ
+	(ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения &lt;= ВТ_УчастникиСоревнований.ДатаНачалаСоревнования
+			ИЛИ ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПодтверждения &lt;= ВТ_УчастникиСоревнований.ДатаНачалаСоревнования
+				И ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПодтверждения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1))
+
+СГРУППИРОВАТЬ ПО
+	ВТ_УчастникиСоревнований.Спортсмен,
+	ВТ_УчастникиСоревнований.Соревнование,
+	ВТ_УчастникиСоревнований.Организация,
+	ВТ_УчастникиСоревнований.УчебныйГод,
+	ВТ_УчастникиСоревнований.ВидСпорта,
+	ВТ_УчастникиСоревнований.Тренер,
+	ВТ_УчастникиСоревнований.Группа,
+	ВТ_УчастникиСоревнований.ДатаНачалаСоревнования,
+	ВТ_УчастникиСоревнований.ГодРождения
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Разряды.Соревнование КАК Соревнование,
+	ВТ_Разряды.Организация КАК Организация,
+	ВТ_Разряды.УчебныйГод КАК УчебныйГод,
+	ВТ_Разряды.ВидСпорта КАК ВидСпорта,
+	ВТ_Разряды.Тренер КАК Тренер,
+	ВТ_Разряды.Группа КАК Группа,
+	ВТ_Разряды.ДатаНачалаСоревнования КАК ДатаНачалаСоревнования,
+	ВТ_Разряды.Спортсмен КАК Спортсмен,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Разряд.Наименование КАК Разряд,
+	ВТ_Разряды.ГодРождения КАК ГодРождения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор КАК Регистратор
+ПОМЕСТИТЬ ВТ_УчастникиСРазрядами
+ИЗ
+	ВТ_Разряды КАК ВТ_Разряды
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+		ПО ВТ_Разряды.Спортсмен = ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен.ФизическоеЛицо
+			И ВТ_Разряды.Организация = ПодтвержденныеРазрядыСпортсменовСрезПоследних.Организация
+			И ВТ_Разряды.ВидСпорта = ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта
+			И ВТ_Разряды.ДатаПрисвоения = ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения
+			И ВТ_Разряды.ДатаПодтверждения = ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПодтверждения
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_УчастникиСоревнований.Соревнование КАК Соревнование,
+	ВТ_УчастникиСоревнований.Организация КАК Организация,
+	ВТ_УчастникиСоревнований.УчебныйГод КАК УчебныйГод,
+	ВТ_УчастникиСоревнований.ВидСпорта КАК ВидСпорта,
+	ВТ_УчастникиСоревнований.Тренер КАК Тренер,
+	ВТ_УчастникиСоревнований.Группа КАК Группа,
+	ВТ_УчастникиСоревнований.ДатаНачалаСоревнования КАК ДатаНачалаСоревнования,
+	ВТ_УчастникиСоревнований.Спортсмен КАК Спортсмен,
+	ВТ_УчастникиСоревнований.ГодРождения КАК ГодРождения,
+	ВТ_УчастникиСРазрядами.Разряд КАК Разряд,
+	ВТ_УчастникиСРазрядами.Регистратор КАК Регистратор
+ПОМЕСТИТЬ ВТ_ОбщаяСРазрядами
+ИЗ
+	ВТ_УчастникиСоревнований КАК ВТ_УчастникиСоревнований
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УчастникиСРазрядами КАК ВТ_УчастникиСРазрядами
+		ПО ВТ_УчастникиСоревнований.Спортсмен = ВТ_УчастникиСРазрядами.Спортсмен
+			И ВТ_УчастникиСоревнований.Соревнование = ВТ_УчастникиСРазрядами.Соревнование
+			И ВТ_УчастникиСоревнований.Организация = ВТ_УчастникиСРазрядами.Организация
+			И ВТ_УчастникиСоревнований.УчебныйГод = ВТ_УчастникиСРазрядами.УчебныйГод
+			И ВТ_УчастникиСоревнований.ВидСпорта = ВТ_УчастникиСРазрядами.ВидСпорта
+			И ВТ_УчастникиСоревнований.Тренер = ВТ_УчастникиСРазрядами.Тренер
+			И ВТ_УчастникиСоревнований.Группа = ВТ_УчастникиСРазрядами.Группа
+			И ВТ_УчастникиСоревнований.ДатаНачалаСоревнования = ВТ_УчастникиСРазрядами.ДатаНачалаСоревнования
+			И ВТ_УчастникиСоревнований.ГодРождения = ВТ_УчастникиСРазрядами.ГодРождения
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ОбщаяСРазрядами.Соревнование КАК Соревнование,
+	ВТ_ОбщаяСРазрядами.Тренер КАК Тренер,
+	ВТ_ОбщаяСРазрядами.Группа КАК Группа,
+	ВТ_ОбщаяСРазрядами.Спортсмен КАК Спортсмен,
+	ВТ_ОбщаяСРазрядами.ГодРождения КАК ГодРождения,
+	ВТ_ОбщаяСРазрядами.Разряд КАК Разряд,
+	ЕСТЬNULL(ИтоговыеРезультатыСоревнованияСрезПоследних.РезультатЧисло, 0) КАК Результат,
+	ИтоговыеРезультатыСоревнованияСрезПоследних.Место КАК Место,
+	ВТ_ОбщаяСРазрядами.Регистратор КАК Регистратор,
+	ИтоговыеРезультатыСоревнованияСрезПоследних.Регистратор КАК РегистраторИтоговые
+ИЗ
+	ВТ_ОбщаяСРазрядами КАК ВТ_ОбщаяСРазрядами
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИтоговыеРезультатыСоревнования.СрезПоследних КАК ИтоговыеРезультатыСоревнованияСрезПоследних
+		ПО ВТ_ОбщаяСРазрядами.Спортсмен = ИтоговыеРезультатыСоревнованияСрезПоследних.Спортсмен.ФизическоеЛицо
+			И ВТ_ОбщаяСРазрядами.Организация = ИтоговыеРезультатыСоревнованияСрезПоследних.Организация
+			И ВТ_ОбщаяСРазрядами.УчебныйГод = ИтоговыеРезультатыСоревнованияСрезПоследних.УчебныйГод
+			И ВТ_ОбщаяСРазрядами.Соревнование = ИтоговыеРезультатыСоревнованияСрезПоследних.Соревнование
+			И ВТ_ОбщаяСРазрядами.ВидСпорта = ИтоговыеРезультатыСоревнованияСрезПоследних.ВидСпорта</query>
+	</dataSet>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ВЫБОР КОГДА &amp;СтандартныйПериод.ДатаОкончания = ДАТАВРЕМЯ(1,1,1) ТОГДА ДАТАВРЕМЯ(3999,12,31,23,59,59) ИНАЧЕ ВЫБОР КОГДА &amp;СтандартныйПериод.ДатаОкончания &lt; &amp;СтандартныйПериод.ДатаНачала ТОГДА ДАТАВРЕМЯ(3999,12,31,23,59,59) ИНАЧЕ &amp;СтандартныйПериод.ДатаОкончания КОНЕЦ КОНЕЦ</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СтандартныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стандартный период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Разряд</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Расшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Разряд</dcsat:name>
+			<dcsat:expression>Представление(Разряд)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>Расшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Регистратор</dcsat:field>
+				<dcsat:expression>Регистратор</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Место</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РасшифровкаМесто</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Место</dcsat:name>
+			<dcsat:expression>Место</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РасшифровкаМесто</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>РегистраторИтоговые</dcsat:field>
+				<dcsat:expression>РегистраторИтоговые</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Результат</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РасшифровкаРезультатЧисло</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Результат</dcsat:name>
+			<dcsat:expression>УчетСпортсменовОбщегоНазначенияКлиентСервер.ПересчитатьВремяВМиллесекундахВСтроку(Результат)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РасшифровкаРезультатЧисло</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>РегистраторИтоговые</dcsat:field>
+				<dcsat:expression>РегистраторИтоговые</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+	</template>
+	<fieldTemplate>
+		<field>Разряд</field>
+		<template>Макет1</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>Место</field>
+		<template>Макет2</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>Результат</field>
+		<template>Макет3</template>
+	</fieldTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Протокол участия в соревнованиях</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Спортсмен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГодРождения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Группа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Тренер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Разряд</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Соревнование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Место</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Результат</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Группа</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>d67752e7-4633-474c-a083-e07ea5964536</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Тренер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ef542c84-09a1-42a2-b15e-d9a7620102bd</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Соревнование</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4c17c717-a0ef-43b1-ae5f-ce4295d32854</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>4e2ad4e8-6457-44af-8b11-2a26584a3eb6</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>СтандартныйПериод</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>cbb694d7-66c2-476e-b542-cad255eaabe0</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Спортсмен</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Результат</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Результат</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

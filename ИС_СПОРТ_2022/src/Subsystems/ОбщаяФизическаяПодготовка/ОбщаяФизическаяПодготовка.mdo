@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36f36d57-479f-4bd8-9a79-1260a24685b9">
+  <name>ОбщаяФизическаяПодготовка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общая физическая подготовка</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Нормативы</content>
+  <content>InformationRegister.ОценкиПрохожденияНормативов</content>
+  <content>Document.ПротоколОФПСдачаНормативов</content>
+  <content>AccumulationRegister.РезультатыВыполненияПоказателейИНормативов</content>
+  <content>Enum.ТипыСдачиНормативов</content>
+  <content>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП</content>
+  <content>InformationRegister.ЗаявкиНаПроведениеСоревнованияОФПСдачаНормативов</content>
+  <content>Document.СоревнованиеОФПСдачаНормативов</content>
+  <content>InformationRegister.УчастникиСоревнованийОФПСдачаНормативов</content>
+  <content>InformationRegister.ШкалаСоответствияОчковРезультатовСоревнованияОФП</content>
+  <content>InformationRegister.ИтоговыеРезультатыСоревнованиийОФПСдачаНормативов</content>
+  <content>InformationRegister.РезультатыПараметровСоревнованиийОФПСдачаНормативов</content>
+  <content>DataProcessor.НастройкаРегистраОценкиПрохожденияНормативов</content>
+  <content>DocumentJournal.СоставЗаявок</content>
+  <subsystems>НормативыПоФизическойПодготовке</subsystems>
+  <subsystems>СоревнованияПоОбщейФизическойПодготовке</subsystems>
+</mdclass:Subsystem>

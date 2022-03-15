@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2d3391a-77b4-45b0-9b6b-8bad50b81d5f">
+  <producedTypes>
+    <objectType typeId="1810ba39-a590-4d2e-992b-9756cfa93484" valueTypeId="2d177abe-8ca2-47fc-990e-879cf8606818"/>
+    <managerType typeId="9d133b3f-b14a-46f6-a7ec-77048aab18d3" valueTypeId="8081b7ba-dad8-41fd-a4c3-63e8c7643680"/>
+  </producedTypes>
+  <name>ПечатьРасписания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать расписания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПечатьРасписания.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9763d5b8-6493-4832-83b3-324e6bb0780d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c17f8db0-35b8-45b7-953f-3cba8d3bb725">
+  <name>ОФППодсчетРезультатовВыполненияНормативовСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>ОФП_Подсчет результатов выполнения нормативов сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="caaa630c-f770-4a20-b865-4df7ff8bc2ad">
+  <producedTypes>
+    <objectType typeId="a37d1cc7-179d-46ed-a016-234e12e42592" valueTypeId="d25ce197-0768-4997-a376-bfe9dbb2b372"/>
+    <managerType typeId="21608c3a-0817-4491-8240-cba0b3a8dbed" valueTypeId="7bf077b9-f109-47a0-8bb4-69b90a9da868"/>
+  </producedTypes>
+  <name>РабочийСтолМетодист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочий стол методиста</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РабочийСтолМетодист.Form.Форма</defaultForm>
+  <forms uuid="cb694194-3610-4066-b6c0-1247c2ec5b4c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26f50827-b14d-4f65-8fab-fb9f26398870">
+    <name>ФормаРасшифровка</name>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="19f899a0-e96f-4b22-9702-ab6052ac8a77">
+    <name>МакетТаблица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет таблица</value>
+    </synonym>
+  </templates>
+  <templates uuid="8422403e-e8d7-403d-b476-420e653254eb">
+    <name>МакетШирокаяТаблица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет широкая таблица</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

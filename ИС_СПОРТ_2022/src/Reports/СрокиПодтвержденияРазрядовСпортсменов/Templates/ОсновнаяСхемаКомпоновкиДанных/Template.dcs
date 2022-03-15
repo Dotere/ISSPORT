@@ -1,0 +1,2096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этап</dataPath>
+			<field>Этап</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрядУдалить</dataPath>
+			<field>РазрядУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разряд</dataPath>
+			<field>Разряд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПодтверждения</dataPath>
+			<field>ДатаПодтверждения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПрисвоения</dataPath>
+			<field>ДатаПрисвоения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСледующегоПодтверждения</dataPath>
+			<field>ДатаСледующегоПодтверждения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РегистраторЭтапы</dataPath>
+			<field>РегистраторЭтапы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистратор этапы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения КАК ДатаПрисвоения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПодтверждения КАК ДатаПодтверждения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Разряд КАК Разряд,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор КАК Регистратор,
+	ФизическиеЛица.ДатаРождения КАК ДатаРождения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Период КАК Период,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ПрисвоениеРазряда.Ссылка КАК СсылкаПрисвоение,
+	ПодтверждениеРазрядаСпортсмена.Ссылка КАК СсылкаПодтверждение
+ПОМЕСТИТЬ ВТ_Разряды
+ИЗ
+	РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних(, ) КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен.ФизическоеЛицо = ФизическиеЛица.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПодтверждениеРазрядаСпортсмена КАК ПодтверждениеРазрядаСпортсмена
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор = ПодтверждениеРазрядаСпортсмена.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПрисвоениеРазряда КАК ПрисвоениеРазряда
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор = ПрисвоениеРазряда.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ПрисвоениеРазрядаСпортсмены.Спортсмен КАК Спортсмен,
+	ВТ_Разряды.ДатаПрисвоения КАК ДатаПрисвоения,
+	ВТ_Разряды.ДатаПодтверждения КАК ДатаПодтверждения,
+	ВТ_Разряды.Разряд КАК Разряд,
+	ВТ_Разряды.Регистратор КАК Регистратор,
+	ВТ_Разряды.ДатаРождения КАК ДатаРождения,
+	ВТ_Разряды.Период КАК Период,
+	ВТ_Разряды.ВидСпорта КАК ВидСпорта,
+	ПрисвоениеРазрядаСпортсмены.ДатаПодтверждения КАК ДатаСледующегоПодтверждения
+ПОМЕСТИТЬ ВТ_РазрядыСрок
+ИЗ
+	ВТ_Разряды КАК ВТ_Разряды
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПрисвоениеРазряда.Спортсмены КАК ПрисвоениеРазрядаСпортсмены
+		ПО ВТ_Разряды.Спортсмен = ПрисвоениеРазрядаСпортсмены.Спортсмен
+			И ВТ_Разряды.СсылкаПрисвоение = ПрисвоениеРазрядаСпортсмены.Ссылка
+ГДЕ
+	ВТ_Разряды.Регистратор ССЫЛКА Документ.ПрисвоениеРазряда
+	И ПрисвоениеРазрядаСпортсмены.ДатаПодтверждения МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПодтверждениеРазрядаСпортсменаСпортсмены.Спортсмен,
+	ВТ_Разряды.ДатаПрисвоения,
+	ВТ_Разряды.ДатаПодтверждения,
+	ВТ_Разряды.Разряд,
+	ВТ_Разряды.Регистратор,
+	ВТ_Разряды.ДатаРождения,
+	ВТ_Разряды.Период,
+	ВТ_Разряды.ВидСпорта,
+	ПодтверждениеРазрядаСпортсменаСпортсмены.ДатаСледующегоПодтверждения
+ИЗ
+	ВТ_Разряды КАК ВТ_Разряды
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПодтверждениеРазрядаСпортсмена.Спортсмены КАК ПодтверждениеРазрядаСпортсменаСпортсмены
+		ПО ВТ_Разряды.Спортсмен = ПодтверждениеРазрядаСпортсменаСпортсмены.Спортсмен
+			И ВТ_Разряды.СсылкаПодтверждение = ПодтверждениеРазрядаСпортсменаСпортсмены.Ссылка
+ГДЕ
+	ВТ_Разряды.Регистратор ССЫЛКА Документ.ПодтверждениеРазрядаСпортсмена
+	И ПодтверждениеРазрядаСпортсменаСпортсмены.ДатаСледующегоПодтверждения МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(&amp;КонецПериода, Спортсмен.СтатусСпортсмена &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСпортсменов.СпортсменДругогоСпортивногоУчреждения)) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения &gt; &amp;Период
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер КАК Тренер,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап КАК Этап,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Регистратор КАК РегистраторЭтапы
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(
+			&amp;КонецПериода,
+			Спортсмен В
+					(ВЫБРАТЬ
+						ВТ_СоставУчащихся.Спортсмен КАК Спортсмен
+					ИЗ
+						ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)
+				И Этап &lt;&gt; ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ПустаяСсылка)) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ВТ_Этапы.Тренер КАК Тренер,
+	ВТ_Этапы.Этап КАК Этап,
+	ВТ_Этапы.Спортсмен КАК Спортсмен,
+	ВТ_Этапы.ВидСпорта КАК ВидСпорта,
+	ВТ_РазрядыСрок.ДатаПрисвоения КАК ДатаПрисвоения,
+	ВТ_РазрядыСрок.ДатаПодтверждения КАК ДатаПодтверждения,
+	ВТ_РазрядыСрок.Разряд КАК Разряд,
+	ВТ_РазрядыСрок.Регистратор КАК Регистратор,
+	ВТ_РазрядыСрок.ДатаРождения КАК ДатаРождения,
+	ВТ_РазрядыСрок.Период КАК Период,
+	ВТ_РазрядыСрок.ДатаСледующегоПодтверждения КАК ДатаСледующегоПодтверждения,
+	ВТ_Этапы.РегистраторЭтапы КАК РегистраторЭтапы
+ИЗ
+	ВТ_РазрядыСрок КАК ВТ_РазрядыСрок
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Этапы КАК ВТ_Этапы
+		ПО ВТ_РазрядыСрок.Спортсмен = ВТ_Этапы.Спортсмен
+			И ВТ_РазрядыСрок.ВидСпорта = ВТ_Этапы.ВидСпорта
+ГДЕ
+	ВТ_Этапы.Спортсмен &lt;&gt; ЗНАЧЕНИЕ(Справочник.Спортсмены.ПустаяСсылка)
+{ГДЕ
+	(ВТ_Этапы.Этап В ИЕРАРХИИ (&amp;Этап))}
+
+УПОРЯДОЧИТЬ ПО
+	Период</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрядУдалить</dataPath>
+			<field>РазрядУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТренерПросроченный</dataPath>
+			<field>ТренерПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тренер просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапПросроченный</dataPath>
+			<field>ЭтапПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортсменПросроченный</dataPath>
+			<field>СпортсменПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спортсмен просроченный</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаПросроченный</dataPath>
+			<field>ВидСпортаПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид спорта просроченный</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПрисвоенияПросроченный</dataPath>
+			<field>ДатаПрисвоенияПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата присвоения просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПодтвержденияПросроченный</dataPath>
+			<field>ДатаПодтвержденияПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата подтверждения просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрядПросроченный</dataPath>
+			<field>РазрядПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разряд просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РегистраторПросроченный</dataPath>
+			<field>РегистраторПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистратор просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРожденияПросроченный</dataPath>
+			<field>ДатаРожденияПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата рождения просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодПросроченный</dataPath>
+			<field>ПериодПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСледующегоПодтвержденияПросроченный</dataPath>
+			<field>ДатаСледующегоПодтвержденияПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата следующего подтверждения просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РегистраторЭтапыПросроченный</dataPath>
+			<field>РегистраторЭтапыПросроченный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистратор этапы просроченный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПрисвоения КАК ДатаПрисвоения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ДатаПодтверждения КАК ДатаПодтверждения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Разряд КАК Разряд,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор КАК Регистратор,
+	ФизическиеЛица.ДатаРождения КАК ДатаРождения,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.Период КАК Период,
+	ПодтвержденныеРазрядыСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ПрисвоениеРазряда.Ссылка КАК СсылкаПрисвоение,
+	ПодтверждениеРазрядаСпортсмена.Ссылка КАК СсылкаПодтверждение
+ПОМЕСТИТЬ ВТ_Разряды
+ИЗ
+	РегистрСведений.ПодтвержденныеРазрядыСпортсменов.СрезПоследних(, ) КАК ПодтвержденныеРазрядыСпортсменовСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Спортсмен.ФизическоеЛицо = ФизическиеЛица.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПодтверждениеРазрядаСпортсмена КАК ПодтверждениеРазрядаСпортсмена
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор = ПодтверждениеРазрядаСпортсмена.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПрисвоениеРазряда КАК ПрисвоениеРазряда
+		ПО ПодтвержденныеРазрядыСпортсменовСрезПоследних.Регистратор = ПрисвоениеРазряда.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПрисвоениеРазрядаСпортсмены.Спортсмен КАК Спортсмен,
+	ВТ_Разряды.ДатаПрисвоения КАК ДатаПрисвоения,
+	ВТ_Разряды.ДатаПодтверждения КАК ДатаПодтверждения,
+	ВТ_Разряды.Разряд КАК Разряд,
+	ВТ_Разряды.Регистратор КАК Регистратор,
+	ВТ_Разряды.ДатаРождения КАК ДатаРождения,
+	ВТ_Разряды.Период КАК Период,
+	ВТ_Разряды.ВидСпорта КАК ВидСпорта,
+	ПрисвоениеРазрядаСпортсмены.ДатаПодтверждения КАК ДатаСледующегоПодтверждения
+ПОМЕСТИТЬ ВТ_РазрядыСрок
+ИЗ
+	ВТ_Разряды КАК ВТ_Разряды
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПрисвоениеРазряда.Спортсмены КАК ПрисвоениеРазрядаСпортсмены
+		ПО ВТ_Разряды.Спортсмен = ПрисвоениеРазрядаСпортсмены.Спортсмен
+			И ВТ_Разряды.СсылкаПрисвоение = ПрисвоениеРазрядаСпортсмены.Ссылка
+ГДЕ
+	ВТ_Разряды.Регистратор ССЫЛКА Документ.ПрисвоениеРазряда
+	И ПрисвоениеРазрядаСпортсмены.ДатаПодтверждения &lt; &amp;ТекущаяДата
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПодтверждениеРазрядаСпортсменаСпортсмены.Спортсмен,
+	ВТ_Разряды.ДатаПрисвоения,
+	ВТ_Разряды.ДатаПодтверждения,
+	ВТ_Разряды.Разряд,
+	ВТ_Разряды.Регистратор,
+	ВТ_Разряды.ДатаРождения,
+	ВТ_Разряды.Период,
+	ВТ_Разряды.ВидСпорта,
+	ПодтверждениеРазрядаСпортсменаСпортсмены.ДатаСледующегоПодтверждения
+ИЗ
+	ВТ_Разряды КАК ВТ_Разряды
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПодтверждениеРазрядаСпортсмена.Спортсмены КАК ПодтверждениеРазрядаСпортсменаСпортсмены
+		ПО ВТ_Разряды.Спортсмен = ПодтверждениеРазрядаСпортсменаСпортсмены.Спортсмен
+			И ВТ_Разряды.СсылкаПодтверждение = ПодтверждениеРазрядаСпортсменаСпортсмены.Ссылка
+ГДЕ
+	ВТ_Разряды.Регистратор ССЫЛКА Документ.ПодтверждениеРазрядаСпортсмена
+	И ПодтверждениеРазрядаСпортсменаСпортсмены.ДатаСледующегоПодтверждения &lt; &amp;ТекущаяДата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(&amp;КонецПериода, Спортсмен.СтатусСпортсмена &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСпортсменов.СпортсменДругогоСпортивногоУчреждения)) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения &gt; &amp;Период
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен КАК Спортсмен,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер КАК Тренер,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап КАК Этап,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Регистратор КАК РегистраторЭтапы
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(
+			&amp;КонецПериода,
+			Спортсмен В
+					(ВЫБРАТЬ
+						ВТ_СоставУчащихся.Спортсмен КАК Спортсмен
+					ИЗ
+						ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)
+				И Этап &lt;&gt; ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ПустаяСсылка)) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Этапы.Тренер КАК ТренерПросроченный,
+	ВТ_Этапы.Этап КАК ЭтапПросроченный,
+	ВТ_Этапы.Спортсмен КАК СпортсменПросроченный,
+	ВТ_Этапы.ВидСпорта КАК ВидСпортаПросроченный,
+	ВТ_РазрядыСрок.ДатаПрисвоения КАК ДатаПрисвоенияПросроченный,
+	ВТ_РазрядыСрок.ДатаПодтверждения КАК ДатаПодтвержденияПросроченный,
+	ВТ_РазрядыСрок.Разряд КАК РазрядПросроченный,
+	ВТ_РазрядыСрок.Регистратор КАК РегистраторПросроченный,
+	ВТ_РазрядыСрок.ДатаРождения КАК ДатаРожденияПросроченный,
+	ВТ_РазрядыСрок.Период КАК ПериодПросроченный,
+	ВТ_РазрядыСрок.ДатаСледующегоПодтверждения КАК ДатаСледующегоПодтвержденияПросроченный,
+	ВТ_Этапы.РегистраторЭтапы КАК РегистраторЭтапыПросроченный
+ИЗ
+	ВТ_РазрядыСрок КАК ВТ_РазрядыСрок
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Этапы КАК ВТ_Этапы
+		ПО ВТ_РазрядыСрок.Спортсмен = ВТ_Этапы.Спортсмен
+			И ВТ_РазрядыСрок.ВидСпорта = ВТ_Этапы.ВидСпорта
+ГДЕ
+	ВТ_Этапы.Спортсмен &lt;&gt; ЗНАЧЕНИЕ(Справочник.Спортсмены.ПустаяСсылка)
+{ГДЕ
+	(ВТ_Этапы.Этап В ИЕРАРХИИ (&amp;Этап))}</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ДатаПоявленияРазряда</dataPath>
+		<expression>Выбор Когда ТипЗначения(Регистратор) = Тип("Документ.ПодтверждениеРазрядаСпортсмена") Тогда ДатаПодтверждения Когда ТипЗначения(Регистратор) = Тип("Документ.ПрисвоениеРазряда") Тогда ДатаПрисвоения  Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата появления разряда</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДатаМесяц</dataPath>
+		<expression>Формат(Период,"ДФ=MMMM")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата месяц</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ТипДокумента</dataPath>
+		<expression>Выбор Когда ТипЗначения(Регистратор) = Тип("Документ.ПодтверждениеРазрядаСпортсмена") Тогда "Подтверждение разряда" Когда ТипЗначения(Регистратор) = Тип("Документ.ПрисвоениеРазряда") Тогда "Присвоение разряда"  Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип документа</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДатаПоявленияРазрядаПросроченный</dataPath>
+		<expression>Выбор Когда ТипЗначения(РегистраторПросроченный) = Тип("Документ.ПодтверждениеРазрядаСпортсмена") Тогда ДатаПодтвержденияПросроченный Когда ТипЗначения(РегистраторПросроченный) = Тип("Документ.ПрисвоениеРазряда") Тогда ДатаПрисвоенияПросроченный  Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата появления разряда просроченный</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ТипДокументаПросроченный</dataPath>
+		<expression>Выбор Когда ТипЗначения(РегистраторПросроченный) = Тип("Документ.ПодтверждениеРазрядаСпортсмена") Тогда "Подтверждение разряда" Когда ТипЗначения(РегистраторПросроченный) = Тип("Документ.ПрисвоениеРазряда") Тогда "Присвоение разряда"  Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип документа просроченный</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДатаМесяцПросроченный</dataPath>
+		<expression>Формат(ПериодПросроченный,"ДФ=MMMM")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата месяц просроченный</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>СтандартныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДатаСеанса()</expression>
+	</parameter>
+	<parameter>
+		<name>Этап</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭтапыСпортивнойПодготовки</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подтвердить разряд</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсмен</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата рождения</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Этап спортивной подготовки</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Разряд/Звание</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#F5DEB3</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата присвоения/подтверждения</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип документа</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Месяц</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#C0DCC0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Месяц</dcsat:name>
+			<dcsat:expression>ДатаМесяц</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпорта</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ВидСпорта</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпорта</dcsat:name>
+			<dcsat:expression>ВидСпорта</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Тренер</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Тренер</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Тренер</dcsat:name>
+			<dcsat:expression>Тренер</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет5</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаСледующегоПодтверждения</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Спортсмен</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Спортсмен</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаРождения</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Этап</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ЭпапРегистратор</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Разряд</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#F5DEB3</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РазрядРегистратор</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаПоявленияРазряда</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ТипДокумента</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Спортсмен</dcsat:name>
+			<dcsat:expression>Спортсмен</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаРождения</dcsat:name>
+			<dcsat:expression>ДатаРождения</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Этап</dcsat:name>
+			<dcsat:expression>Этап</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Разряд</dcsat:name>
+			<dcsat:expression>Представление(Разряд)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаПоявленияРазряда</dcsat:name>
+			<dcsat:expression>ДатаПоявленияРазряда</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ТипДокумента</dcsat:name>
+			<dcsat:expression>ТипДокумента</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаСледующегоПодтверждения</dcsat:name>
+			<dcsat:expression>ДатаСледующегоПодтверждения</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:name>
+			<dcsat:expression>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ЭпапРегистратор</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>РегистраторЭтапы</dcsat:field>
+				<dcsat:expression>РегистраторЭтапы</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РазрядРегистратор</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Регистратор</dcsat:field>
+				<dcsat:expression>Регистратор</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет6</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Все разряды требующие подтверждения</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:LightCoral</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет10</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаСледующегоПодтвержденияПросроченный</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">СпортсменПросроченный</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">СпортсменПросроченный</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаРожденияПросроченный</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ЭтапПросроченный</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ЭпапРегистратор</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">РазрядПросроченный</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#F5DEB3</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">РазрядРегистратор</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаПоявленияРазрядаПросроченный</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ТипДокументаПросроченный</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/colors/web" xsi:type="v8ui:Color">d8p1:Red</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаСледующегоПодтвержденияПросроченный</dcsat:name>
+			<dcsat:expression>ДатаСледующегоПодтвержденияПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>СпортсменПросроченный</dcsat:name>
+			<dcsat:expression>СпортсменПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаРожденияПросроченный</dcsat:name>
+			<dcsat:expression>ДатаРожденияПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ЭтапПросроченный</dcsat:name>
+			<dcsat:expression>ЭтапПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>ЭпапРегистратор</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>РегистраторЭтапыПросроченный</dcsat:field>
+				<dcsat:expression>РегистраторЭтапыПросроченный</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>РазрядПросроченный</dcsat:name>
+			<dcsat:expression>РазрядПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>РазрядРегистратор</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>РегистраторПросроченный</dcsat:field>
+				<dcsat:expression>РегистраторПросроченный</dcsat:expression>
+			</dcsat:fieldExpression>
+			<dcsat:mainAction>OpenValue</dcsat:mainAction>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаПоявленияРазрядаПросроченный</dcsat:name>
+			<dcsat:expression>ДатаПоявленияРазрядаПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ТипДокументаПросроченный</dcsat:name>
+			<dcsat:expression>ТипДокументаПросроченный</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:name>
+			<dcsat:expression>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет9</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпортаПросроченный</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ВидСпортаПросроченный</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпортаПросроченный</dcsat:name>
+			<dcsat:expression>Представление(ВидСпортаПросроченный)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет11</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ТренерПросроченный</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">ТренерПросроченный</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ТренерПросроченный</dcsat:name>
+			<dcsat:expression>Представление(ТренерПросроченный)</dcsat:expression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupName>Шапка</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Месяц</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ВидСпорта</groupName>
+		<templateType>Header</templateType>
+		<template>Макет3</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Тренер</groupName>
+		<templateType>Header</templateType>
+		<template>Макет4</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>СтрокаДанные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет5</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ШапкаПросроченный</groupName>
+		<templateType>Header</templateType>
+		<template>Макет6</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>СтрокаДанныеПросроченные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет10</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ВидСпортаПросроченный</groupName>
+		<templateType>Header</templateType>
+		<template>Макет9</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ТренерПросроченный</groupName>
+		<templateType>Header</templateType>
+		<template>Макет11</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сроки подтверждения разрядов спортсменов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Спортсмен</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>f16c374b-e270-4125-a0cb-8211ffcf3f89</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Тренер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>58e241e0-34cc-43c2-88a9-daea7e117d7a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Разряд</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>446a289e-d4f5-4a2f-9656-d8b5e2a29976</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>d7bd5846-6ec5-43d4-8224-5647fc36164a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>СтандартныйПериод</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisYear</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>ad014f6d-8a98-4832-941b-705c5c9a3261</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ТекущаяДата</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Этап</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>230b0ae9-11e3-449d-b476-7329352669f9</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДатаСледующегоПодтверждения</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДатаСледующегоПодтверждения</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.ТекущаяДата</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:Red</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Шапка</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>Месяц</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ДатаМесяц</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:name>ВидСпорта</dcsset:name>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидСпорта</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:name>Тренер</dcsset:name>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Тренер</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:name>СтрокаДанные</dcsset:name>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+										<dcsset:use>false</dcsset:use>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаСледующегоПодтверждения</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>Спортсмен</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаРождения</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>Этап</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>Разряд</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаПоявленияРазряда</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ТипДокумента</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:conditionalAppearance>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>ДатаСледующегоПодтверждения</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>ДатаРождения</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>ДатаПоявленияРазряда</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>ТипДокумента</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>Спортсмен</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>Этап</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>Разряд</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter>
+											<dcsset:item xsi:type="dcsset:FilterItemComparison">
+												<dcsset:left xsi:type="dcscor:Field">ДатаСледующегоПодтверждения</dcsset:left>
+												<dcsset:comparisonType>Less</dcsset:comparisonType>
+												<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.ТекущаяДата</dcsset:right>
+											</dcsset:item>
+										</dcsset:filter>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:use>false</dcscor:use>
+												<dcscor:parameter>ЦветФона</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>ЦветТекста</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">web:Red</dcscor:value>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+								</dcsset:conditionalAppearance>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ШапкаПросроченный</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+						<dcsset:use>false</dcsset:use>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:name>МесяцПросроченный</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ДатаМесяцПросроченный</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>ВидСпортаПросроченный</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВидСпортаПросроченный</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:name>ТренерПросроченный</dcsset:name>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ТренерПросроченный</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:name>СтрокаДанныеПросроченные</dcsset:name>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+									<dcsset:use>false</dcsset:use>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаСледующегоПодтвержденияПросроченный</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СпортсменПросроченный</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаРожденияПросроченный</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ЭтапПросроченный</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>РазрядПросроченный</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаПоявленияРазрядаПросроченный</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ТипДокументаПросроченный</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

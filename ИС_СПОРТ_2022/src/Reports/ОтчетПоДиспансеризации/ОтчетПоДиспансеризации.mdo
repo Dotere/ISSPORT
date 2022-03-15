@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="093e644b-8dc9-4054-8bdd-710d1340b1eb">
+  <producedTypes>
+    <objectType typeId="f67aba2f-f0bb-425a-a07d-cba6bd3501e7" valueTypeId="3b5d90b0-f23c-43e6-83cd-107c6842e937"/>
+    <managerType typeId="cd71f395-65be-4182-8789-e84aaa7d4fc7" valueTypeId="f0b19d8f-6a10-4a56-8f33-53c92fc3925f"/>
+  </producedTypes>
+  <name>ОтчетПоДиспансеризации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по диспансеризации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоДиспансеризации.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="0df3f36d-2e87-4318-8f1f-a3581ae06ba8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5befe5d4-014c-4d14-95f1-b4e278bc150a">
+  <producedTypes>
+    <objectType typeId="3ba1a10c-aada-4e19-9c1a-1dc472426ca9" valueTypeId="7f5db891-a38a-4418-b8a3-14f648456c43"/>
+    <refType typeId="8ee61444-bc33-4c9c-8cd4-785d3243ccf8" valueTypeId="f79ebb3a-e58e-450c-a43f-3295818117c7"/>
+    <selectionType typeId="842f329c-1e8c-4511-8b49-532a4860e593" valueTypeId="c3e1ff8f-ed60-479d-bfed-ba4932ed3855"/>
+    <listType typeId="5c3445df-75fd-4ffd-bdf0-0c3e0d6f9681" valueTypeId="45883a91-0a92-4ee5-a2d4-69ed2fbd2285"/>
+    <managerType typeId="f94ba779-7923-414a-9872-863299362fb8" valueTypeId="f4ef1d03-6c48-4056-b391-eb368a923b7f"/>
+  </producedTypes>
+  <name>СостоянияПопыток</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния попыток</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СостоянияПопыток.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СостоянияПопыток.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Состояние попытки</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Состояния попыток</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СостоянияПопыток.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="0c8ff6a2-abec-4ef0-a69f-8c957551997f">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab2ccff6-b48a-4fc3-9898-4f8f87fe344f">
+    <name>УчитыватьВПодсчетеРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать в подсчете результата</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b15db7b3-e196-4696-b09e-8ee618578814">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

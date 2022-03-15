@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6de0e77-8bab-48cc-8edb-226c3c395a1e">
+  <producedTypes>
+    <objectType typeId="857ddcf8-05e8-49d9-b1c5-5f5f63cd72d3" valueTypeId="79df8586-0138-49c6-91f8-ab765aa8fa74"/>
+    <managerType typeId="5b9342e1-2796-4ee1-8d1b-431a875e2e05" valueTypeId="02c2aba7-ebce-4c43-ad32-e893215696b8"/>
+  </producedTypes>
+  <name>НастройкаРегистраОценкиПрохожденияНормативов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки прохождения нормативов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="a97d5c22-696d-44f9-bf0e-3fde78f29a8a">
+    <name>ФормаНастройкиНормативаФП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки норматива ФП</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ef7de6ec-6aac-478a-9126-c3e7df8e7158">
+    <name>ФормаНастройкиПоЭтапу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки по этапу</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

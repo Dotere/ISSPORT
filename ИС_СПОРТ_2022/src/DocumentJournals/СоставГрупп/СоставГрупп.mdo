@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="868733cb-314f-4df1-b561-3dff05a7c1c9">
+  <producedTypes>
+    <selectionType typeId="16c3be3e-5524-4357-a62d-be5a9b280266" valueTypeId="2635100c-b59c-4553-8780-a88f0d9cfccf"/>
+    <listType typeId="2ee368fb-c651-45cd-9bdb-bd0e5d73d7cf" valueTypeId="1b4ebb2e-8bad-44ae-a079-25fe7a65bdb1"/>
+    <managerType typeId="41941f40-84ff-4234-8fd6-76b3a57e08a5" valueTypeId="cfe89ce9-8305-4f94-bb00-393b4ce34eef"/>
+  </producedTypes>
+  <name>СоставГрупп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав групп</value>
+  </synonym>
+  <defaultForm>DocumentJournal.СоставГрупп.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ФормированиеГруппы</registeredDocuments>
+  <registeredDocuments>Document.ПереводСпортсменовМеждуГруппами</registeredDocuments>
+  <columns uuid="73fe3381-20cc-4ced-a65f-c953b6ea5804">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.Организация</references>
+    <references>Document.ФормированиеГруппы.Attribute.Организация</references>
+  </columns>
+  <columns uuid="b03aceb2-0ee8-4e76-8872-01ea1873d591">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.ВидСпорта</references>
+    <references>Document.ФормированиеГруппы.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="19426843-4a0d-46e0-bb2f-57348d3b5fbb">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <references>Document.ФормированиеГруппы.Attribute.УчебныйГод</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.УчебныйГод</references>
+  </columns>
+  <columns uuid="f41d6345-7a27-4f2e-a86f-3b63ee08ae34">
+    <name>ТренерСборной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер группы</value>
+    </synonym>
+    <references>Document.ФормированиеГруппы.Attribute.ТренерСборной</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.ТренерСборной</references>
+  </columns>
+  <columns uuid="e0040c91-b74c-4efb-891e-b030306f2b00">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <references>Document.ФормированиеГруппы.Attribute.Группа</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.Группа</references>
+  </columns>
+  <columns uuid="d608c253-c927-4bc7-864c-2b44863128dc">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <references>Document.ФормированиеГруппы.Attribute.ДатаДокумента</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.ДатаДокумента</references>
+  </columns>
+  <columns uuid="178aa147-f8f4-4c9c-b813-c2e8820dcfd7">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <references>Document.ФормированиеГруппы.Attribute.НомерДокумента</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.НомерДокумента</references>
+  </columns>
+  <forms uuid="4a65a5e2-c3e1-4252-a004-0e62453345ed">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="00997eb8-2f39-4267-9d0f-d1e890dcd41a">
+    <name>ФормаФормированияПечатнойФормыПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказы на формирование групп</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="35ee4f2d-e4de-4368-b2bd-0fc1dbc6b47e">
+    <name>Группы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы</value>
+    </synonym>
+    <group>FormNavigationPanelImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Спортсмены</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="240a414b-e344-464b-9580-13533c42ae87">
+    <name>ПриказНаФормированиеГрупп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ на формирование групп</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

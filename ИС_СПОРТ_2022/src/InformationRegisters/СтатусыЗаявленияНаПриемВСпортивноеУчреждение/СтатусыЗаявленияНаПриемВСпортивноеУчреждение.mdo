@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35949093-6456-4f3b-a3dc-244ec31bae73">
+  <producedTypes>
+    <selectionType typeId="1aace126-3ddc-4f8b-a786-5dd4b3839830" valueTypeId="b1085393-fecd-4d8c-bc71-64260da8b072"/>
+    <listType typeId="029c397b-533d-40cf-a31a-128285978a1b" valueTypeId="30267b88-de1f-4950-9820-ceafe67c7b43"/>
+    <managerType typeId="b4efe982-30c8-4f49-a070-001027f0737b" valueTypeId="82c6198e-bfc9-4697-aab2-9311b17dc232"/>
+    <recordSetType typeId="8abaa941-ddcd-42dc-972f-4a0d9db8a265" valueTypeId="34ddd9e9-784c-4901-b517-d84fb2672d91"/>
+    <recordKeyType typeId="08c56ae0-b309-4546-a878-a2fe95077065" valueTypeId="fc0b95f4-4134-4dca-bf1d-a184403efe0f"/>
+    <recordType typeId="b478d0b6-8746-4e22-a871-a653f2d7d7bb" valueTypeId="1364d8d1-723d-4165-a1dd-d394b8b7ecd9"/>
+    <recordManagerType typeId="eed3c4eb-b000-459c-81fe-5d4b44667fc0" valueTypeId="7a6f65f7-2469-4588-b30e-4ee15af0cdc7"/>
+  </producedTypes>
+  <name>СтатусыЗаявленияНаПриемВСпортивноеУчреждение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявления на прием в спортивное учреждение</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="89484025-cd44-4ac6-bf28-ead03f3c1245">
+    <name>СтатусЗаявления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус заявления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЗаявленийНаПриемВСпортивноеУчреждение</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="7b4a56d7-db50-46fd-84ad-3da435ddb3c0">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь установивший статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="6d985498-3cf1-419c-b6d2-953af8b602f1">
+    <name>Заявление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявленияНаПриемВСпортивноеУчреждение</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

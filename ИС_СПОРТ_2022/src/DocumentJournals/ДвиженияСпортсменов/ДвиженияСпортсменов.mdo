@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55d43508-c497-4f92-9598-547189eb20c0">
+  <producedTypes>
+    <selectionType typeId="cc60455e-222d-4339-a4c4-cc86e5bb80c3" valueTypeId="fd2b3f93-033f-4f31-ac54-61ace88b6eda"/>
+    <listType typeId="336830c4-cf34-4f12-8f78-692f45fc0698" valueTypeId="86e7777a-3f03-4fc6-9208-a31e824e0c59"/>
+    <managerType typeId="cb1abe60-cfd0-4a7c-8bb2-ae6c4f01dd77" valueTypeId="13f9ecdf-a723-4044-bfda-f2683711bed9"/>
+  </producedTypes>
+  <name>ДвиженияСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения спортсменов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДвиженияСпортсменов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ИсключениеИзСпортивногоУчреждения</registeredDocuments>
+  <registeredDocuments>Document.ЗаявленияНаПриемВСпортивноеУчреждение</registeredDocuments>
+  <registeredDocuments>Document.ФормированиеГруппы</registeredDocuments>
+  <registeredDocuments>Document.ПереводСпортсменовМеждуГруппами</registeredDocuments>
+  <columns uuid="f6c4f205-f2e6-409d-be55-bcd779972e71">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.Организация</references>
+    <references>Document.ЗаявленияНаПриемВСпортивноеУчреждение.Attribute.Организация</references>
+    <references>Document.ФормированиеГруппы.Attribute.Организация</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.Организация</references>
+  </columns>
+  <columns uuid="001b9631-d862-481e-a9e1-8858821cd392">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.ВидСпорта</references>
+    <references>Document.ЗаявленияНаПриемВСпортивноеУчреждение.Attribute.ВидСпорта</references>
+    <references>Document.ФормированиеГруппы.Attribute.ВидСпорта</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="0f5a703c-3ccb-405d-aca5-66dd03dd2d4d">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.ДатаДокумента</references>
+    <references>Document.ФормированиеГруппы.Attribute.ДатаДокумента</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.ДатаДокумента</references>
+    <references>Document.ЗаявленияНаПриемВСпортивноеУчреждение.Attribute.ДатаПриказа</references>
+  </columns>
+  <columns uuid="0a6ab886-eb18-402b-b526-668891423932">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.НомерДокумента</references>
+    <references>Document.ФормированиеГруппы.Attribute.НомерДокумента</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.НомерДокумента</references>
+    <references>Document.ЗаявленияНаПриемВСпортивноеУчреждение.Attribute.НомерПриказа</references>
+  </columns>
+  <columns uuid="094a7c9e-2eca-40eb-a8c0-ad867d75e79f">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.ДатаОкончанияОбучения</references>
+    <references>Document.ФормированиеГруппы.Attribute.ДатаЗачисления</references>
+    <references>Document.ЗаявленияНаПриемВСпортивноеУчреждение.Attribute.ДатаЗаявления</references>
+    <references>Document.ПереводСпортсменовМеждуГруппами.Attribute.ДатаПеревода</references>
+  </columns>
+  <forms uuid="69883686-d49d-4991-ba7e-fad8f83d6e02">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

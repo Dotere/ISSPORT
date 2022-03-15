@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6028cd8-2090-406f-b020-db6182ecc141">
+  <name>СпортивныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивные группы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Группа</content>
+  <content>Document.ВключениеСпортсменовВГруппу</content>
+  <content>Document.ФормированиеГруппы</content>
+  <content>Document.ИсключениеСпортсменовИзГруппы</content>
+  <content>DocumentJournal.СоставГрупп</content>
+  <content>InformationRegister.СоставГруппы</content>
+  <content>Document.СтраховойПолисСпортсмена</content>
+  <content>Report.СпискиГрупп</content>
+  <content>Report.СоставГруппы</content>
+  <content>Report.СписокГрупп</content>
+  <content>Report.СписокСпортсменовПоГруппам</content>
+  <parentSubsystem>Subsystem.Методист.Subsystem.СпортивныеУчреждения</parentSubsystem>
+</mdclass:Subsystem>

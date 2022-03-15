@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8f47d19-1901-4703-b3f2-254692c4fb07">
+  <name>ИспользоватьВозрастныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать возрастные группы</value>
+  </synonym>
+  <location>InformationRegister.НастройкиФОДляОрганизации.Resource.ИспользоватьВозрастныеГруппы</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Subsystem.Методист.Subsystem.УстановкаМеждународныхВозрастныхГрупп</content>
+  <content>Catalog.МеждународныеВозрастныеГруппы</content>
+  <content>Catalog.Рейтинги.TabularSection.МеждународныеВозрастныеГруппы</content>
+  <content>Catalog.Соревнование.TabularSection.МеждународныеВозрастныеГруппы</content>
+  <content>Catalog.Соревнование.TabularSection.Жеребьевка.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.ЗаявкаНаПроведениеСоревнования.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.ПротоколСоревнования.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.Соревнование.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.Соревнование.TabularSection.Жеребьевка.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.УстановкаМеждународнойВозрастнойГруппы</content>
+  <content>Document.ПротоколОФПСдачаНормативов.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.СоревнованиеОФПСдачаНормативов.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.СоревнованиеОФПСдачаНормативов.TabularSection.Жеребьевка.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>Document.РезультатыСдачиКонтрольноПереводныхНормативов.TabularSection.СоставУчастников.Attribute.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.ЗаявкиНаПроведениеСоревнования.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.ИтоговыеРезультатыСоревнования.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.МеждународныеВозрастныеГруппы</content>
+  <content>InformationRegister.РезультатыПараметровСпортсменов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.УчастникиСоревнований.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.ШкалаСоответствияОчковРезультатовСоревнованияОФП.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.ОценкиПрохожденияНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.УчастникиСоревнованийОФПСдачаНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.ЗаявкиНаПроведениеСоревнованияОФПСдачаНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.ИтоговыеРезультатыСоревнованиийОФПСдачаНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.РезультатыПараметровСоревнованиийОФПСдачаНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.РезультатыСдачиКонтрольноПереводныхНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>AccumulationRegister.ПодсчетРейтингов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>AccumulationRegister.РезультатыВыполненияПоказателейИНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>AccumulationRegister.ИтоговыеРезультатыСдачиКонтрольноПереводныхНормативов.Dimension.МеждународнаяВозрастнаяГруппа</content>
+  <content>InformationRegister.НастройкиФОДляОрганизации</content>
+</mdclass:FunctionalOption>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2da2836f-510f-4f55-9421-d59465785c35">
+  <name>Спортсмены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортсмены</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Спортсмены</content>
+  <content>Document.СтраховойПолисСпортсмена</content>
+  <content>Document.ДопускиУчастниковКСпортивнымСоревнованиям</content>
+  <content>InformationRegister.СоставыСемейСпортсменов</content>
+  <content>InformationRegister.УчебныеУчрежденияСпортсменов</content>
+  <content>Report.ОтчётОбИстеченииСроковСтрахования</content>
+  <content>Report.ОтчётОбИстеченииДопусковСпортсменовКСоревнованиям</content>
+  <content>Catalog.РодителиЗаконныеПредставителиСпортсменов</content>
+  <content>Document.СогласиеНаОбработкуПерсональныхДанных</content>
+  <content>Document.ОтзывСогласияНаОбработкуПерсональныхДанных</content>
+  <content>DocumentJournal.СогласияНаОбработкуПерсональныхДанных</content>
+  <content>DocumentJournal.СогласияНаОбработкуПД</content>
+  <content>DocumentJournal.ДвиженияСпортсменов</content>
+  <content>Catalog.ЗачетнаяКнижка</content>
+  <content>Catalog.Районы</content>
+  <content>Report.ОтчетПоДиспансеризации</content>
+  <content>Report.ЗачетнаяКнижка</content>
+  <content>Report.ОтчетПоПредоставленнымДокументамСпортсменов</content>
+  <content>Report.ОтчетПоСводнойЧисленностиЗанимающихся</content>
+  <content>Report.СписокСпортсменов</content>
+  <subsystems>СпортсменыАдаптивныхВидовСпорта</subsystems>
+  <parentSubsystem>Subsystem.Методист.Subsystem.СпортивныеУчреждения</parentSubsystem>
+</mdclass:Subsystem>

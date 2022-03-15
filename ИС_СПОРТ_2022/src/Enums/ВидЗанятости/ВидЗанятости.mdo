@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8cc4edb-70bf-4f2f-9cad-daf75e38892e">
+  <producedTypes>
+    <refType typeId="b79e0751-c12b-497d-b171-7fd2ea41db16" valueTypeId="00c71ca1-c8f8-49b1-b59c-9c06500905c1"/>
+    <listType typeId="bfabe801-3400-4967-a526-280393cc6ea9" valueTypeId="6ae160ef-a91c-48ff-976d-d2a27311577d"/>
+    <managerType typeId="61a638e8-d8ab-48d7-8232-20fa7b256fac" valueTypeId="85e21457-99b0-42e4-8908-88085bba2e34"/>
+  </producedTypes>
+  <name>ВидЗанятости</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид занятости</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="290a7369-a535-4984-b07b-def14051a626">
+    <name>ОсновноеМестоРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное место работы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fed57cb7-76e8-43b0-8e18-68d0157d8e70">
+    <name>Совместительство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Совместительство</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

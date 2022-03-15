@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b36f02fc-ccc9-49f6-9758-89693cc3b3a3">
+  <producedTypes>
+    <objectType typeId="9b43720e-33e8-47d9-9c1b-fc133510d8e8" valueTypeId="b5f35e8c-0aba-4202-931c-952995824df8"/>
+    <managerType typeId="2fc9bac1-cc35-4a4d-a8a3-d5b2c276516d" valueTypeId="20ccecc5-4122-4456-adba-5ed91d8b342f"/>
+  </producedTypes>
+  <name>МастерЗаполненияУчебногоГода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мастер заполнения учебного года</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МастерЗаполненияУчебногоГода.Form.Форма</defaultForm>
+  <forms uuid="013749e8-518d-448e-8b7d-38b5387407c0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="726b41d3-e0b3-4589-9118-3589cb2b4237">
+    <name>МастерЗаполненияНаУчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер заполнения на Учебный год</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

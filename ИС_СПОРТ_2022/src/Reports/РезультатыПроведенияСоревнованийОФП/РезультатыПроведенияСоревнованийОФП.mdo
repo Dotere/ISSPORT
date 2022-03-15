@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8a696f7-a18d-4b8d-9eb0-39aa4fa4a6f7">
+  <producedTypes>
+    <objectType typeId="0a90a882-d41c-4e46-a339-344a9deb0647" valueTypeId="0f0db98d-0a7f-4cf1-907c-209169c0bef6"/>
+    <managerType typeId="34bbf931-c5e5-4e97-bad9-748dc7b470a6" valueTypeId="edd96f8a-2d66-40b3-ae14-95cbec362e7e"/>
+  </producedTypes>
+  <name>РезультатыПроведенияСоревнованийОФП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты проведения соревнований по общей физической подготовке</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РезультатыПроведенияСоревнованийОФП.Template.СКД_ОбработанныйНабор</mainDataCompositionSchema>
+  <templates uuid="52d6a901-d98b-41d7-ad6e-f839eb571f97">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="68b7d944-0d93-4a70-a3b3-164a6405c24f">
+    <name>СКД_ОбработанныйНабор</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД обработанный набор</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

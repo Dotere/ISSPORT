@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3a96799-7965-4ed4-8f02-ca056c35e755">
+  <producedTypes>
+    <objectType typeId="87f57b1b-9723-4251-9c01-183a1fea0748" valueTypeId="a20c66b4-a726-4d38-bd98-3aa9abe472ff"/>
+    <refType typeId="3336e076-36fa-4fb5-8f0a-249927dc5c9b" valueTypeId="3c118e62-6684-431d-8ef7-c61214755452"/>
+    <selectionType typeId="b5481c89-1553-4d54-8f20-02f10570ea12" valueTypeId="d89ab6ca-3658-4ed7-ab81-09a79b74f569"/>
+    <listType typeId="97edd354-e61e-48eb-840c-409add7b5301" valueTypeId="6d9018bf-b849-4ee2-a414-9b83a28cfd75"/>
+    <managerType typeId="6d77e296-f3ea-47f4-b9bd-159fffb87e3d" valueTypeId="3c0cb5a1-f276-453e-aa49-0f1d400b3463"/>
+  </producedTypes>
+  <name>НастройкиМакетовWord</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки макетов Word</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиМакетовWord.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиМакетовWord.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиМакетовWord.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="3f8d210f-93d7-4be4-aada-b8ff773ec6cc">
+    <name>ВладелецМакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец макета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="fdaf190b-0fd8-4df9-a7de-bb0d19e3bc35">
+    <producedTypes>
+      <objectType typeId="14986b38-9add-4e22-b7e9-44ad89702e66" valueTypeId="a061387f-38d3-44fb-bdcd-4a5a8f711623"/>
+      <rowType typeId="4117b8f6-c311-48ee-855a-41a2b80f9575" valueTypeId="f822bdd6-f807-44d5-91cc-15bf8a2771a0"/>
+    </producedTypes>
+    <name>НастройкиМакетаWord</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки макета Word</value>
+    </synonym>
+    <attributes uuid="5be5cb42-29a0-455f-bfe4-6b3345e25497">
+      <name>ПараметрШаблонаWord</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр шаблона word</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="519c63b2-d730-412e-8e21-d40a870b1029">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aede443c-084a-4054-86f1-f00491b2bcea">
+      <name>ВидПараметра</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид параметра</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9affe4ef-af9f-4dcd-9b0f-2b6bf093c18e">
+      <name>Родитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Родитель</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b7c95080-be40-4a21-926b-250624a604ba">
+      <name>ГУИД</name>
+      <synonym>
+        <key>ru</key>
+        <value>ГУИД</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="81c46434-c34f-451a-889b-3780443dcef7">
+    <name>ПечатьКарточки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать карточки</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e1543d11-df6c-4028-bfd4-2725d77e8b18">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

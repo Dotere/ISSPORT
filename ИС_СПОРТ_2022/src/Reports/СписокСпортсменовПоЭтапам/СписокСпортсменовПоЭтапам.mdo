@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="601caf30-723a-446f-82d9-9df6748c92e0">
+  <producedTypes>
+    <objectType typeId="40aa8e07-78fe-45ef-848f-4062e01b327d" valueTypeId="c27ecd5e-8698-4f83-912f-809ae5bd6aad"/>
+    <managerType typeId="0b465b08-1d4c-4b42-b907-7b4b0607cc72" valueTypeId="c31952c0-9abc-4a82-97e2-e0bef79ffecd"/>
+  </producedTypes>
+  <name>СписокСпортсменовПоЭтапам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распределение спортсменов по этапам спортивной подготовки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокСпортсменовПоЭтапам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СписокСпортсменовПоЭтапам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.СписокСпортсменовПоЭтапам.Form.ФормаНастроек</defaultSettingsForm>
+  <forms uuid="68653379-d39e-4ec2-b86a-f38179411b2a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ae7ced9-6d2c-404e-90f1-dfed5fea5c6a">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="94c0d75e-c74b-4a07-810e-f3d5d925feb7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

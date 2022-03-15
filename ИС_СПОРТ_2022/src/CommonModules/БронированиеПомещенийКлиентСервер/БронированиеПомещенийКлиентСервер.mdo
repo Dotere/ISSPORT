@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6aef0dd-c8a6-4bbe-8395-69d3b30ef54d">
+  <name>БронированиеПомещенийКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бронирование помещений клиент сервер</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

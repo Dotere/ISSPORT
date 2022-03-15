@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c835d2ac-28f3-49e6-a5b7-6f7f6494a89c">
+  <producedTypes>
+    <selectionType typeId="18610e81-bf2a-47ee-bd0a-81acbffdb24c" valueTypeId="7447d757-3e4f-41a5-83a9-593be5a6a0b3"/>
+    <listType typeId="d0a311f6-6350-4343-8cec-7722fa3c1e04" valueTypeId="ea3e007c-a22b-44fe-b9b5-7d3e49123d43"/>
+    <managerType typeId="a236782c-a0a4-4108-adbe-ea8fdffb08d3" valueTypeId="e371806a-0be5-4ac8-84d3-2558b3d4fb5c"/>
+    <recordSetType typeId="d4d151ed-ca66-4061-b8c1-ff39814b8af9" valueTypeId="4323d2a9-5c34-43ec-bc4b-3993f99baebd"/>
+    <recordKeyType typeId="fb3cf304-ab18-43ce-907b-f687fa95799a" valueTypeId="a6bb46e9-daff-4705-94ab-ee35eceaf28b"/>
+    <recordType typeId="5c6f15fe-dc9e-46da-99fd-bdbde824db83" valueTypeId="1b653140-e633-4d25-8978-25e040d59da6"/>
+    <recordManagerType typeId="62d48abc-2e51-45fb-8318-88a1f67d6d45" valueTypeId="ab69e929-722a-4dda-bfdd-edf994b04542"/>
+  </producedTypes>
+  <name>ЗаявкиНаПроведениеСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки на проведение соревнования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9f8a5c6e-3bea-4e9c-96a8-24be4a5c7b66">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a8066f18-aeea-4eb2-8b67-af33dfb50698">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4f5373a8-d7d2-419e-bca6-32225aa4c036">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное учреждение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a49e1368-2caa-4ebc-80d4-7c980df43180">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="647b5ba9-79d5-4eb0-95c4-134db25a34db">
+    <name>Команда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Команды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a985e7ce-a035-433d-9462-83a78be8ac86">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7500c9b5-313c-489f-afa4-97caac27668b">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ff189e7c-9a50-422a-ad68-df2d920cea16">
+    <name>МеждународнаяВозрастнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="50142ad0-2a19-41ee-bb14-6fdccb439ae5">
+    <name>Дисциплина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивныеДисциплины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

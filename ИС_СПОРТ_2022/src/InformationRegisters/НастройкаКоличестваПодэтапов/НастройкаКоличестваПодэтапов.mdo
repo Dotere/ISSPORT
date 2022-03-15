@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b729e678-d39c-4ed0-a28c-bdd62f427777">
+  <producedTypes>
+    <selectionType typeId="6bd7fcce-5cea-4ca7-8a53-1f78b62e4928" valueTypeId="1fbcd181-edd5-4e79-b1ca-e82bab417eaa"/>
+    <listType typeId="58841f5f-633a-4219-8beb-55c2cbade393" valueTypeId="a17459ef-56f1-4095-a6af-52e1a23a4bc5"/>
+    <managerType typeId="3e1f2630-8733-4b21-99dd-787bd52ebd1b" valueTypeId="1a4a9b76-ff67-4f88-a1fa-6cf61c0a9992"/>
+    <recordSetType typeId="b54d5d92-9327-46c2-a772-13010d2fa2dc" valueTypeId="59b1f720-3dcf-4ab9-8b9f-c8ca5d54a004"/>
+    <recordKeyType typeId="617c4cd2-b527-4561-989a-a69f8d006f72" valueTypeId="9227c109-f6b9-4bff-88c7-3560b03cb233"/>
+    <recordType typeId="82cb79f0-32dd-49d8-99fb-5e9574848029" valueTypeId="ecdcfdee-cef8-4a91-b7e7-6b63eb7ce8c3"/>
+    <recordManagerType typeId="f0f99528-dd83-483c-a1ab-70c775be721e" valueTypeId="d7d614ba-2378-494a-9d7e-2e78c011d66f"/>
+  </producedTypes>
+  <name>НастройкаКоличестваПодэтапов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка количества подэтапов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкаКоличестваПодэтапов.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c01c7eb0-7617-4625-a2bb-ad18b3c40483">
+    <name>КоличествоПодэтапов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество подэтапов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>5</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="84b82da0-73c5-49c5-af0e-a748de9c63a8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="666a8dfb-813d-4d5d-90d8-91ca53a5d076">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f80cd171-941e-43c1-8c6f-16f6136b2e64">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыСпортивнойПодготовки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="562ac2f4-1ad2-487d-9a37-66b06f2a01a4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

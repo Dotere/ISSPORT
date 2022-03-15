@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3fd77fa-fc51-412e-bd30-24d987675cf0">
+  <producedTypes>
+    <refType typeId="edab314c-3280-4dfa-bdec-2c4253bf535f" valueTypeId="8482bfe5-503f-492a-8026-eab4d4e176ef"/>
+    <listType typeId="a6de1831-ebdd-4bf9-bf78-aed9b44fb799" valueTypeId="70f6730b-78e0-496b-b9c2-58562dd958cf"/>
+    <managerType typeId="3e58c195-d59a-4488-a411-42f9c1b718a5" valueTypeId="92c5899a-742b-48d5-bf81-17ff7ccfd463"/>
+  </producedTypes>
+  <name>ЧастотаПовторения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Частота повторения</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="511f334a-a060-4468-8f70-40dd54106fc7">
+    <name>Ежедневно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежедневно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="23f7b598-6b2f-429b-8b17-85cbcec3174f">
+    <name>Еженедельно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Еженедельно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fe9a166b-f1f0-4f4d-ad5f-14b8bfe3a26d">
+    <name>Ежемесячно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежемесячно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1cdcc7ee-b24d-4cd6-9177-3b3c4b41b562">
+    <name>Ежегодно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежегодно</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

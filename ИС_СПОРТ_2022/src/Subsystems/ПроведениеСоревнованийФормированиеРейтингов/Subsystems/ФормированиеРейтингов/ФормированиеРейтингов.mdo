@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0985ca02-2621-4aea-a5f6-844f7bb80b43">
+  <name>ФормированиеРейтингов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование рейтингов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>AccumulationRegister.ПодсчетРейтингов</content>
+  <content>Catalog.ЦелиПроведенияРейтинга</content>
+  <content>Catalog.СистемаПодсчетаБаллов</content>
+  <content>Catalog.Рейтинги</content>
+  <content>Report.ПодсчетРейтингов</content>
+  <content>InformationRegister.ВключениеСоревнованийВРейтинги</content>
+  <parentSubsystem>Subsystem.ПроведениеСоревнованийФормированиеРейтингов</parentSubsystem>
+</mdclass:Subsystem>

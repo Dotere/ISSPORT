@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41ee3ca7-6b68-4698-aabf-81d36cdd29df">
+  <producedTypes>
+    <objectType typeId="37657114-c750-44db-bfae-a985a26e059d" valueTypeId="da47dde8-fb28-44c9-9af0-ede127e06f48"/>
+    <managerType typeId="b7ed9d7a-fe72-4356-b33e-3edf30ef6a22" valueTypeId="b86d445e-7ee3-471c-8542-2bf59b1fcb8a"/>
+  </producedTypes>
+  <name>ИсправлениеТипаПодсчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исправление типа подсчета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ИсправлениеТипаПодсчета.Form.Форма</defaultForm>
+  <forms uuid="0eca55ee-86a3-4ca3-b3ac-b7f410384352">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

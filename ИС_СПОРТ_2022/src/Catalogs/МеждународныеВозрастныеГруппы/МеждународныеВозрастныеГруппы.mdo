@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6f50306-64b1-4957-bedc-4f1faff597e5">
+  <producedTypes>
+    <objectType typeId="5a9e290a-fa7d-4f4d-b2bf-12fb5ff86a35" valueTypeId="3fc9ce59-19ee-4de2-a6e4-bb9722e7975b"/>
+    <refType typeId="9bf1a283-98c0-4a55-b515-f2eaf5eb36ac" valueTypeId="190d3379-2dea-4c9a-a4c6-f1d3d81f6841"/>
+    <selectionType typeId="ae7243b3-80db-4456-a385-7fbd912e995d" valueTypeId="99af4875-55c7-4e48-b455-89648df19364"/>
+    <listType typeId="027ff45d-3d80-4e85-bc1c-8e46301209e7" valueTypeId="8dd0d603-a94c-47d7-9bc5-9b89f87eb6da"/>
+    <managerType typeId="74e177a3-4f7b-420d-b06a-b454bd57de95" valueTypeId="47352c2c-fc1c-47c7-9c10-834211c52d4d"/>
+  </producedTypes>
+  <name>МеждународныеВозрастныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возрастные группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МеждународныеВозрастныеГруппы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МеждународныеВозрастныеГруппы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Возрастная группа</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Возрастные группы</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.МеждународныеВозрастныеГруппы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.МеждународныеВозрастныеГруппы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.МеждународныеВозрастныеГруппы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a5a3481d-4e55-4331-96d4-458d834bc2df">
+    <name>ОписаниеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание группы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6e0d4de0-5fe6-4b7d-8eea-9b03c522157e">
+    <name>ВозрастОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст от</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f1923393-d6f5-414a-8bc6-676f4e83b0ee">
+    <name>ВозрастДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст до</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cfe4b908-df28-4382-90bd-e9f670dcac3e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ca0dd530-c0ba-483d-bc8f-bb22cd2858e1">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7e3ad4fa-23e1-490b-9078-fe18449091d9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

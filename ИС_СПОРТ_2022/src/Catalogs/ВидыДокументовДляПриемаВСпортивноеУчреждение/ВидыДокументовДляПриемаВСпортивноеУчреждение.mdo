@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41cac8dd-92f9-4827-8827-57a1fb3abddb">
+  <producedTypes>
+    <objectType typeId="1d173387-0d2b-4122-b240-cec2f4ba5db8" valueTypeId="2af883f6-c3c4-4f48-9038-518eacd8b07b"/>
+    <refType typeId="65b20709-828b-46b3-9175-56bff98f6963" valueTypeId="430b0f0c-a4bb-45e9-a0e5-1d3f828166a6"/>
+    <selectionType typeId="cffcb3f7-7cfa-47e9-8b92-adb016ffd35f" valueTypeId="f8e0c9c4-71b1-46d0-8c51-712ea4f33d2d"/>
+    <listType typeId="b851827f-9266-45a4-8dbf-5e1cc364da87" valueTypeId="e618d1cf-2592-4eb2-be62-2e83df3dac9c"/>
+    <managerType typeId="0f270987-d936-45ae-bb8f-6b1dd006625c" valueTypeId="d40ed4db-9dfd-405f-993b-d68a37b7b20e"/>
+  </producedTypes>
+  <name>ВидыДокументовДляПриемаВСпортивноеУчреждение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды документов для приема в спортивное учреждение</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыДокументовДляПриемаВСпортивноеУчреждение.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыДокументовДляПриемаВСпортивноеУчреждение.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c0062765-a191-4c13-a42c-23951002c27a">
+      <name>ЗаявлениеНаПриемВУчреждение</name>
+      <description>Заявление на прием в учреждение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="e4b327e0-2487-49ea-b7a6-a9bd86836765">
+      <name>ИНН</name>
+      <description>ИНН</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="fd5f65fc-7d8d-4dd4-a35c-069319afeddc">
+      <name>МедицинскийДопуск</name>
+      <description>Медицинский допуск</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="522c5dfd-acf2-4ce6-84a4-63d5bb2d73aa">
+      <name>Паспорт</name>
+      <description>Паспорт</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="6d127123-f282-4aed-8072-b9e9168e9b4a">
+      <name>ПаспортРодителя</name>
+      <description>Паспорт родителя</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="cdd84960-7e25-45d5-9a7d-5a54b51f726d">
+      <name>ПолисОМС</name>
+      <description>Полис ОМС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="a090a82f-3257-46b3-b5b6-e2592966c7f6">
+      <name>ПриказОРазряде</name>
+      <description>Приказ о разряде</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="099ab2b8-0dd0-48b2-8187-5e7aa0afc8be">
+      <name>ПриказОбОтчисленииИзДругогоУчреждения</name>
+      <description>Приказ об отчислении из другого учреждения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="99fcfa52-e19f-4dbf-b296-de1ff8c6563a">
+      <name>СвидетельствоОРождении</name>
+      <description>Свидетельство о рождении</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="fbc82f85-998e-4cc3-b33e-df8fab43bde2">
+      <name>СНИЛС</name>
+      <description>СНИЛС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="de21008e-d72e-4af0-bb67-327314f89bc2">
+      <name>СогласиеНаОбработкуПД</name>
+      <description>Согласие на обработку ПД</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="1a3c1819-8d07-4dd0-98d9-296772395f36">
+      <name>СправкаИзШколы</name>
+      <description>Справка из школы текущего учебного года с фото</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="1fde5171-c0dc-47ea-ac0f-17681bda6bb7">
+      <name>СтраховойПолис</name>
+      <description>Страховой полис</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="97467ea2-05ac-42e8-82c4-b1d0e1965520">
+      <name>Фото</name>
+      <description>Фото 3*4 (2 шт.)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="0eea9e7b-9924-447d-b4ca-ee74832e52bf">
+      <name>ФотоВЭлектронномВиде</name>
+      <description>Фото в электронном виде (файл)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыДокументовДляПриемаВСпортивноеУчреждение.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="35089943-4fc3-4a7a-ba28-1f9eab8226b8">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a1f89dad-7ea2-40d1-ae5e-c2387e27fb44">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b67c8ba1-ede9-49fb-a46b-6365500c0127">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

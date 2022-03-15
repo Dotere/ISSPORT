@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48659b94-ace8-45f4-a043-6b2731ec6925">
+  <name>RemoteAdministrationOfExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Remote administration of exchange</value>
+  </synonym>
+  <namespace>http://www.1c.ru/SaaS/1.0/WS/RemoteAdministrationOfExchange</namespace>
+  <descriptorFileName>RemoteAdministrationOfExchange.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+</mdclass:WebService>

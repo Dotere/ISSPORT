@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4bcfc83-9411-4210-8ba6-5029f7d50516">
+  <producedTypes>
+    <objectType typeId="8c22d4cb-8136-4d05-a893-8d37ad849c2a" valueTypeId="4e488a27-6fbe-46b1-90c2-ff501b58840a"/>
+    <refType typeId="c94496c7-6150-48cd-821d-8192a8ae3f52" valueTypeId="f9ebbdb3-cc41-4516-ba33-f874fcb1a26f"/>
+    <selectionType typeId="df0b781c-0724-4f41-8c8e-079d2ff7bbb7" valueTypeId="4b15dbbc-0a64-4d41-8e27-a0acc79297d6"/>
+    <listType typeId="be5aa68d-5872-4f36-8bf0-dd5545a20f9f" valueTypeId="fea48ca6-9687-4156-bbaf-5c7c560c1ea0"/>
+    <managerType typeId="029b8f2e-48dd-4b7c-b284-1e94d22e79e6" valueTypeId="2348f4d0-d49f-4211-b50d-288e6cde4089"/>
+  </producedTypes>
+  <name>Районы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Районы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Районы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Районы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f59e2b3b-6050-419a-8fd7-5860d180e6e3">
+      <name>Новосибирск</name>
+      <description>Новосибирск</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <content id="cccbbbf9-a4dd-4cd1-98bc-9c91b259d1c7">
+        <name>ДзержинскийРайон</name>
+        <description>Дзержинский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000002</value>
+        </code>
+      </content>
+      <content id="e4924ec4-effc-454b-8abd-a255f7bee49d">
+        <name>ЖелезнодорожныйРайон</name>
+        <description>Железнодорожный район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000003</value>
+        </code>
+      </content>
+      <content id="a05f4001-388e-4dec-84c4-04eceffe8dca">
+        <name>ЗаельцовскийРайон</name>
+        <description>Заельцовский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+      <content id="4604001d-d6fc-4f09-bfa5-14da7671f526">
+        <name>КалининскийРайон</name>
+        <description>Калининский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+      <content id="67fa18c7-85fb-46b0-970f-15d0a6e05abc">
+        <name>КировскийРайон</name>
+        <description>Кировский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="35186345-8d15-4302-b961-a7896c2ec441">
+        <name>ЛенинскийРайон</name>
+        <description>Ленинский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="b9fc6144-e4f4-45ae-ac8c-098badc56690">
+        <name>ОктябрьскийРайон</name>
+        <description>Октябрьский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000008</value>
+        </code>
+      </content>
+      <content id="02638351-10c0-4caf-853f-af09157cfed6">
+        <name>ПервомайскийРайон</name>
+        <description>Первомайский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000009</value>
+        </code>
+      </content>
+      <content id="1e2a2f0b-033e-4abc-98b4-181287364397">
+        <name>СоветскийРайон</name>
+        <description>Советский район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000010</value>
+        </code>
+      </content>
+      <content id="b407450e-8882-43b2-8d55-5f7d09daa70a">
+        <name>ЦентральныйРайон</name>
+        <description>Центральный район</description>
+        <code xsi:type="core:StringValue">
+          <value>000000011</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

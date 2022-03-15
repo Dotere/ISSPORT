@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮн3Место</dataPath>
+			<field>ПРЮн3Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮн3 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрочиеУчастие</dataPath>
+			<field>ПрочиеУчастие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие участие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прочие46Место</dataPath>
+			<field>Прочие46Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие46 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соревнование</dataPath>
+			<field>Соревнование</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮ1Место</dataPath>
+			<field>ПРЮ1Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮ1 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮн46Место</dataPath>
+			<field>ПРЮн46Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮн46 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮн2Место</dataPath>
+			<field>ПРЮн2Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮн2 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего3Место</dataPath>
+			<field>Всего3Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего3 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮУчастие</dataPath>
+			<field>ПРЮУчастие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮУчастие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего123</dataPath>
+			<field>Всего123</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего123</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего1Место</dataPath>
+			<field>Всего1Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего1 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮн1Место</dataPath>
+			<field>ПРЮн1Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮн1 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего2Место</dataPath>
+			<field>Всего2Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего2 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего46Место</dataPath>
+			<field>Всего46Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего46 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВсегоУчастие</dataPath>
+			<field>ВсегоУчастие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего участие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧР1Место</dataPath>
+			<field>ЧР1Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ч р1 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧР2Место</dataPath>
+			<field>ЧР2Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ч р2 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮнУчастие</dataPath>
+			<field>ПРЮнУчастие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮн участие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧР3Место</dataPath>
+			<field>ЧР3Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ч р3 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧР46Место</dataPath>
+			<field>ЧР46Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ч р46 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧРУчастие</dataPath>
+			<field>ЧРУчастие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЧРУчастие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КР1Место</dataPath>
+			<field>КР1Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К р1 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮ2Место</dataPath>
+			<field>ПРЮ2Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮ2 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КР2Место</dataPath>
+			<field>КР2Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К р2 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮ3Место</dataPath>
+			<field>ПРЮ3Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮ3 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПРЮ46Место</dataPath>
+			<field>ПРЮ46Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРЮ46 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КР3Место</dataPath>
+			<field>КР3Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К р3 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КР46Место</dataPath>
+			<field>КР46Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К р46 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КРУчастие</dataPath>
+			<field>КРУчастие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КРУчастие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прочие1Место</dataPath>
+			<field>Прочие1Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие1 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прочие2Место</dataPath>
+			<field>Прочие2Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие2 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прочие3Место</dataPath>
+			<field>Прочие3Место</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие3 место</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Место</dataPath>
+			<field>Место</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дисциплина</dataPath>
+			<field>Дисциплина</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Организация КАК Организация,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(&amp;КонецПериода, Спортсмен.СтатусСпортсмена &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСпортсменов.СпортсменДругогоСпортивногоУчреждения)) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения &gt; &amp;КонецПериода
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1))
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	Спортсмен,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИтоговыеРезультатыСоревнования.Организация КАК Организация,
+	ИтоговыеРезультатыСоревнования.ВидСпорта КАК ВидСпорта,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Место = 1
+				ИЛИ ИтоговыеРезультатыСоревнования.Место = 2
+				ИЛИ ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "Всего123"
+	КОНЕЦ КАК Всего123,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Место = 1
+			ТОГДА "Всего1Место"
+	КОНЕЦ КАК Всего1Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Место = 2
+			ТОГДА "Всего2Место"
+	КОНЕЦ КАК Всего2Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "Всего3Место"
+	КОНЕЦ КАК Всего3Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Место = 4
+				ИЛИ ИтоговыеРезультатыСоревнования.Место = 5
+				ИЛИ ИтоговыеРезультатыСоревнования.Место = 6
+			ТОГДА "Всего46Место"
+	КОНЕЦ КАК Всего46Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Место &lt;&gt; 1
+				ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 2
+				ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 3
+				ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 4
+				ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 5
+				ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 6
+			ТОГДА "ВсегоУчастие"
+	КОНЕЦ КАК ВсегоУчастие,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ЧемпионатРоссии)
+				И ИтоговыеРезультатыСоревнования.Место = 1
+			ТОГДА "ЧР1Место"
+	КОНЕЦ КАК ЧР1Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ЧемпионатРоссии)
+				И ИтоговыеРезультатыСоревнования.Место = 2
+			ТОГДА "ЧР2Место"
+	КОНЕЦ КАК ЧР2Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ЧемпионатРоссии)
+				И ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "ЧР3Место"
+	КОНЕЦ КАК ЧР3Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ЧемпионатРоссии)
+				И (ИтоговыеРезультатыСоревнования.Место = 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 6)
+			ТОГДА "ЧР46Место"
+	КОНЕЦ КАК ЧР46Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ЧемпионатРоссии)
+				И (ИтоговыеРезультатыСоревнования.Место &lt;&gt; 1
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 2
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 3
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 6)
+			ТОГДА "ЧРУчастие"
+	КОНЕЦ КАК ЧРУчастие,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮниоровИЮниорок)
+				И ИтоговыеРезультатыСоревнования.Место = 1
+			ТОГДА "ПРЮ1Место"
+	КОНЕЦ КАК ПРЮ1Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮниоровИЮниорок)
+				И ИтоговыеРезультатыСоревнования.Место = 2
+			ТОГДА "ПРЮ2Место"
+	КОНЕЦ КАК ПРЮ2Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮниоровИЮниорок)
+				И ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "ПРЮ3Место"
+	КОНЕЦ КАК ПРЮ3Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮниоровИЮниорок)
+				И (ИтоговыеРезультатыСоревнования.Место = 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 6)
+			ТОГДА "ПРЮ46Место"
+	КОНЕЦ КАК ПРЮ46Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮниоровИЮниорок)
+				И (ИтоговыеРезультатыСоревнования.Место &lt;&gt; 1
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 2
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 3
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 6)
+			ТОГДА "ПРЮУчастие"
+	КОНЕЦ КАК ПРЮУчастие,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮношейИДевушек)
+				И ИтоговыеРезультатыСоревнования.Место = 1
+			ТОГДА "ПРЮн1Место"
+	КОНЕЦ КАК ПРЮн1Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮношейИДевушек)
+				И ИтоговыеРезультатыСоревнования.Место = 2
+			ТОГДА "ПРЮн2Место"
+	КОНЕЦ КАК ПРЮн2Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮношейИДевушек)
+				И ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "ПРЮн3Место"
+	КОНЕЦ КАК ПРЮн3Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮношейИДевушек)
+				И (ИтоговыеРезультатыСоревнования.Место = 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 6)
+			ТОГДА "ПРЮн46Место"
+	КОНЕЦ КАК ПРЮн46Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссииСредиЮношейИДевушек)
+				И (ИтоговыеРезультатыСоревнования.Место &lt;&gt; 1
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 2
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 3
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 6)
+			ТОГДА "ПРЮнУчастие"
+	КОНЕЦ КАК ПРЮнУчастие,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.КубокРоссии)
+				И ИтоговыеРезультатыСоревнования.Место = 1
+			ТОГДА "КР1Место"
+	КОНЕЦ КАК КР1Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.КубокРоссии)
+				И ИтоговыеРезультатыСоревнования.Место = 2
+			ТОГДА "КР2Место"
+	КОНЕЦ КАК КР2Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.КубокРоссии)
+				И ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "КР3Место"
+	КОНЕЦ КАК КР3Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.КубокРоссии)
+				И (ИтоговыеРезультатыСоревнования.Место = 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 6)
+			ТОГДА "КР46Место"
+	КОНЕЦ КАК КР46Место,
+	ВЫБОР
+		КОГДА ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.КубокРоссии)
+				И (ИтоговыеРезультатыСоревнования.Место &lt;&gt; 1
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 2
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 3
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 6)
+			ТОГДА "КРУчастие"
+	КОНЕЦ КАК КРУчастие,
+	ВЫБОР
+		КОГДА (ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ДругиеВсероссийкиеСоревнованияВключенныеВЕКП)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.СпартакиадаРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.УниверсиадаРоссии))
+				И ИтоговыеРезультатыСоревнования.Место = 1
+			ТОГДА "Прочие1Место"
+	КОНЕЦ КАК Прочие1Место,
+	ВЫБОР
+		КОГДА (ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ДругиеВсероссийкиеСоревнованияВключенныеВЕКП)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.СпартакиадаРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.УниверсиадаРоссии))
+				И ИтоговыеРезультатыСоревнования.Место = 2
+			ТОГДА "Прочие2Место"
+	КОНЕЦ КАК Прочие2Место,
+	ВЫБОР
+		КОГДА (ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ДругиеВсероссийкиеСоревнованияВключенныеВЕКП)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.СпартакиадаРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.УниверсиадаРоссии))
+				И ИтоговыеРезультатыСоревнования.Место = 3
+			ТОГДА "Прочие3Место"
+	КОНЕЦ КАК Прочие3Место,
+	ВЫБОР
+		КОГДА (ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ДругиеВсероссийкиеСоревнованияВключенныеВЕКП)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.СпартакиадаРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.УниверсиадаРоссии))
+				И (ИтоговыеРезультатыСоревнования.Место = 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место = 6)
+			ТОГДА "Прочие46Место"
+	КОНЕЦ КАК Прочие46Место,
+	ВЫБОР
+		КОГДА (ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ДругиеВсероссийкиеСоревнованияВключенныеВЕКП)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ПервенствоРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.СпартакиадаРоссии)
+				ИЛИ ИтоговыеРезультатыСоревнования.Соревнование.Ранг = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.УниверсиадаРоссии))
+				И (ИтоговыеРезультатыСоревнования.Место &lt;&gt; 1
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 2
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 3
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 4
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 5
+					ИЛИ ИтоговыеРезультатыСоревнования.Место &lt;&gt; 6)
+			ТОГДА "ПрочиеУчастие"
+	КОНЕЦ КАК ПрочиеУчастие,
+	ИтоговыеРезультатыСоревнования.Спортсмен КАК Спортсмен,
+	ФизическиеЛица.ДатаРождения КАК ДатаРождения,
+	ИтоговыеРезультатыСоревнования.Место КАК Место,
+	ИтоговыеРезультатыСоревнования.Соревнование КАК Соревнование,
+	ИтоговыеРезультатыСоревнования.Дисциплина КАК Дисциплина
+ПОМЕСТИТЬ ВТ_Итог
+ИЗ
+	РегистрСведений.ИтоговыеРезультатыСоревнования КАК ИтоговыеРезультатыСоревнования
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО ИтоговыеРезультатыСоревнования.Спортсмен.ФизическоеЛицо = ФизическиеЛица.Ссылка
+ГДЕ
+	ИтоговыеРезультатыСоревнования.ДатаНачалаСоревнования МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ИтоговыеРезультатыСоревнования.ДатаОкончанияСоревнования МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И (ИтоговыеРезультатыСоревнования.Спортсмен, ИтоговыеРезультатыСоревнования.ВидСпорта) В
+			(ВЫБРАТЬ
+				ВТ_СоставУчащихся.Спортсмен КАК Спортсмен,
+				ВТ_СоставУчащихся.ВидСпорта КАК ВидСпорта
+			ИЗ
+				ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)
+	И ИтоговыеРезультатыСоревнования.Соревнование.Ранг.Родитель = ЗНАЧЕНИЕ(Справочник.РанжированиеСоревнований.ВсеРоссийские)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Итог.Организация КАК Организация,
+	ВТ_Итог.ВидСпорта КАК ВидСпорта,
+	ВТ_Итог.Всего123 КАК Всего123,
+	ВТ_Итог.Всего1Место КАК Всего1Место,
+	ВТ_Итог.Всего2Место КАК Всего2Место,
+	ВТ_Итог.Всего3Место КАК Всего3Место,
+	ВТ_Итог.Всего46Место КАК Всего46Место,
+	ВТ_Итог.ВсегоУчастие КАК ВсегоУчастие,
+	ВТ_Итог.ЧР1Место КАК ЧР1Место,
+	ВТ_Итог.ЧР2Место КАК ЧР2Место,
+	ВТ_Итог.ЧР3Место КАК ЧР3Место,
+	ВТ_Итог.ЧР46Место КАК ЧР46Место,
+	ВТ_Итог.ЧРУчастие КАК ЧРУчастие,
+	ВТ_Итог.ПРЮ1Место КАК ПРЮ1Место,
+	ВТ_Итог.ПРЮ2Место КАК ПРЮ2Место,
+	ВТ_Итог.ПРЮ3Место КАК ПРЮ3Место,
+	ВТ_Итог.ПРЮ46Место КАК ПРЮ46Место,
+	ВТ_Итог.ПРЮУчастие КАК ПРЮУчастие,
+	ВТ_Итог.ПРЮн1Место КАК ПРЮн1Место,
+	ВТ_Итог.ПРЮн2Место КАК ПРЮн2Место,
+	ВТ_Итог.ПРЮн3Место КАК ПРЮн3Место,
+	ВТ_Итог.ПРЮн46Место КАК ПРЮн46Место,
+	ВТ_Итог.ПРЮнУчастие КАК ПРЮнУчастие,
+	ВТ_Итог.КР1Место КАК КР1Место,
+	ВТ_Итог.КР2Место КАК КР2Место,
+	ВТ_Итог.КР3Место КАК КР3Место,
+	ВТ_Итог.КР46Место КАК КР46Место,
+	ВТ_Итог.КРУчастие КАК КРУчастие,
+	ВТ_Итог.Прочие1Место КАК Прочие1Место,
+	ВТ_Итог.Прочие2Место КАК Прочие2Место,
+	ВТ_Итог.Прочие3Место КАК Прочие3Место,
+	ВТ_Итог.Прочие46Место КАК Прочие46Место,
+	ВТ_Итог.ПрочиеУчастие КАК ПрочиеУчастие,
+	ВТ_Итог.Спортсмен КАК Спортсмен,
+	ВТ_Итог.ДатаРождения КАК ДатаРождения,
+	ВТ_Итог.Место КАК Место,
+	ВТ_Итог.Соревнование КАК Соревнование,
+	ВТ_Итог.Дисциплина КАК Дисциплина
+ИЗ
+	ВТ_Итог КАК ВТ_Итог</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсмен</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20.875</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата рождения</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Соревнование</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">49.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">49.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортивная дисциплина</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">36.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">36.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Место</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Спортсмен</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Спортсмен</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаРождения</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Соревнование</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">49.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">49.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Соревнование</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Дисциплина</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">36.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">36.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Дисциплина</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Место</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Спортсмен</dcsat:name>
+			<dcsat:expression>Спортсмен</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаРождения</dcsat:name>
+			<dcsat:expression>ДатаРождения</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Соревнование</dcsat:name>
+			<dcsat:expression>Соревнование</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Дисциплина</dcsat:name>
+			<dcsat:expression>Дисциплина</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Место</dcsat:name>
+			<dcsat:expression>Место</dcsat:expression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupName>Данные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<groupHeaderTemplate>
+		<groupName>Шапка</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupHeaderTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Расшифровка</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Шапка</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>Данные</dcsset:name>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Спортсмен.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Место</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Соревнование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Спортсмен</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДатаРождения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Соревнование</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Дисциплина</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Место</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

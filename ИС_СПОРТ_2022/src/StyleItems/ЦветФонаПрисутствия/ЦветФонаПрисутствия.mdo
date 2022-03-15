@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="100fe679-6870-49ed-8671-0d247c23dd3a">
+  <name>ЦветФонаПрисутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвет фона присутствия</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorDef">
+      <red>182</red>
+      <green>215</green>
+      <blue>168</blue>
+    </value>
+  </value>
+</mdclass:StyleItem>

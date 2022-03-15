@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba961652-13b9-4093-bb03-d9ca4afc6e62">
+  <producedTypes>
+    <objectType typeId="fe36d5ba-3e3e-491b-bf6b-7ac18b82f699" valueTypeId="99eeaea2-6400-4b97-bf30-39827ab2578f"/>
+    <managerType typeId="059f81fa-6244-4812-bb7d-22016d0680a6" valueTypeId="4e9ee8f0-863e-4396-9cc2-d6975c3fe5c0"/>
+  </producedTypes>
+  <name>СпискиГрупп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списки групп</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СпискиГрупп.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d00243fe-c5cf-4a00-8e4a-3c2ebc38339a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="386a32b2-da06-4396-b733-4b2e23a5ed16">
+  <producedTypes>
+    <selectionType typeId="e9520ccd-2a3e-4f11-beea-e8467f087433" valueTypeId="f7402482-d946-4f0b-bdaf-6870e254a169"/>
+    <listType typeId="b2e96e1d-0706-4ba2-8ae0-222ce58f2f4f" valueTypeId="bab49dc6-89c2-48d7-a855-fa0c5dd2cda4"/>
+    <managerType typeId="3ad17f23-5c85-4656-be74-c082977cef4e" valueTypeId="db591d16-e48c-4a63-840a-743d1356913d"/>
+    <recordSetType typeId="a96322d1-e2da-4edf-8a4f-f644e725d809" valueTypeId="1b7b4b29-2ede-4769-a303-ef734c7fd4d7"/>
+    <recordKeyType typeId="aec74ad6-419a-4e6e-9737-2efb9b2d3783" valueTypeId="26003bbf-df9e-454f-9547-2165dc408eba"/>
+    <recordType typeId="e07b35b2-1f3e-4304-94cc-caee35e9bec3" valueTypeId="e288fa31-0d93-4031-b8cf-1887ad02c331"/>
+    <recordManagerType typeId="a6be370b-cb38-4dbe-8d0d-7ce5421a7455" valueTypeId="aea9a20a-16d4-4d93-8fe9-502926e10529"/>
+  </producedTypes>
+  <name>ПоказателиФизическогоЗдоровья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели физического здоровья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="33a5b9d9-2ee3-4e35-83b5-45f0e0fa164e">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗначениияСвойствПоказателейФизическогоЗдоровья</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ПоказателиФизическогоЗдоровья.Dimension.Свойство</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="79932ebe-f100-48a2-be47-7581ac5854d7">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиФизическогоЗдоровья</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="641ce466-64e5-4674-a86d-8cfcb90c3fdc">
+    <name>Свойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СвойстваПоказателейФизическогоЗдоровья</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

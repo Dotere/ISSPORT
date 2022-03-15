@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="577788e2-533a-4d3c-bdd5-090a81f6d841">
+  <producedTypes>
+    <objectType typeId="873fd1bd-4921-4172-96f9-5968941be7e6" valueTypeId="53d81651-0451-48fb-926b-22e51554ac82"/>
+    <managerType typeId="4eb00880-4cc2-427d-889a-f52c832ad4ad" valueTypeId="23785175-be57-4fda-b135-482a3da44779"/>
+  </producedTypes>
+  <name>ВыгрузкаЗагрузкаДанныхСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка загрузка данных соревнования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаЗагрузкаДанныхСоревнования.Form.Форма</defaultForm>
+  <forms uuid="34da9ba6-ff87-4578-adf5-b1c0166594cd">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e636efd8-235a-4f2a-b3d1-ed8a4491b2b6">
+    <name>ФормаЗагрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a5dec5f5-7994-41a3-8836-05255fbfbae3">
+    <name>ФормаЭтаповЗагрузкиФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма этапов загрузки файла</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a194ca46-8abe-49b7-80fe-a15c6afcb61a">
+    <name>ФормаЗагрузкиЗаявокИзФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузки заявок из файла</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d0f730d8-f124-48e7-be30-d5d031975557">
+    <name>ФормаПромежуточногоЗаполненияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма промежуточного заполнения данных</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

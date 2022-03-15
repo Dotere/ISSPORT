@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8dc04b8-2d38-431c-939a-cb601155833b">
+  <producedTypes>
+    <refType typeId="59b7b828-8bcf-42cc-b0c1-40bd5a7e74f4" valueTypeId="31563a7c-3d40-45ff-a820-023aa25b45c3"/>
+    <listType typeId="44cda785-5723-49cf-af8b-b922e79c3e24" valueTypeId="9df6155a-dc82-4fa2-b83d-7955ffa62ea4"/>
+    <managerType typeId="dac76d16-807b-497c-ac0a-f37f2807ae76" valueTypeId="ac85bae8-a001-41ff-878c-bc37b6e0715f"/>
+  </producedTypes>
+  <name>ПричиныОтчисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины отчисления</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="73c6328d-19a3-48c8-9f7b-9338e3762aa7">
+    <name>НарушениеПравилВнутреннегоРаспорядкаУчреждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нарушение правил внутреннего распорядка Учреждения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d55babb2-01db-47de-af58-9617a52c6cf2">
+    <name>НепосещениеЗанятий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Непосещение занятий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f45ea00d-90a8-42b3-8689-f4ce7868162c">
+    <name>Переезд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переезд</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f648d29a-8cf9-43a4-9022-7ec8055215b4">
+    <name>НевозможностьПоМедицинскимПоказаниямЗаниматьсяИзбраннымВидомСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Невозможность по медицинским показаниям заниматься избранным видом спорта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3fe4efef-5c8d-47b8-89ea-4359fe270896">
+    <name>ИныеОбстоятельства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иные обстоятельства</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Catalog.Рейтинги.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ПодсчетРейтингов.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>Catalog.Рейтинги.StandardCommand.OpenList</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>Report.ПодсчетРейтингов.Command.ПодсчетРейтингов</commands>
+      <commands>Catalog.Рейтинги.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

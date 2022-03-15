@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aaee2f96-42b9-424b-beb3-95c706f75796">
+  <producedTypes>
+    <objectType typeId="6eee7dfe-c138-4846-bef6-a29565cfa3fa" valueTypeId="f45a8d76-4f88-443d-8fd4-f8bc598b04da"/>
+    <refType typeId="9fe598d5-26a1-442e-8c8e-91aa03dc67af" valueTypeId="a1032951-c780-4a70-9ec6-6576de537016"/>
+    <selectionType typeId="bfc9fad0-8ef8-473e-8eae-0d7d7faaed4f" valueTypeId="0f690bfa-8223-4165-b654-ce8c55a6d4df"/>
+    <listType typeId="802740dc-19b0-4d44-8ad3-0d8ebe4791bc" valueTypeId="ba21974c-6dcb-4fa6-97c5-355109c911cf"/>
+    <managerType typeId="98db8c5d-a7a6-4c77-83e2-9503d0be7628" valueTypeId="ca81ef0e-8add-41e0-a36d-882787d8b421"/>
+    <containerType typeId="e8fcfc79-5865-4749-9b07-8dc843c543aa" valueTypeId="7326a544-5f3f-420b-b7f8-3a6a4ada9b17"/>
+  </producedTypes>
+  <name>ХарактеристикиДостиженийСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Характеристики достижений спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ХарактеристикиДостиженийСпортсменов.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ХарактеристикиДостиженийСпортсменов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.ХарактеристикиДостиженийСпортсменов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e331b313-4ee2-4224-b78e-0a6f4cbb8546">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2048cedb-f4e2-43a5-9c2d-e4eacea7837b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

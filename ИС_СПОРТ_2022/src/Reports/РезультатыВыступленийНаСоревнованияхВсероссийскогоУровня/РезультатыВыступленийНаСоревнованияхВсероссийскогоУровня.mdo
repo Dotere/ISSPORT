@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b896a7c2-8df9-47dc-a330-83d605a9ba3a">
+  <producedTypes>
+    <objectType typeId="90a2cd54-6d98-455e-9626-c3b7536a44b2" valueTypeId="17096d5e-85b7-4bc7-8fbe-c8c6db365159"/>
+    <managerType typeId="21a24053-379e-492f-bd9c-8181752a4170" valueTypeId="0d415d3f-f743-483c-ba70-81eddf0de7b3"/>
+  </producedTypes>
+  <name>РезультатыВыступленийНаСоревнованияхВсероссийскогоУровня</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты выступлений на соревнованиях всероссийского уровня</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РезультатыВыступленийНаСоревнованияхВсероссийскогоУровня.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РезультатыВыступленийНаСоревнованияхВсероссийскогоУровня.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="e44537be-5e68-44d6-bfb2-0e4e46e6a7c5">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4bd75c26-4fa5-4710-95e3-806a61ad55c2">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bef6de5b-d5d3-4756-85c3-3c2cb5c4a002">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="64c77c4a-589a-43e7-a4b6-8bf9096b629d">
+    <name>РасшифровкаНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка новый</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

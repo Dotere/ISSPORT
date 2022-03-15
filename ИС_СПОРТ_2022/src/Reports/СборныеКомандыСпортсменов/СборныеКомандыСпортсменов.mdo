@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="478b0ce5-c3ff-41e4-ad59-2cbfb6b4744a">
+  <producedTypes>
+    <objectType typeId="7ac9d514-8ade-4735-9a6e-072c512196a6" valueTypeId="eefbaca2-e1b3-41a7-8631-3f8522f2c21e"/>
+    <managerType typeId="217e31c4-61a7-47bb-a2e2-7730e4189f6a" valueTypeId="e8a2b924-56dd-4f41-945e-0f6bae661ccf"/>
+  </producedTypes>
+  <name>СборныеКомандыСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сборные команды спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СборныеКомандыСпортсменов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СборныеКомандыСпортсменов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="85f3f9c0-cf76-4375-8eff-f2cdd4549448">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bd730ccd-235e-4352-b973-996cb2f8c911">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

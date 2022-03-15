@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ecef568c-dc40-43e8-8361-3b8480902058">
+  <producedTypes>
+    <selectionType typeId="7b6b6a94-e412-4be2-84c4-716cb11301c5" valueTypeId="295e2603-4e32-4522-8927-abbdccd2908d"/>
+    <listType typeId="b996e036-1e91-416a-98d6-eee8e9790a68" valueTypeId="1411fab3-10dd-47db-9c6b-515b9915b183"/>
+    <managerType typeId="e7d44d5a-5f2a-4b0b-9f41-17861a9bd8ca" valueTypeId="57a2a5dc-389c-4227-99c7-b9fb66e5eb11"/>
+    <recordSetType typeId="b257d975-7610-48cd-b032-e5645edebac0" valueTypeId="f785f0d7-b0aa-48c9-8f05-8ebf690fddb2"/>
+    <recordKeyType typeId="536b2326-3516-4611-b822-5b12d3e19b0f" valueTypeId="bfd3385b-0f93-4b6a-aa59-038e292c4d3d"/>
+    <recordType typeId="51c8b1fd-ef65-4aac-99c9-9bf0904dce43" valueTypeId="898eebf2-bc4c-4637-a094-f5960a98c297"/>
+    <recordManagerType typeId="ec48acea-9698-475e-a2f6-47a2cc41b71b" valueTypeId="e07213b5-4c00-4fb1-af8b-04216601cde5"/>
+  </producedTypes>
+  <name>ИсторияИзмененийФизическогоЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменений физического лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4252ba26-48d0-4af9-b74a-2f4503553df7">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7c57c758-5157-4aa8-8927-547a544bb05e">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1920f1ab-406f-47d1-b4ac-2dd070b46c29">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6cab5b10-952d-4d02-8f1c-3d56abbbf928">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88fa3af3-5046-474e-a587-7621ad15a611">
+  <producedTypes>
+    <selectionType typeId="e3693218-6377-460a-885c-9d8dc3213115" valueTypeId="f2c8183d-797f-4c08-9646-bf3963f70026"/>
+    <listType typeId="b60b08d5-92c4-4bf5-85e4-c5b468c5a5cf" valueTypeId="834ac153-125a-429b-b530-6edc98ca513f"/>
+    <managerType typeId="710500b8-bfad-4033-a8d3-83bf6066e7ff" valueTypeId="3c7d08ab-fd1b-4eee-a6e9-61ff523751ec"/>
+    <recordSetType typeId="3c881ce9-0eeb-43e4-a11a-35cb768bb457" valueTypeId="e344fabc-31de-47d2-8848-273232acbb52"/>
+    <recordKeyType typeId="0715f862-6fe2-4646-b2fb-8c38b108a5e1" valueTypeId="b20e89e2-ff8d-4733-bc45-7a24f41e7d78"/>
+    <recordType typeId="f685b4b1-2ac7-4a12-87a8-3129232919ae" valueTypeId="67e83245-7006-4885-9cbe-3ac84ade1a09"/>
+    <recordManagerType typeId="2f544053-4c80-48f8-a0b0-4810a867facc" valueTypeId="6695f080-d060-4aaa-9ab8-dd5c89608f34"/>
+  </producedTypes>
+  <name>УчебныеУчрежденияСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список учебных учреждений спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УчебныеУчрежденияСпортсменов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчебныеУчрежденияСпортсменов.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Учебное учреждение спортсмена</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Список учебных учреждений спортсменов</value>
+  </listPresentation>
+  <resources uuid="263c095e-5024-4276-9036-819612d03ef6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образовательное учреждение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеУчреждения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a6385923-bb48-4f33-a6cf-7c5bcd155f9b">
+    <name>Класс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="57d08fc5-9226-469a-8078-7bcff4bfdea5">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="0e0dd26c-65a3-48c1-9342-eb7a76f37e23">
+    <name>Факультет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факультет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="00ca7cd0-4f41-41b9-a108-b6204d3d8257">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="aa4014b2-c33b-4a2f-9d6f-ca2f108f2d12">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df5b45de-03cc-45bb-8235-7f27df51c2e4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="05f2c89d-6fab-48b2-8a58-764cc5e4afa3">
+    <name>МестоУчебыСпортсмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образовательные учреждения спортсменов</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Спортсмены</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

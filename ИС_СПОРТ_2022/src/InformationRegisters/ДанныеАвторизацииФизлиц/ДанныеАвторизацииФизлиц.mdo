@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cbd7843-d7c0-4879-8c40-f530dd897e16">
+  <producedTypes>
+    <selectionType typeId="8f276515-3872-4438-90a6-6c42fe24cf7d" valueTypeId="e21ca561-a669-44b9-aadf-497d1da5c937"/>
+    <listType typeId="a682c5e7-c52e-450d-be1d-4d848d24e001" valueTypeId="d7935b0e-5a09-49f9-9258-bcbb5adef441"/>
+    <managerType typeId="5b52ac3c-9d19-40a4-84fb-49f1489a32bc" valueTypeId="c41f5653-7e0b-4b34-b986-876685dff2b8"/>
+    <recordSetType typeId="eb63fdcb-1339-40bc-b1f6-2ca5bbc8333b" valueTypeId="d191e55d-1709-4a3e-9607-77b08ca29db0"/>
+    <recordKeyType typeId="9ce86089-4099-49db-822d-71a74eb60967" valueTypeId="97b60ccc-a081-40e2-806d-8ff132435347"/>
+    <recordType typeId="cc0db4dc-a849-4dfc-95e0-ba13d33a7c74" valueTypeId="c67e2451-f726-49b9-81c8-a9db052f5ee3"/>
+    <recordManagerType typeId="5c127bd5-56ab-411b-9c1e-1a90cadf1fe9" valueTypeId="92037858-156b-4343-b033-0c462c74b8df"/>
+  </producedTypes>
+  <name>ДанныеАвторизацииФизлиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные авторизации физлиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bea19d95-36b9-46c6-900a-e89a008e7a9d">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b69756a1-f15f-4f48-849a-7d67fbabc1d5">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="fe5c3026-2336-4584-813c-3a70c19127e7">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="853b795c-5025-41e3-a84b-8b9b49d9c983">
+    <name>РольАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль авторизации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РолиАвторизацииФизлиц</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

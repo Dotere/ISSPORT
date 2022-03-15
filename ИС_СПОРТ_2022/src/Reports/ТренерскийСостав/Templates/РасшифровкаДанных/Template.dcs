@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВысшаяКатегория</dataPath>
+			<field>ВысшаяКатегория</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высшая категория</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйГод</dataPath>
+			<field>УчебныйГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаУдалить</dataPath>
+			<field>ГруппаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВидаСпорта</dataPath>
+			<field>ДатаВидаСпорта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>От49ИДо65</dataPath>
+			<field>От49ИДо65</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>От49 и до65</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>До35</dataPath>
+			<field>До35</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>До35</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовышениеКвалификацииСовместитель</dataPath>
+			<field>ПовышениеКвалификацииСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повышение квалификации совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>От35ИДо49</dataPath>
+			<field>От35ИДо49</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>От35 и до49</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>От65</dataPath>
+			<field>От65</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>От65</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПерваяКатегория</dataPath>
+			<field>ПерваяКатегория</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первая категория</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВтораяКатегория</dataPath>
+			<field>ВтораяКатегория</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вторая категория</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВысшееОбразованиеСовместительФизкультурное</dataPath>
+			<field>ВысшееОбразованиеСовместительФизкультурное</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высшее образование совместитель физкультурное</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗваниеМастерСпорта</dataPath>
+			<field>ЗваниеМастерСпорта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Звание мастер спорта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТренерШтат</dataPath>
+			<field>ТренерШтат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тренер штат</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Переподготовка</dataPath>
+			<field>Переподготовка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переподготовка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВысшееОбразованиеФизкультурное</dataPath>
+			<field>ВысшееОбразованиеФизкультурное</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высшее образование физкультурное</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовышениеКвалификации</dataPath>
+			<field>ПовышениеКвалификации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повышение квалификации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВысшееОбразование</dataPath>
+			<field>ВысшееОбразование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высшее образование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееОбразование</dataPath>
+			<field>СреднееОбразование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее образование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееОбразованиеФизкультурное</dataPath>
+			<field>СреднееОбразованиеФизкультурное</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее образование физкультурное</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееОбразованиеСовместительФизкультурное</dataPath>
+			<field>СреднееОбразованиеСовместительФизкультурное</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее образование совместитель физкультурное</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПереподготовкаСовместитель</dataPath>
+			<field>ПереподготовкаСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переподготовка совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПерваяКатегорияСовместитель</dataPath>
+			<field>ПерваяКатегорияСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первая категория совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВтораяКатегорияСовместитель</dataPath>
+			<field>ВтораяКатегорияСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вторая категория совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВысшаяКатегорияСовместитель</dataPath>
+			<field>ВысшаяКатегорияСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высшая категория совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВысшееОбразованиеСовместитель</dataPath>
+			<field>ВысшееОбразованиеСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Высшее образование совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееОбразованиеСовместитель</dataPath>
+			<field>СреднееОбразованиеСовместитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее образование совместитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТренерПреподавательКоличество</dataPath>
+			<field>ТренерПреподавательКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тренер преподаватель количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТренерПреподавательШтат</dataPath>
+			<field>ТренерПреподавательШтат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тренер преподаватель штат</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КадровыеИсторииТренеровСрезПоследних.Тренер КАК Тренер,
+	КадровыеИсторииТренеровСрезПоследних.ВидЗанятости КАК ВидЗанятости,
+	КадровыеИсторииТренеровСрезПоследних.ТренерПреподователь КАК ТренерПреподователь
+ПОМЕСТИТЬ ВТ_КадроваяИстория
+ИЗ
+	РегистрСведений.КадровыеИсторииТренеров.СрезПоследних(&amp;ДатаОтчета, Организация = &amp;Организация) КАК КадровыеИсторииТренеровСрезПоследних
+ГДЕ
+	(КадровыеИсторииТренеровСрезПоследних.ВидСобытия = ЗНАЧЕНИЕ(Перечисление.ВидыКадровыхСобытий.Прием)
+			ИЛИ КадровыеИсторииТренеровСрезПоследних.ВидСобытия = ЗНАЧЕНИЕ(Перечисление.ВидыКадровыхСобытий.Увольнение)
+				И (КадровыеИсторииТренеровСрезПоследних.Период МЕЖДУ &amp;НачалоГода И &amp;КонецГода))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер КАК Тренер,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_ТренерскийСостав_Пред
+ИЗ
+	РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СоставГруппыСрезПоследних.ТренерСборной,
+	СоставГруппыСрезПоследних.ВидСпорта
+ИЗ
+	РегистрСведений.СоставГруппы.СрезПоследних КАК СоставГруппыСрезПоследних
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	КоличествоВидовСпортаТренеровОстатки.Тренер,
+	КоличествоВидовСпортаТренеровОстатки.ВидСпорта
+ИЗ
+	РегистрНакопления.КоличествоВидовСпортаТренеров.Остатки КАК КоличествоВидовСпортаТренеровОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ВТ_ТренерскийСостав.Тренер КАК Тренер,
+	ВТ_ТренерскийСостав.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_ТренерскийСостав
+ИЗ
+	ВТ_ТренерскийСостав_Пред КАК ВТ_ТренерскийСостав
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_ТренерскийСостав.Тренер КАК Тренер,
+	ВТ_ТренерскийСостав.ВидСпорта КАК ВидСпорта,
+	ВТ_КадроваяИстория.ВидЗанятости КАК ВидЗанятости,
+	ВТ_КадроваяИстория.ТренерПреподователь КАК ТренерПреподователь
+ПОМЕСТИТЬ ВТ_Тренеры
+ИЗ
+	ВТ_КадроваяИстория КАК ВТ_КадроваяИстория
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ТренерскийСостав КАК ВТ_ТренерскийСостав
+		ПО ВТ_КадроваяИстория.Тренер = ВТ_ТренерскийСостав.Тренер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Тренеры.ВидСпорта КАК ВидСпорта,
+	ВТ_Тренеры.Тренер КАК Тренер,
+	Тренеры.ФизическоеЛицо КАК ФизическоеЛицо,
+	ВТ_Тренеры.ВидЗанятости КАК ВидЗанятости,
+	ВТ_Тренеры.ТренерПреподователь КАК ТренерПреподователь
+ПОМЕСТИТЬ ВТ_ТренерыДанные
+ИЗ
+	ВТ_Тренеры КАК ВТ_Тренеры
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Тренеры КАК Тренеры
+		ПО ВТ_Тренеры.Тренер = Тренеры.Ссылка
+ГДЕ
+	Тренеры.СтатусТренера &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыТренеров.ТренерДругогоСпортивногоУчреждения)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_ТренерыДанные.ВидСпорта КАК ВидСпорта,
+	ВТ_ТренерыДанные.Тренер КАК Тренер,
+	ФизическиеЛица.ДатаРождения КАК ДатаРождения,
+	ВТ_ТренерыДанные.ВидЗанятости КАК ВидЗанятости,
+	ВТ_ТренерыДанные.ТренерПреподователь КАК ТренерПреподователь
+ПОМЕСТИТЬ ВТ_ТренерФизЛицо
+ИЗ
+	ВТ_ТренерыДанные КАК ВТ_ТренерыДанные
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО ВТ_ТренерыДанные.ФизическоеЛицо = ФизическиеЛица.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_ТренерФизЛицо.ВидСпорта КАК ВидСпорта,
+	ВТ_ТренерФизЛицо.Тренер КАК Тренер,
+	ВТ_ТренерФизЛицо.ДатаРождения КАК ДатаРождения,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбучения = ЗНАЧЕНИЕ(Перечисление.ВидыОбучения.Переподготовка)
+					И (ОбразованиеТренеров.НачалоОбучения МЕЖДУ &amp;НачалоГода И &amp;КонецГода)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Переподготовка,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбучения = ЗНАЧЕНИЕ(Перечисление.ВидыОбучения.ПовышениеКвалификации)
+					И (ОбразованиеТренеров.НачалоОбучения МЕЖДУ &amp;НачалоГода И &amp;КонецГода)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ПовышениеКвалификации,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.ВысшееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ВысшееОбразование,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.СреднееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СреднееОбразование,
+	ВТ_ТренерФизЛицо.ВидЗанятости КАК ВидЗанятости,
+	ВТ_ТренерФизЛицо.ТренерПреподователь КАК ТренерПреподователь,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбучения = ЗНАЧЕНИЕ(Перечисление.ВидыОбучения.Переподготовка)
+					И (ОбразованиеТренеров.НачалоОбучения МЕЖДУ &amp;НачалоГода И &amp;КонецГода)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ПереподготовкаСовместитель,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбучения = ЗНАЧЕНИЕ(Перечисление.ВидыОбучения.ПовышениеКвалификации)
+					И (ОбразованиеТренеров.НачалоОбучения МЕЖДУ &amp;НачалоГода И &amp;КонецГода)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ПовышениеКвалификацииСовместитель,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.ВысшееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ВысшееОбразованиеСовместитель,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.СреднееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СреднееОбразованиеСовместитель,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.ВысшееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+					И ОбразованиеТренеров.ФизкультурноеОбразование = ИСТИНА
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ВысшееОбразованиеФизкультурное,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.СреднееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+					И ОбразованиеТренеров.ФизкультурноеОбразование = ИСТИНА
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СреднееОбразованиеФизкультурное,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.ВысшееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+					И ОбразованиеТренеров.ФизкультурноеОбразование = ИСТИНА
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ВысшееОбразованиеСовместительФизкультурное,
+	СУММА(ВЫБОР
+			КОГДА ОбразованиеТренеров.ВидОбразования.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыОбразования.СреднееОбразованиеГруппа)
+					И ВТ_ТренерФизЛицо.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+					И ОбразованиеТренеров.ФизкультурноеОбразование = ИСТИНА
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СреднееОбразованиеСовместительФизкультурное
+ПОМЕСТИТЬ ВТ_Образование
+ИЗ
+	ВТ_ТренерФизЛицо КАК ВТ_ТренерФизЛицо
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ОбразованиеТренеров КАК ОбразованиеТренеров
+		ПО ВТ_ТренерФизЛицо.Тренер = ОбразованиеТренеров.Владелец
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ТренерФизЛицо.ВидСпорта,
+	ВТ_ТренерФизЛицо.Тренер,
+	ВТ_ТренерФизЛицо.ДатаРождения,
+	ВТ_ТренерФизЛицо.ВидЗанятости,
+	ВТ_ТренерФизЛицо.ТренерПреподователь
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Образование.ВидСпорта КАК ВидСпорта,
+	ВТ_Образование.Тренер КАК Тренер,
+	КвалификационныеКатегорииТренеровСрезПоследних.Категория КАК Категория,
+	КвалификационныеКатегорииТренеровСрезПоследних.СрокДействия КАК СрокДействия,
+	ВТ_Образование.ДатаРождения КАК ДатаРождения,
+	ВТ_Образование.Переподготовка КАК Переподготовка,
+	ВТ_Образование.ПовышениеКвалификации КАК ПовышениеКвалификации,
+	ВТ_Образование.ВысшееОбразование КАК ВысшееОбразование,
+	ВТ_Образование.СреднееОбразование КАК СреднееОбразование,
+	ВТ_Образование.ВидЗанятости КАК ВидЗанятости,
+	ВТ_Образование.ТренерПреподователь КАК ТренерПреподователь,
+	ВТ_Образование.ПереподготовкаСовместитель КАК ПереподготовкаСовместитель,
+	ВТ_Образование.ПовышениеКвалификацииСовместитель КАК ПовышениеКвалификацииСовместитель,
+	ВТ_Образование.ВысшееОбразованиеСовместитель КАК ВысшееОбразованиеСовместитель,
+	ВТ_Образование.СреднееОбразованиеСовместитель КАК СреднееОбразованиеСовместитель,
+	ВТ_Образование.ВысшееОбразованиеФизкультурное КАК ВысшееОбразованиеФизкультурное,
+	ВТ_Образование.СреднееОбразованиеФизкультурное КАК СреднееОбразованиеФизкультурное,
+	ВТ_Образование.ВысшееОбразованиеСовместительФизкультурное КАК ВысшееОбразованиеСовместительФизкультурное,
+	ВТ_Образование.СреднееОбразованиеСовместительФизкультурное КАК СреднееОбразованиеСовместительФизкультурное
+ПОМЕСТИТЬ ВТ_КвалификационныеКатегории
+ИЗ
+	ВТ_Образование КАК ВТ_Образование
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КвалификационныеКатегорииТренеров.СрезПоследних КАК КвалификационныеКатегорииТренеровСрезПоследних
+		ПО ВТ_Образование.Тренер = КвалификационныеКатегорииТренеровСрезПоследних.Тренер
+			И ВТ_Образование.ВидСпорта = КвалификационныеКатегорииТренеровСрезПоследних.ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_КвалификационныеКатегории.ВидСпорта КАК ВидСпорта,
+	ВТ_КвалификационныеКатегории.Тренер КАК Тренер,
+	ВТ_КвалификационныеКатегории.Категория КАК Категория,
+	ВТ_КвалификационныеКатегории.СрокДействия КАК СрокДействия,
+	СпортивныеЗванияТренеровСрезПоследних.Звание КАК Звание,
+	ВТ_КвалификационныеКатегории.ДатаРождения КАК ДатаРождения,
+	ВТ_КвалификационныеКатегории.Переподготовка КАК Переподготовка,
+	ВТ_КвалификационныеКатегории.ПовышениеКвалификации КАК ПовышениеКвалификации,
+	ВТ_КвалификационныеКатегории.ВысшееОбразование КАК ВысшееОбразование,
+	ВТ_КвалификационныеКатегории.СреднееОбразование КАК СреднееОбразование,
+	ВТ_КвалификационныеКатегории.ВидЗанятости КАК ВидЗанятости,
+	ВТ_КвалификационныеКатегории.ТренерПреподователь КАК ТренерПреподователь,
+	ВТ_КвалификационныеКатегории.ПереподготовкаСовместитель КАК ПереподготовкаСовместитель,
+	ВТ_КвалификационныеКатегории.ПовышениеКвалификацииСовместитель КАК ПовышениеКвалификацииСовместитель,
+	ВТ_КвалификационныеКатегории.ВысшееОбразованиеСовместитель КАК ВысшееОбразованиеСовместитель,
+	ВТ_КвалификационныеКатегории.СреднееОбразованиеСовместитель КАК СреднееОбразованиеСовместитель,
+	ВТ_КвалификационныеКатегории.ВысшееОбразованиеФизкультурное КАК ВысшееОбразованиеФизкультурное,
+	ВТ_КвалификационныеКатегории.СреднееОбразованиеФизкультурное КАК СреднееОбразованиеФизкультурное,
+	ВТ_КвалификационныеКатегории.ВысшееОбразованиеСовместительФизкультурное КАК ВысшееОбразованиеСовместительФизкультурное,
+	ВТ_КвалификационныеКатегории.СреднееОбразованиеСовместительФизкультурное КАК СреднееОбразованиеСовместительФизкультурное
+ПОМЕСТИТЬ ВТ_ЗванияТренеров
+ИЗ
+	ВТ_КвалификационныеКатегории КАК ВТ_КвалификационныеКатегории
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СпортивныеЗванияТренеров.СрезПоследних КАК СпортивныеЗванияТренеровСрезПоследних
+		ПО ВТ_КвалификационныеКатегории.Тренер = СпортивныеЗванияТренеровСрезПоследних.Тренер
+			И ВТ_КвалификационныеКатегории.ВидСпорта = СпортивныеЗванияТренеровСрезПоследних.ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_ЗванияТренеров.Тренер КАК ТренерКоличество,
+	ВЫБОР
+		КОГДА ГОД(&amp;ТекущаяДата) - ГОД(ВТ_ЗванияТренеров.ДатаРождения) &lt; 35
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК До35,
+	ВЫБОР
+		КОГДА ГОД(&amp;ТекущаяДата) - ГОД(ВТ_ЗванияТренеров.ДатаРождения) &gt;= 35
+				И ГОД(&amp;ТекущаяДата) - ГОД(ВТ_ЗванияТренеров.ДатаРождения) &lt; 49
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК От35ИДо49,
+	ВЫБОР
+		КОГДА ГОД(&amp;ТекущаяДата) - ГОД(ВТ_ЗванияТренеров.ДатаРождения) &gt;= 49
+				И ГОД(&amp;ТекущаяДата) - ГОД(ВТ_ЗванияТренеров.ДатаРождения) &lt; 65
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК От49ИДо65,
+	ВЫБОР
+		КОГДА ГОД(&amp;ТекущаяДата) - ГОД(ВТ_ЗванияТренеров.ДатаРождения) &gt;= 65
+				И НЕ ВТ_ЗванияТренеров.ДатаРождения = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК От65,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Категория = ЗНАЧЕНИЕ(Справочник.КвалификационныеКатегорииТренеров.ТренерПервойКатегории)
+				И ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПерваяКатегория,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Категория = ЗНАЧЕНИЕ(Справочник.КвалификационныеКатегорииТренеров.ТренерВторойКатегории)
+				И ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВтораяКатегория,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Категория = ЗНАЧЕНИЕ(Справочник.КвалификационныеКатегорииТренеров.ТренерВысшейКатегории)
+				И ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВысшаяКатегория,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Звание = ЗНАЧЕНИЕ(Справочник.ЗванияТренеров.ЗваниеЗаслуженныйТренерРоссии)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЗваниеМастерСпорта,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ТренерШтат,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Переподготовка &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Переподготовка,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ПовышениеКвалификации &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПовышениеКвалификации,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ВысшееОбразование &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВысшееОбразование,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.СреднееОбразование &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК СреднееОбразование,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ВысшееОбразованиеФизкультурное &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВысшееОбразованиеФизкультурное,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.СреднееОбразованиеФизкультурное &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК СреднееОбразованиеФизкультурное,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ВысшееОбразованиеСовместительФизкультурное &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВысшееОбразованиеСовместительФизкультурное,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.СреднееОбразованиеСовместительФизкультурное &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК СреднееОбразованиеСовместительФизкультурное,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ПереподготовкаСовместитель &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПереподготовкаСовместитель,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ПовышениеКвалификацииСовместитель &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПовышениеКвалификацииСовместитель,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Категория = ЗНАЧЕНИЕ(Справочник.КвалификационныеКатегорииТренеров.ТренерПервойКатегории)
+				И ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПерваяКатегорияСовместитель,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Категория = ЗНАЧЕНИЕ(Справочник.КвалификационныеКатегорииТренеров.ТренерВторойКатегории)
+				И ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВтораяКатегорияСовместитель,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.Категория = ЗНАЧЕНИЕ(Справочник.КвалификационныеКатегорииТренеров.ТренерВысшейКатегории)
+				И ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.Совместительство)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВысшаяКатегорияСовместитель,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидЗанятости.ОсновноеМестоРаботы)
+				И ВТ_ЗванияТренеров.ТренерПреподователь = ИСТИНА
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ТренерПреподователь,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ТренерПреподователь = ИСТИНА
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ТренерПреподовательКоличество,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.ВысшееОбразованиеСовместитель &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВысшееОбразованиеСовместитель,
+	ВЫБОР
+		КОГДА ВТ_ЗванияТренеров.СреднееОбразованиеСовместитель &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК СреднееОбразованиеСовместитель,
+	ВТ_ЗванияТренеров.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_КонечныеДанные
+ИЗ
+	ВТ_ЗванияТренеров КАК ВТ_ЗванияТренеров
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_КонечныеДанные.ТренерКоличество КАК Тренер,
+	ВТ_КонечныеДанные.До35 КАК До35,
+	ВТ_КонечныеДанные.От35ИДо49 КАК От35ИДо49,
+	ВТ_КонечныеДанные.От49ИДо65 КАК От49ИДо65,
+	ВТ_КонечныеДанные.От65 КАК От65,
+	ВТ_КонечныеДанные.ПерваяКатегория КАК ПерваяКатегория,
+	ВТ_КонечныеДанные.ВтораяКатегория КАК ВтораяКатегория,
+	ВТ_КонечныеДанные.ВысшаяКатегория КАК ВысшаяКатегория,
+	ВТ_КонечныеДанные.ЗваниеМастерСпорта КАК ЗваниеМастерСпорта,
+	ВТ_КонечныеДанные.ТренерШтат КАК ТренерШтат,
+	ВТ_КонечныеДанные.Переподготовка КАК Переподготовка,
+	ВТ_КонечныеДанные.ПовышениеКвалификации КАК ПовышениеКвалификации,
+	ВТ_КонечныеДанные.ВысшееОбразование КАК ВысшееОбразование,
+	ВТ_КонечныеДанные.СреднееОбразование КАК СреднееОбразование,
+	ВТ_КонечныеДанные.ВысшееОбразованиеФизкультурное КАК ВысшееОбразованиеФизкультурное,
+	ВТ_КонечныеДанные.СреднееОбразованиеФизкультурное КАК СреднееОбразованиеФизкультурное,
+	ВТ_КонечныеДанные.ВысшееОбразованиеСовместительФизкультурное КАК ВысшееОбразованиеСовместительФизкультурное,
+	ВТ_КонечныеДанные.СреднееОбразованиеСовместительФизкультурное КАК СреднееОбразованиеСовместительФизкультурное,
+	ВТ_КонечныеДанные.ПереподготовкаСовместитель КАК ПереподготовкаСовместитель,
+	ВТ_КонечныеДанные.ПовышениеКвалификацииСовместитель КАК ПовышениеКвалификацииСовместитель,
+	ВТ_КонечныеДанные.ПерваяКатегорияСовместитель КАК ПерваяКатегорияСовместитель,
+	ВТ_КонечныеДанные.ВтораяКатегорияСовместитель КАК ВтораяКатегорияСовместитель,
+	ВТ_КонечныеДанные.ВысшаяКатегорияСовместитель КАК ВысшаяКатегорияСовместитель,
+	ВТ_КонечныеДанные.ВысшееОбразованиеСовместитель КАК ВысшееОбразованиеСовместитель,
+	ВТ_КонечныеДанные.СреднееОбразованиеСовместитель КАК СреднееОбразованиеСовместитель,
+	ВТ_КонечныеДанные.ТренерПреподователь КАК ТренерПреподавательШтат,
+	ВТ_КонечныеДанные.ТренерПреподовательКоличество КАК ТренерПреподавательКоличество,
+	ВТ_КонечныеДанные.ВидСпорта КАК ВидСпорта
+ИЗ
+	ВТ_КонечныеДанные КАК ВТ_КонечныеДанные</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецГода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец года</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(&amp;ДатаОтчета,"Год")</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоГода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало года</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>НачалоПериода(&amp;ДатаОтчета,"Год")</expression>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номер</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тренер</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">44</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">44</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Номер</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Тренер</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">44</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">44</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Тренер</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Номер</dcsat:name>
+			<dcsat:expression>СистемныеПоля.НомерПоПорядку</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Тренер</dcsat:name>
+			<dcsat:expression>Представление(Тренер)</dcsat:expression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupName>Шапка</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Данные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>bc90a757-29fa-48be-96f5-95e5a8f58149</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецГода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>e9dc2ff4-6c7d-411a-acae-5bf4828bc5cf</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НачалоГода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>cdb08571-d92e-4eb2-ad03-e2505aab622e</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ТекущаяДата</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>1e70f905-895c-415f-a058-7b7018b73e70</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>149ee1c2-5aa4-4bda-a882-75e326b392f9</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a064c762-1023-4132-a957-4b250ebf4977</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Шапка</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>Данные</dcsset:name>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Тренер</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

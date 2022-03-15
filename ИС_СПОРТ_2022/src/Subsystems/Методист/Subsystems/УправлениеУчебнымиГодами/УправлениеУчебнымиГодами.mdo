@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e212b527-7d64-4497-ad66-a92cae24d380">
+  <name>УправлениеУчебнымиГодами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление учебными годами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.УчебныйГод</content>
+  <content>Document.УправлениеУчебнымГодом</content>
+  <content>Document.ФормированиеГруппы</content>
+  <content>DataProcessor.МастерЗаполненияУчебногоГода</content>
+  <content>Document.ПереводСпортсменовМеждуГруппами</content>
+  <parentSubsystem>Subsystem.Методист</parentSubsystem>
+</mdclass:Subsystem>

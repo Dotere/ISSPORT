@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d287ed5d-c2d5-4391-a381-20d952048dcc">
+  <producedTypes>
+    <objectType typeId="b3f35f78-a2d3-4676-acc7-6a8b4f0bd61d" valueTypeId="6a8133b8-76e5-494e-a958-544585f2ff7a"/>
+    <refType typeId="4bb532b1-9822-4d9a-8d20-d67b0bd5b0bb" valueTypeId="b6ff355d-27b7-4cde-b4c7-99f762e0e27b"/>
+    <selectionType typeId="1e50bd05-dc25-4432-a6bc-5ff2ed86966f" valueTypeId="b8e8f9ac-c215-4a11-b786-65967be17ea3"/>
+    <listType typeId="ffe78f9f-306a-43e9-bd23-f2a234756f5c" valueTypeId="5ef55e6e-a257-44d5-a046-8e38c4b0899d"/>
+    <managerType typeId="daa26677-bddb-451f-ab2d-c5cfaee73290" valueTypeId="c9745b8c-0fd6-4dce-857d-3a634182916d"/>
+  </producedTypes>
+  <name>ВидыОтправления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды отправления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОтправления.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОтправления.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8f85f215-fc38-473c-aa3c-f60341635e72">
+      <name>Авиатранспортом</name>
+      <description>Авиатранспортом</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="4b0ebcea-d290-4f5c-b830-9ec0358f4b28">
+      <name>Автобусом</name>
+      <description>Автобусом</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="04ee0a33-1b95-4b5e-b70f-3a05ee654b08">
+      <name>ЖелезнодорожнымТранспортом</name>
+      <description>Железнодорожным транспортом</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="48527eac-cfca-40c6-9c04-03a74de269d9">
+      <name>ЛичнымТранспортомУчастниковСоревнований</name>
+      <description>Личным транспортом участников соревнований</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

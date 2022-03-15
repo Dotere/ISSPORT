@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bef6081e-f377-41d6-83a1-b0e218a3fb46">
+  <producedTypes>
+    <containerType typeId="38cab6fc-a064-4995-9ab1-0e13c91bc34e" valueTypeId="af4be178-f85b-4a44-ab7a-db749c737979"/>
+  </producedTypes>
+  <name>ПрисоединенныйФайл</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенный файл</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ТренерыПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗачислениеСпортсменовНаЭтапПрисоединенныеФайлы</types>
+    <types>CatalogRef.СогласиеНаОбработкуПерсональныхДанныхПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФППрисоединенныеФайлы</types>
+    <types>CatalogRef.ИсключениеИзСпортивногоУчрежденияПрисоединенныеФайлы</types>
+    <types>CatalogRef.ОтзывСогласияНаОбработкуПерсональныхДанныхПрисоединенныеФайлы</types>
+    <types>CatalogRef.СпортсменыПрисоединенныеФайлы</types>
+    <types>CatalogRef.Файлы</types>
+    <types>CatalogRef.ВключениеСпортсменовВГруппуПрисоединенныеФайлы</types>
+    <types>CatalogRef.НазначениеОпросовПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПротоколСоревнованияПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПереводСпортсменовМеждуГруппамиПрисоединенныеФайлы</types>
+    <types>CatalogRef.СтраховойПолисСпортсменаПрисоединенныеФайлы</types>
+    <types>CatalogRef.СоревнованиеОФПСдачаНормативовПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗапланированноеВзаимодействиеПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПротоколОФПСдачаНормативовПрисоединенныеФайлы</types>
+    <types>CatalogRef.ИсключениеСпортсменовИзГруппыПрисоединенныеФайлы</types>
+    <types>CatalogRef.АнкетаПрисоединенныеФайлы</types>
+    <types>CatalogRef.ДопускиУчастниковКСпортивнымСоревнованиямПрисоединенныеФайлы</types>
+    <types>CatalogRef.РегистрацияДостиженийСпортсменовПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПереводСпортсменовНаЭтапПрисоединенныеФайлы</types>
+    <types>CatalogRef.ФормированиеГруппыПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПодтверждениеРазрядаСпортсменаПрисоединенныеФайлы</types>
+    <types>CatalogRef.СообщениеSMSПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПрисвоениеРазрядаПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗаявкаНаПроведениеСоревнованияПрисоединенныеФайлы</types>
+    <types>CatalogRef.РодителиЗаконныеПредставителиСпортсменовПрисоединенныеФайлы</types>
+    <types>CatalogRef.ВстречаПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗаявленияНаПриемВСпортивноеУчреждениеПрисоединенныеФайлы</types>
+    <types>CatalogRef.ВерсииФайлов</types>
+    <types>CatalogRef.СоревнованиеПрисоединенныеФайлы</types>
+    <types>CatalogRef.ТелефонныйЗвонокПрисоединенныеФайлы</types>
+    <types>CatalogRef.ШаблоныСообщенийПрисоединенныеФайлы</types>
+  </type>
+</mdclass:DefinedType>

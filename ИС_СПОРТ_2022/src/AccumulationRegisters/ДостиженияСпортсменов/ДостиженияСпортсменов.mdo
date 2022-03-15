@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b78895c-e652-4fef-949c-eae6e5203068">
+  <producedTypes>
+    <selectionType typeId="3a5ba0e1-afe3-44d5-8b9a-a7c39c00f844" valueTypeId="4a8e3e7f-aae2-454a-a2a7-58e5840a29ba"/>
+    <listType typeId="0db005eb-57bc-4b37-a672-4fb087128a0e" valueTypeId="1b235d51-4f7a-450a-b1a5-74d7dadc273e"/>
+    <managerType typeId="70fc7572-5927-4169-aa9f-a6720f6f98fb" valueTypeId="2a7555ab-732d-4659-a0ca-6fad83f2e56f"/>
+    <recordSetType typeId="1f1dc3e9-46de-4b46-800a-9e03c6f131ef" valueTypeId="08cd738f-0d96-46be-a804-0dda2b9f6e86"/>
+    <recordKeyType typeId="2e5a816a-0cd3-4229-8135-2af645057780" valueTypeId="d7bfcecd-85d2-4e2d-80a2-73285a3233d0"/>
+    <recordType typeId="c5e4a913-d69a-4211-ade9-7110c3c45c49" valueTypeId="0d698d92-16fe-4be0-8fb9-39b1449552ca"/>
+  </producedTypes>
+  <name>ДостиженияСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Достижения спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="a89940a9-aa42-43d4-b55e-2fe71d569e8a">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="a830f740-8db1-449f-8ed6-7f6fc81ef3b5">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="d7b57b81-025e-4516-957d-2f55e4dbdad6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2cb6f2a9-ec5f-410d-b565-81c30198c60b">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="80b4db94-09d1-4969-93fb-2d32b2d31fcf">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="96887828-69a3-447d-8eb0-9e386770ecb2">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="28d3d148-8075-408a-b215-cae14d2b3124">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="03686574-5b2f-4e25-8ae1-71cd69ffa720">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ХарактеристикиДостиженийСпортсменов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

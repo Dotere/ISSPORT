@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a8d6944-e1b9-4ea4-a6ca-725fd942bb2b">
+  <producedTypes>
+    <selectionType typeId="b1bcd200-a0eb-4379-a42f-46b638442870" valueTypeId="3337f4f6-050d-4291-80cd-11f8580cf7ed"/>
+    <listType typeId="6d922d0b-45a5-4ead-a4ac-da03ee5e103b" valueTypeId="eefed235-f7e6-4cfc-8e8f-0679354d8c9f"/>
+    <managerType typeId="cc20ccd5-72fb-48d9-bfbe-adc61d721361" valueTypeId="06915be6-37b5-4b9a-be96-9b166ed2affc"/>
+    <recordSetType typeId="b38419bf-4d71-4d32-80a5-cd54c037e4cc" valueTypeId="d1e107ec-9204-4897-a88e-69b821f0383f"/>
+    <recordKeyType typeId="5ee71469-7226-4a37-8812-a5d53f2ebcf4" valueTypeId="3a2fa25f-5785-44b7-b03f-143b3f99389c"/>
+    <recordType typeId="8ff63142-0c75-4ad8-8302-2879fcb39057" valueTypeId="452d4e7f-a4af-4ff9-8117-b8cb6ed1af50"/>
+    <recordManagerType typeId="af76aaa8-4184-403d-b903-a50bca89503c" valueTypeId="8cc14fe3-d2d3-4bf7-9b32-7c736fd34703"/>
+  </producedTypes>
+  <name>ОценкиПрохожденияНормативов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки прохождения нормативов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОценкиПрохожденияНормативов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОценкиПрохожденияНормативов.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7d62e219-9a1c-4f9c-8621-7b77079bcdef">
+    <name>РезультатЧисло</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат число</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>25</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1afed7a2-a822-4de9-8f84-13ab90c2105e">
+    <name>РезультатБулево</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат булево</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6a0f197e-62b7-4f20-ab27-93ea4f26722d">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+  </resources>
+  <attributes uuid="cb888f43-199d-4d32-a444-17c25d0248a2">
+    <name>ТипПодсчетаРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип подсчета результатов попыток</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипПодсчетаРезультата</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="971d070f-1579-431c-bed7-5949d1bb5d07">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9a41b894-1859-492d-8c5d-83db236c3046">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="153759cc-d2a1-4197-9ae8-cba57286802c">
+    <name>МеждународнаяВозрастнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8047a9f1-89b2-4ee2-a7e9-079a6a87350c">
+    <name>Пол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пол</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПолФизическогоЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="df2b3303-b4ab-4623-bab0-adbe7a896e84">
+    <name>Норматив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норматив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Нормативы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="157ff0b5-1d7c-4234-aa2d-c8667255fb94">
+    <name>Балл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Балл</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="70baed88-10f1-4156-92c8-2b5ff0c76bad">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2d4ee4dc-f076-4082-a65c-3a132640e935">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

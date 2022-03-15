@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b745eb77-03af-4398-b819-8957867d21d7">
+  <producedTypes>
+    <selectionType typeId="797f7484-d6c3-497c-af48-ee991262bfff" valueTypeId="bff4b990-6097-4555-b9e5-d4cfb898742d"/>
+    <listType typeId="81fbb8e6-c827-42e4-878c-b84404f2dcbf" valueTypeId="be825187-57bc-4bfe-9ec6-5b858fcc3d11"/>
+    <managerType typeId="14cc475c-0c67-415d-93fd-f9df86790810" valueTypeId="8c47df1d-6527-485c-ba68-56c6859b52e8"/>
+    <recordSetType typeId="0af7cb22-e03a-41fd-8725-ddd4f3cafcc2" valueTypeId="4d067f58-7d8d-470d-9bf8-d5a1fbc53a80"/>
+    <recordKeyType typeId="8dc42618-9f1e-4471-b17f-1c2ec4a13535" valueTypeId="607f740c-87f0-480d-8035-8587c25715ba"/>
+    <recordType typeId="99cb14a9-2882-4a2e-adad-7095b1ad9e98" valueTypeId="63a5960b-b3bd-44f8-abbf-e74ee3d7f92e"/>
+    <recordManagerType typeId="c558ddc3-e1aa-4ee7-8808-bc7a44475498" valueTypeId="477d90fd-a46a-4f85-a77b-347dbd5e28e6"/>
+  </producedTypes>
+  <name>ЗачетныеКнижкиСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зачетные книжки спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b8ed91b1-a97e-48d6-91eb-7ae2469d42a7">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="f4419a4d-09b5-4a41-af31-789961a6d479">
+    <name>Место</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1595ab4f-75f0-481a-8fdc-1d96574f0850">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ea2160a2-be12-48c0-a5ba-928f398fff7f">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="228425f7-1fc4-4c77-b97e-3a2d5a7c77be">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="31a55545-bba7-4230-9168-08b3d8d4f360">
+    <name>ЗачетнаяКнижка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачетная книжка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗачетнаяКнижка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f65ad1fb-edd4-4be0-8090-38d48aaa7f95">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

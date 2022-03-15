@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4270f94-01b9-4c24-b526-8a6037a1cb19">
+  <name>УчетСпортсменовОбщегоНазначенияКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет спортсменов общего назначения клиент сервер</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

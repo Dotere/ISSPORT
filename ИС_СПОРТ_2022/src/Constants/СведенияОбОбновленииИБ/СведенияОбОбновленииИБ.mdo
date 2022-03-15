@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="454628cc-2043-4607-aee4-91a04b10310b">
+  <producedTypes>
+    <managerType typeId="8f3a0e71-2878-4bdf-b841-48a24bfd6041" valueTypeId="715ef5d7-3f25-4813-a856-c422cc09acb8"/>
+    <valueManagerType typeId="f2e09688-71bb-4bb6-9cc0-ebed8feae184" valueTypeId="f3fff268-c42f-4a38-9186-3c716cb0a01e"/>
+    <valueKeyType typeId="d3a51e10-a6de-4d5f-9669-253ed4bc8a3d" valueTypeId="d00e5dc1-23c0-4d23-b5f6-236e213b1d95"/>
+  </producedTypes>
+  <name>СведенияОбОбновленииИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения об обновлении ИБ</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <toolTip>
+    <key>ru</key>
+    <value>Содержит информацию об основном и отложенном циклах обновления.</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

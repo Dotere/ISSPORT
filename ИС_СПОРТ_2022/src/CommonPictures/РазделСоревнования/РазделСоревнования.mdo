@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="213e2d7f-3b90-476b-9e09-2ef0e68b8b3d">
+  <name>РазделСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раздел соревнования</value>
+  </synonym>
+</mdclass:CommonPicture>

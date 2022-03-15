@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="470b7628-af3e-49b1-97c3-276567b3efac">
+  <producedTypes>
+    <objectType typeId="f045c6e6-1753-42e7-a72f-5a6073339dcd" valueTypeId="e6ebfee9-c21c-413c-ace8-3ada5652f2d7"/>
+    <managerType typeId="d9fcf70b-5755-4e78-8604-215a3b708e9f" valueTypeId="66cb9be5-a982-4180-a808-10dc50441298"/>
+  </producedTypes>
+  <name>ОтчётОбИстеченииСроковСтрахования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет об истечении сроков страхования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчётОбИстеченииСроковСтрахования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d6df2871-1b23-4f4a-92dd-654fbaf482b5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

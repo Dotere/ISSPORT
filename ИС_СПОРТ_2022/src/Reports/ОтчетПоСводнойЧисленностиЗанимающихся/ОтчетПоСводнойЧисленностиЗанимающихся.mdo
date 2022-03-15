@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e56a500-c8ad-4c85-92b1-57184367288c">
+  <producedTypes>
+    <objectType typeId="e0ee9e39-36ed-495d-8840-0813bcad8138" valueTypeId="60da6484-9732-43e8-b56c-a27dd71d18c9"/>
+    <managerType typeId="b5b55ab2-f32e-417d-b135-b0e1b0e25adf" valueTypeId="b0253780-5ff2-4e7f-8393-88285b07ca9e"/>
+  </producedTypes>
+  <name>ОтчетПоСводнойЧисленностиЗанимающихся</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводная численность спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоСводнойЧисленностиЗанимающихся.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоСводнойЧисленностиЗанимающихся.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="26968ff1-492e-4af7-8b14-21c2db5fe032">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7c12dfd8-7981-486a-9cba-ba1386107786">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5eca2f9b-197b-4af7-a04c-a793ef0e8966">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e20324bd-54a2-4fe1-8824-659f2f32a359">
+    <name>ОсновнаяСхемаКомпоновкиДанныхСтарая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных старая</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

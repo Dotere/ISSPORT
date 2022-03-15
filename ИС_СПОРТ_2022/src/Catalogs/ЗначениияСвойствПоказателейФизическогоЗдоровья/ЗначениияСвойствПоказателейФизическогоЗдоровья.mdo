@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12372ccf-b276-408b-834e-fd11f42f83c3">
+  <producedTypes>
+    <objectType typeId="69c158e0-588f-4a70-9adc-bffecf8fe22a" valueTypeId="73e36be5-8cb6-4ba9-a577-3a3ca541283d"/>
+    <refType typeId="388acea8-d367-48ae-8327-0c1b39283ea5" valueTypeId="9fb89c52-65fa-40cc-8e39-ff78e77718df"/>
+    <selectionType typeId="9a0fb8fd-24f5-453b-912f-5ca414c87343" valueTypeId="7db09d04-de6f-4f4a-ba66-18094758ceb7"/>
+    <listType typeId="8d136960-e164-4454-9675-d74d39e99b6a" valueTypeId="7958d31f-0c4e-424e-9f00-df5d5b46e099"/>
+    <managerType typeId="9de6c6b1-928d-4556-bb1f-a5e5ab9fffc5" valueTypeId="87713f58-722d-4951-bff6-2514fff067a0"/>
+  </producedTypes>
+  <name>ЗначениияСвойствПоказателейФизическогоЗдоровья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значениия свойств показателей физического здоровья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗначениияСвойствПоказателейФизическогоЗдоровья.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗначениияСвойствПоказателейФизическогоЗдоровья.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>ChartOfCharacteristicTypes.СвойстваПоказателейФизическогоЗдоровья</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

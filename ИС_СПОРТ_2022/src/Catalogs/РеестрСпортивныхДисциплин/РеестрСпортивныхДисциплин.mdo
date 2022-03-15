@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b37ab7b3-73c0-4d8e-8f3f-94531f7af4e9">
+  <producedTypes>
+    <objectType typeId="9fe1d734-4cd8-47d2-858f-919ad05e4562" valueTypeId="b8eee4dd-aa75-4239-b7d0-71e5a6d78a35"/>
+    <refType typeId="6e5b94f3-c8e3-4bcb-8e42-0fb920221853" valueTypeId="c63c2dee-97e4-4167-9f0b-f0b299616f03"/>
+    <selectionType typeId="89ff1d11-5785-47fe-9d8d-b5d20635bafa" valueTypeId="c3daf69d-4ce0-45be-a6d6-884ab4135648"/>
+    <listType typeId="3b5f4f6c-2fa3-4b5f-98b5-8cafe3ee62d7" valueTypeId="392c5981-242d-4be8-8aa3-a70134ccef99"/>
+    <managerType typeId="518bc9b8-fbfe-450e-86ea-b5aa477da1b2" valueTypeId="c6dad8e4-e6d5-47bd-a8b0-feeae5fdd29b"/>
+  </producedTypes>
+  <name>РеестрСпортивныхДисциплин</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр спортивных дисциплин</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РеестрСпортивныхДисциплин.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РеестрСпортивныхДисциплин.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.РеестрВидовСпорта.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.РеестрСпортивныхДисциплин.EmptyRef</value>
+    </fillValue>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.РеестрСпортивныхДисциплин.StandardAttribute.Owner</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.РеестрВидовСпорта</owners>
+  <subordinationUse>ToFoldersAndItems</subordinationUse>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinOwnerSubordination</codeSeries>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.РеестрСпортивныхДисциплин.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.РеестрСпортивныхДисциплин.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.РеестрСпортивныхДисциплин.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="4220a1ee-791b-406c-9db0-42d19836cf10">
+    <name>НомерКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер-Код</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>17</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9f74b06c-89f0-4226-b229-bbe57d9f1cef">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64b73891-8ca0-4648-96fe-7d51e3c18136">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="785ffe14-5f7c-4f70-86ee-83c60db98c7a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fed4a1c7-4146-4d53-978e-338ccf2c1799">
+    <name>ПредопределённыеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предопределённые данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="dc393cc7-24d6-46c6-b72a-99498cdcea24">
+    <name>Общероссийские</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общероссийские</value>
+    </synonym>
+  </templates>
+  <templates uuid="37f129b1-5c25-4fa0-bb63-60f442b5c09d">
+    <name>Национальные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Национальные</value>
+    </synonym>
+  </templates>
+  <templates uuid="4b3849d7-408d-4106-a85c-d44b3ccdc196">
+    <name>Прикладные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прикладные</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

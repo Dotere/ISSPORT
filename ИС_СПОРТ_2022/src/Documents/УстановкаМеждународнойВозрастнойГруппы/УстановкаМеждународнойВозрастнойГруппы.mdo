@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f7ec9cc-2b66-4787-9fec-488e031d62c0">
+  <producedTypes>
+    <objectType typeId="99ccdd5e-d335-4c66-911a-125209f06044" valueTypeId="072fecdd-1f3a-43ac-8277-02d303f7de40"/>
+    <refType typeId="f844c0bd-d843-4564-8622-5c62f48582a5" valueTypeId="02dd6128-8ee1-41ff-bfa4-e3712b59c172"/>
+    <selectionType typeId="e860cd2a-65ed-46f0-84a0-27cb4978e427" valueTypeId="0a258875-436a-4496-9edc-6c27b17c462a"/>
+    <listType typeId="d33a1c0f-ec2e-4d52-b6ef-7402c3ea63c0" valueTypeId="8607e376-d0f8-4684-8e87-3c63640d5d3b"/>
+    <managerType typeId="43ebd82b-1a54-4aff-8364-da7e1167f221" valueTypeId="5ac38011-42fd-45f0-aa23-1b0ed2093351"/>
+  </producedTypes>
+  <name>УстановкаМеждународнойВозрастнойГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка возрастной группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаМеждународнойВозрастнойГруппы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Установка возрастной группы</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Установленные возрастные группы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаМеждународнойВозрастнойГруппы.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаМеждународнойВозрастнойГруппы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.УстановкаМеждународнойВозрастнойГруппы.Form.ФормаВыбора</defaultChoiceForm>
+  <registerRecords>InformationRegister.МеждународныеВозрастныеГруппы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5e5a5916-4019-46ae-bbb1-77939cc1b5db">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год </value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="517212b0-2ee8-4325-be09-af0c7c6078cd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное учреждение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3979f94a-dd8f-4fdd-9484-08303622916d">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.УстановкаМеждународнойВозрастнойГруппы.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4594e338-e31d-443f-ac63-21361ab28544">
+    <name>МеждународнаяВозрастнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb1e8421-5d53-476f-ac9e-1865d0306919">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dff448a3-b4d4-4c8a-b780-29b613e529f1">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cc9e6ea3-000c-411d-ae86-cdd30afc8748">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c6154af-c0c4-4e38-9f7b-871757159f61">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b0ef7cc2-06bd-4e2e-b878-74b70dfdff9f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="3495127e-0b70-4922-a1c0-54dc1635155d">
+    <producedTypes>
+      <objectType typeId="1318e964-0cb5-4ce8-b81d-2696a70f8472" valueTypeId="0de3d179-9a25-4c38-9af7-ed9915e05123"/>
+      <rowType typeId="47913a7d-ba10-45c2-a4fc-6deec05053bd" valueTypeId="0f6c4ae4-30c1-4a02-a2e7-be141e639127"/>
+    </producedTypes>
+    <name>Спортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <attributes uuid="5325dffe-67e3-4b0d-ac81-93928cfbbb4d">
+      <name>Спортсмен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спортсмен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Спортсмены</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.СтатусСпортсмена</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусыСпортсменов.EnumValue.Спортсмен</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="30cc9ba0-6cc9-4af1-b047-1f0474ef0930">
+    <name>МеждународныеВозрастныеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастные группы</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Спортсмены</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

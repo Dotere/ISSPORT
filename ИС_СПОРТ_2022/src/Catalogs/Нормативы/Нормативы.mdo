@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a9cb10e-1e4f-41e3-b2d3-cd594152608f">
+  <producedTypes>
+    <objectType typeId="3436d43e-e4c6-438f-b088-2e093c201faa" valueTypeId="a7dceda4-4d8a-4f91-b642-a3e8c8d603a4"/>
+    <refType typeId="e1782131-e00c-4ab6-8d01-fbebe109b017" valueTypeId="21539376-c39a-4ccf-bd62-3905fcd21056"/>
+    <selectionType typeId="be12a56a-3345-47af-8596-22cc2060b7bd" valueTypeId="2d96fc4f-068b-4c33-badc-68c3b23f0da8"/>
+    <listType typeId="5945b096-de8d-480b-a116-805f7c567b8d" valueTypeId="7cf93fb2-0af7-4798-b6ff-d0aceb27458d"/>
+    <managerType typeId="9963a2ec-b4fc-4ffe-a163-0d247c0ff6ad" valueTypeId="0f6d3cf1-3e42-47c4-9944-aa68bcb940cb"/>
+  </producedTypes>
+  <name>Нормативы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормативы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Нормативы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Нормативы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Нормативы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Нормативы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Нормативы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="81bad66b-7ce5-4531-a492-62ce0c5ead77">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ba077ec-e9f9-4eab-8724-36b085168333">
+    <name>ТипРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип результата</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыРезультатов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="10565beb-c26b-4488-8750-8be4e5b57191">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe4438aa-6212-4ad9-8a71-cfde81fead7a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c0d20ffe-3ebf-454a-a0b6-26539c418db5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

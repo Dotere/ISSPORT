@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart:Chart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:chart="http://g5.1c.ru/v8/dt/chart/model" xmlns:core="http://g5.1c.ru/v8/dt/mcore">
+  <seriesCurId>2</seriesCurId>
+  <isSeriesDesign>true</isSeriesDesign>
+  <realSeriesCount>1</realSeriesCount>
+  <realSeriesData>
+    <properties>
+      <id>2</id>
+      <valInfo xsi:type="core:UndefinedValue"/>
+      <line>
+        <width>2</width>
+        <style>Solid</style>
+      </line>
+      <marker>Auto</marker>
+      <text>
+        <key>ru</key>
+        <value>Место</value>
+      </text>
+      <strIsChanged>true</strIsChanged>
+      <key xsi:type="core:UndefinedValue"/>
+      <valueLabelFormat>
+        <key>ru</key>
+        <value>ЧДЦ=0</value>
+      </valueLabelFormat>
+    </properties>
+  </realSeriesData>
+  <realExSeriesData>
+    <properties>
+      <id>1</id>
+      <valInfo xsi:type="core:UndefinedValue"/>
+      <line>
+        <width>2</width>
+        <style>Solid</style>
+      </line>
+      <marker>Auto</marker>
+      <text>
+        <key>ru</key>
+        <value>Сводная</value>
+      </text>
+      <key xsi:type="core:UndefinedValue"/>
+    </properties>
+  </realExSeriesData>
+  <isPointsDesign>true</isPointsDesign>
+  <labelsDelimiter>, </labelsDelimiter>
+  <lbFormat>
+    <key>ru</key>
+    <value>ЧДЦ=0</value>
+  </lbFormat>
+  <labelsColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </labelsColor>
+  <labelsFont xsi:type="core:AutoFont"/>
+  <transparentLabelsBkg>true</transparentLabelsBkg>
+  <labelsBorder xsi:type="core:BorderDef">
+    <width>1</width>
+  </labelsBorder>
+  <isShowTitle>true</isShowTitle>
+  <ttlBorder xsi:type="core:BorderDef"/>
+  <ttlBorderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </ttlBorderColor>
+  <lgBorder xsi:type="core:BorderDef"/>
+  <lgBorderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </lgBorderColor>
+  <chBorder xsi:type="core:BorderDef"/>
+  <chBorderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </chBorderColor>
+  <bkgColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </bkgColor>
+  <ttlColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </ttlColor>
+  <legColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </legColor>
+  <chColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </chColor>
+  <ttlTxtColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </ttlTxtColor>
+  <legTxtColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </legTxtColor>
+  <chTxtColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </chTxtColor>
+  <ttlFont xsi:type="core:AutoFont"/>
+  <legFont xsi:type="core:AutoFont"/>
+  <chFont xsi:type="core:FontRef">
+    <font>Style.NormalTextFont</font>
+    <height>9.0</height>
+  </chFont>
+  <isShowScale>true</isShowScale>
+  <isShowSeriesScale>true</isShowSeriesScale>
+  <isShowPointsScale>true</isShowPointsScale>
+  <isShowValuesScale>true</isShowValuesScale>
+  <scaleLine>
+    <width>1</width>
+    <style>Solid</style>
+  </scaleLine>
+  <isAutoSeriesName>true</isAutoSeriesName>
+  <isAutoPointName>true</isAutoPointName>
+  <maxSeries>4</maxSeries>
+  <maxSeriesPrc>30</maxSeriesPrc>
+  <spaceMode>Half</spaceMode>
+  <baseVal>0</baseVal>
+  <isLight>true</isLight>
+  <dtVerLines>true</dtVerLines>
+  <dtHorLines>true</dtHorLines>
+  <dtHAlign>Right</dtHAlign>
+  <dtKeys>true</dtKeys>
+  <paletteKind>Auto</paletteKind>
+  <surfaceColor xsi:type="core:ColorDef">
+    <red>169</red>
+  </surfaceColor>
+  <gaugeQualityBands/>
+  <endGaugeAngle>180</endGaugeAngle>
+  <gaugeThickness>5</gaugeThickness>
+  <gaugeLabelsLocation>InsideScale</gaugeLabelsLocation>
+  <gaugeBushThickness>4</gaugeBushThickness>
+  <gaugeBushColor xsi:type="core:ColorDef">
+    <red>169</red>
+    <green>169</green>
+    <blue>169</blue>
+  </gaugeBushColor>
+  <autoMaxValue>true</autoMaxValue>
+  <autoMinValue>true</autoMinValue>
+  <titleIsInit>true</titleIsInit>
+  <legendIsInit>true</legendIsInit>
+  <chartIsInit>true</chartIsInit>
+  <elementsChart/>
+  <elementsLegend>
+    <left>0.83</left>
+    <top>0.08</top>
+  </elementsLegend>
+  <elementsTitle>
+    <left>0.83</left>
+    <bottom>0.92</bottom>
+  </elementsTitle>
+  <borderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </borderColor>
+  <border xsi:type="core:BorderDef">
+    <width>1</width>
+  </border>
+  <splineStrain>95</splineStrain>
+  <translucenceMode>Auto</translucenceMode>
+  <funnelNeckHeightPercent>10.0</funnelNeckHeightPercent>
+  <funnelNeckWidthPercent>10.0</funnelNeckWidthPercent>
+  <funnelGapSumPercent>3.0</funnelGapSumPercent>
+  <multiStageLinkLine>
+    <width>1</width>
+    <style>Solid</style>
+  </multiStageLinkLine>
+  <multiStageLinkColor xsi:type="core:ColorDef"/>
+  <rebuildTime>7020126</rebuildTime>
+  <valuesAxis>
+    <interval>
+      <leftIsNum>true</leftIsNum>
+      <rightIsNum>true</rightIsNum>
+    </interval>
+  </valuesAxis>
+  <pointsAxis>
+    <interval>
+      <leftIsNum>true</leftIsNum>
+      <rightIsNum>true</rightIsNum>
+    </interval>
+  </pointsAxis>
+  <bubbleSizeValueSource>NextSeries</bubbleSizeValueSource>
+  <bubbleSizeCommonSeries>-2</bubbleSizeCommonSeries>
+  <bubbleSizing>IncreaseArea</bubbleSizing>
+  <pointsScale>
+    <titleArea>
+      <location>Auto</location>
+      <font xsi:type="core:AutoFont"/>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+  </pointsScale>
+  <valuesScale>
+    <titleArea>
+      <location>Auto</location>
+      <font xsi:type="core:AutoFont"/>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <gridLinesShowMode>DontShow</gridLinesShowMode>
+    <scaleLabelLocation>None</scaleLabelLocation>
+    <labelOrientation>Auto</labelOrientation>
+    <scaleLine>
+      <width>1</width>
+      <style>Solid</style>
+    </scaleLine>
+    <scaleStep>1</scaleStep>
+  </valuesScale>
+  <seriesScale>
+    <titleArea>
+      <location>Auto</location>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <labelOrientation>Auto</labelOrientation>
+  </seriesScale>
+  <colorPaletteDescription>
+    <colorPalette>Auto</colorPalette>
+  </colorPaletteDescription>
+  <referenceBandsColorPaletteDescription>
+    <colorPalette>Auto</colorPalette>
+  </referenceBandsColorPaletteDescription>
+  <valuesReferenceLines>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>0</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>&lt;=100</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>1</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>&lt;=30</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <left>0.0</left>
+        <top>0.2</top>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>2</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>&lt;=10</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>3</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>5</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>4</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>4</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>5</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>3</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>6</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>2</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>7</value>
+      </value>
+      <labelText>
+        <key>ru</key>
+        <value>1</value>
+      </labelText>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+    <chartReferenceLine>
+      <value xsi:type="core:NumberValue">
+        <value>8</value>
+      </value>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <line>
+        <width>2</width>
+        <style>Dotted</style>
+      </line>
+      <color xsi:type="core:ColorDef">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+    </chartReferenceLine>
+  </valuesReferenceLines>
+  <pointsReferenceLines/>
+  <valuesReferenceBands>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>-1</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>0</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>80</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>0</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>1</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>100</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>1</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>2</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>120</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>2</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>3</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>140</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>3</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>4</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>160</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>4</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>5</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>180</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>5</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>6</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>200</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>6</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>7</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>220</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+    <chartReferenceBand>
+      <begin xsi:type="core:NumberValue">
+        <value>7</value>
+      </begin>
+      <end xsi:type="core:NumberValue">
+        <value>8</value>
+      </end>
+      <labelArea>
+        <location>Auto</location>
+        <font xsi:type="core:AutoFont"/>
+        <transparent>true</transparent>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+        <marker>Auto</marker>
+        <orientation>Auto</orientation>
+      </labelArea>
+      <color xsi:type="core:ColorDef">
+        <red>240</red>
+        <green>248</green>
+        <blue>255</blue>
+      </color>
+      <semitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <border>
+        <width>1</width>
+      </border>
+      <borderSemitransparencyPercent xsi:type="core:UndefinedValue"/>
+      <details xsi:type="core:UndefinedValue"/>
+      <displayAreaEnd>1.0</displayAreaEnd>
+    </chartReferenceBand>
+  </valuesReferenceBands>
+  <pointsReferenceBands/>
+  <legendPlacement>None</legendPlacement>
+  <plotAreaPlacement>UseCoordinates</plotAreaPlacement>
+  <additionalValuesScale>
+    <titleArea>
+      <location>Auto</location>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <labelOrientation>Auto</labelOrientation>
+  </additionalValuesScale>
+  <additionalValuesAxis>
+    <interval>
+      <leftIsNum>true</leftIsNum>
+      <rightIsNum>true</rightIsNum>
+    </interval>
+  </additionalValuesAxis>
+</chart:Chart>

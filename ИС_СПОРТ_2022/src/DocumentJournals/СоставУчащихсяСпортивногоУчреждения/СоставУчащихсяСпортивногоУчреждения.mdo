@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7526eb5a-1234-4bf1-9739-a0add1273d3c">
+  <producedTypes>
+    <selectionType typeId="cf940ffe-b759-41ef-a7ea-f98897b4c02f" valueTypeId="887ea903-a8e3-4111-b79a-9637d9f323ce"/>
+    <listType typeId="b302a6e6-3b91-4874-92df-f62f2a09b160" valueTypeId="b60e43b2-2e22-4d23-a7e6-e5a8d5070d18"/>
+    <managerType typeId="fe04930d-b594-439f-aed7-9515bbb82c80" valueTypeId="5caf4cc0-df9b-4952-a61c-5e16196b6b00"/>
+  </producedTypes>
+  <name>СоставУчащихсяСпортивногоУчреждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав учащихся спортивного учреждения</value>
+  </synonym>
+  <defaultForm>DocumentJournal.СоставУчащихсяСпортивногоУчреждения.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ИсключениеИзСпортивногоУчреждения</registeredDocuments>
+  <registeredDocuments>Document.ЗаявленияНаПриемВСпортивноеУчреждение</registeredDocuments>
+  <columns uuid="d199027b-2e21-4abd-88c5-1d97dc7a0e35">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.ДатаДокумента</references>
+  </columns>
+  <columns uuid="2345c68d-b873-4415-8af9-cfffcf2e1534">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.НомерДокумента</references>
+  </columns>
+  <columns uuid="c62b2393-a0c6-4f22-a9b2-bd45791be9e7">
+    <name>КраткийСоставСпортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <references>Document.ИсключениеИзСпортивногоУчреждения.Attribute.КраткийСоставСпортсмены</references>
+    <references>Document.ЗаявленияНаПриемВСпортивноеУчреждение.Attribute.Спортсмен</references>
+  </columns>
+  <forms uuid="0f54aab0-b912-44eb-9f5b-fd8b31e8932f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="894038ed-d68f-4883-9781-a9f158773acb">
+    <name>СпортивноеУчреждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное учреждение</value>
+    </synonym>
+    <group>FormNavigationPanelImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Спортсмены</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

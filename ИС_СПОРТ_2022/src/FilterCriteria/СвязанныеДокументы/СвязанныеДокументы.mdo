@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15b10ba1-4565-45af-b776-943f5023f38b">
+  <producedTypes>
+    <listType typeId="4a50feab-f556-45eb-97f2-1c51d11e8ad0" valueTypeId="ea9d619c-8c28-4e0f-9205-8178e1c551da"/>
+    <managerType typeId="45bf0e06-5a14-4e80-8857-083573bbaf8b" valueTypeId="11b4a1f1-43bc-4011-8b1f-a5cce8bf6634"/>
+  </producedTypes>
+  <name>СвязанныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы</value>
+  </synonym>
+  <type>
+    <types>DocumentRef</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.ПротоколСоревнования.Attribute.ДокументОснование</content>
+  <content>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения.TabularSection.ЗависимостиДополнительныхРеквизитов.Attribute.Значение</content>
+</mdclass:FilterCriterion>

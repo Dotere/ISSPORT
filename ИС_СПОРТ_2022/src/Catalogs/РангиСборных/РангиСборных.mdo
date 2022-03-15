@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34dcd27c-8a10-479a-ac3a-ce505933004f">
+  <producedTypes>
+    <objectType typeId="275d655d-80e1-4cac-a7b8-5aef917f980e" valueTypeId="41287abb-8259-449e-8c18-d1e2150f6b92"/>
+    <refType typeId="7e0c0024-3663-4c8b-a434-4d0a135071f3" valueTypeId="9f8a8b28-8b10-467f-b37f-e25a93a57db8"/>
+    <selectionType typeId="1320ca46-0b22-4943-857e-a1fbcbe3401b" valueTypeId="09806acc-be25-4397-b7e4-33333b114b8d"/>
+    <listType typeId="e7b044f5-c949-496a-98c2-2353d615d0dd" valueTypeId="8831ae1e-80bb-4f3e-9d87-cc2751419247"/>
+    <managerType typeId="d7ef6fc7-5da5-4363-9e82-4ef8dc7e6d58" valueTypeId="b3acac8b-ff9c-461a-8809-fc7f409abb0b"/>
+  </producedTypes>
+  <name>РангиСборных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ранги сборных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РангиСборных.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РангиСборных.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="aed43d67-e42b-4ab5-a184-8daea7febe71">
+      <name>Всероссийские</name>
+      <description>Всероссийские</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="0273bc6f-4e3f-4e95-b861-b5c17037f8e3">
+        <name>СборнаяРоссии</name>
+        <description>Сборная России</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+    </items>
+    <items id="f0633f6c-c515-4a70-a464-3691e281be41">
+      <name>Межрегиональные</name>
+      <description>Межрегиональные</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="2c04f075-b718-48c0-b108-8dcd9b0c5e34">
+        <name>СборнаяДальневосточногоФедеральногоОкругаДВФО</name>
+        <description>Сборная Дальневосточного федерального округа (ДВФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000010</value>
+        </code>
+      </content>
+      <content id="a8f66d82-61f5-42aa-99cc-56be052ebae0">
+        <name>СборнаяПриволжскогоФедеральногоОкругаПФО</name>
+        <description>Сборная Приволжского федерального округа (ПФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000009</value>
+        </code>
+      </content>
+      <content id="0e41d7f8-9809-456b-84f8-1bd706cf25fb">
+        <name>СборнаяСевероЗападногоФедеральногоОкругаСЗФО</name>
+        <description>Сборная Северо-Западного федерального округа (СЗФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="2eb0d600-2682-4637-ae20-4282dc101167">
+        <name>СборнаяСевероКавказскогоФедеральногоОкругаСКФО</name>
+        <description>Сборная Северо-Кавказского федерального округа (СКФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000011</value>
+        </code>
+      </content>
+      <content id="bb396d11-3c0a-4440-af8d-783aa50451e4">
+        <name>СборнаяСибирскогоФедеральногоОкругаСФО</name>
+        <description>Сборная Сибирского федерального округа (СФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+      <content id="142367d5-23d7-4cac-8e6b-7a8fadfc0ef1">
+        <name>СборнаяУральскогоФедерльногоОкругаУрФО</name>
+        <description>Сборная Уральского федерльного округа (УрФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000012</value>
+        </code>
+      </content>
+      <content id="0d866667-03b4-4f9c-ae12-0aeb916ae679">
+        <name>СборнаяЦентральногоФедеральногоОкругаЦФО</name>
+        <description>Сборная Центрального федерального округа (ЦФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="cd6a8a05-792a-48ba-8e68-d0f6646d34b8">
+        <name>СборнаяЮжногоФедеральногоОкругаЮФО</name>
+        <description>Сборная Южного федерального округа (ЮФО)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000008</value>
+        </code>
+      </content>
+    </items>
+    <items id="2a87df2d-5a09-49dc-922f-5bc439e8e57e">
+      <name>ФедеральныеИМуниципальные</name>
+      <description>Федеральные и муниципальные</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="03195b6e-414c-4db9-90ea-b3b004fca1b2">
+        <name>СборнаяАвтономногоОкруга</name>
+        <description>Сборная автономного округа</description>
+        <code xsi:type="core:StringValue">
+          <value>000000014</value>
+        </code>
+      </content>
+      <content id="c52709be-3571-4e7c-83ff-38da4212ee79">
+        <name>СборнаяАвтономнойОбласти</name>
+        <description>Сборная автономной области</description>
+        <code xsi:type="core:StringValue">
+          <value>000000013</value>
+        </code>
+      </content>
+      <content id="576ecdce-bf02-4cbf-b673-f53596847bf7">
+        <name>СборнаяГорода</name>
+        <description>Сборная города</description>
+        <code xsi:type="core:StringValue">
+          <value>000000015</value>
+        </code>
+      </content>
+      <content id="ea314835-cfe9-4f12-99f5-b1e2e9bec5b4">
+        <name>СборнаяКрая</name>
+        <description>Сборная края</description>
+        <code xsi:type="core:StringValue">
+          <value>000000016</value>
+        </code>
+      </content>
+      <content id="0f42009c-fccb-4f9f-bd88-9eea616c4f32">
+        <name>СборнаяОбласти</name>
+        <description>Сборная области</description>
+        <code xsi:type="core:StringValue">
+          <value>000000017</value>
+        </code>
+      </content>
+      <content id="0b5efc67-743c-495a-bb23-63590f9ed9d5">
+        <name>СборнаяРеспублики</name>
+        <description>Сборная республики</description>
+        <code xsi:type="core:StringValue">
+          <value>000000018</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

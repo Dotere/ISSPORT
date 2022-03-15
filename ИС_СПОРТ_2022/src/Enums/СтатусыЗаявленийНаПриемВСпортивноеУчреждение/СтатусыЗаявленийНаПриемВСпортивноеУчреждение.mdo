@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9da59303-488e-45ec-8127-783541ea3424">
+  <producedTypes>
+    <refType typeId="ff33f621-6c1b-4414-936e-97655b4b9506" valueTypeId="7fbacbd1-5aaa-46af-bf1b-12b96ade1118"/>
+    <listType typeId="fb8e6c6a-4d52-415f-9bca-d66ea3d90744" valueTypeId="8ed42f12-c606-4181-85cf-19d55ed8dd1c"/>
+    <managerType typeId="adc9bc27-e132-49d9-9018-1cd44534e4e3" valueTypeId="69c951d4-52d4-4792-a269-12fceea1d351"/>
+  </producedTypes>
+  <name>СтатусыЗаявленийНаПриемВСпортивноеУчреждение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявлений на прием в спортивное учреждение</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6880649d-51a9-41fc-9409-72d0971ff9ef">
+    <name>Подготовлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подготовлено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2f1f5970-da00-4ce6-b65e-427c387a0e38">
+    <name>Принято</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принято</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="856f18ad-b3e8-4261-9a15-1dbc0504a75c">
+    <name>Отменено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

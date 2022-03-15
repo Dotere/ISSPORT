@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9c7e2e4-fcb1-4709-a62d-f938fe68edf6">
+  <producedTypes>
+    <objectType typeId="9ae17da1-2f04-4149-90ba-0cabdbc22a19" valueTypeId="e8504489-9990-4140-8f4f-ac2903040894"/>
+    <refType typeId="81f644ad-9760-4704-834a-17aff3169782" valueTypeId="a07cffbd-5629-4ad7-973f-4ad469a7917b"/>
+    <selectionType typeId="7f3b6bb8-fe41-46c0-8489-389241f60ce0" valueTypeId="df186b9d-90c5-49e7-aab7-097d03b2abae"/>
+    <listType typeId="442180f2-35cc-49bd-b548-24bc7cb3851c" valueTypeId="05590cc5-85ea-4aba-a53a-36979e804924"/>
+    <managerType typeId="203b35b0-c052-4f03-8a2b-c3d8da087705" valueTypeId="46161d7a-063b-4455-bdcf-2bf03fda6631"/>
+  </producedTypes>
+  <name>ЦелиПроведенияРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цели проведения рейтинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЦелиПроведенияРейтинга.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЦелиПроведенияРейтинга.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Цель проведения рейтинга</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЦелиПроведенияРейтинга.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="3ba9d93b-0c2a-4c53-b832-ee3aaff7ab82">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f1bb94fa-aafc-4611-b41a-890cc1c62ee7">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

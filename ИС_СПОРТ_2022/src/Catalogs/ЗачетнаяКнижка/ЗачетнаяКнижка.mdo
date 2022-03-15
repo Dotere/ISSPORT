@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0ac0ca6-ad57-459e-b910-fcfad44f6a67">
+  <producedTypes>
+    <objectType typeId="673a615f-6f6e-40c9-9ee8-e5c98444b0c7" valueTypeId="5d0109b0-4e71-429f-9566-6eb4c24fbcfb"/>
+    <refType typeId="66bb2a6d-6a6e-4f3c-b817-f75470852ce1" valueTypeId="ff51d8e2-5b0d-4368-954c-676deba0292f"/>
+    <selectionType typeId="18343cb3-6e46-4ebb-86a1-438dd00d721e" valueTypeId="b82212d6-5b69-449f-aed7-ea5c60411fc0"/>
+    <listType typeId="088bacc5-4569-4808-bed5-85644ac89d9d" valueTypeId="4ad3dbed-388b-43f7-a316-de16ce96c436"/>
+    <managerType typeId="bca8b4eb-e52d-44ab-86de-61e726f4b610" valueTypeId="7a239e89-8d15-4a69-bcf6-5505e40bd97b"/>
+  </producedTypes>
+  <name>ЗачетнаяКнижка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зачетная книжка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗачетнаяКнижка.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗачетнаяКнижка.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Спортсмены</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>10</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЗачетнаяКнижка.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="8b3ad825-c056-4cda-810c-dbb4e2aee7bb">
+    <name>ДатаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2b124cee-4634-45fd-b1bf-72c6a1e223fe">
+    <name>ДатаАннулирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата аннулирования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc04e93b-1ccf-460c-aa6a-6d6d18af70c5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегестрировано в</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="703e9941-4da2-4af3-aae1-1c9e4bcf6ce8">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

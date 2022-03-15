@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="680499c4-61f5-4ecf-a7b5-75bcefc4cdd1">
+  <name>РегистрацияРезультатовСоревнований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация результатов соревнований</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ЗаявкаНаПроведениеСоревнования</content>
+  <content>Document.Соревнование</content>
+  <content>Document.ПротоколСоревнования</content>
+  <content>Document.РегистрацияДостиженийСпортсменов</content>
+  <content>AccumulationRegister.ДостиженияСпортсменов</content>
+  <content>Catalog.ХарактеристикиДостиженийСпортсменов</content>
+  <parentSubsystem>Subsystem.ПроведениеСоревнованийФормированиеРейтингов</parentSubsystem>
+</mdclass:Subsystem>

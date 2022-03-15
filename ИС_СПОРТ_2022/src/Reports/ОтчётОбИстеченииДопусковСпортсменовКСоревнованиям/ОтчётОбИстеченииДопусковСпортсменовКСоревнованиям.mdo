@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c17bf864-ac28-4a96-bb41-aaf68c086144">
+  <producedTypes>
+    <objectType typeId="0ca96d92-fdce-430d-b5cb-dde3be4b1b18" valueTypeId="ca8f6790-148b-4755-a644-915beba198c8"/>
+    <managerType typeId="5dba5fc9-c0ca-4161-86cf-0d011d5b5685" valueTypeId="059c7a7b-68a8-4ce1-8ba7-46fc8e40da06"/>
+  </producedTypes>
+  <name>ОтчётОбИстеченииДопусковСпортсменовКСоревнованиям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет об истечении допусков спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчётОбИстеченииДопусковСпортсменовКСоревнованиям.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчётОбИстеченииДопусковСпортсменовКСоревнованиям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <forms uuid="d1f50185-b55b-4d09-aabb-106876a14bb6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3a93ff45-f423-4593-9c3d-ec1a3fe3d27f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

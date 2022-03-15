@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c646e0f-d851-430c-9a38-b005517173b2">
+  <producedTypes>
+    <refType typeId="dcba40be-c9ea-4402-b9ec-7b0d1b2a1c8c" valueTypeId="27eae353-bfce-4b38-911a-752a12a2c11b"/>
+    <listType typeId="5f8c32d9-b2c7-48e3-b2ea-01cbca8b42fc" valueTypeId="dd4bc629-8045-4d29-a40d-35466ff9f679"/>
+    <managerType typeId="8e6e062b-dd2f-4f5a-a8b8-121d159a0e84" valueTypeId="76e2e773-540e-47f8-b414-35b490675018"/>
+  </producedTypes>
+  <name>ТипыРезультатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы результатов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d9215265-d72f-404f-8e3a-7526fed90b4f">
+    <name>Булево</name>
+    <synonym>
+      <key>ru</key>
+      <value>Булево</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d674698b-8bbf-408d-82e0-e67a1d13f633">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9ae7ad25-e2cd-4def-9348-0a906e0ab520">
+    <name>Число</name>
+    <synonym>
+      <key>ru</key>
+      <value>Число</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

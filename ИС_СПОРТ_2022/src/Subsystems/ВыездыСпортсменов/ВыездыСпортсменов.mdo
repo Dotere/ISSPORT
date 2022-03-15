@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e88077d-751c-4176-aa2d-d99ab0995430">
+  <name>ВыездыСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выезды спортсменов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ЕдиныйКалендарныйПлан</content>
+  <content>Document.ВыездСпортсменовНаМероприятие</content>
+  <content>InformationRegister.ЕдиныеКалендарныеПланы</content>
+  <content>InformationRegister.ВыездыСпортсменов</content>
+  <content>InformationRegister.ВыездыТренеров</content>
+  <content>Catalog.ВидыОтправления</content>
+  <content>Catalog.ВидыРасходов</content>
+  <content>Catalog.Финансирование</content>
+  <content>Report.ВыездыСпортсменовНаМероприятия</content>
+</mdclass:Subsystem>

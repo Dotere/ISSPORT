@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7f54ebf-2907-49f7-ab36-88cdfaf1de65">
+  <producedTypes>
+    <refType typeId="46f648b3-61f6-45e7-a3fa-9a47b79a34f7" valueTypeId="8d3cba33-ef3c-4a99-ab52-f455a474c7ac"/>
+    <listType typeId="48782824-22f7-4deb-8032-21d68126d4c2" valueTypeId="067a5f1a-755c-43b4-99fe-306bb18043bb"/>
+    <managerType typeId="643e8b5a-9f8a-4295-bec3-a557d7b2ffea" valueTypeId="92271f8f-a30a-4f58-b210-0f4cb2e2f387"/>
+  </producedTypes>
+  <name>Статусы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fed6b13e-650a-4303-baf6-48cad5edb38e">
+    <name>Открыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="232e0666-08ec-4ac4-9e74-bdd878e068c5">
+    <name>Закрыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

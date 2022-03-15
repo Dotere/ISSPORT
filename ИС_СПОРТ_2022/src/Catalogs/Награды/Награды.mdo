@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8644d8b3-f60e-4458-956d-8d892d5ecd86">
+  <producedTypes>
+    <objectType typeId="388e11bc-08e6-4b9c-a4a9-c2a146ef7333" valueTypeId="54710086-8ebb-4574-976f-d11ccb5328b1"/>
+    <refType typeId="da1c3aec-98b7-46c1-a7b6-7409cc45de93" valueTypeId="c91005c9-054c-4baf-9f57-7ee16678588c"/>
+    <selectionType typeId="2bb8a587-eb5b-454a-ad95-a878a88478db" valueTypeId="a995dfd4-c43d-4088-ad14-89816bddb7b3"/>
+    <listType typeId="bc591718-ee0f-4672-9ad0-9dae618a8580" valueTypeId="7c3e344e-e5b9-459a-93e5-9c2175b42dc3"/>
+    <managerType typeId="caf1c416-afaa-4d4f-a185-6e585810a51c" valueTypeId="a1708179-665c-4356-8771-74431a101915"/>
+  </producedTypes>
+  <name>Награды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Награды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Награды.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Награды.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="31fef69a-b1dc-4341-83d1-f607fd41f216">
+      <name>БлагодарностьМинистраСпортаРоссийскойФедерации</name>
+      <description>Благодарность Министра спорта Российской Федерации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="18f26698-c0d9-4c40-8f1f-4a48ab4b9106">
+      <name>ЗнакОтличияМинистерстваСпортаРоссийскойФедерацииПочетныйНаставник</name>
+      <description>Знак отличия Министерства спорта Российской Федерации &quot;Почетный наставник&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="f25d22c9-f94a-4ef1-a162-1e87700023b4">
+      <name>МедальНиколаяОзерова</name>
+      <description>Медаль Николая Озерова</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="f02b63d9-6377-4ab0-a6ef-d92b12f958cf">
+      <name>МедальПетраЛесгафта</name>
+      <description>Медаль Петра Лесгафта</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="6dda1bbc-ae0a-4835-8b35-6c66b739fdab">
+      <name>НагрудныйЗнакЗаслуженныйМастерСпортаРоссии</name>
+      <description>Нагрудный знак &quot;Заслуженный мастер спорта России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="341c830a-77ac-4813-a6a7-5746bfb5b659">
+      <name>НагрудныйЗнакЗаслуженныйТренерРоссии</name>
+      <description>Нагрудный знак &quot;Заслуженный тренер России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="abb9419b-dc71-4711-958d-b8bca55f318f">
+      <name>НагрудныйЗнакОтличникФизическойКультурыИСпорта</name>
+      <description>Нагрудный знак &quot;Отличник физической культуры и спорта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="dd0ee141-449a-4c9a-bd9e-e73119996346">
+      <name>НагрудныйЗнакПочетныйСпортивныйСудьяРоссии</name>
+      <description>Нагрудный знак &quot;Почетный спортивный судья России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="a3544a28-acd1-4d91-8f46-337d02c39d21">
+      <name>ПочетнаяГрамотаМинистерстваСпортаРоссийскойФедерации</name>
+      <description>Почетная грамота Министерства спорта Российской Федерации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="5f2ae8de-0d78-4f97-add6-65253dd0e9f9">
+      <name>ПочетныйЗнакЗаЗаслугиВРазвитииФизическойКультурыИСпорта</name>
+      <description>Почетный знак &quot;За заслуги в развитии физической культуры и спорта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

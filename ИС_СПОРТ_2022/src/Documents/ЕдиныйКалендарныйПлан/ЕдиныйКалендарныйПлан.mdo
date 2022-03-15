@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dea7492-f1f5-413e-9c42-465d36f0bccb">
+  <producedTypes>
+    <objectType typeId="4242be49-fa1f-4d50-a272-f55d541443a5" valueTypeId="a546df84-21b0-45de-b086-ea203d3aacba"/>
+    <refType typeId="6a3f859f-1bf8-4703-b528-5f22332cb43e" valueTypeId="a145e714-48db-48c7-a04b-44ab80294a68"/>
+    <selectionType typeId="4ab6107c-3663-42eb-a9e5-496e31cb0d5a" valueTypeId="52e23d97-936e-4470-9376-cd906a18078d"/>
+    <listType typeId="4669c950-594c-4dfa-8f9a-873d6386f9cd" valueTypeId="a8f74328-0466-446c-801e-b936d968665a"/>
+    <managerType typeId="f7965acb-9a65-4a17-87aa-437a5ba96065" valueTypeId="6ebdbf70-0c28-4f18-b4b3-4859a7f3e9db"/>
+  </producedTypes>
+  <name>ЕдиныйКалендарныйПлан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Единый календарный план</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЕдиныйКалендарныйПлан.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Единый календарный план</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Единые календарные планы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЕдиныйКалендарныйПлан.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЕдиныйКалендарныйПлан.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.ЕдиныеКалендарныеПланы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="9919860d-9220-469c-91c0-ed902a5f3188">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fc7efa99-79c4-49ad-880a-aaa810422864">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9cc2e80b-3340-435d-bd48-8d416754bd16">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="04bd4e59-bf15-4d1f-97e9-941eb3d72057">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a65f93ab-ec9e-4040-9b0a-517d1a1511a7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="707d8b0e-c42c-405a-80a6-ba27121827d3">
+    <name>ФормаДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма добавления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6c130c4-49bf-4f21-9ce2-69cd99f00d08">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="cf7b8962-d601-4e70-be9e-27dab6cdc393">
+    <producedTypes>
+      <objectType typeId="213413f0-9d49-4df2-bde3-ffc00df647bb" valueTypeId="9ff5d389-67ab-4c2f-b053-7f62b90a9db6"/>
+      <rowType typeId="9d67c8a4-1d4b-443d-9b48-252f07324e5b" valueTypeId="aa664acb-6bf6-4caa-9457-78ca2011c9e6"/>
+    </producedTypes>
+    <name>ЕКП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕКП</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="99250229-0a73-47f2-975e-15291aea1685">
+      <name>ВидСпорта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид спорта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыСпорта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7e7cae70-f247-4b17-81ab-fb8ba855d885">
+      <name>Соревнование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Соревнование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Соревнование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dfd7c57c-1563-4cc5-89fb-bc5bdd20aa25">
+      <name>НаименованиеОрганизаторов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование организаторов</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ОрганизаторыСоревнований</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="95d6007c-d065-46e1-8c9a-401c89474096">
+      <name>КоличествоУчастников</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество участников</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f2916197-a633-458d-8313-1371f18ba14a">
+      <name>КоличествоТренеров</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество тренеров</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ed2ebbcf-2cbc-4fee-a915-1cea2083db49">
+      <name>Финансирование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Финансирование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Финансирование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5c68399e-5edb-4ba2-a7d8-9de8be884dab">
+      <name>МестоПроведения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Место проведения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e53bc817-2381-4373-ae23-225ca9cf5dfb">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="751f047d-6e21-44db-9e52-e5c705823ef3">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d5ffa896-fa59-4c32-9228-b0d2449f59a0">
+      <name>НомерСоревнования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ЕКП</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a650a435-c6e0-44e4-86b2-e5bc21d046bf">
+      <name>Город</name>
+      <synonym>
+        <key>ru</key>
+        <value>Город</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="1425250c-58e5-4b15-855b-76e1004ece51">
+    <name>ЕКПТабДок</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕКПТаб док</value>
+    </synonym>
+  </templates>
+  <commands uuid="7083f708-37ab-40a6-85b4-61865888b736">
+    <name>ЕКП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕКП</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>DocumentRef.ЕдиныйКалендарныйПлан</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

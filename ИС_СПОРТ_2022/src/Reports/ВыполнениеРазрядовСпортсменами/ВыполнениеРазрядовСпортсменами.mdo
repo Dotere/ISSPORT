@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a3695ff-33c5-452c-a26b-c3434d589fdf">
+  <producedTypes>
+    <objectType typeId="0b96d1cb-85d3-4589-96bf-246f4e368f1d" valueTypeId="3a25582f-ed2d-4079-84a1-8b3512b3ffbe"/>
+    <managerType typeId="72463cec-72d0-4681-9b1b-1cb092b54216" valueTypeId="ed2fc2fe-6df9-461a-9c52-bba29c6705d2"/>
+  </producedTypes>
+  <name>ВыполнениеРазрядовСпортсменами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные о выполнении нормативов и требований на присвоение разрядов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВыполнениеРазрядовСпортсменами.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="13219fcd-0eb1-4b7f-a481-d34124e63b96">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

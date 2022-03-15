@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e8d580f-0088-4428-9ef8-c63b059260a1">
+  <producedTypes>
+    <objectType typeId="5240e0e9-9b70-4a01-bac0-fed8c01a27a6" valueTypeId="eb9e0b75-1ec3-4449-82d4-80825e1b7e70"/>
+    <managerType typeId="136e7fea-6934-4366-9f91-2aa5c71c5b94" valueTypeId="cb4380e3-a3dc-45b7-a7c3-dd3463702348"/>
+  </producedTypes>
+  <name>ДанныеПоСпортивнымРазрядамИЗваниям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные по спортивным разрядам и званиям</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДанныеПоСпортивнымРазрядамИЗваниям.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДанныеПоСпортивнымРазрядамИЗваниям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="51f80492-2897-4d3d-88c1-81b489faf556">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c233ef9a-4aca-4e96-b169-de4212449f31">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cfc0862d-cbfc-4a4d-98a0-423816d89032">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

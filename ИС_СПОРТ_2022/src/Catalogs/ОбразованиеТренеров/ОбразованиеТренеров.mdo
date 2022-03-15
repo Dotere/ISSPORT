@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a758b04-4605-4032-9e05-a73798a5eac6">
+  <producedTypes>
+    <objectType typeId="efae5996-d688-4ca8-b069-42030ca6ea9c" valueTypeId="30e244ff-84a2-47e1-9954-e1ee16849ece"/>
+    <refType typeId="3c61fe67-7d18-48d9-8b4d-d5f2e158cd9d" valueTypeId="9ce1eebb-67b5-4bb2-83b0-e1e2b6fe8599"/>
+    <selectionType typeId="cdd0d3bc-3530-4819-bbb5-7c26a6a1b5d8" valueTypeId="59b50d7b-c558-470d-badd-a20688c0b524"/>
+    <listType typeId="34efbb17-317d-417b-94e9-47baa957aa8d" valueTypeId="f617129f-0c1c-43a2-90e8-cb6fa981d615"/>
+    <managerType typeId="6e8d7830-a84b-484d-bb35-ad70b7bccc3e" valueTypeId="5f913bda-a826-436f-8bc5-31d819d9f3aa"/>
+  </producedTypes>
+  <name>ОбразованиеТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Образование</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ОбразованиеТренеров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ОбразованиеТренеров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Образование</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Образование</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Тренеры</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ОбразованиеТренеров.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ОбразованиеТренеров.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="85ce9233-58f4-47fc-b803-81648561ff55">
+    <name>ОсновноеОбразование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное образование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0b2a4ce2-fc9e-42d2-85cd-fd7c37211b24">
+    <name>ВидОбразования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид образования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыОбразования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8c8c448b-5a3c-4df7-8296-6b3c37396c02">
+    <name>ВидОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид обучения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОбучения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a3fa7f7e-3600-47ad-a7a6-4f23cf114c2d">
+    <name>УчебноеЗаведение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебное заведение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7dd200ad-7994-4b6f-b78f-c74773dd36cf">
+    <name>НачалоОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало обучения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="654675ea-a2b6-4584-b9ec-ccf36bef546a">
+    <name>ОкончаниеОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание обучения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2486ce90-edc6-4efc-851f-650e2753a391">
+    <name>ПродолжительностьОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжительность обучения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9aa0123e-5c47-4f8a-9125-3cfeaec7d228">
+    <name>Специальность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Специальность</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a7fe295d-ef21-47f4-85fe-3d0067203681">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e11d19cf-f971-48fb-82b7-7630f7b070d4">
+    <name>Квалификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квалификация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="728653c3-6495-499c-abcb-1f82ba0a48dd">
+    <name>НаименованиеКурса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование курса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e6336587-de33-4daa-ab69-276b26bb5621">
+    <name>КоличествоКурсов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество курсов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e0f1b185-b3a1-48cc-8f13-b6992212d42d">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыДокументовОбОбразовании</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="de6a18f7-d657-4d8c-a8b5-328ce1c2981c">
+    <name>Серия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10ceaf06-210a-43c6-b9cb-f297e0218179">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5963b23f-f606-4808-bf80-7a544953b4e5">
+    <name>ДатаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f7f77c1e-fee8-4e9b-a6a4-c27decc110d8">
+    <name>СрокДействияКвалификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия квалификации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="032c6c2e-45af-4e3f-bba4-a81f40b4bb3a">
+    <name>ФизкультурноеОбразование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физкультурное образование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4ef63a97-c000-43a9-a68a-cdbec4b1bf6f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d8451440-211c-499a-b6de-9e8a2f77a20c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

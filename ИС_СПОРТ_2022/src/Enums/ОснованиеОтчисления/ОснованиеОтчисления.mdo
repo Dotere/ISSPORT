@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d787fd47-dd20-4402-9e5c-5ad27bf31a9a">
+  <producedTypes>
+    <refType typeId="4ca0fcf9-bdff-4467-b2d9-491b14ebf07b" valueTypeId="e6d86bb4-7b18-488f-9764-1962eb90107e"/>
+    <listType typeId="fa28ecb5-cc7b-474d-96ca-0999443176f9" valueTypeId="4835308a-69f1-491b-890e-0fd246ff4220"/>
+    <managerType typeId="deabbb18-707f-4170-aa01-aef3d434c775" valueTypeId="feafa037-2c64-4eac-b1d7-d2318f44c1be"/>
+  </producedTypes>
+  <name>ОснованиеОтчисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основание отчисления</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c3a290b5-35c0-4fd6-b843-ba28079f4b3b">
+    <name>ЛичноеЗаявление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Личное заявление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="27855999-18c8-4d4b-be3d-1d548b4ea4f5">
+    <name>ЗаявлениеРодителейИлиЗаконныхПредставителей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление родителей, законных представителей</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="892ae68d-ae3e-4200-81f0-2d889348dcd7">
+    <name>ЗаявлениеТренера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление тренера</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2185b60c-49ea-4782-9a9d-86f976649b74">
+    <name>ОкончаниеПрохожденияСпортивнойПодготовки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание прохождения спортивной подготовки</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

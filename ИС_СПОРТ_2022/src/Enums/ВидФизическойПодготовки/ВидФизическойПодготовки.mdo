@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2d4eee2-b335-40b8-8965-2c804aa44d1c">
+  <producedTypes>
+    <refType typeId="4d2506eb-d6c1-4ad9-a88e-afb229e4aae0" valueTypeId="fd2592c9-c4bb-417c-aa24-1d83586e6520"/>
+    <listType typeId="ecdb3d33-76b9-4d26-84e0-3787baa8b978" valueTypeId="d5ee8567-e62a-4a5b-aa77-633825be6630"/>
+    <managerType typeId="e94a4d29-f864-4ed6-abd1-5a62cc4aab38" valueTypeId="b3392ed5-2359-4b58-8688-d7b99a043b8e"/>
+  </producedTypes>
+  <name>ВидФизическойПодготовки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид физической подготовки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e709815d-59bb-40a4-835b-5b89bf573844">
+    <name>Общая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="01d7ce8a-43e6-408f-9551-7643872e9d0d">
+    <name>Специальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Специальная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7e4738c6-6d90-41d6-8b7b-3a51f9265476">
+    <name>Техническая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техническая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

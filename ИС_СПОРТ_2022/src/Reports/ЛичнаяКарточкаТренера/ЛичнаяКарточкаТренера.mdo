@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37a0585b-a498-494c-aa6a-4ec0220f6bf5">
+  <producedTypes>
+    <objectType typeId="f7b96283-286c-4fb2-bc96-15e4e39d441f" valueTypeId="84c18245-94c4-4640-b076-6a982b75d0a1"/>
+    <managerType typeId="6a2bfed6-2cf2-488c-8a52-39085fef450a" valueTypeId="77f96498-9b73-492c-8daf-fa617cd695a0"/>
+  </producedTypes>
+  <name>ЛичнаяКарточкаТренера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Личная карточка тренера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЛичнаяКарточкаТренера.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="a25feb20-6f35-4aa6-a010-d6de5ff7dbb7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="be60c759-79c4-437b-8484-6483b434821b">
+    <name>ОсновныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные данные</value>
+    </synonym>
+  </templates>
+  <commands uuid="bdad10fb-7d66-4a8a-b501-1061090f5d6a">
+    <name>ЛичнаяКарточкаТренера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Личная карточка тренера</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Тренеры</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

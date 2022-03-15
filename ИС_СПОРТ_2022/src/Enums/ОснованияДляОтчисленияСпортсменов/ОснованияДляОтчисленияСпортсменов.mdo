@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="567b9a78-ada6-498b-9897-f4243a199b82">
+  <producedTypes>
+    <refType typeId="395702af-19cf-4f46-bb89-d3c714c5ba8e" valueTypeId="abd5cec2-ca63-4b6c-a563-2a125900a27c"/>
+    <listType typeId="beb9824b-8272-4708-b9ec-e5631d65c95e" valueTypeId="9b3aa6b0-6c7b-4a82-a6c7-36a841852f0a"/>
+    <managerType typeId="0ce05b4d-2e79-499c-b1ef-6c0e7805fb6e" valueTypeId="a096ca19-5704-43c9-9ec4-4b1e958e251c"/>
+  </producedTypes>
+  <name>ОснованияДляОтчисленияСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основания для отчисления спортсменов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="92c4ecc4-6b44-4c91-9ea0-423cd7177c36">
+    <name>ПереводВДругуюГруппу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевод в другую группу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c0329f08-9d06-42d9-894a-545875dbfb4a">
+    <name>ПереводНаСледующийУровеньПодготовки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевод на следующий уровень подготовки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8e3029b1-6f6e-46fa-ac0c-68016be93df6">
+    <name>Исключение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исключение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

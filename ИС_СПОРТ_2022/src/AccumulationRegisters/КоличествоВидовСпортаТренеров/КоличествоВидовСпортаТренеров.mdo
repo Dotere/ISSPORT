@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97844080-75a6-400f-90db-661d043fa522">
+  <producedTypes>
+    <selectionType typeId="12322bf4-5766-4765-a57a-5ca341a03a00" valueTypeId="37359b00-64f5-42a7-8044-5d7eb53e0327"/>
+    <listType typeId="2020fdbd-6290-4bd6-b5a0-dc0ffcc30d6e" valueTypeId="3116de4c-dd49-4aaf-b94b-8e2bf2f7ccdd"/>
+    <managerType typeId="382cb380-63ba-4633-a0f9-fcea5a8aa71a" valueTypeId="22e08fae-2db8-4a6c-8cac-859b44180622"/>
+    <recordSetType typeId="85a10dd6-2371-416b-aab4-6993930b8044" valueTypeId="5b36a1a8-6626-4a21-9521-19b01eec61a0"/>
+    <recordKeyType typeId="b6cb82bb-9d77-46ae-8d5b-405acb235d73" valueTypeId="cf0f1995-be8a-4bbb-9c48-5f7be705db95"/>
+    <recordType typeId="9f42837c-c376-4e83-ab2f-bbec4a2c0dc3" valueTypeId="dede4ee4-e14b-4505-8328-987e15ed490c"/>
+  </producedTypes>
+  <name>КоличествоВидовСпортаТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество видов спорта тренеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="338644bf-3b0d-4a8b-8656-216a28d9894d">
+    <name>КоличествоТренеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество тренеров</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a2d0957f-3a50-4942-b589-0b0cdeaeb9d6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="55b20fc6-e6d3-4966-b187-178c978a568f">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="256e711e-2caa-40ed-800e-fd0e522dac19">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="40d63ff4-49a4-49f2-bf8c-c51e2f96e116">
+    <name>ДатаВидаСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата вида спорта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

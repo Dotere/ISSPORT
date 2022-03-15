@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f6f94fa-c530-4b74-b118-a131fd9996f8">
+  <producedTypes>
+    <objectType typeId="bac681b1-ed6b-45a5-9001-9bab8475a35f" valueTypeId="70282a6e-9c40-4c02-9831-af7de632e70e"/>
+    <refType typeId="95845ffa-9bdf-4dc8-913a-d050b139de3b" valueTypeId="8a5e123a-5d28-4fd2-a6d0-4d91414f1cbc"/>
+    <selectionType typeId="8bed2b4a-4012-4cf6-aa88-73179d06b4cb" valueTypeId="b43e5a55-0cdf-4e62-8fb2-0ece719c4a10"/>
+    <listType typeId="a42db307-0f0c-4a31-96a7-1b1607caef2d" valueTypeId="e62f6f65-5e3a-47f7-ae59-489b2724e0c8"/>
+    <managerType typeId="5b101c79-5e49-4d21-8711-9a60895be3cd" valueTypeId="71e34c94-2f33-46d4-8bb5-171d524e0642"/>
+  </producedTypes>
+  <name>СпортивныеДисциплины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивные дисциплины</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СпортивныеДисциплины.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СпортивныеДисциплины.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Спортивные дисциплины</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ВидыСпорта</owners>
+  <codeLength>17</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СпортивныеДисциплины.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.СпортивныеДисциплины.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.СпортивныеДисциплины.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СпортивныеДисциплины.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="bc54b268-63e9-4588-a4f6-12e66077c22c">
+    <name>ДисциплинаПоРеестру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплина по реестру</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РеестрСпортивныхДисциплин</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="188d6d32-25c6-4438-9ccd-c1d314318c0c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="48bb5d17-7315-4442-8c46-db3b87900499">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2253ef41-94f6-47c8-b98f-16013c108495">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6f096a6e-bd1a-4b22-8462-c1703479eda1">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8f867635-a596-4243-8273-1794a448d4a1">
+    <name>ПредопределённыеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предопределённые данные</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

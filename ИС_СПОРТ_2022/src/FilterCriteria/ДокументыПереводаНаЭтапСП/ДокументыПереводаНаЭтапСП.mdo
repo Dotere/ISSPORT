@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="893c28dd-c366-4dda-ad78-c1182c28ffb9">
+  <producedTypes>
+    <listType typeId="dfeaaf99-40bc-4e64-bdbb-c9f103ea73d1" valueTypeId="8a792ca8-43cd-4f19-a405-f32d60f50079"/>
+    <managerType typeId="5149d63f-8290-4d2d-9a88-4dc1132b0140" valueTypeId="22f8ad8b-7298-4973-8ca6-dd1df5963fe0"/>
+  </producedTypes>
+  <name>ДокументыПереводаНаЭтапСП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы перевода на этап спортивной подготовки</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.РезультатыСдачиКонтрольноПереводныхНормативов</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.ЗачислениеСпортсменовНаЭтап.Attribute.ДокументОснование</content>
+  <content>Document.ПереводСпортсменовНаЭтап.Attribute.ДокументОснование</content>
+</mdclass:FilterCriterion>

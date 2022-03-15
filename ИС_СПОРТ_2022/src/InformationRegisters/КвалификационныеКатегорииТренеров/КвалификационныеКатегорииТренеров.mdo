@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8791e06c-830e-4d9d-913f-75570c736cc0">
+  <producedTypes>
+    <selectionType typeId="8834619b-87e9-4908-85ce-171dbb5c5f02" valueTypeId="f80a122b-287b-44f0-af21-5d1031f5f2c1"/>
+    <listType typeId="17a90ef8-25af-4ed8-9fc7-014244311c32" valueTypeId="d5f45c3a-0357-4461-8ba1-3878632390eb"/>
+    <managerType typeId="9e022908-0187-4c2d-a955-fe53d375be3b" valueTypeId="e4d51a9c-6817-4984-9a25-e2119f748aa2"/>
+    <recordSetType typeId="d743f5a4-4b93-48d1-9716-5d04e1cea69a" valueTypeId="880104b1-2356-40cf-a6fb-04a461df689f"/>
+    <recordKeyType typeId="9ff01a1f-9f0d-4896-a1df-6968e43e86e3" valueTypeId="adb5f440-2652-43b8-95b8-0ba22fdc0370"/>
+    <recordType typeId="e006588f-9f39-4827-9f15-7e55c6781454" valueTypeId="37dacb2c-19b8-43e6-bd04-7777b1549fa7"/>
+    <recordManagerType typeId="851f9e9f-3993-4d18-9ac9-d9015e294091" valueTypeId="e3ef590c-3663-4c10-ba37-fc8ec3921b38"/>
+  </producedTypes>
+  <name>КвалификационныеКатегорииТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Квалификационные категории тренеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КвалификационныеКатегорииТренеров.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КвалификационныеКатегорииТренеров.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4d06e070-78f1-4501-85d5-61e287e0b9d5">
+    <name>ДатаПрисвоения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата присвоения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f5ca869f-9e50-4bd4-883f-d6e2f05c6a4b">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="660b70e0-9c05-480e-a3bb-7c6d9479e32c">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fcb3c262-8c35-45b4-bfaa-b46e3497a496">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="407e48cd-ce3d-41c0-aaa7-a411b81de1ac">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КвалификационныеКатегорииТренеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="63c3f936-8510-4b0c-9a83-fc5af5a58549">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3b41b1fd-0f94-4b48-b782-1282aa7c56dd">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d5082693-3210-415e-ae6b-139b9869958b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3ae1eb90-9056-4b09-82a2-9b9f0faf6fb0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="58c70ae3-e478-4732-84c9-d757af43ef46">
+    <name>КвалификационнаяКатегория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квалификационная категория</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Тренеры</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

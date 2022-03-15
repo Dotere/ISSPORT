@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99685589-ffe7-487e-ab0a-6861fc156659">
+  <producedTypes>
+    <refType typeId="adfb8efe-aac7-4328-af67-19e018aee704" valueTypeId="a656081f-6138-48ff-8470-a109a92def16"/>
+    <listType typeId="2a37c248-623a-4bc8-b45e-48c7b08a0902" valueTypeId="b55150c4-e226-44b9-ba4a-6603b318c06c"/>
+    <managerType typeId="aa73b996-a978-4e41-acff-47348fa62013" valueTypeId="1f246079-0e74-4811-8f79-978d70f74dcc"/>
+  </producedTypes>
+  <name>ТипПодсчетаРезультата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип подсчета результата</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="03669784-08fa-4022-b6bf-63de19c05f99">
+    <name>СуммаПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма попыток</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="217e1ed1-38d7-4ed7-9293-a3a46916fbd1">
+    <name>МинимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальное значение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="22f7af3d-60ef-4cf7-b709-2a077d17fd84">
+    <name>МаксимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное значение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fe04aaf-9b4f-4dd1-8fc3-d3d0e0a2b984">
+  <name>ОбработкаПроведенияЗаявленияНаПриемВСпортивноеУчреждение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка проведения заявления на прием в спортивное учреждение</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЗаявленияНаПриемВСпортивноеУчреждение</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.СоответствиеФизическихЛицИОрганизацийСервер.ОбработкаПроведенияЗаявленияНаПриемВСпортивноеУчреждениеОбработкаПроведения</handler>
+</mdclass:EventSubscription>

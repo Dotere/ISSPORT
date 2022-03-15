@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыССМ</dataPath>
+			<field>ЭтапыССМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы ССМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапНП1</dataPath>
+			<field>ЭтапНП1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап н п1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапВСМ5</dataPath>
+			<field>ЭтапВСМ5</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ВСМ5</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапССМ3</dataPath>
+			<field>ЭтапССМ3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ССМ3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеОтчислен</dataPath>
+			<field>НеОтчислен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не отчислен</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапНП2</dataPath>
+			<field>ЭтапНП2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап н п2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапСОГ</dataPath>
+			<field>ЭтапСОГ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап СОГ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапНП3</dataPath>
+			<field>ЭтапНП3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап н п3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыОтчисленныеСОГ</dataPath>
+			<field>ЭтапыОтчисленныеСОГ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы отчисленные СОГ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапТ1</dataPath>
+			<field>ЭтапТ1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап т1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыОтчисленныеВСМ</dataPath>
+			<field>ЭтапыОтчисленныеВСМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы отчисленные ВСМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапТ2</dataPath>
+			<field>ЭтапТ2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап т2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапТ3</dataPath>
+			<field>ЭтапТ3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап т3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтчисленВЭтомГоду</dataPath>
+			<field>ОтчисленВЭтомГоду</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчислен в этом году</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапТ4</dataPath>
+			<field>ЭтапТ4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап т4</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапТ5</dataPath>
+			<field>ЭтапТ5</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап т5</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапССМ1</dataPath>
+			<field>ЭтапССМ1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ССМ1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапССМ2</dataPath>
+			<field>ЭтапССМ2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ССМ2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапССМ4</dataPath>
+			<field>ЭтапССМ4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ССМ4</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапССМ5</dataPath>
+			<field>ЭтапССМ5</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ССМ5</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапВСМ1</dataPath>
+			<field>ЭтапВСМ1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ВСМ1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапВСМ2</dataPath>
+			<field>ЭтапВСМ2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ВСМ2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапВСМ3</dataPath>
+			<field>ЭтапВСМ3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ВСМ3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапВСМ4</dataPath>
+			<field>ЭтапВСМ4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап ВСМ4</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыНП</dataPath>
+			<field>ЭтапыНП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы НП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыТ</dataPath>
+			<field>ЭтапыТ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы Т</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыВСМ</dataPath>
+			<field>ЭтапыВСМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы ВСМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыОтчисленныеНП</dataPath>
+			<field>ЭтапыОтчисленныеНП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы отчисленные НП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыОтчисленныеССМ</dataPath>
+			<field>ЭтапыОтчисленныеССМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы отчисленные ССМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапыОтчисленныеТ</dataPath>
+			<field>ЭтапыОтчисленныеТ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы отчисленные Т</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	ВЫБОР
+		КОГДА СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения МЕЖДУ &amp;НачалоГода И &amp;КонецГода
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтчисленВЭтомГоду,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчереждения
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(&amp;Период, ) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1)
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения МЕЖДУ &amp;НачалоГода И &amp;КонецГода)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_СоставУчереждения.Спортсмен КАК Спортсмен,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК НеОтчислен,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.СОГ)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапСОГ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапНП1,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП2)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапНП2,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП3)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапНП3,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапТ1,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т2)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапТ2,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т3)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапТ3,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т4)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапТ4,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т5)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапТ5,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапССМ1,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ2)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапССМ2,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ3)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапССМ3,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ4)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапССМ4,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ5)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапССМ5,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапВСМ1,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ2)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапВСМ2,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ3)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапВСМ3,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ4)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапВСМ4,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ5)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапВСМ5,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП3))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыНП,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т3)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т4)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т5))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыТ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ3)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ4)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ5))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыССМ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 0
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ3)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ4)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ5))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыВСМ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 1
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтчисленВЭтомГоду,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 1
+				И ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.СОГ)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыОтчисленныеСОГ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 1
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.НП3))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыОтчисленныеНП,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 1
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т3)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т4)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.Т5))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыОтчисленныеТ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 1
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ3)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ4)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ССМ5))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыОтчисленныеССМ,
+	ВЫБОР
+		КОГДА ВТ_СоставУчереждения.ОтчисленВЭтомГоду = 1
+				И (ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ1)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ2)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ3)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ4)
+					ИЛИ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ВСМ5))
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЭтапыОтчисленныеВСМ,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	ВТ_СоставУчереждения КАК ВТ_СоставУчереждения
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(&amp;Период, ) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+		ПО ВТ_СоставУчереждения.Спортсмен = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен
+			И ВТ_СоставУчереждения.ВидСпорта = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта
+ГДЕ
+	НЕ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Этапы.Спортсмен КАК Спортсмен,
+	ВТ_Этапы.НеОтчислен КАК НеОтчислен,
+	ВТ_Этапы.ЭтапСОГ КАК ЭтапСОГ,
+	ВТ_Этапы.ЭтапНП1 КАК ЭтапНП1,
+	ВТ_Этапы.ЭтапНП2 КАК ЭтапНП2,
+	ВТ_Этапы.ЭтапНП3 КАК ЭтапНП3,
+	ВТ_Этапы.ЭтапТ1 КАК ЭтапТ1,
+	ВТ_Этапы.ЭтапТ2 КАК ЭтапТ2,
+	ВТ_Этапы.ЭтапТ3 КАК ЭтапТ3,
+	ВТ_Этапы.ЭтапТ4 КАК ЭтапТ4,
+	ВТ_Этапы.ЭтапТ5 КАК ЭтапТ5,
+	ВТ_Этапы.ЭтапССМ1 КАК ЭтапССМ1,
+	ВТ_Этапы.ЭтапССМ2 КАК ЭтапССМ2,
+	ВТ_Этапы.ЭтапССМ3 КАК ЭтапССМ3,
+	ВТ_Этапы.ЭтапССМ4 КАК ЭтапССМ4,
+	ВТ_Этапы.ЭтапССМ5 КАК ЭтапССМ5,
+	ВТ_Этапы.ЭтапВСМ1 КАК ЭтапВСМ1,
+	ВТ_Этапы.ЭтапВСМ2 КАК ЭтапВСМ2,
+	ВТ_Этапы.ЭтапВСМ3 КАК ЭтапВСМ3,
+	ВТ_Этапы.ЭтапВСМ4 КАК ЭтапВСМ4,
+	ВТ_Этапы.ЭтапВСМ5 КАК ЭтапВСМ5,
+	ВТ_Этапы.ЭтапыНП КАК ЭтапыНП,
+	ВТ_Этапы.ЭтапыТ КАК ЭтапыТ,
+	ВТ_Этапы.ЭтапыССМ КАК ЭтапыССМ,
+	ВТ_Этапы.ЭтапыВСМ КАК ЭтапыВСМ,
+	ВТ_Этапы.ОтчисленВЭтомГоду КАК ОтчисленВЭтомГоду,
+	ВТ_Этапы.ЭтапыОтчисленныеСОГ КАК ЭтапыОтчисленныеСОГ,
+	ВТ_Этапы.ЭтапыОтчисленныеНП КАК ЭтапыОтчисленныеНП,
+	ВТ_Этапы.ЭтапыОтчисленныеТ КАК ЭтапыОтчисленныеТ,
+	ВТ_Этапы.ЭтапыОтчисленныеССМ КАК ЭтапыОтчисленныеССМ,
+	ВТ_Этапы.ЭтапыОтчисленныеВСМ КАК ЭтапыОтчисленныеВСМ,
+	ВТ_Этапы.ВидСпорта КАК ВидСпорта
+ИЗ
+	ВТ_Этапы КАК ВТ_Этапы</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>КонецГода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец года</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>КонецПериода(&amp;Период,"Год")</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоГода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало года</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>НачалоПериода(&amp;Период,"Год")</expression>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номер</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсмен</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">27</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">27</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Номер</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Спортсмен</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">27</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">27</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Спортсмен</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Номер</dcsat:name>
+			<dcsat:expression>СистемныеПоля.НомерПоПорядку</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Спортсмен</dcsat:name>
+			<dcsat:expression>Представление(Спортсмен)</dcsat:expression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupName>Шапка</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Данные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>2021-12-02T00:00:00</v8:date>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Шапка</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>Данные</dcsset:name>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Спортсмен</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

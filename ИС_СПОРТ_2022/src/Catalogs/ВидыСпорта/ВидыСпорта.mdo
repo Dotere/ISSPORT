@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e0a459c-5458-4fcd-923d-33214e0dd739">
+  <producedTypes>
+    <objectType typeId="86f5b3f0-1458-4173-b4f0-aeb12a0a8a0b" valueTypeId="a1ff3e9d-fda8-4195-8616-c44049ed7601"/>
+    <refType typeId="1677d7ee-98d9-4f02-88db-74d09016b164" valueTypeId="7ae70111-33e9-472d-a243-5aa6374133c9"/>
+    <selectionType typeId="3578cc39-8ccb-4a87-8dfa-573cf0c041d0" valueTypeId="6aa1594b-e5b5-4176-b1dd-b33d08017ffc"/>
+    <listType typeId="fcf97e4c-e0a0-4275-ba3d-8c1473f40096" valueTypeId="8c3edf6e-ec67-41a9-891e-1f8e30a5bb04"/>
+    <managerType typeId="3077bcf9-2c5e-42e3-9018-511a67cab0b9" valueTypeId="49442511-fd41-4aee-a39b-d4043445bbfa"/>
+  </producedTypes>
+  <name>ВидыСпорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды спорта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыСпорта.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыСпорта.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид спорта</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <subordinationUse>ToFoldersAndItems</subordinationUse>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыСпорта.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ВидыСпорта.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ВидыСпорта.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыСпорта.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="4027d3f7-1c4c-4309-8718-4d193b2be53a">
+    <name>ВидСпортаПоРеестру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта по реестру</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РеестрВидовСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="548a615e-fdda-4736-a014-68852e000491">
+    <name>АдаптивныйВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адаптивный вид спорта</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="621dd5b0-8f54-4e5c-8499-5e82daee827e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a460140d-8552-473a-ac4f-bb36a103d744">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="38a6ba3e-8a6c-4e84-adfa-3f6bdf675dce">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f216e57a-0674-49dc-86f1-8f343baeee0d">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df06a88a-ba26-4776-bc01-83efe7d8158c">
+    <name>ФормаВыбораСОтбором</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора с отбором</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

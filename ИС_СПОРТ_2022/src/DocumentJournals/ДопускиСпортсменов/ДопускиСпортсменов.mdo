@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="611fa029-a8d5-4c30-ac61-0efff0c8981a">
+  <producedTypes>
+    <selectionType typeId="7e3d69d1-3222-444b-82a3-1538ee350951" valueTypeId="3374d01a-d9c9-4184-97c1-94456fe4210b"/>
+    <listType typeId="c5393678-e34e-476b-af3b-cd3bd59c6416" valueTypeId="f726ffe7-a4be-4c87-8446-e06c62a1e382"/>
+    <managerType typeId="14d14300-3129-4a51-a3e6-cf8921d8c182" valueTypeId="5adf07bf-d1e2-4839-8879-a8507eed8981"/>
+  </producedTypes>
+  <name>ДопускиСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Допуски спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ДопускиУчастниковКСпортивнымСоревнованиям</registeredDocuments>
+  <listPresentation>
+    <key>ru</key>
+    <value>Медицинские допуски спортсменов к спортивной деятельности</value>
+  </listPresentation>
+  <columns uuid="23aa060b-e2af-41fc-bc7d-511f46d67118">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.ДопускиУчастниковКСпортивнымСоревнованиям.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="3b6093be-62e4-4e0a-b3b3-63793ffadccb">
+    <name>ВидДопуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид допуска</value>
+    </synonym>
+    <references>Document.ДопускиУчастниковКСпортивнымСоревнованиям.Attribute.ВидДопуска</references>
+  </columns>
+  <columns uuid="bc75a23f-7314-422f-8c54-fcb308f6d099">
+    <name>ДатаОкончанияДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания действия</value>
+    </synonym>
+    <references>Document.ДопускиУчастниковКСпортивнымСоревнованиям.Attribute.ДействуетДо</references>
+  </columns>
+  <columns uuid="34dbdd3e-05a9-410b-bc0f-cfa8b6afdfda">
+    <name>КраткийСоставСпортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <references>Document.ДопускиУчастниковКСпортивнымСоревнованиям.Attribute.КраткийСоставСпортсмены</references>
+  </columns>
+  <columns uuid="29b98371-926b-45fa-aaed-802ca905caa8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ДопускиУчастниковКСпортивнымСоревнованиям.Attribute.Организация</references>
+  </columns>
+</mdclass:DocumentJournal>

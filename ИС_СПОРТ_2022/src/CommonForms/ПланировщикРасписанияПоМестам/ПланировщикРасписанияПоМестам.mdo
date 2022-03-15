@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c4c8f4e-a680-420f-b213-afd63abdd3a1">
+  <name>ПланировщикРасписанияПоМестам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планировщик расписания по местам</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

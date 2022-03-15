@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c95e743a-8359-49af-96a0-e57f494c621a">
+  <producedTypes>
+    <objectType typeId="175e0cb0-1af5-46ee-b2a4-fa61f18bca99" valueTypeId="49040a1f-bfe0-4a22-a98b-7ed4ea1cb8cd"/>
+    <refType typeId="5e6af536-06c2-47c0-9a9c-86f34d5c02b6" valueTypeId="5a536927-6751-4778-9a07-16f3fa26797f"/>
+    <selectionType typeId="4e5f8d13-e761-4bb5-acf4-8513e9f339eb" valueTypeId="d0da6f9a-77c6-42d1-ad18-536fc485c322"/>
+    <listType typeId="78cce8df-6d9a-44c9-b3aa-2b03f2b82727" valueTypeId="8f2a95f9-a5ab-4893-ae1b-6b0e535b21f7"/>
+    <managerType typeId="a3d0ac6b-96e5-4fbf-aaa0-b62aa5c7224e" valueTypeId="aff91d54-a72f-42d7-a6d9-526173017b99"/>
+  </producedTypes>
+  <name>ЗачислениеСпортсменовНаЭтап</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зачисление спортсменов на этап спортивной подготовки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗачислениеСпортсменовНаЭтап.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Зачисление на этап спортивной подготовки</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Зачисления на этап спортивной подготовки</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗачислениеСпортсменовНаЭтап.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗачислениеСпортсменовНаЭтап.Form.ФормаСписка</defaultListForm>
+  <registerRecords>AccumulationRegister.КоличествоВидовСпортаТренеров</registerRecords>
+  <registerRecords>InformationRegister.ЭтапыСпортивнойПодготовкиСпортсменов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="59b8afa7-3062-461c-a5db-94a387ea55df">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f74f8ce-0e98-4d3c-b8cc-cb896f4e33b1">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f684e3c-3092-482a-a691-fd5a6afa2a19">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыСпортивнойПодготовки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <quickChoice>Use</quickChoice>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ac83da80-037f-4900-a5f1-3cd2465e3cf3">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b4a04558-3a39-43d7-bfbf-ee847e20bb0c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e59284e3-167f-4802-a51e-ee9e7499cab9">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a1ec9809-3d57-4391-891a-72a0d7272ba9">
+    <name>ДатаЗачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата зачисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6957d744-b110-4dce-a9e2-dd7267910eb8">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab0a7542-2f93-4b15-ac56-ddc5a65a1a16">
+    <name>НомерДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffda4aed-4706-41e1-a1f9-b3f0411d0059">
+    <name>СпортивнаяПрограмма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивная программа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивныеПрограммы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="54fcad87-f9f0-4a3e-ad89-0c31a2fa3044">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РезультатыСдачиКонтрольноПереводныхНормативов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0d6f9de0-091c-40d8-a3b1-333b7b76292b">
+    <name>КраткийСоставСпортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="46b9a076-58fe-410d-89ef-084e5cf3e699">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="53693335-f8b0-492a-8253-8e3a51f7e4c1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="22077d3e-ff22-4afd-8919-e42721aa4926">
+    <producedTypes>
+      <objectType typeId="61bdf333-200d-47e5-8508-d3098694f582" valueTypeId="3847a5c3-e0e7-4bcb-a3fd-80da2192a601"/>
+      <rowType typeId="07563ead-47fc-4dc4-b706-fc9a2f0d0cca" valueTypeId="d10c0a3f-85e4-44d0-b287-464bcf8ac91c"/>
+    </producedTypes>
+    <name>Спортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1e620936-b9fa-4078-8fb5-835f2fb54094">
+      <name>Спортсмен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спортсмен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Спортсмены</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.СтатусСпортсмена</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусыСпортсменов.EnumValue.Спортсмен</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="329f5796-00bb-4755-a1f4-e39ff0e4b3ce">
+    <name>ПФ_MXL_ПриказОЗачисленииСпортсменовНаЭтап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о зачислении спортсменов на этап</value>
+    </synonym>
+  </templates>
+  <templates uuid="24a53b24-ff1e-495b-8a8d-547068935b8f">
+    <name>ПФ_DOC_ПриказОЗачисленииСпортсменовНаЭтап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о зачислении спортсменов на этап</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="4f3e7e99-0254-477d-b28f-92f9030d4717">
+    <name>ПриказОЗачисленииСпортсменовНаЭтап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о зачислении спортсменов на этап</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>DocumentRef.ЗачислениеСпортсменовНаЭтап</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

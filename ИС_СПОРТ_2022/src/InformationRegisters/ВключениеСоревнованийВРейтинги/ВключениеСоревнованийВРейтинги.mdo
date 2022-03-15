@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20a08ed6-2c5c-48a9-b664-631b830f6b60">
+  <producedTypes>
+    <selectionType typeId="64e23c3b-1a9b-4e22-ada4-d5a97f228f52" valueTypeId="b84a3e3c-a777-4b3d-baa5-001830926315"/>
+    <listType typeId="a9442098-169d-45a3-b1de-5ebd75ad2ee7" valueTypeId="96590546-b9fa-4f2c-b86e-6e9111de21c2"/>
+    <managerType typeId="6b77df62-d2ea-4ba5-b5a6-368d997e84b4" valueTypeId="fae24892-4604-4a3f-843c-b964187a9bf4"/>
+    <recordSetType typeId="0898e584-7316-4113-bdf8-ba7bd655dc8c" valueTypeId="3294613a-6e93-4788-986f-a15c2cd2f3cc"/>
+    <recordKeyType typeId="1493b312-4931-4eb3-ac9a-4e8d96ea1dc6" valueTypeId="5331e99c-b4b9-4cec-9cf9-6592e2dda11e"/>
+    <recordType typeId="8d55e3bc-dab1-41ce-bec3-b3652dde3ce1" valueTypeId="3c463999-5024-40bc-adaa-8e304d36fe16"/>
+    <recordManagerType typeId="54b5b1da-64a7-4aa2-a98d-0af3c0c679f6" valueTypeId="1b3831c9-d488-4b5f-b465-0cbd918473eb"/>
+  </producedTypes>
+  <name>ВключениеСоревнованийВРейтинги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Включение соревнований в рейтинги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВключениеСоревнованийВРейтинги.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВключениеСоревнованийВРейтинги.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="fd0f0da3-4d4a-4fd6-8486-0057be239e95">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a24e441d-b117-4e9f-bc3a-843fac19163e">
+    <name>Рейтинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтинг</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Рейтинги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9ffdc069-ea3b-4673-b359-91be8664d27b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aa7e41cc-87e0-4c19-a60a-7aadb288302f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

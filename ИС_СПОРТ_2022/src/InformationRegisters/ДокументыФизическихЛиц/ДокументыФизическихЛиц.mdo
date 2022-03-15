@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bed36781-3dbf-4c1b-ad68-866e07a6419c">
+  <producedTypes>
+    <selectionType typeId="52d4dc44-85ca-4eb1-bf94-e64980da0c48" valueTypeId="80406384-3830-4c55-b06d-5e7e640fa224"/>
+    <listType typeId="ceabb067-c78b-422a-be56-0036dbaf490f" valueTypeId="fd955df8-26a8-44e9-b205-773d08b67cf2"/>
+    <managerType typeId="22445529-d43c-4392-b047-d8ba193c26e5" valueTypeId="8d170443-5bcb-4700-b622-766de207f3a9"/>
+    <recordSetType typeId="1c1bc627-bdf6-406a-a889-502a6d1653a0" valueTypeId="d3bcfd21-514d-4401-9ffc-a9ff792a5054"/>
+    <recordKeyType typeId="702bd30e-7d95-404c-aa96-0ed0c4346ee3" valueTypeId="475993fa-83e9-4941-9791-b6e5af8ac171"/>
+    <recordType typeId="2ecee03f-7733-4011-a7a5-22255a0db3ad" valueTypeId="1cf446da-c14d-45af-adef-e01964c211f4"/>
+    <recordManagerType typeId="167172f0-e084-4420-a02a-831de660abe9" valueTypeId="90e3b394-a67b-4c86-9f87-c9a5c4c662a8"/>
+  </producedTypes>
+  <name>ДокументыФизическихЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы физических лиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ДокументыФизическихЛиц.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ДокументыФизическихЛиц.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="72273f10-dd7c-4af2-bc99-7cbf671a9e9b">
+    <name>Серия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Серия документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="054ad989-f04c-4440-b749-e8f74b27d8f9">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="82542203-64b4-40c8-9458-3539e7e2439f">
+    <name>ДатаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата выдачи документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="85c5c0b9-68e9-4e94-badf-c1ad1e673110">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок действия документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6268c9ee-b239-44c2-a7f4-79b2c52d0cdb">
+    <name>КемВыдан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кем выдан</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кем выдан документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5e55cd86-a10e-4f6a-ac52-f8084e4067c9">
+    <name>КодПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код подразделения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код подразделения документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="4fa45b1a-6fe4-4220-a5d3-f160dfe49235">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Файлы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="98807ca2-61da-424b-8f9d-2e94a0aadc52">
+    <name>Гражданство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гражданство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтраныМира</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтраныМира.Россия</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="113d513f-33a6-41b5-8ae8-6e93f8bb40f4">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="81afe254-570a-4339-bca4-e3471ea0bffe">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыДокументовФизическихЛиц</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3cc1ea6c-fd84-454c-a223-6b61c1fae584">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c9c4189e-6a37-4630-b8f7-97cb028c6b84">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6585aee8-022f-4ec4-b53e-4bdb30cb5f9b">
+    <name>ДокументыУдостоверяющиеЛичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы удостоверяющие личность</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Тренеры</types>
+      <types>CatalogRef.Спортсмены</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

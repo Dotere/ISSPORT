@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="077a862c-7397-4996-881b-46a39b762b8a">
+  <name>ПроведениеСоревнованийФормированиеРейтингов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соревнования/Рейтинги</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаПроведениеСоревнований</picture>
+  </picture>
+  <content>Document.ЗаявкаНаПроведениеСоревнования</content>
+  <content>Document.ПрисвоениеРазряда</content>
+  <content>Document.ПротоколСоревнования</content>
+  <content>Document.Соревнование</content>
+  <content>InformationRegister.ПодтвержденныеРазрядыСпортсменов</content>
+  <content>InformationRegister.УчастникиСоревнований</content>
+  <content>InformationRegister.ЗаявкиНаПроведениеСоревнования</content>
+  <content>Catalog.Соревнование</content>
+  <content>CommonPicture.ПодсистемаПроведениеСоревнований</content>
+  <content>InformationRegister.ИтоговыеРезультатыСоревнования</content>
+  <content>Catalog.СпортивнаяКлассификация</content>
+  <content>Catalog.СостоянияПопыток</content>
+  <content>Catalog.КатегорииСпортивныхСудей</content>
+  <content>InformationRegister.РезультатыПараметровСпортсменов</content>
+  <content>Report.ПротоколУчастияВCоревнованиях</content>
+  <subsystems>ДопускиКСоревнованиям</subsystems>
+  <subsystems>РазрядыИЗванияСпортсменов</subsystems>
+  <subsystems>ФормированиеРейтингов</subsystems>
+  <subsystems>Соревнования</subsystems>
+  <subsystems>РегистрацияРезультатовСоревнований</subsystems>
+</mdclass:Subsystem>

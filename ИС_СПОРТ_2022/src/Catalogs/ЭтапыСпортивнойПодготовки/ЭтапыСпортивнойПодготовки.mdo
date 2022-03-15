@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365ee025-caef-4c27-ab54-89d600271889">
+  <producedTypes>
+    <objectType typeId="3b728c41-f5e3-46d4-b32f-28812b867322" valueTypeId="84731c88-683f-48df-9ed2-3baa408554db"/>
+    <refType typeId="4f70abd8-a861-43cb-be99-ff8dc7a2b1a3" valueTypeId="fbbe86d4-1858-451d-83ad-a9a395ad96c0"/>
+    <selectionType typeId="62c48c41-2d57-4162-8f7c-1e285c0744fe" valueTypeId="be7878f8-27d2-48c6-b553-aff55d16471d"/>
+    <listType typeId="df1ca3d9-910c-4f63-be6d-05bf46750158" valueTypeId="8e7ab747-220c-4f1d-b8fb-39181dd982c9"/>
+    <managerType typeId="763e54b4-927a-4ae4-aa93-57b5dd469006" valueTypeId="6aa1b226-d65e-422c-ae67-dc1fcd9f6b01"/>
+  </producedTypes>
+  <name>ЭтапыСпортивнойПодготовки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы спортивной подготовки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭтапыСпортивнойПодготовки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭтапыСпортивнойПодготовки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Этап спортивной подготовки</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="ee78b1dc-4cdd-411d-b7f5-46be0f49fbe0">
+      <name>ВысшегоСпортивногоМастерства</name>
+      <description>Высшего спортивного мастерства</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+      <content id="cb4200ad-b43d-4009-a8cd-da167a08f6c6">
+        <name>ВСМ1</name>
+        <description>ВСМ-1</description>
+        <code xsi:type="core:StringValue">
+          <value>000000017</value>
+        </code>
+      </content>
+      <content id="5d62749e-b005-48c4-8af8-7940a87154a0">
+        <name>ВСМ2</name>
+        <description>ВСМ-2</description>
+        <code xsi:type="core:StringValue">
+          <value>000000021</value>
+        </code>
+      </content>
+      <content id="62fcb7ca-ef5e-4665-9ce2-5124bee5634b">
+        <name>ВСМ3</name>
+        <description>ВСМ-3</description>
+        <code xsi:type="core:StringValue">
+          <value>000000022</value>
+        </code>
+      </content>
+      <content id="8118843e-5dae-4a82-8585-065cd496af37">
+        <name>ВСМ4</name>
+        <description>ВСМ-4</description>
+        <code xsi:type="core:StringValue">
+          <value>000000023</value>
+        </code>
+      </content>
+      <content id="177e25cb-8802-4879-af22-8acbe1a34de6">
+        <name>ВСМ5</name>
+        <description>ВСМ-5</description>
+        <code xsi:type="core:StringValue">
+          <value>000000024</value>
+        </code>
+      </content>
+    </items>
+    <items id="eaccd7cc-631a-4a04-9d27-4bd7c0203c07">
+      <name>НачальнаяПодготовка</name>
+      <description>Начальная подготовка</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <content id="06daba54-89eb-4cc9-83da-2fe5876f2f3d">
+        <name>НП1</name>
+        <description>НП-1</description>
+        <code xsi:type="core:StringValue">
+          <value>000000010</value>
+        </code>
+      </content>
+      <content id="dc1a1283-53ce-4073-8bbe-88b8897f77d1">
+        <name>НП2</name>
+        <description>НП-2</description>
+        <code xsi:type="core:StringValue">
+          <value>000000011</value>
+        </code>
+      </content>
+      <content id="168dc8d3-841a-4bb3-9995-bb8a18955c66">
+        <name>НП3</name>
+        <description>НП-3</description>
+        <code xsi:type="core:StringValue">
+          <value>000000012</value>
+        </code>
+      </content>
+    </items>
+    <items id="705f5eda-5c6d-4a48-b643-c305c83edad6">
+      <name>СовершенствованиеСпортивногоМастерства</name>
+      <description>Совершенствование спортивного мастерства</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+      <content id="341ae076-5b27-4afe-90c7-408b3267ec35">
+        <name>ССМ1</name>
+        <description>ССМ-1</description>
+        <code xsi:type="core:StringValue">
+          <value>000000014</value>
+        </code>
+      </content>
+      <content id="1daa835f-20ee-4d0a-bdae-c6c619f8fd99">
+        <name>ССМ2</name>
+        <description>ССМ-2</description>
+        <code xsi:type="core:StringValue">
+          <value>000000015</value>
+        </code>
+      </content>
+      <content id="21ec5ea9-426d-4567-a7f1-3c3455ddec95">
+        <name>ССМ3</name>
+        <description>ССМ-3</description>
+        <code xsi:type="core:StringValue">
+          <value>000000016</value>
+        </code>
+      </content>
+      <content id="7867bea0-0e57-4611-b626-ee1bfdd9a2bc">
+        <name>ССМ4</name>
+        <description>ССМ-4</description>
+        <code xsi:type="core:StringValue">
+          <value>000000025</value>
+        </code>
+      </content>
+      <content id="bab1c2bb-4d7c-4276-a518-3e37498b5c69">
+        <name>ССМ5</name>
+        <description>ССМ-5</description>
+        <code xsi:type="core:StringValue">
+          <value>000000026</value>
+        </code>
+      </content>
+    </items>
+    <items id="4dfc8128-d70a-4069-b791-95aa38293436">
+      <name>СпортивноОздоровительный</name>
+      <description>Спортивно - оздоровительный</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <content id="ea4c81ff-de00-4e6e-a458-31020ff5db26">
+        <name>СОГ</name>
+        <description>СОГ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000020</value>
+        </code>
+      </content>
+    </items>
+    <items id="07d8a2fb-8621-499a-b13a-ddcc25b4bd38">
+      <name>Тренировочный</name>
+      <description>Тренировочный (спортивная специализация)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+      <content id="eaebd478-d032-43eb-8a86-27995a3b093e">
+        <name>Т1</name>
+        <description>Т-1</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="e2e7a7a9-b5f6-4c8e-9c7f-7cedfcb7048b">
+        <name>Т2</name>
+        <description>Т-2</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="bad64e5f-8548-4f3c-a9ec-896cf6c1c96d">
+        <name>Т3</name>
+        <description>Т-3</description>
+        <code xsi:type="core:StringValue">
+          <value>000000008</value>
+        </code>
+      </content>
+      <content id="22e94ee7-c3a2-4324-9a50-5d44bffd6599">
+        <name>Т4</name>
+        <description>Т-4</description>
+        <code xsi:type="core:StringValue">
+          <value>000000009</value>
+        </code>
+      </content>
+      <content id="ab9780d9-a643-4a45-b582-7ca2ed7e359c">
+        <name>Т5</name>
+        <description>Т-5</description>
+        <code xsi:type="core:StringValue">
+          <value>000000013</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЭтапыСпортивнойПодготовки.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="29b97d4c-3094-4cab-bb22-53c866629110">
+    <name>Последовательность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последовательность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="58bf70d6-89f5-44b4-96ea-0cccc386d598">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

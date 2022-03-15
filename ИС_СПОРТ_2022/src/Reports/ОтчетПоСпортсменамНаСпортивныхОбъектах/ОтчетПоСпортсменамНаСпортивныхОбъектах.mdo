@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e943b76-99ef-4150-8f62-8531e912fd0d">
+  <producedTypes>
+    <objectType typeId="eecce795-d87b-42f0-bd45-d201a2709467" valueTypeId="2ccc28aa-3488-4f30-bff7-52d3ad96cf0f"/>
+    <managerType typeId="ceee95ac-08dc-47dd-bf66-8c1bde41c347" valueTypeId="9aea614e-b35c-44a3-82c6-63632072395b"/>
+  </producedTypes>
+  <name>ОтчетПоСпортсменамНаСпортивныхОбъектах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по спортсменам на спортивных объектах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоСпортсменамНаСпортивныхОбъектах.Template.ОсновнаяСхемаКомпоновкиДанных1</mainDataCompositionSchema>
+  <templates uuid="361b4ed1-a78c-4aed-b7ea-64fa21255b75">
+    <name>ОсновнаяСхемаКомпоновкиДанных1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных1</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="208122e0-b7e8-49e7-b6da-09db1e8fa5b3">
+  <producedTypes>
+    <selectionType typeId="f9ef6607-16fe-4c78-b925-50c7566db9dc" valueTypeId="d776a14d-c9d2-498c-9abb-90717f11a8c1"/>
+    <listType typeId="3278ac96-a066-49b3-b6a6-6f12f38f4ab4" valueTypeId="08d8499c-8957-4d07-b644-239fba7e646d"/>
+    <managerType typeId="3ff5b63b-e0a0-4ad6-a9f0-c48cfb707b13" valueTypeId="f8231f14-6a93-4771-8193-87850036763e"/>
+    <recordSetType typeId="22ab07db-7a57-4e4c-8ff9-98c7435502a6" valueTypeId="d656d611-b16e-4b27-86f0-d5ff078e4b0e"/>
+    <recordKeyType typeId="a843dc02-1886-4b2a-9b78-98fbf6649bcf" valueTypeId="082e3920-3a48-4d81-b5d9-6913b5ce8649"/>
+    <recordType typeId="21c57050-cba9-4cc5-b57a-53c042e0f0e5" valueTypeId="ee76cc03-9c26-48fa-a08e-883995758594"/>
+    <recordManagerType typeId="e9c6da18-cdb7-4835-b413-964dbb06dca4" valueTypeId="a464d179-3865-45f7-9740-48be6c001c59"/>
+  </producedTypes>
+  <name>СоответствиеПользователейИВидовСпорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие пользователей и видов спорта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="78abb2bb-49a8-4b31-ba07-d0d2faf2fce2">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f17b09e2-81e9-46e3-8850-6645cae070cf">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

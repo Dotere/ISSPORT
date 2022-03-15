@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ffed1629-b6cb-4dfa-a7b2-11a91b727384">
+  <producedTypes>
+    <objectType typeId="2b75f830-306c-4f45-b1a5-424ea10b1336" valueTypeId="fd9a8495-09a6-4970-af7b-ea7104e3f000"/>
+    <managerType typeId="fba7352a-0488-4e19-b241-d494f45ea15a" valueTypeId="915c0c82-c11d-4cec-b242-fc0591555af7"/>
+  </producedTypes>
+  <name>РабочийСтолРуководитель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочий стол руководитель</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РабочийСтолРуководитель.Form.Форма</defaultForm>
+  <forms uuid="1e8afeee-7fe5-40cd-9b5c-f948371406f5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="63bfd076-5b70-4956-8f98-ef8e743b065c">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4ab4b393-5634-48e6-9bfa-40689af834c2">
+    <name>МакетТаблица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет таблица</value>
+    </synonym>
+  </templates>
+  <templates uuid="3b8be00b-ea1d-4010-b12d-82cc2eebaa1a">
+    <name>ГеографическаяСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Географическая схема</value>
+    </synonym>
+    <templateType>GeographicalSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

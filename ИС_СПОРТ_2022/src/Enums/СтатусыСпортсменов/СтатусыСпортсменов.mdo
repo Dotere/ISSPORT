@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="360a8c9e-5d7d-4787-8e95-b2d3d640113c">
+  <producedTypes>
+    <refType typeId="a23ecb24-afca-4da5-9a41-9455c69c4a7e" valueTypeId="062feeaf-9073-451a-829a-ac24d6cb0ff8"/>
+    <listType typeId="82f3ab18-2c12-4e05-bb54-2c435d8022a9" valueTypeId="75c3cc80-04a0-44cd-991b-68e6bc14c748"/>
+    <managerType typeId="f8865aa0-ad82-47b9-836c-5f8fb18d809b" valueTypeId="55aa5fd4-b9ad-4ebf-b64f-efc34247e906"/>
+  </producedTypes>
+  <name>СтатусыСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы спортсменов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a422f2da-3263-4367-8944-feb90130676c">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="37fe6be7-b3e0-42a5-893f-37935f6b1e71">
+    <name>ЗанимающийсяСпортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Занимающийся (спортсмен)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07815322-6d1e-4618-9166-9d0295a56daf">
+    <name>ЗанимающийсяОбучающийся</name>
+    <synonym>
+      <key>ru</key>
+      <value>Занимающийся (обучающийся)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="35133873-a965-4995-82df-763c42083db7">
+    <name>СпортсменДругогоСпортивногоУчреждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен другого спортивного учреждения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

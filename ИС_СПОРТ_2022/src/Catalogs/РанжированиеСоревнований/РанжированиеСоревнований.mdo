@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64e0b99a-b15d-4e1b-8338-a97595195c92">
+  <producedTypes>
+    <objectType typeId="0a0651cd-8432-4e9e-b47e-5e3907dba563" valueTypeId="d8600a60-f1a5-466f-a717-a751f966b1a3"/>
+    <refType typeId="26b04ca8-9c56-4f45-be28-b5f930a0fd9d" valueTypeId="4d825657-fef0-4990-a863-7068e7ad350d"/>
+    <selectionType typeId="79a3427b-ee69-4b8e-8f47-1c900e4c4f94" valueTypeId="7aec2306-9629-48fd-8024-7801e8bc5713"/>
+    <listType typeId="228f61b5-2709-4c34-8b37-db291b4d9c64" valueTypeId="bcdc1383-cc2d-431c-b71c-e9167945777e"/>
+    <managerType typeId="4fd04036-8efa-438e-9de7-41e69ed53b61" valueTypeId="a3c2ebbd-c984-4e23-a1b5-7091c50f5013"/>
+  </producedTypes>
+  <name>РанжированиеСоревнований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ранжирование соревнований</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РанжированиеСоревнований.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РанжированиеСоревнований.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="a4d8b8a7-7c38-48ad-9111-87573419b0e8">
+      <name>Всероссийские</name>
+      <description>Всероссийские</description>
+      <code xsi:type="core:StringValue">
+        <value>02</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="5beb19fe-925c-4a0c-986f-8071c642b1a5">
+        <name>ДругиеВсероссийкиеСоревнованияВключенныеВЕКП</name>
+        <description>Другие всероссийкие соревнования включенные в ЕКП</description>
+        <code xsi:type="core:StringValue">
+          <value>000000025</value>
+        </code>
+      </content>
+      <content id="728544c5-a85c-46f8-9e45-d18600c08bb7">
+        <name>КубокРоссии</name>
+        <description>Кубок России</description>
+        <code xsi:type="core:StringValue">
+          <value>000000022</value>
+        </code>
+      </content>
+      <content id="f93f41ba-2771-43fc-b69c-22a8469aa7ff">
+        <name>ПервенствоРоссии</name>
+        <description>Первенство России</description>
+        <code xsi:type="core:StringValue">
+          <value>000000023</value>
+        </code>
+      </content>
+      <content id="d639d952-4505-4525-b401-f915c42ad45d">
+        <name>ПервенствоРоссииСредиЮниоровИЮниорок</name>
+        <description>Первенство России среди юниоров и юниорок</description>
+        <code xsi:type="core:StringValue">
+          <value>000000026</value>
+        </code>
+      </content>
+      <content id="cc663f88-9092-4988-a03b-4ce2595ccc09">
+        <name>ПервенствоРоссииСредиЮношейИДевушек</name>
+        <description>Первенство России среди юношей и девушек</description>
+        <code xsi:type="core:StringValue">
+          <value>000000028</value>
+        </code>
+      </content>
+      <content id="7d1a0f78-f33c-4e8d-b330-cb0721fa9e73">
+        <name>СпартакиадаРоссии</name>
+        <description>Спартакиада России</description>
+        <code xsi:type="core:StringValue">
+          <value>000000021</value>
+        </code>
+      </content>
+      <content id="6a6d6849-25aa-478d-90b8-71acdf5f2476">
+        <name>УниверсиадаРоссии</name>
+        <description>Универсиада России</description>
+        <code xsi:type="core:StringValue">
+          <value>000000024</value>
+        </code>
+      </content>
+      <content id="4b4a0273-d725-489d-89e2-a25b88615c47">
+        <name>ЧемпионатРоссии</name>
+        <description>Чемпионат России</description>
+        <code xsi:type="core:StringValue">
+          <value>000000020</value>
+        </code>
+      </content>
+    </items>
+    <items id="5f20b4b5-7e77-4ebe-8a2f-7f2ca1d7d3a3">
+      <name>Международные</name>
+      <description>Международные</description>
+      <code xsi:type="core:StringValue">
+        <value>01</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="7f25fef3-4191-4759-ba4b-70558744e124">
+        <name>ВсемирнаяУниверсиада</name>
+        <description>Всемирная универсиада</description>
+        <code xsi:type="core:StringValue">
+          <value>000000010</value>
+        </code>
+      </content>
+      <content id="92bb78c6-2443-4966-bed4-6733276f6b10">
+        <name>ВсемирныеИгры</name>
+        <description>Всемирные игры</description>
+        <code xsi:type="core:StringValue">
+          <value>000000003</value>
+        </code>
+      </content>
+      <content id="85e3e08a-c3b0-43d1-bd62-4b890778454d">
+        <name>ДругиеМеждународныеСоревнованияВключенныеВЕКП</name>
+        <description>Другие международные соревнования включенные в ЕКП</description>
+        <code xsi:type="core:StringValue">
+          <value>000000013</value>
+        </code>
+      </content>
+      <content id="cc409bd8-ce12-445b-8108-dab9df8b4e62">
+        <name>ЕвропейскиеИгры</name>
+        <description>Европейские игры</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="72e6ad40-c951-4ef3-ad8c-3d4c456f6321">
+        <name>ЕвропейскийЮношескийОлимпийскийФестиваль</name>
+        <description>Европейский юношеский олимпийский фестиваль</description>
+        <code xsi:type="core:StringValue">
+          <value>000000012</value>
+        </code>
+      </content>
+      <content id="73ed1521-c615-4e19-b5b4-473059ab62c5">
+        <name>КубокЕвропы</name>
+        <description>Кубок Европы</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="08ae865f-6cc6-490c-966c-0f7319e12e09">
+        <name>КубокМира</name>
+        <description>Кубок мира</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+      <content id="bdc29571-ff26-4bd8-add0-44adbae4340d">
+        <name>ОлимпийскиеИгры</name>
+        <description>Олимпийские игры</description>
+        <code xsi:type="core:StringValue">
+          <value>000000001</value>
+        </code>
+      </content>
+      <content id="adc5c011-3dba-495b-8885-1e4257e3ed69">
+        <name>ПервенствоЕвропы</name>
+        <description>Первенство европы</description>
+        <code xsi:type="core:StringValue">
+          <value>000000011</value>
+        </code>
+      </content>
+      <content id="ea2fda2d-b1c5-40a9-a574-1c317a305914">
+        <name>ПервенствоМира</name>
+        <description>Первенство мира</description>
+        <code xsi:type="core:StringValue">
+          <value>000000008</value>
+        </code>
+      </content>
+      <content id="227ce8da-52b3-46d1-9a80-47c457a8fcea">
+        <name>ЧемпионатЕвропы</name>
+        <description>Чемпионат Европы</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+      <content id="43ed5ac6-0af7-40ef-84f8-f0eb885f4085">
+        <name>ЧемпионатМира</name>
+        <description>Чемпионат мира</description>
+        <code xsi:type="core:StringValue">
+          <value>000000002</value>
+        </code>
+      </content>
+      <content id="f7626524-a54e-4268-ad63-a2363e099977">
+        <name>ЮношескиеОлимпийскиеИгры</name>
+        <description>Юношеские Олимпийские игры</description>
+        <code xsi:type="core:StringValue">
+          <value>000000009</value>
+        </code>
+      </content>
+    </items>
+    <items id="60b42a5e-255d-424f-b920-3349b43bd6bb">
+      <name>Межрегиональные</name>
+      <description>Межрегиональные</description>
+      <code xsi:type="core:StringValue">
+        <value>03</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="bc436b6f-5574-48b7-b657-f386bdda1d69">
+        <name>ДругиеСоревнованияФедеральногоОкругаВключенныеВЕКП</name>
+        <description>Другие соревнования федерального округа включенные в ЕКП</description>
+        <code xsi:type="core:StringValue">
+          <value>000000032</value>
+        </code>
+      </content>
+      <content id="e99369d6-a497-4c2c-a337-4b1ace4879b1">
+        <name>ПервенствоФедеральногоОкругаДвухИБолееФедеральныхОкругов</name>
+        <description>Первенство федерального округа, двух и более федеральных округов</description>
+        <code xsi:type="core:StringValue">
+          <value>000000031</value>
+        </code>
+      </content>
+      <content id="11dd4207-2ea3-44e3-a110-b64775ed499c">
+        <name>ЧемпионатФедеральногоОкругаДвухИБолееФедеральныхОкругов</name>
+        <description>Чемпионат федерального округа, двух и более федеральных округов</description>
+        <code xsi:type="core:StringValue">
+          <value>000000030</value>
+        </code>
+      </content>
+    </items>
+    <items id="95b9f914-282b-41ef-a89b-f22b722fcfed">
+      <name>ФедеральныеИМуниципальные</name>
+      <description>Федеральные и муниципальные</description>
+      <code xsi:type="core:StringValue">
+        <value>04</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="b2f004df-580b-47ba-9fb3-edd18086c7d9">
+        <name>ДругиеСоревнованияМуниципалитетаВключенныеВЕКП</name>
+        <description>Другие соревнования муниципалитета включенные в ЕКП</description>
+        <code xsi:type="core:StringValue">
+          <value>000000047</value>
+        </code>
+      </content>
+      <content id="9f3f0c4d-aee0-4393-afd5-39d6d7426b09">
+        <name>ДругиеСоревнованияСубъектаРФВключенныеВЕКП</name>
+        <description>Другие соревнования субъекта РФ включенные в ЕКП</description>
+        <code xsi:type="core:StringValue">
+          <value>000000042</value>
+        </code>
+      </content>
+      <content id="33fa0f00-b99b-4a49-a037-a3dadd13bb7b">
+        <name>КубокМуниципалитета</name>
+        <description>Кубок муниципалитета</description>
+        <code xsi:type="core:StringValue">
+          <value>000000045</value>
+        </code>
+      </content>
+      <content id="c3529ce4-3f0b-4b11-9adf-23f914245d64">
+        <name>КубокСубъектаРФ</name>
+        <description>Кубок субъекта РФ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000041</value>
+        </code>
+      </content>
+      <content id="ab096ce8-274d-4a09-8312-32bec5c93fe8">
+        <name>ПервенствоМуниципалитета</name>
+        <description>Первенство муниципалитета</description>
+        <code xsi:type="core:StringValue">
+          <value>000000046</value>
+        </code>
+      </content>
+      <content id="80781fc3-17b2-47b5-a0ff-2089a4357b27">
+        <name>ПервенствоСубъектаРФ</name>
+        <description>Первенство субъекта РФ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000043</value>
+        </code>
+      </content>
+      <content id="11cdbaaf-0b9f-4c66-ba77-4a1aa690477d">
+        <name>ЧемпионатМуниципалитета</name>
+        <description>Чемпионат муниципалитета</description>
+        <code xsi:type="core:StringValue">
+          <value>000000044</value>
+        </code>
+      </content>
+      <content id="f575c632-0850-411f-9a0d-dc676f5f4168">
+        <name>ЧемпионатСубъектаРФ</name>
+        <description>Чемпионат субъекта РФ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000040</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="dda30594-1737-4127-8197-26e1aa4ed9d2">
+    <name>ВесСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ранг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="13e69242-b2c7-4259-be0a-9ce7601a3a7e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

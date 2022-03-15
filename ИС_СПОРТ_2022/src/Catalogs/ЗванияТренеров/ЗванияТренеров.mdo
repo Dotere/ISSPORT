@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="076016c9-c397-4b08-a5af-4f840e2ed4b5">
+  <producedTypes>
+    <objectType typeId="bb30d240-618e-48de-a19b-b2c7604990aa" valueTypeId="73feacc1-08be-403b-b568-639eab4c4025"/>
+    <refType typeId="f640fb1e-e81e-4398-8257-63ba3341532b" valueTypeId="872431c3-8890-44d9-b5ab-33f77e374f49"/>
+    <selectionType typeId="a616cab5-9846-40a1-b124-6f927ac7bdaf" valueTypeId="7d972263-c8a2-4e01-b149-cf0ec22cfd74"/>
+    <listType typeId="c87fef49-41d9-4026-aa80-d069eb8237c3" valueTypeId="ef540aaa-53db-43ec-96ea-bd1427ff213b"/>
+    <managerType typeId="82f658c7-e8c5-41f1-a5ce-7d3a05e4b608" valueTypeId="fe3fc943-fb9b-4100-9f7d-ff41ea632403"/>
+  </producedTypes>
+  <name>ЗванияТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Звания тренеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗванияТренеров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗванияТренеров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="dc93759f-5362-4cd4-bfbd-f1876844d85f">
+      <name>ЗваниеЗаслуженныйМастерСпортаРоссии</name>
+      <description>Звание &quot;Заслуженный мастер спорта России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000017</value>
+      </code>
+    </items>
+    <items id="9847cfad-f648-4d9b-ac99-5374a6f26fc4">
+      <name>ЗваниеЗаслуженныйРаботникФизическойКультурыРоссийскойФедерации</name>
+      <description>Звание &quot;Заслуженный работник физической культуры Российской Федерации&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="53284552-78c8-4bfa-b690-e3539dc15c08">
+      <name>ЗваниеЗаслуженныйТренерРоссии</name>
+      <description>Звание &quot;Заслуженный тренер России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+    <items id="a42e5718-ff28-42e2-9a7c-72d0ad9d8242">
+      <name>МастерCпортаМеждународногоКласса</name>
+      <description>Звание &quot;Мастер cпорта международного класса&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000021</value>
+      </code>
+    </items>
+    <items id="6570338f-dafa-414c-8ae4-8c89d02b2271">
+      <name>МастерСпортаРоссии</name>
+      <description>Звание &quot;Мастер cпорта России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000020</value>
+      </code>
+    </items>
+    <items id="e89bf796-c302-4b2c-9a1b-80ee8ae3e407">
+      <name>ЗваниеПочетныйСпортивныйСудьяРоссии</name>
+      <description>Звание &quot;Почетный спортивный судья России&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000019</value>
+      </code>
+    </items>
+    <items id="936619f4-4d4c-4158-970b-df302ffcffa8">
+      <name>ЗваниеВетеранТруда</name>
+      <description>Звание “Ветеран труда”</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЗванияТренеров.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ЗванияТренеров.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ЗванияТренеров.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ЗванияТренеров.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>Catalog.ЗванияТренеров.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
+  <attributes uuid="12fef319-ba8c-4f26-b3b1-498c7552164a">
+    <name>СокращенноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сокращенное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df3ff0e1-a357-4d16-a607-2854d9749792">
+    <name>СпортивноеЗвание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное звание</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="00279e9e-d1ea-44ae-987c-d6a79a547959">
+    <name>ПочетноеЗвание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почетное звание</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="24c03206-cfb6-4ffd-b3b6-49bfcf4881d4">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3d584f41-9623-4e31-9b49-00b114e699df">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b872ac11-d05c-4ae6-a64b-034b2a934efd">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7cb72991-7e89-4d31-b6b9-0fe79f25c7d3">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="80b58ea2-6583-429c-adad-84c588f8ff28">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

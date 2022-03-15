@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d46ba7ce-b56f-4f43-b055-1ac8b59066d4">
+  <name>ТабелиПосещений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Табели посещений</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>AccumulationRegister.ДанныеТабельногоУчетаПосещенийСпортсменов</content>
+  <content>Document.ТабельПосещения</content>
+  <content>CommonModule.ТабельПосещений</content>
+  <content>StyleItem.ЦветФонаПрисутствия</content>
+  <content>StyleItem.ЦветФонаОтсутствия</content>
+  <content>StyleItem.ЦветФонаОтсутствияПоУв</content>
+  <content>StyleItem.ЦветФонаОтсутствияПоНеУв</content>
+  <content>StyleItem.ЦветФонаОпоздания</content>
+  <content>StyleItem.ЦветТекстаЗаголовкаТабеляПосещений</content>
+  <content>StyleItem.ЦветФонаЗаголовкаОсновнойТабеляПосещений</content>
+  <content>StyleItem.ШрифтЗаголовкаТабеляПосещений</content>
+</mdclass:Subsystem>

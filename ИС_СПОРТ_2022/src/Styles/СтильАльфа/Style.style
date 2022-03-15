@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style:Style xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:style="http://g5.1c.ru/v8/dt/style">
+  <items xsi:type="style:ColorStyleItem">
+    <name>ActivityColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>254</red>
+      <green>176</green>
+      <blue>106</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>AccentColor</name>
+    <color xsi:type="core:ColorDef">
+      <green>93</green>
+      <blue>141</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>NavigationColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>53</red>
+      <green>63</green>
+      <blue>71</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>AuxiliaryNavigationColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>254</red>
+      <green>176</green>
+      <blue>106</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>ImportantColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>254</red>
+      <green>176</green>
+      <blue>106</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.БазовыйЦветФонаЭтапаОтправки</name>
+    <color xsi:type="core:ColorDef">
+      <red>153</red>
+      <green>204</green>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ВыделеннаяКнопкаФон</name>
+    <color xsi:type="core:ColorDef">
+      <red>254</red>
+      <green>176</green>
+      <blue>106</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ГиперссылкаЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <green>93</green>
+      <blue>141</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.РезультатПредупреждениеЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <red>203</red>
+      <green>91</green>
+      <blue>59</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.РезультатПроблемаЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <red>203</red>
+      <green>91</green>
+      <blue>59</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ТекстИнформационнойНадписи</name>
+    <color xsi:type="core:ColorDef">
+      <green>93</green>
+      <blue>141</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветГиперссылки</name>
+    <color xsi:type="core:ColorDef">
+      <green>93</green>
+      <blue>141</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветГиперссылкиБРО</name>
+    <color xsi:type="core:ColorDef">
+      <green>93</green>
+      <blue>141</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветГиперссылкиБЭД</name>
+    <color xsi:type="core:ColorDef">
+      <green>93</green>
+      <blue>141</blue>
+    </color>
+  </items>
+</style:Style>

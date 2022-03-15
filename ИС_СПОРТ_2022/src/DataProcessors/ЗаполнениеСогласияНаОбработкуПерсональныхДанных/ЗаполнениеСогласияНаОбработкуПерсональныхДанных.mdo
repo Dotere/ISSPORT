@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2dfbbe45-4505-4803-af45-87013d14006a">
+  <producedTypes>
+    <objectType typeId="87e7363f-5434-4337-94f8-1fafdf200969" valueTypeId="bcf5100a-bb77-4a8f-9864-a090d02a4867"/>
+    <managerType typeId="c59cecd5-29fb-4921-8993-645ea67f8e8e" valueTypeId="cd507aa9-a8da-4003-be75-89d71b220c1a"/>
+  </producedTypes>
+  <name>ЗаполнениеСогласияНаОбработкуПерсональныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение согласия на обработку персональных данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнениеСогласияНаОбработкуПерсональныхДанных.Form.Форма</defaultForm>
+  <forms uuid="6604deb5-d7cd-41db-9594-a788573662c3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

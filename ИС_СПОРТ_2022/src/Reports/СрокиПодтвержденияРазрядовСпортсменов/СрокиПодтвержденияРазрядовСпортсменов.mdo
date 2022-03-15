@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a80a069-846e-4631-8663-71a8a03bf047">
+  <producedTypes>
+    <objectType typeId="341636d2-f3c9-48d0-9aa3-548f7699e800" valueTypeId="5a055df4-d0db-4267-95af-597f9ff1bb1c"/>
+    <managerType typeId="97f83e53-d4de-454a-90b5-75114dada2a5" valueTypeId="c4f28a7f-3fe5-4803-89e9-b4e111e90fad"/>
+  </producedTypes>
+  <name>СрокиПодтвержденияРазрядовСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки подтверждения разрядов спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СрокиПодтвержденияРазрядовСпортсменов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="bb95021f-267b-4e67-8144-727ea4aa2b72">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

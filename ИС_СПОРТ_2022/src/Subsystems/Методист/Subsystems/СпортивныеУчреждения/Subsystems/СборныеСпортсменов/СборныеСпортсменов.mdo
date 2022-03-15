@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46421ddc-6217-478a-8d1b-e5b641c5eeaf">
+  <name>СборныеСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сборные спортсменов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Сборные</content>
+  <content>Catalog.РангиСборных</content>
+  <content>InformationRegister.СборныеСпортсменов</content>
+  <parentSubsystem>Subsystem.Методист.Subsystem.СпортивныеУчреждения</parentSubsystem>
+</mdclass:Subsystem>

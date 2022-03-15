@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c039740-261f-4879-9911-356dc5b05ccc">
+  <producedTypes>
+    <selectionType typeId="2fe093f8-13f5-4d95-ab68-13403bbc9843" valueTypeId="690b7112-d4c3-4d62-8094-e02ee9fdb8de"/>
+    <listType typeId="1c95a2e1-20bc-4970-8a31-b4c3a9dc6c2e" valueTypeId="f2336d3c-ef36-40ba-9444-dab52651a659"/>
+    <managerType typeId="bd69a197-13b9-4934-9b55-e80aae869d36" valueTypeId="73aaa466-4e66-43a2-949e-a12c7368bfa0"/>
+    <recordSetType typeId="7d94bc4e-5e25-4854-a431-38e85e894918" valueTypeId="dae77468-7bac-4f1a-8c34-e990b16c6f17"/>
+    <recordKeyType typeId="c4c02e23-c735-49f0-8d63-334f73fdff97" valueTypeId="a414d9c3-2f52-47cd-800c-504a37b9aeb5"/>
+    <recordType typeId="4ec68e96-c3c8-4583-9404-de5f08294c39" valueTypeId="c32c92ba-ff98-4193-ae3e-a890086af17c"/>
+    <recordManagerType typeId="91048ad5-978b-489a-a3a5-cdce12c1ca8a" valueTypeId="a34a482d-401d-4177-bf85-823ad1d78407"/>
+  </producedTypes>
+  <name>СпортивныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивные объекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СпортивныеОбъекты.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СпортивныеОбъекты.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="705570ed-7058-4929-995e-6c08ed24434f">
+    <name>СпортивныйОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивный объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивныеОбъекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4fa331df-3540-4cb4-8528-a85d32fd42c1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c9d988b8-f68a-4f40-a9c3-efc0bfcecb47">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6553b9b5-20da-4cbc-80c7-7a69efc551f3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f94765a3-5187-416a-882b-2fd07b44ef2c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

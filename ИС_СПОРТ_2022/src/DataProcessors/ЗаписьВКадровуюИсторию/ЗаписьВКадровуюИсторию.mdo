@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="309bad2a-2e6f-4cf5-9460-e6b59790b3dd">
+  <producedTypes>
+    <objectType typeId="37ea5d1a-0167-42b8-8197-ff5e866e97d9" valueTypeId="224473a3-e94c-4bb6-83b0-8d6168be0acb"/>
+    <managerType typeId="e727eb7e-5fae-473e-aa23-ec8c4c679d44" valueTypeId="0f31570b-b286-489f-86bb-4cc1eb74d4d4"/>
+  </producedTypes>
+  <name>ЗаписьВКадровуюИсторию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись в кадровую историю</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаписьВКадровуюИсторию.Form.Форма</defaultForm>
+  <forms uuid="17ad83bd-f506-4a8d-9717-b29a03f991dd">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13daa02f-d2d6-4470-ac82-78b1e3da7b33">
+  <producedTypes>
+    <selectionType typeId="e9d367cf-b408-4533-95db-0308bc9ffc63" valueTypeId="2d0e3b6a-3ad1-47ad-8658-209c9854b6e0"/>
+    <listType typeId="e3a75f02-93a2-4053-b4dd-3fcacfbff7a7" valueTypeId="65902cef-9293-4990-bd0a-b00a171b40ed"/>
+    <managerType typeId="724e5f7d-42c0-46fa-9faa-97f35e63a31a" valueTypeId="d9ae50d7-72a6-4d31-a19f-0b40826c49b7"/>
+  </producedTypes>
+  <name>ЭтапыСпортивнойПодготовкиСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы спортивной подготовки спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЗачислениеСпортсменовНаЭтап</registeredDocuments>
+  <registeredDocuments>Document.ПереводСпортсменовНаЭтап</registeredDocuments>
+  <columns uuid="3c8362aa-b242-444c-aaae-422b9a132ff5">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.ДатаДокумента</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.ДатаДокумента</references>
+  </columns>
+  <columns uuid="201b995f-c710-4dcf-a359-6a7a041c8736">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.НомерДокумента</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.НомерДокумента</references>
+  </columns>
+  <columns uuid="8b4eb567-222b-4fe5-90e0-01b723c7e218">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.Организация</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.Организация</references>
+  </columns>
+  <columns uuid="0a7b24f0-7272-4279-a9e6-aae2a8d8e66d">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.ВидСпорта</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="c6c23d8f-7026-4cbb-b2b6-13592c139f1f">
+    <name>КраткийСоставСпортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.КраткийСоставСпортсмены</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.КраткийСоставСпортсмены</references>
+  </columns>
+  <columns uuid="a3465081-56eb-40ab-8088-63c6fbaa5a76">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.Этап</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.Этап</references>
+  </columns>
+  <columns uuid="d7286af9-1d25-4b53-8408-f3ea446d4a83">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.Тренер</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.Тренер</references>
+  </columns>
+  <columns uuid="60a7dfab-bdba-434b-af41-502270f82e7a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.Комментарий</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="7ceea67a-5d9e-4d44-a997-80700b1547c9">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ЗачислениеСпортсменовНаЭтап.Attribute.Ответственный</references>
+    <references>Document.ПереводСпортсменовНаЭтап.Attribute.Ответственный</references>
+  </columns>
+</mdclass:DocumentJournal>

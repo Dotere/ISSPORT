@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d198b60-934f-4746-ac8f-19fbff7bdf27">
+  <producedTypes>
+    <objectType typeId="8ff61baa-c76d-405b-a88f-1f4167980acf" valueTypeId="6e5616db-0eac-41e0-b677-25a32afd14cf"/>
+    <refType typeId="be2356ee-0202-417b-b0df-4ddd904afdab" valueTypeId="dde7f1d0-aedd-4227-b299-9a74687b0fe0"/>
+    <selectionType typeId="b7036951-13b4-4d9b-b3d8-19f073ae090f" valueTypeId="097661dc-6ad5-4aae-bd7b-f2a337b78403"/>
+    <listType typeId="73b5283e-8495-424c-9ec5-949a65d11096" valueTypeId="950300e1-d96d-4e9c-a984-af84db7ef18d"/>
+    <managerType typeId="6b7b0332-ffe9-48f9-a99c-5e4d709d9519" valueTypeId="a214a5a0-09d8-4854-9a48-ff3bfb133572"/>
+  </producedTypes>
+  <name>Команды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Команды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Команды.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Команды.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Команда</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Команды</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Команды.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Команды.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Команды.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="f5e595e0-11d3-4faa-a2fd-ec3740d4adf1">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f8ea5e76-f662-4fa6-b24a-81901d9df101">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e9446731-d621-4c3b-b523-c24de21e9780">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc5ac309-0843-4d01-8689-e9988b27f37e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

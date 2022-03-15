@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c79cdb7-7e9b-47e3-87f1-cfba837a0ccf">
+  <producedTypes>
+    <objectType typeId="f29599ff-f0af-4add-94b1-9f4691ee8aae" valueTypeId="95a7b643-184e-4a52-a7f5-b517c5cc86bb"/>
+    <managerType typeId="f5527e5b-0e18-4e2e-8fa5-0fbb64b410d8" valueTypeId="a9500ff6-7c8c-47f9-8f61-6d7f2beb958d"/>
+  </producedTypes>
+  <name>ОтчетПоПредоставленнымДокументамСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по предоставленным документам спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоПредоставленнымДокументамСпортсменов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоПредоставленнымДокументамСпортсменов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ОтчетПоПредоставленнымДокументамСпортсменов.Form.ФормаНастроек</defaultSettingsForm>
+  <defaultVariantForm>Report.ОтчетПоПредоставленнымДокументамСпортсменов.Form.ФормаВарианта</defaultVariantForm>
+  <forms uuid="10f8f328-83b1-4d5f-80cc-b8f9a169a514">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c7192007-a398-4b93-a571-1482e0b4d597">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd31506d-c1aa-4ad8-998f-f5aee8dafd22">
+    <name>ФормаВарианта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d1dea4ab-4cd6-4dfe-b73a-c64b9860923d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

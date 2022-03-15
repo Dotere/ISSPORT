@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04777fa1-0466-4604-b7e9-a5910e8f95db">
+  <name>АвтоматическиеНапоминанияПользователям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматические напоминания пользователям</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПодтверждениеРазрядаСпортсмена</types>
+    <types>DocumentObject.ПрисвоениеРазряда</types>
+    <types>DocumentObject.СтраховойПолисСпортсмена</types>
+    <types>DocumentObject.ДопускиУчастниковКСпортивнымСоревнованиям</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.УчетСпортсменовАвтоматическоеСозданиеНапоминанийПользователю.АвтоматическиеНапоминанияПользователямОбработкаПроведения</handler>
+</mdclass:EventSubscription>

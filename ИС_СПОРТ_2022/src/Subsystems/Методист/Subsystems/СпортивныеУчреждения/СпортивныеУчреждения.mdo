@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c2f86a9-0193-461f-a5ac-4898ae966806">
+  <name>СпортивныеУчреждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивные учреждения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Организации</content>
+  <content>DocumentJournal.СоставУчащихсяСпортивногоУчреждения</content>
+  <content>Document.ИсключениеИзСпортивногоУчреждения</content>
+  <content>Document.ЗаявленияНаПриемВСпортивноеУчреждение</content>
+  <content>Catalog.ОрганизаторыСоревнований</content>
+  <subsystems>Спортсмены</subsystems>
+  <subsystems>ТренерскийСостав</subsystems>
+  <subsystems>СпортивныеГруппы</subsystems>
+  <subsystems>Этапы</subsystems>
+  <subsystems>СпортивныеОбъекты</subsystems>
+  <subsystems>СборныеСпортсменов</subsystems>
+  <parentSubsystem>Subsystem.Методист</parentSubsystem>
+</mdclass:Subsystem>

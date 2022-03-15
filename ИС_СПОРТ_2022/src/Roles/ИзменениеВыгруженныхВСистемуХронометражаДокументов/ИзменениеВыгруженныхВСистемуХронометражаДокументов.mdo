@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="501a0081-822d-4c68-9c0d-a150d5744471">
+  <name>ИзменениеВыгруженныхВСистемуХронометражаДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение выгруженных в систему хронометража документов</value>
+  </synonym>
+</mdclass:Role>

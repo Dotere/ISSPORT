@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="131194e4-c805-4f4e-b0c4-327bc170f3d7">
+  <producedTypes>
+    <selectionType typeId="0aa636e5-8681-463b-9392-0f059783e120" valueTypeId="ee82100a-fd79-4442-ab22-171f59ecce60"/>
+    <listType typeId="2901cbe8-e8e1-48d4-86af-eaf5b24fab52" valueTypeId="f58d723f-db27-4785-85be-17d40e5686ae"/>
+    <managerType typeId="489f8f2b-463c-46c8-8c75-739039d84d8c" valueTypeId="d7a3a4b7-a7ee-4f42-97d2-ff47e4ce533a"/>
+    <recordSetType typeId="b344604e-0cec-455e-8872-ad0469a45e66" valueTypeId="007f7a32-70d9-446b-857c-f1bf0c8685ad"/>
+    <recordKeyType typeId="d053d761-a586-4975-bc34-69f4c28c82fa" valueTypeId="1500bfd7-6e1e-4a52-aed2-aa189e2ebe9e"/>
+    <recordType typeId="464de259-b75b-423b-ad3b-6899eb12d234" valueTypeId="77feb028-05f1-4bed-88c1-6b7553e4e251"/>
+    <recordManagerType typeId="858a3ea0-ea0f-4dce-9580-c79f3d2c906e" valueTypeId="ed63b12d-77d2-4b9f-b06f-2caf0c5246de"/>
+  </producedTypes>
+  <name>РегистрацияСтраховыхПолисовСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация страховых полисов спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="970a210c-0583-459d-8d36-008bb9a943c4">
+    <name>СтраховаяКомпания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховая компания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтраховыеКомпании</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f65f4776-983b-4d7b-ac8a-9d6a789e103e">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5daf6c99-d202-40b1-8f90-721edb05c43f">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf3392f6-b5cf-40fe-a9da-a027c41f0200">
+    <name>НомерСтраховогоПолиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер страхового полиса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="de0500c0-3ab5-4dab-9362-2609ee3b3e9f">
+    <name>ДатаВыдачиПолиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи полиса</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf9ec1d2-d020-47d9-8caa-5195b345617a">
+    <name>СерияСтраховогоПолиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия страхового полиса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="7088b0f5-2148-46e1-82f7-0c1e0e9ad90d">
+    <name>СтраховаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховая сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1729bea9-7fdc-468d-bf99-4757aee0ecd0">
+    <name>СтраховаяПремия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховая премия</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="54b8ced0-9050-492c-908d-000362206b65">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="082950c9-4ae7-4aef-8cae-2556484516f2">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de85f7fe-be34-4bae-85e8-9c3048ca1b88">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

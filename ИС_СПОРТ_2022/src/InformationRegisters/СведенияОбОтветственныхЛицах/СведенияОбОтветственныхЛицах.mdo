@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c145e82-5b8b-4f73-8906-3b44d066f7f7">
+  <producedTypes>
+    <selectionType typeId="12739556-746e-4b77-8be4-15b990c3581c" valueTypeId="2ed6317d-33a1-4a87-8936-8ff97e856f02"/>
+    <listType typeId="69fb2f04-e6da-4d51-81c9-67421984f648" valueTypeId="52ec0d61-2c4b-4ab6-92de-f9a4caa4011e"/>
+    <managerType typeId="f0dd5b29-edd1-4571-86cf-240460854fc8" valueTypeId="82dcde24-2616-45b1-8daf-546b171d17e9"/>
+    <recordSetType typeId="fadad8d1-dd80-43af-8015-bb0f99c9943c" valueTypeId="01a6fc93-307e-4bd4-a215-0dc46840fe1e"/>
+    <recordKeyType typeId="57c3a14f-5681-4263-93e8-3e7111b59989" valueTypeId="e827ce15-c8b3-4c3c-acb8-10e932466f13"/>
+    <recordType typeId="bd431206-f297-45de-a17a-e1113ad739ef" valueTypeId="3ff665a6-62bc-49ae-bc79-ae11f79342e1"/>
+    <recordManagerType typeId="c9e27862-3adf-4766-a009-1c9870b48db8" valueTypeId="956bb732-6065-498e-8821-9dcaa752fc91"/>
+  </producedTypes>
+  <name>СведенияОбОтветственныхЛицах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения об ответственных лицах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СведенияОбОтветственныхЛицах.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОбОтветственныхЛицах.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения об ответственных лицах</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сведения об ответственных лицах</value>
+  </listPresentation>
+  <resources uuid="ce250afc-0d14-4cbf-8e4b-fef2927f73d7">
+    <name>Заместитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заместитель директора</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="34cedfc2-71dd-4c63-a1a3-fbace7e0e461">
+    <name>ГлавныйБухгалтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главный бухгалтер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d44eda6d-2374-4c5e-a897-3b7c68aeed7a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="def5435c-78f7-4941-9b46-2d0f0f712af0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="69938d1c-3002-4af3-8106-54ba98ec2a04">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

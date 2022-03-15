@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4668c7ce-c68d-426d-98b8-7118d1fb852c">
+  <name>ИспользоватьСтрахованиеСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать страхование спортсменов</value>
+  </synonym>
+  <location>InformationRegister.НастройкиФОДляОрганизации.Resource.ИспользоватьСтрахованиеСпортсменов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.СтраховыеКомпании</content>
+  <content>Document.СтраховойПолисСпортсмена</content>
+  <content>Report.ОтчётОбИстеченииСроковСтрахования</content>
+  <content>Catalog.СтраховойПолисСпортсменаПрисоединенныеФайлы</content>
+  <content>InformationRegister.РегистрацияСтраховыхПолисовСпортсменов</content>
+</mdclass:FunctionalOption>

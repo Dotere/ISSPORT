@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a1b0643-6ae8-4085-b0e2-bfbf87281af7">
+  <producedTypes>
+    <objectType typeId="e4b6277f-9b1e-4836-9b50-a22425864ab5" valueTypeId="1dc29a81-3355-460d-9f05-1032c1b5cb2f"/>
+    <refType typeId="0f542867-ae27-4968-b1d9-e8904f0dce81" valueTypeId="6c4d3f36-3070-4fac-9100-7fa805044cf8"/>
+    <selectionType typeId="d475661d-a5f7-4906-8a29-3eaa45f53a44" valueTypeId="f1663120-3dc3-43ac-93e0-4745ee32e5d3"/>
+    <listType typeId="0417690c-2aad-4c0f-b14f-46707c8d29fe" valueTypeId="df1fd009-e6c7-4cf1-b605-8c3214e38018"/>
+    <managerType typeId="f05b07b9-7883-4636-9ed5-3ba087bbf57a" valueTypeId="ae2205d0-6a58-488f-b24b-ea0fe210a710"/>
+  </producedTypes>
+  <name>СпортивнаяКлассификация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивная классификация</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СпортивнаяКлассификация.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СпортивнаяКлассификация.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Разряды и звания спортсмена</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="7ccd1f68-be2b-488b-b3e8-da896e128cdd">
+      <name>ПервыйСпортивныйРазряд</name>
+      <description>1-й спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="55562d4c-6b5d-483e-83c3-b3153499719f">
+      <name>ПервыйЮношеский</name>
+      <description>1-й юношеский спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="d2ee0b06-ff7c-43bb-8daa-74abcf4890ff">
+      <name>ВторойСпортивныйРазряд</name>
+      <description>2-й спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="6d604808-ec9b-4ce7-bbf6-7cc68deb4e0d">
+      <name>ВторойЮношеский</name>
+      <description>2-й юношеский спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="e2a997c2-a4be-41ac-9b19-c2872855b704">
+      <name>ТретийСпортивныйРазряд</name>
+      <description>3-й спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="11f895a8-4dd3-4bf2-a556-85b720c5025b">
+      <name>ТретийЮношеский</name>
+      <description>3-й юношеский спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="db611f72-d43b-41d8-90ec-a6bb9719d715">
+      <name>ЧетвертыйЮношеский</name>
+      <description>4-й юношеский спортивный разряд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="8a5a4f87-0a4a-48e5-b0de-e8b75c548e48">
+      <name>ГроссмейстерРоссии</name>
+      <description>Гроссмейстер России</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="97810a90-14cb-422e-b39b-0a6d73de794c">
+      <name>ЗаслуженныйМастерСпортаРоссии</name>
+      <description>Заслуженный мастер спорта России</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="36ec41d7-944c-48ff-957c-f3fd14df84a1">
+      <name>КандидатВМастераСпорта</name>
+      <description>Кандидат в мастера спорта</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="2f295817-4bc4-4336-89a3-a00c86c583a3">
+      <name>МастерСпортаРоссии</name>
+      <description>Мастер спорта России</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="11f8f344-a66a-46f5-ac5f-735de2581bd9">
+      <name>МастерСпортаРоссииМеждународногоКласса</name>
+      <description>Мастер спорта России Международного Класса</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <defaultChoiceForm>Catalog.СпортивнаяКлассификация.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="6cf54ac6-c697-485b-9c5c-b16a8856589f">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="be2e8b0d-e196-4ce5-a3b7-79d3827780ea">
+    <name>МинимальныйВозраст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальный возраст</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9603d55-3113-4501-bd74-4d1c1ae96446">
+    <name>КодДляИнтеграции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код (система хронометража)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3629a89d-a7ff-410a-aa8f-808792558ad6">
+    <name>Порядок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3ecde0e1-dac6-438c-b64b-d4f6b557c97f">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия (лет)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4d822194-12d7-46fd-a06a-2f5b303ea3f7">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96273b55-063c-44a0-b388-16a896ba95e7">
+  <producedTypes>
+    <objectType typeId="522a83c8-2473-4981-9b87-063ca6b5b0f1" valueTypeId="abd3212f-4580-46f2-a6dd-dd91d3dd74b0"/>
+    <managerType typeId="42fab27d-c2a5-4424-bd16-bf42efb53b37" valueTypeId="1dd05872-cfc4-4204-82cd-361c3f1a5a0e"/>
+  </producedTypes>
+  <name>СписокСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокСпортсменов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СписокСпортсменов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="5e2f893a-6886-40c1-9dd8-4de67100284a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="908ad575-ebe4-49d6-9ea2-3eca2b1aba87">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

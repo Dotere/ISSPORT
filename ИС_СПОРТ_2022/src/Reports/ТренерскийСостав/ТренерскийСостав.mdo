@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3346c7f-c146-4441-9fb0-18d5e7781cd6">
+  <producedTypes>
+    <objectType typeId="13bcaa50-6243-4c13-b088-7eae566b235d" valueTypeId="8cdc7faf-28be-4770-8346-9b70c0e9436f"/>
+    <managerType typeId="a78c1cc8-5f35-41b9-a29e-9f7121705c36" valueTypeId="99eef945-6c3d-49f7-9bf7-0a01adccde69"/>
+  </producedTypes>
+  <name>ТренерскийСостав</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тренерский состав</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ТренерскийСостав.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ТренерскийСостав.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="22ddc7a6-73fc-45fc-a437-03b35eab027d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c779aae-0d55-4020-b99e-211d57f25659">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8138a440-ce20-4ff6-bb67-6ed0013cae4c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="997197a7-f74d-4267-b645-8b1f63a18ef5">
+    <name>РасшифровкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

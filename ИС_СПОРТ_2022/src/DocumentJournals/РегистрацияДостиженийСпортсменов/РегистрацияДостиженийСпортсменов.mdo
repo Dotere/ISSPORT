@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28b1c5bb-3df8-4334-a89f-ab5789b54971">
+  <producedTypes>
+    <selectionType typeId="f324f0b3-fbab-43c8-8da6-87e1c2bf3287" valueTypeId="1803183e-03f9-4beb-a581-32be4a1d4df1"/>
+    <listType typeId="5ef617d3-46af-4344-b5a3-bcc48ecb8793" valueTypeId="2a0b041c-67d3-42af-80c3-631e166c33d6"/>
+    <managerType typeId="c483e4ee-83f2-4038-8ae0-e5681a955d75" valueTypeId="77b77ecc-bcb3-4fc9-8e41-5120c529d590"/>
+  </producedTypes>
+  <name>РегистрацияДостиженийСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация достижений спортсменов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РегистрацияДостиженийСпортсменов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РегистрацияДостиженийСпортсменов</registeredDocuments>
+  <columns uuid="58611c74-f037-455a-b904-e4c8d2903c84">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.РегистрацияДостиженийСпортсменов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="a59014f0-deda-4976-9b9e-0e3d678c6c75">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.РегистрацияДостиженийСпортсменов.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="76257d8a-425a-47f8-909f-5850c2d58815">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <references>Document.РегистрацияДостиженийСпортсменов.Attribute.УчебныйГод</references>
+  </columns>
+  <columns uuid="59527b4a-652f-43a6-8741-ad06e4e2d4eb">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <references>Document.РегистрацияДостиженийСпортсменов.Attribute.ДокументОснование</references>
+  </columns>
+  <columns uuid="22188ddd-2ce9-4948-aef8-9dfc7e2f6f33">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РегистрацияДостиженийСпортсменов.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="9fdc3095-7751-49b5-863a-7377c0dfe304">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.РегистрацияДостиженийСпортсменов.Attribute.Ответственный</references>
+  </columns>
+  <forms uuid="fd354bc7-6e5c-4c74-bbf6-5f292548df75">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

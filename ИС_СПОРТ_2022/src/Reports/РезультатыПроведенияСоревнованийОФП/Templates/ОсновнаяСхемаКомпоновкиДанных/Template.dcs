@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипСоревнования</dataPath>
+			<field>ТипСоревнования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Норматив</dataPath>
+			<field>Норматив</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МеждународнаяВозрастнаяГруппа</dataPath>
+			<field>МеждународнаяВозрастнаяГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипРезультата</dataPath>
+			<field>ТипРезультата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОснование</dataPath>
+			<field>ДокументОснование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соревнование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РезультатЧисло</dataPath>
+			<field>РезультатЧисло</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РезультатБулево</dataPath>
+			<field>РезультатБулево</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Место</dataPath>
+			<field>Место</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Очки</dataPath>
+			<field>Очки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтартовыйНомер</dataPath>
+			<field>СтартовыйНомер</field>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйГод</dataPath>
+			<field>УчебныйГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументУправлениеУчебнымГодом</dataPath>
+			<field>ДокументУправлениеУчебнымГодом</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ управление учебным годом</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущийУчебныйГод</dataPath>
+			<field>ТекущийУчебныйГод</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий учебный год</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	УправлениеУчебнымГодом.Ссылка КАК ДокументУправлениеУчебнымГодом,
+	УправлениеУчебнымГодом.УчебныйГод КАК УчебныйГод
+ПОМЕСТИТЬ ВТ_ТаблицаУчебныхГодов
+ИЗ
+	Документ.УправлениеУчебнымГодом КАК УправлениеУчебнымГодом
+ГДЕ
+	УправлениеУчебнымГодом.Проведен
+	И НЕ УправлениеУчебнымГодом.ПометкаУдаления
+
+СГРУППИРОВАТЬ ПО
+	УправлениеУчебнымГодом.Ссылка,
+	УправлениеУчебнымГодом.УчебныйГод
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РезультатыВыполненияПоказателейИНормативов.Регистратор КАК Регистратор,
+	РезультатыВыполненияПоказателейИНормативов.Организация КАК Организация,
+	РезультатыВыполненияПоказателейИНормативов.ВидСпорта КАК ВидСпорта,
+	РезультатыВыполненияПоказателейИНормативов.УчебныйГод КАК УчебныйГод,
+	РезультатыВыполненияПоказателейИНормативов.ТипСоревнования КАК ТипСоревнования,
+	РезультатыВыполненияПоказателейИНормативов.Норматив КАК Норматив,
+	РезультатыВыполненияПоказателейИНормативов.Тренер КАК Тренер,
+	РезультатыВыполненияПоказателейИНормативов.Спортсмен КАК Спортсмен,
+	РезультатыВыполненияПоказателейИНормативов.МеждународнаяВозрастнаяГруппа КАК МеждународнаяВозрастнаяГруппа,
+	РезультатыВыполненияПоказателейИНормативов.ДокументОснование КАК ДокументОснование,
+	РезультатыВыполненияПоказателейИНормативов.Место КАК Место,
+	РезультатыВыполненияПоказателейИНормативов.Очки КАК Очки,
+	РезультатыВыполненияПоказателейИНормативов.РезультатЧисло КАК РезультатЧисло,
+	РезультатыВыполненияПоказателейИНормативов.РезультатБулево КАК РезультатБулево,
+	РезультатыВыполненияПоказателейИНормативов.СтартовыйНомер КАК СтартовыйНомер,
+	Нормативы.ТипРезультата КАК ТипРезультата,
+	ВТ_ТаблицаУчебныхГодов.ДокументУправлениеУчебнымГодом КАК ТекущийУчебныйГод
+{ВЫБРАТЬ
+	Организация.*,
+	ВидСпорта.*,
+	УчебныйГод.*,
+	ТипСоревнования.*,
+	Норматив.*,
+	Тренер.*,
+	Спортсмен.*,
+	МеждународнаяВозрастнаяГруппа.*,
+	ДокументОснование.*,
+	Место,
+	Очки,
+	РезультатЧисло,
+	РезультатБулево,
+	Регистратор.*}
+ИЗ
+	РегистрНакопления.РезультатыВыполненияПоказателейИНормативов КАК РезультатыВыполненияПоказателейИНормативов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Нормативы КАК Нормативы
+		ПО РезультатыВыполненияПоказателейИНормативов.Норматив = Нормативы.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ТаблицаУчебныхГодов КАК ВТ_ТаблицаУчебныхГодов
+		ПО РезультатыВыполненияПоказателейИНормативов.УчебныйГод = ВТ_ТаблицаУчебныхГодов.УчебныйГод
+ГДЕ
+	РезультатыВыполненияПоказателейИНормативов.ТипСоревнования = ЗНАЧЕНИЕ(Перечисление.ТипыСдачиНормативов.Соревнование)
+	И ИСТИНА
+{ГДЕ
+	РезультатыВыполненияПоказателейИНормативов.Организация.*,
+	РезультатыВыполненияПоказателейИНормативов.ВидСпорта.*,
+	РезультатыВыполненияПоказателейИНормативов.УчебныйГод.*,
+	РезультатыВыполненияПоказателейИНормативов.ТипСоревнования.*,
+	РезультатыВыполненияПоказателейИНормативов.Норматив.*,
+	РезультатыВыполненияПоказателейИНормативов.Тренер.*,
+	РезультатыВыполненияПоказателейИНормативов.Спортсмен.*,
+	РезультатыВыполненияПоказателейИНормативов.МеждународнаяВозрастнаяГруппа.*,
+	РезультатыВыполненияПоказателейИНормативов.ДокументОснование.*,
+	РезультатыВыполненияПоказателейИНормативов.Место,
+	РезультатыВыполненияПоказателейИНормативов.Очки,
+	РезультатыВыполненияПоказателейИНормативов.РезультатЧисло,
+	РезультатыВыполненияПоказателейИНормативов.РезультатБулево,
+	Нормативы.ТипРезультата.*,
+	ВТ_ТаблицаУчебныхГодов.ДокументУправлениеУчебнымГодом.*}</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Результат</dataPath>
+		<expression>Выбор когда ТипРезультата = Значение(Перечисление.ТипыРезультатов.Булево) тогда
+выбор когда РезультатБулево тогда "Выполнил" иначе "Не выполнил" конец
+	когда ТипРезультата = Значение(Перечисление.ТипыРезультатов.Время) тогда
+	УчетСпортсменовОбщегоНазначенияКлиентСервер.ПересчитатьВремяВМиллесекундахВСтроку(РезультатЧисло)
+	иначе РезультатЧисло конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Результат</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Результаты проведения соревнований по общей физической подготовке</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВидСпорта</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>УчебныйГод</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ДокументОснование</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>МеждународнаяВозрастнаяГруппа</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Норматив</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Спортсмен</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтартовыйНомер</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Тренер</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Место</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РезультатБулево</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РезультатЧисло</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТипРезультата</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Очки</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Результат</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТекущийУчебныйГод</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

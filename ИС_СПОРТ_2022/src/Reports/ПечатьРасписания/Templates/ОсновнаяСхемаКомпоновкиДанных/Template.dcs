@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этап</dataPath>
+			<field>Этап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесьДень</dataPath>
+			<field>ВесьДень</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Весь день</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометка удаления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачала</dataPath>
+			<field>ДатаНачала</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОкончания</dataPath>
+			<field>ДатаОкончания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЗаписи</dataPath>
+			<field>ТипЗаписи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип записи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тренер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивныйОбъект</dataPath>
+			<field>СпортивныйОбъект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спортивный объект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЭлемента</dataPath>
+			<field>ВидЭлемента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид элемента</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачалаИсходная</dataPath>
+			<field>ДатаНачалаИсходная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала исходная</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлительностьЗанятия</dataPath>
+			<field>ДлительностьЗанятия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длительность занятия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗанимающихся</dataPath>
+			<field>КоличествоЗанимающихся</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество занимающихся</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоПроведения</dataPath>
+			<field>МестоПроведения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место проведения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Понедельник</dataPath>
+			<field>Понедельник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Понедельник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пятница</dataPath>
+			<field>Пятница</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пятница</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вторник</dataPath>
+			<field>Вторник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вторник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Среда</dataPath>
+			<field>Среда</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среда</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Четверг</dataPath>
+			<field>Четверг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Четверг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Суббота</dataPath>
+			<field>Суббота</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Суббота</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Воскресенье</dataPath>
+			<field>Воскресенье</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Воскресенье</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОтображаемыеБрони.Ссылка КАК Ссылка,
+	ОтображаемыеБрони.ДатаНачала КАК ДатаНачала,
+	ОтображаемыеБрони.ДатаОкончания КАК ДатаОкончания,
+	ОтображаемыеБрони.ВесьДень КАК ВесьДень,
+	ОтображаемыеБрони.ТипЗаписи КАК ТипЗаписи,
+	ОтображаемыеБрони.Тренер КАК Тренер,
+	ОтображаемыеБрони.ВидСпорта КАК ВидСпорта,
+	ОтображаемыеБрони.Этап КАК Этап,
+	ОтображаемыеБрони.СпортивныйОбъект КАК СпортивныйОбъект,
+	ОтображаемыеБрони.МестоЗанятия КАК МестоЗанятия,
+	ОтображаемыеБрони.ПометкаУдаления КАК ПометкаУдаления,
+	ОтображаемыеБрони.ВидЭлемента КАК ВидЭлемента,
+	ОтображаемыеБрони.ДатаНачалаИсходная КАК ДатаНачалаИсходная
+ПОМЕСТИТЬ ОтображаемыеБрони
+ИЗ
+	&amp;ОтображаемыеБрони КАК ОтображаемыеБрони
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Организация КАК Организация,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(
+			&amp;Период,
+			Организация = &amp;Организация
+				И Спортсмен.СтатусСпортсмена &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСпортсменов.СпортсменДругогоСпортивногоУчреждения)) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен) КАК КоличествоЗанимающихся,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап КАК Этап,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер КАК Тренер
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	ОтображаемыеБрони КАК ОтображаемыеБрони
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(
+				&amp;Период,
+				Спортсмен В
+						(ВЫБРАТЬ
+							ВТ_СоставУчащихся.Спортсмен КАК Спортсмен
+						ИЗ
+							ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)
+					И Этап &lt;&gt; ЗНАЧЕНИЕ(Справочник.ЭтапыСпортивнойПодготовки.ПустаяСсылка)) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+		ПО ОтображаемыеБрони.Этап = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап
+			И ОтображаемыеБрони.Тренер = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер
+			И ОтображаемыеБрони.ВидСпорта = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта
+
+СГРУППИРОВАТЬ ПО
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер
+
+ИНДЕКСИРОВАТЬ ПО
+	КоличествоЗанимающихся
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОтображаемыеБрони.Ссылка КАК Ссылка,
+	ОтображаемыеБрони.ДатаНачала КАК ДатаНачала,
+	ОтображаемыеБрони.ДатаОкончания КАК ДатаОкончания,
+	ОтображаемыеБрони.ВесьДень КАК ВесьДень,
+	ОтображаемыеБрони.ТипЗаписи КАК ТипЗаписи,
+	ОтображаемыеБрони.Тренер КАК Тренер,
+	ОтображаемыеБрони.ВидСпорта КАК ВидСпорта,
+	ОтображаемыеБрони.Этап КАК Этап,
+	ОтображаемыеБрони.СпортивныйОбъект КАК СпортивныйОбъект,
+	ОтображаемыеБрони.МестоЗанятия КАК МестоПроведения,
+	ОтображаемыеБрони.ПометкаУдаления КАК ПометкаУдаления,
+	ОтображаемыеБрони.ВидЭлемента КАК ВидЭлемента,
+	ОтображаемыеБрони.ДатаНачалаИсходная КАК ДатаНачалаИсходная,
+	РАЗНОСТЬДАТ(ОтображаемыеБрони.ДатаНачала, ОтображаемыеБрони.ДатаОкончания, ЧАС) КАК ДлительностьЗанятия,
+	ВТ_Этапы.КоличествоЗанимающихся КАК КоличествоЗанимающихся,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 1
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Понедельник,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 2
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Вторник,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 3
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Среда,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 4
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Четверг,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 5
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Пятница,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 6
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Суббота,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ОтображаемыеБрони.ДатаНачала) = 7
+			ТОГДА ОтображаемыеБрони.ДатаНачала + ":" + ОтображаемыеБрони.ДатаОкончания
+	КОНЕЦ КАК Воскресенье
+ИЗ
+	ОтображаемыеБрони КАК ОтображаемыеБрони
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Этапы КАК ВТ_Этапы
+		ПО ОтображаемыеБрони.Этап = ВТ_Этапы.Этап
+			И ОтображаемыеБрони.ВидСпорта = ВТ_Этапы.ВидСпорта
+			И ОтображаемыеБрони.Тренер = ВТ_Этапы.Тренер</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>КоличествоЧасов</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество часов</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ОтображаемыеБрони</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отображаемые брони</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:ValueTable</v8:Type>
+		</valueType>
+		<value xsi:type="v8:ValueTable"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Тренер</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ОтображаемыеБрони</dcscor:parameter>
+					<dcscor:value xsi:type="v8:ValueTable"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Тренер</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Этап</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>КоличествоЗанимающихся</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>МестоЗанятия</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

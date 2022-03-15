@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="feb941ce-cb6f-4605-ad05-ce07bd846113">
+  <name>Соревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соревнования</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Нормативы</content>
+  <content>Catalog.НаборыДополнительныхРеквизитовИСведений</content>
+  <content>Catalog.Соревнование</content>
+  <content>Catalog.СостоянияПопыток</content>
+  <content>Catalog.Команды</content>
+  <content>InformationRegister.ВключениеСоревнованийВРейтинги</content>
+  <content>Report.СборныеКомандыСпортсменов</content>
+  <content>ed85e5df-ec2a-4c80-8e81-49b3126dd96f</content>
+  <content>Report.ОтчетПоСоревновательнойДеятельности</content>
+  <content>Report.АктуальныйСписокСоревнований</content>
+  <content>Report.ВыступлениеНаСоревнованиях</content>
+  <content>Catalog.РанжированиеСоревнований</content>
+  <parentSubsystem>Subsystem.ПроведениеСоревнованийФормированиеРейтингов</parentSubsystem>
+</mdclass:Subsystem>

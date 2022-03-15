@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спортсмен</dataPath>
+			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпорта</dataPath>
+			<field>ВидСпорта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСпортаУдалить</dataPath>
+			<field>ВидСпортаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпортивнаяПрограммаУдалить</dataPath>
+			<field>СпортивнаяПрограммаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйГод</dataPath>
+			<field>УчебныйГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапУдалить</dataPath>
+			<field>ЭтапУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаУдалить</dataPath>
+			<field>ГруппаУдалить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачалаОбучения</dataPath>
+			<field>ДатаНачалаОбучения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыдачиПолиса</dataPath>
+			<field>ДатаВыдачиПолиса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачала</dataPath>
+			<field>ДатаНачала</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОкончания</dataPath>
+			<field>ДатаОкончания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтраховогоПолиса</dataPath>
+			<field>НомерСтраховогоПолиса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтраховаяКомпания</dataPath>
+			<field>СтраховаяКомпания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДнейДоОкончанияСтраховки</dataPath>
+			<field>КоличествоДнейДоОкончанияСтраховки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дней до окончания страховки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этап</dataPath>
+			<field>Этап</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тренер</dataPath>
+			<field>Тренер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Группа</dataPath>
+			<field>Группа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппировкаПолиса</dataPath>
+			<field>ГруппировкаПолиса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировка полиса</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Организация КАК Организация,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения КАК ДатаОкончанияОбучения,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаНачалаОбучения КАК ДатаНачалаОбучения
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(&amp;ДатаОтчета, ) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1)
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения &gt; &amp;ДатаОтчета)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_СоставСпортУчереждения.Спортсмен КАК Спортсмен,
+	ВТ_СоставСпортУчереждения.Организация КАК Организация,
+	ВТ_СоставСпортУчереждения.ВидСпорта КАК ВидСпорта,
+	ВТ_СоставСпортУчереждения.ДатаНачалаОбучения КАК ДатаНачалаОбучения,
+	РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.ДатаВыдачиПолиса КАК ДатаВыдачиПолиса,
+	РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.ДатаНачала КАК ДатаНачала,
+	РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.ДатаОкончания КАК ДатаОкончания,
+	РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.НомерСтраховогоПолиса КАК НомерСтраховогоПолиса,
+	РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.СтраховаяКомпания КАК СтраховаяКомпания,
+	ВЫБОР
+		КОГДА НЕ РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.ДатаОкончания ЕСТЬ NULL
+			ТОГДА РАЗНОСТЬДАТ(&amp;ДатаОтчета, РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.ДатаОкончания, ДЕНЬ)
+		ИНАЧЕ "Без страхового полиса"
+	КОНЕЦ КАК КоличествоДнейДоОкончанияСтраховки
+ПОМЕСТИТЬ ВТ_СтраховойПолис
+ИЗ
+	ВТ_СоставУчащихся КАК ВТ_СоставСпортУчереждения
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РегистрацияСтраховыхПолисовСпортсменов.СрезПоследних(
+				,
+				Спортсмен В
+					(ВЫБРАТЬ
+						ВТ_СоставУчащихся.Спортсмен КАК Спортсмен
+					ИЗ
+						ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК РегистрацияСтраховыхПолисовСпортсменовСрезПоследних
+		ПО ВТ_СоставСпортУчереждения.Спортсмен = РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.Спортсмен
+ГДЕ
+	РегистрацияСтраховыхПолисовСпортсменовСрезПоследних.ДатаНачала &lt;= &amp;ДатаОтчета
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_СтраховойПолис.Спортсмен КАК Спортсмен,
+	ВТ_СтраховойПолис.Организация КАК Организация,
+	ВТ_СтраховойПолис.ВидСпорта КАК ВидСпорта,
+	ВТ_СтраховойПолис.ДатаНачалаОбучения КАК ДатаНачалаОбучения,
+	ВТ_СтраховойПолис.ДатаВыдачиПолиса КАК ДатаВыдачиПолиса,
+	ВТ_СтраховойПолис.ДатаНачала КАК ДатаНачала,
+	ВТ_СтраховойПолис.ДатаОкончания КАК ДатаОкончания,
+	ВТ_СтраховойПолис.НомерСтраховогоПолиса КАК НомерСтраховогоПолиса,
+	ВТ_СтраховойПолис.СтраховаяКомпания КАК СтраховаяКомпания,
+	ВТ_СтраховойПолис.КоличествоДнейДоОкончанияСтраховки КАК КоличествоДнейДоОкончанияСтраховки,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Этап КАК Этап,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер КАК Тренер
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	ВТ_СтраховойПолис КАК ВТ_СтраховойПолис
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(
+				&amp;ДатаОтчета,
+				(Спортсмен, ВидСпорта) В
+					(ВЫБРАТЬ
+						ВТ_СоставУчащихся.Спортсмен КАК Спортсмен,
+						ВТ_СоставУчащихся.ВидСпорта КАК ВидСпорта
+					ИЗ
+						ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+		ПО ВТ_СтраховойПолис.ВидСпорта = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта
+			И ВТ_СтраховойПолис.Спортсмен = ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен
+			И ВТ_СтраховойПолис.ДатаНачалаОбучения &lt;= ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	МАКСИМУМ(СоставГруппыСрезПоследних.Период) КАК Период,
+	СоставГруппыСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставГруппыСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_Группы_Пред
+ИЗ
+	РегистрСведений.СоставГруппы.СрезПоследних(
+			&amp;ДатаОтчета,
+			(Спортсмен, ВидСпорта) В
+				(ВЫБРАТЬ
+					ВТ_СоставУчащихся.Спортсмен КАК Спортсмен,
+					ВТ_СоставУчащихся.ВидСпорта КАК ВидСпорта
+				ИЗ
+					ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК СоставГруппыСрезПоследних
+
+СГРУППИРОВАТЬ ПО
+	СоставГруппыСрезПоследних.ВидСпорта,
+	СоставГруппыСрезПоследних.Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставГруппыСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставГруппыСрезПоследних.ВидСпорта КАК ВидСпорта,
+	СоставГруппыСрезПоследних.Группа КАК Группа
+ПОМЕСТИТЬ ВТ_Группы
+ИЗ
+	ВТ_Группы_Пред КАК ВТ_Группы_Пред
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставГруппы.СрезПоследних КАК СоставГруппыСрезПоследних
+		ПО ВТ_Группы_Пред.Период = СоставГруппыСрезПоследних.Период
+			И ВТ_Группы_Пред.Спортсмен = СоставГруппыСрезПоследних.Спортсмен
+			И ВТ_Группы_Пред.ВидСпорта = СоставГруппыСрезПоследних.ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Этапы.Спортсмен КАК Спортсмен,
+	ВТ_Этапы.Организация КАК Организация,
+	ВТ_Этапы.ВидСпорта КАК ВидСпорта,
+	ВТ_Этапы.ДатаНачалаОбучения КАК ДатаНачалаОбучения,
+	ВТ_Этапы.ДатаВыдачиПолиса КАК ДатаВыдачиПолиса,
+	ВТ_Этапы.ДатаНачала КАК ДатаНачала,
+	ВТ_Этапы.ДатаОкончания КАК ДатаОкончания,
+	ВТ_Этапы.НомерСтраховогоПолиса КАК НомерСтраховогоПолиса,
+	ВТ_Этапы.СтраховаяКомпания КАК СтраховаяКомпания,
+	ВТ_Этапы.КоличествоДнейДоОкончанияСтраховки КАК КоличествоДнейДоОкончанияСтраховки,
+	ВТ_Этапы.Этап КАК Этап,
+	ВТ_Этапы.Тренер КАК Тренер,
+	ВТ_Группы.Группа КАК Группа
+ПОМЕСТИТЬ ВТ_ГруппаУчащихся
+ИЗ
+	ВТ_Этапы КАК ВТ_Этапы
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Группы КАК ВТ_Группы
+		ПО ВТ_Этапы.Спортсмен = ВТ_Группы.Спортсмен
+			И ВТ_Этапы.ВидСпорта = ВТ_Группы.ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ГруппаУчащихся.Спортсмен КАК Спортсмен,
+	ВТ_ГруппаУчащихся.Организация КАК Организация,
+	ВТ_ГруппаУчащихся.ВидСпорта КАК ВидСпорта,
+	ВТ_ГруппаУчащихся.ДатаНачалаОбучения КАК ДатаНачалаОбучения,
+	ВТ_ГруппаУчащихся.ДатаВыдачиПолиса КАК ДатаВыдачиПолиса,
+	ВТ_ГруппаУчащихся.ДатаНачала КАК ДатаНачала,
+	ВТ_ГруппаУчащихся.ДатаОкончания КАК ДатаОкончания,
+	ВТ_ГруппаУчащихся.НомерСтраховогоПолиса КАК НомерСтраховогоПолиса,
+	ВТ_ГруппаУчащихся.СтраховаяКомпания КАК СтраховаяКомпания,
+	ВТ_ГруппаУчащихся.КоличествоДнейДоОкончанияСтраховки КАК КоличествоДнейДоОкончанияСтраховки,
+	ВТ_ГруппаУчащихся.Этап КАК Этап,
+	ВТ_ГруппаУчащихся.Тренер КАК Тренер,
+	ВТ_ГруппаУчащихся.Группа КАК Группа,
+	ВЫБОР
+		КОГДА ВТ_ГруппаУчащихся.КоличествоДнейДоОкончанияСтраховки = "Без страхового полиса"
+			ТОГДА "Спортсмены без полиса"
+		КОГДА ВТ_ГруппаУчащихся.КоличествоДнейДоОкончанияСтраховки &lt;= 0
+			ТОГДА "Просроченные страховые полиса"
+		КОГДА ВТ_ГруппаУчащихся.КоличествоДнейДоОкончанияСтраховки &gt; 0
+			ТОГДА "Действующие страховые полиса"
+	КОНЕЦ КАК ГруппировкаПолиса
+ИЗ
+	ВТ_ГруппаУчащихся КАК ВТ_ГруппаУчащихся
+{ГДЕ
+	(ВТ_ГруппаУчащихся.НомерСтраховогоПолиса = &amp;НомерСтраховогоПолиса),
+	(ВТ_ГруппаУчащихся.Спортсмен = &amp;Спортсмен),
+	(ВТ_ГруппаУчащихся.ВидСпорта = &amp;ВидСпорта)}</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>НомерСтраховогоПолиса</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Номер страхового полиса</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>0</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Спортсмен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Спортсмен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Спортсмены</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидСпорта</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид спорта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыСпорта</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">НомерСтроки</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Спортсмен</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Группа</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Этап</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Тренер</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">22</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">22</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаВыдачиПолиса</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаНачала</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДатаОкончания</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">НомерСтраховогоПолиса</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">СтраховаяКомпания</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КоличествоДнейДоОкончанияСтраховки</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.875</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>НомерСтроки</dcsat:name>
+			<dcsat:expression>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Спортсмен</dcsat:name>
+			<dcsat:expression>Представление(Спортсмен)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Группа</dcsat:name>
+			<dcsat:expression>Представление(Группа)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Этап</dcsat:name>
+			<dcsat:expression>Представление(Этап)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Тренер</dcsat:name>
+			<dcsat:expression>Представление(Тренер)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаВыдачиПолиса</dcsat:name>
+			<dcsat:expression>ДатаВыдачиПолиса</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаНачала</dcsat:name>
+			<dcsat:expression>ДатаНачала</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДатаОкончания</dcsat:name>
+			<dcsat:expression>ДатаОкончания</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>НомерСтраховогоПолиса</dcsat:name>
+			<dcsat:expression>НомерСтраховогоПолиса</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>СтраховаяКомпания</dcsat:name>
+			<dcsat:expression>Представление(СтраховаяКомпания)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КоличествоДнейДоОкончанияСтраховки</dcsat:name>
+			<dcsat:expression>КоличествоДнейДоОкончанияСтраховки</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ГруппировкаПолиса</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ГруппировкаПолиса</dcsat:name>
+			<dcsat:expression>ГруппировкаПолиса</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ВидСпорта</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ВидСпорта</dcsat:name>
+			<dcsat:expression>Представление(ВидСпорта)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">6.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спортсмен</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Этап</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тренер</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">22</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">22</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата выдачи полиса</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">17.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата начала</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата окончания</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номер страхового полиса</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">11.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Страховая компания</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество дней до окончания стахового полиса</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.875</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<groupTemplate>
+		<groupName>СтрДанные</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ГруппировкаПолиса</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>ГруппировкаВидСпорта</groupName>
+		<templateType>Header</templateType>
+		<template>Макет3</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Шапка</groupName>
+		<templateType>Header</templateType>
+		<template>Макет4</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет об истечении сроков страхования</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>3ed5f51d-5e22-4367-8b0b-f1191b799735</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>9379bd24-c488-49b5-ad78-c7889ed74efc</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НомерСтраховогоПолиса</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>25d5c525-ead7-4368-9cbc-47590cb517a7</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Спортсмен</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>25d10ab3-9173-4bd0-a0f7-88b6776fb068</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидСпорта</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e29b5a5e-aa04-474b-a6eb-71a4a4f12eaa</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Шапка</dcsset:name>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>ГруппировкаПолиса</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ГруппировкаПолиса</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ГруппировкаПолиса</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Просроченные страховые полиса</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:name>ГруппировкаВидСпорта</dcsset:name>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидСпорта</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:name>СтрДанные</dcsset:name>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Спортсмен</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Группа</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Этап</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Тренер</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период действия</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаНачала</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаОкончания</dcsset:field>
+									</dcsset:item>
+									<dcsset:placement>Auto</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СтраховаяКомпания</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачалаОбучения</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter/>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>Формат</dcscor:parameter>
+											<dcscor:value xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДЛФ=D</v8:content>
+												</v8:item>
+											</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Спортсмен</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Группа</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Этап</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтраховаяКомпания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Тренер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">КоличествоДнейДоОкончанияСтраховки</dcsset:left>
+											<dcsset:comparisonType>Less</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:SandyBrown</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Спортсмен</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Группа</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Этап</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтраховаяКомпания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Тренер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">КоличествоДнейДоОкончанияСтраховки</dcsset:left>
+											<dcsset:comparisonType>Contains</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:string">Без страхового полиса</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:LightSkyBlue</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>ГруппировкаПолиса</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ГруппировкаПолиса</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ГруппировкаПолиса</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Спортсмены без полиса</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:name>ГруппировкаВидСпорта</dcsset:name>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидСпорта</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:name>СтрДанные</dcsset:name>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Спортсмен</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Группа</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Этап</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Тренер</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период действия</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаНачала</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаОкончания</dcsset:field>
+									</dcsset:item>
+									<dcsset:placement>Auto</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СтраховаяКомпания</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачалаОбучения</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter/>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>Формат</dcscor:parameter>
+											<dcscor:value xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДЛФ=D</v8:content>
+												</v8:item>
+											</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Спортсмен</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Группа</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Этап</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтраховаяКомпания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Тренер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">КоличествоДнейДоОкончанияСтраховки</dcsset:left>
+											<dcsset:comparisonType>Less</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:SandyBrown</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Спортсмен</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Группа</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Этап</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтраховаяКомпания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Тренер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">КоличествоДнейДоОкончанияСтраховки</dcsset:left>
+											<dcsset:comparisonType>Contains</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:string">Без страхового полиса</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:LightSkyBlue</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>ГруппировкаПолиса</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ГруппировкаПолиса</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ГруппировкаПолиса</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Действующие страховые полиса</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:name>ГруппировкаВидСпорта</dcsset:name>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидСпорта</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:name>СтрДанные</dcsset:name>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Спортсмен</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Группа</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Этап</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Тренер</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период действия</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаНачала</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ДатаОкончания</dcsset:field>
+									</dcsset:item>
+									<dcsset:placement>Auto</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СтраховаяКомпания</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачалаОбучения</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter/>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>Формат</dcscor:parameter>
+											<dcscor:value xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДЛФ=D</v8:content>
+												</v8:item>
+											</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Спортсмен</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Группа</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Этап</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтраховаяКомпания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Тренер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">КоличествоДнейДоОкончанияСтраховки</dcsset:left>
+											<dcsset:comparisonType>Less</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:SandyBrown</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Спортсмен</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Группа</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Этап</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаВыдачиПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаНачала</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ДатаОкончания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КоличествоДнейДоОкончанияСтраховки</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>НомерСтраховогоПолиса</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтраховаяКомпания</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Тренер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">КоличествоДнейДоОкончанияСтраховки</dcsset:left>
+											<dcsset:comparisonType>Contains</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:string">Без страхового полиса</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:LightSkyBlue</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

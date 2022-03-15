@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Table">
+    <name>Список</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Список</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <items xsi:type="form:FormField">
+      <name>СписокДатаВидаСпорта</name>
+      <id>24</id>
+      <title>
+        <key>ru</key>
+        <value>Дата</value>
+      </title>
+      <titleTextColor xsi:type="core:ColorRef">
+        <color>Web.Black</color>
+      </titleTextColor>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ДатаВидаСпорта</segments>
+      </dataPath>
+      <titleBackColor xsi:type="core:ColorRef">
+        <color>Web.White</color>
+      </titleBackColor>
+      <extendedTooltip>
+        <name>СписокДатаВидаСпортаРасширеннаяПодсказка</name>
+        <id>26</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокДатаВидаСпортаКонтекстноеМеню</name>
+        <id>25</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокВидСпорта</name>
+      <id>14</id>
+      <titleTextColor xsi:type="core:ColorRef">
+        <color>Web.Black</color>
+      </titleTextColor>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ВидСпорта</segments>
+      </dataPath>
+      <titleBackColor xsi:type="core:ColorRef">
+        <color>Web.White</color>
+      </titleBackColor>
+      <extendedTooltip>
+        <name>СписокВидСпортаРасширеннаяПодсказка</name>
+        <id>16</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокВидСпортаКонтекстноеМеню</name>
+        <id>15</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокВведёнВручную</name>
+      <id>21</id>
+      <titleTextColor xsi:type="core:ColorRef">
+        <color>Web.Black</color>
+      </titleTextColor>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ВведёнВручную</segments>
+      </dataPath>
+      <titleBackColor xsi:type="core:ColorRef">
+        <color>Web.White</color>
+      </titleBackColor>
+      <extendedTooltip>
+        <name>СписокВведёнВручнуюРасширеннаяПодсказка</name>
+        <id>23</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокВведёнВручнуюКонтекстноеМеню</name>
+        <id>22</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <autoCommandBar>
+      <name>СписокКоманднаяПанель</name>
+      <id>3</id>
+      <items xsi:type="form:Button">
+        <name>СписокДобавитьВидСпорта</name>
+        <id>17</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СписокДобавитьВидСпортаРасширеннаяПодсказка</name>
+          <id>18</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ДобавитьВидСпорта</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <textColor xsi:type="core:ColorRef">
+          <color>Web.Black</color>
+        </textColor>
+        <backColor xsi:type="core:ColorDef">
+          <red>254</red>
+          <green>176</green>
+          <blue>106</blue>
+        </backColor>
+        <borderColor xsi:type="core:ColorDef">
+          <red>254</red>
+          <green>176</green>
+          <blue>106</blue>
+        </borderColor>
+        <font xsi:type="core:FontRef">
+          <font>Style.NormalTextFont</font>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>СписокУдалитьВидСпорта</name>
+        <id>19</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СписокУдалитьВидСпортаРасширеннаяПодсказка</name>
+          <id>20</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.УдалитьВидСпорта</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <textColor xsi:type="core:ColorRef">
+          <color>Web.Black</color>
+        </textColor>
+        <backColor xsi:type="core:ColorRef">
+          <color>Web.White</color>
+        </backColor>
+        <font xsi:type="core:FontRef">
+          <font>Style.NormalTextFont</font>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <horizontalAlign>Left</horizontalAlign>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <searchStringAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>СписокСтрокаПоиска</name>
+      <id>5</id>
+      <extendedTooltip>
+        <name>СписокСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСтрокаПоискаКонтекстноеМеню</name>
+        <id>6</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>СписокСостояниеПросмотра</name>
+      <id>8</id>
+      <extendedTooltip>
+        <name>СписокСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>10</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСостояниеПросмотраКонтекстноеМеню</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>СписокУправлениеПоиском</name>
+      <id>11</id>
+      <extendedTooltip>
+        <name>СписокУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>13</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокУправлениеПоискомКонтекстноеМеню</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>СписокРасширеннаяПодсказка</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СписокКонтекстноеМеню</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <representation>HierarchicalList</representation>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <useAlternationRowColor>true</useAlternationRowColor>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <fileDragMode>AsFileRef</fileDragMode>
+    <rowPictureDataPath xsi:type="form:DataPath">
+      <segments>Список.DefaultPicture</segments>
+    </rowPictureDataPath>
+    <extInfo xsi:type="form:DynamicListTableExtInfo">
+      <autoRefreshPeriod>60</autoRefreshPeriod>
+      <period>
+        <startDate>0001-01-01T00:00:00</startDate>
+        <endDate>0001-01-01T00:00:00</endDate>
+      </period>
+      <topLevelParent xsi:type="core:UndefinedValue"/>
+      <showRoot>true</showRoot>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>ОрганизацияСсылка</name>
+    <title>
+      <key>ru</key>
+      <value>Организация ссылка</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>CatalogRef.Организации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТренерСсылка</name>
+    <title>
+      <key>ru</key>
+      <value>Тренер ссылка</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>CatalogRef.Тренеры</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Список</name>
+    <title>
+      <key>ru</key>
+      <value>Список</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Спортсмен КАК Спортсмен,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.Организация КАК Организация,
+	СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ВидСпорта КАК ВидСпорта
+ПОМЕСТИТЬ ВТ_СоставУчащихся
+ИЗ
+	РегистрСведений.СоставУчащихсяСпортивногоУчреждения.СрезПоследних(
+			,
+			Организация = &amp;Организация
+				И Спортсмен.СтатусСпортсмена &lt;> ЗНАЧЕНИЕ(Перечисление.СтатусыСпортсменов.СпортсменДругогоСпортивногоУчреждения)) КАК СоставУчащихсяСпортивногоУчрежденияСрезПоследних
+ГДЕ
+	(СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения > &amp;ТекущаяДата
+			ИЛИ СоставУчащихсяСпортивногоУчрежденияСрезПоследних.ДатаОкончанияОбучения = ДАТАВРЕМЯ(1, 1, 1))
+
+ИНДЕКСИРОВАТЬ ПО
+	Спортсмен,
+	Организация,
+	ВидСпорта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Организация КАК Организация,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.ВидСпорта КАК ВидСпорта,
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Спортсмен КАК Спортсмен
+ПОМЕСТИТЬ ВТ_Этапы
+ИЗ
+	РегистрСведений.ЭтапыСпортивнойПодготовкиСпортсменов.СрезПоследних(
+			,
+			(Спортсмен, ВидСпорта) В
+				(ВЫБРАТЬ
+					ВТ_СоставУчащихся.Спортсмен КАК Спортсмен,
+					ВТ_СоставУчащихся.ВидСпорта КАК ВидСпорта
+				ИЗ
+					ВТ_СоставУчащихся КАК ВТ_СоставУчащихся)) КАК ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних
+ГДЕ
+	ЭтапыСпортивнойПодготовкиСпортсменовСрезПоследних.Тренер = &amp;Тренер
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	ВидСпорта,
+	Спортсмен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КоличествоВидовСпортаТренеровОстатки.ВидСпорта КАК ВидСпорта,
+	&quot;Введён вручную&quot; КАК ВведёнВручную,
+	КоличествоВидовСпортаТренеровОстатки.ДатаВидаСпорта КАК ДатаВидаСпорта
+ПОМЕСТИТЬ ВТ_Объединение
+ИЗ
+	РегистрНакопления.КоличествоВидовСпортаТренеров.Остатки(, Тренер = &amp;Тренер) КАК КоличествоВидовСпортаТренеровОстатки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрНакопления.КоличествоВидовСпортаТренеров КАК КоличествоВидовСпортаТренеров
+		ПО КоличествоВидовСпортаТренеровОстатки.Организация = КоличествоВидовСпортаТренеров.Организация
+			И КоличествоВидовСпортаТренеровОстатки.ВидСпорта = КоличествоВидовСпортаТренеров.ВидСпорта
+			И КоличествоВидовСпортаТренеровОстатки.Тренер = КоличествоВидовСпортаТренеров.Тренер
+			И КоличествоВидовСпортаТренеровОстатки.ДатаВидаСпорта = КоличествоВидовСпортаТренеров.ДатаВидаСпорта
+ГДЕ
+	ТИПЗНАЧЕНИЯ(КоличествоВидовСпортаТренеров.Регистратор) = ТИП(Документ.ВводВидаСпортаВручную)
+	И КоличествоВидовСпортаТренеров.Регистратор.Проведен
+	И КоличествоВидовСпортаТренеров.Регистратор.ПометкаУдаления = ЛОЖЬ
+	И КоличествоВидовСпортаТренеров.Регистратор.Проведен
+	И КоличествоВидовСпортаТренеров.Регистратор.ПометкаУдаления = ЛОЖЬ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТ_Этапы.ВидСпорта,
+	NULL,
+	NULL
+ИЗ
+	ВТ_Этапы КАК ВТ_Этапы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Объединение.ВидСпорта КАК ВидСпорта,
+	ВТ_Объединение.ВведёнВручную КАК ВведёнВручную,
+	ВТ_Объединение.ДатаВидаСпорта КАК ДатаВидаСпорта
+ИЗ
+	ВТ_Объединение КАК ВТ_Объединение</queryText>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+    </extInfo>
+  </attributes>
+  <formCommands>
+    <name>ДобавитьВидСпорта</name>
+    <title>
+      <key>ru</key>
+      <value>Добавить вид спорта</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Добавить вид спорта</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДобавитьВидСпорта</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>УдалитьВидСпорта</name>
+    <title>
+      <key>ru</key>
+      <value>Удалить вид спорта</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Удалить вид спорта</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УдалитьВидСпорта</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

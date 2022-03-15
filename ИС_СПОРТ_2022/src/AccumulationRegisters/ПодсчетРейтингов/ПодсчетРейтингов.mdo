@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41a1077d-d032-4d8e-bb6e-691193847747">
+  <producedTypes>
+    <selectionType typeId="42417fea-564f-4cfb-8ecf-605e9601164f" valueTypeId="66f31802-f5dc-4e36-89e9-bb13716ce685"/>
+    <listType typeId="1033d3de-3387-4e7b-a171-6e651dc4ed54" valueTypeId="f37c318c-337b-4df2-85f1-6222b3a86de1"/>
+    <managerType typeId="cfb700d4-c19b-43a2-ac5a-33ecf47da664" valueTypeId="925a8a35-a726-42b1-9f79-9c3667e467ec"/>
+    <recordSetType typeId="31989c4d-4a4c-4350-be58-97ced3015fee" valueTypeId="f6ab102b-b466-433e-a6b8-188c515a2a23"/>
+    <recordKeyType typeId="9eeeea13-e36d-42db-a754-2b5a7bf1fdc6" valueTypeId="97c53628-7fe9-4530-ac83-806dad6d52c7"/>
+    <recordType typeId="ae88023f-0eac-457f-bc03-5f5fcf62a210" valueTypeId="fb9b709d-75b3-442e-b612-93c9ac89ba6e"/>
+  </producedTypes>
+  <name>ПодсчетРейтингов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсчет рейтингов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="e5e9f559-a113-41e4-90bf-13efd197d988">
+    <name>КоличествоБаллов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество баллов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="cc33a287-83d6-40cd-b8fa-364eac9cdecf">
+    <name>Рейтинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтинг</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Рейтинги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c54d168d-d502-4393-a4b9-c695a5da7789">
+    <name>Организатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организатор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="aa00c3b6-7fb3-4ba6-8ae6-510d242f3607">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="89aba470-1c3a-45fd-9f76-3514e257eff5">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="bddb88bd-edf0-4ec0-9a98-7de3c7f4698d">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="56792c9c-3830-4237-92f9-871545c4c9ae">
+    <name>МеждународнаяВозрастнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="fd56698b-cc48-4c21-95d9-1dc5684c201f">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c4097e8e-eee8-48c5-b822-784e0b380a9f">
+    <name>Команда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Команды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="affc6dce-ad55-49a0-8454-20eddd8c36cf">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6eee5631-ab30-484e-abbf-48a1e71f93b7">
+    <name>Дисциплина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивныеДисциплины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

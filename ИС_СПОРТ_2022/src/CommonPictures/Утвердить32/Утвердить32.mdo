@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2125851-2add-4e2a-9dac-f86a953fc52c">
+  <name>Утвердить32</name>
+  <synonym>
+    <key>ru</key>
+    <value>Утвердить32</value>
+  </synonym>
+  <transparentPixel>
+    <x>27</x>
+    <y>2</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

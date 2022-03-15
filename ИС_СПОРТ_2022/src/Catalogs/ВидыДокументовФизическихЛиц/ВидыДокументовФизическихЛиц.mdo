@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b8c7dc6-c4ef-431a-8f0b-a00ebc87925e">
+  <producedTypes>
+    <objectType typeId="67b2fc5b-da33-435e-8148-9006d9b307b3" valueTypeId="70bcb6ac-5a19-4d1b-bbbb-63c0a4f1a210"/>
+    <refType typeId="489d37ef-407b-4ad3-9bd3-097723fb4ee3" valueTypeId="a2f7a684-ca42-4b67-aa89-9907f7e52883"/>
+    <selectionType typeId="1c5d1d72-b51f-4599-badb-266c8e7d8a6f" valueTypeId="42660dc3-b2e7-47fd-a5a8-5eee5488f850"/>
+    <listType typeId="d51812e0-f83e-4f11-a8a5-adb57418d3fb" valueTypeId="0af54daa-35a8-43a5-bea5-7b7c945de0a2"/>
+    <managerType typeId="96fbb387-e365-4332-9f6c-3209068dc62b" valueTypeId="c29fd3fa-7923-42f4-8488-d78cc2f5f5b1"/>
+  </producedTypes>
+  <name>ВидыДокументовФизическихЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды документов физических лиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыДокументовФизическихЛиц.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыДокументовФизическихЛиц.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Виды документов физического лица</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="7e1a61d9-3772-4a11-8a93-2218459ceae7">
+      <name>ЗагранпаспортГражданинаРФ</name>
+      <description>Загранпаспорт гражданина РФ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="cdfa3a7f-180c-4cb9-807c-819f90e74b64">
+      <name>ПаспортГражданинаРФ</name>
+      <description>Паспорт гражданина РФ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="bb2856b5-ef5e-48d2-b637-e115b7ed57d7">
+      <name>СвидетельствоОРождении</name>
+      <description>Свидетельство о рождении</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыДокументовФизическихЛиц.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="631481b9-2914-46cf-82d7-fec3dd8e0650">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6df73000-1d30-4691-ae44-534e9d591e47">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

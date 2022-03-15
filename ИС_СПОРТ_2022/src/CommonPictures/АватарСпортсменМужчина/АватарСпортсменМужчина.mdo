@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ea65413-2cb8-4738-b751-45201acabd79">
+  <name>АватарСпортсменМужчина</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аватар спортсмен мужчина</value>
+  </synonym>
+</mdclass:CommonPicture>

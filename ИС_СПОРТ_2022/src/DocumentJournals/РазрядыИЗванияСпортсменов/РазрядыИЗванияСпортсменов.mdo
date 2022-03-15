@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff60d888-8af7-45e9-a982-c09ca6dbd156">
+  <producedTypes>
+    <selectionType typeId="dfb9359a-46ff-46db-8fac-6d4c09c1bdbf" valueTypeId="7c253f29-cc56-4ea4-83ff-491e9a34411a"/>
+    <listType typeId="fc473313-3948-46b4-b3d0-1def6d434488" valueTypeId="3cf83746-0f5d-4506-a468-5ceccc055aa2"/>
+    <managerType typeId="4fd235b6-4402-43a4-9532-0bb592b5b38d" valueTypeId="dfe99226-4359-4d0f-9f82-db25ad123425"/>
+  </producedTypes>
+  <name>РазрядыИЗванияСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разряды и звания спортсменов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РазрядыИЗванияСпортсменов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПодтверждениеРазрядаСпортсмена</registeredDocuments>
+  <registeredDocuments>Document.ПрисвоениеРазряда</registeredDocuments>
+  <listPresentation>
+    <key>ru</key>
+    <value>Присвоения/подтверждения разрядов и званий спортсменов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Присвоения/подтверждения разрядов и званий спортсменов</value>
+  </extendedListPresentation>
+  <columns uuid="8ea1717a-fe85-410e-8b42-f265bc910b8f">
+    <name>ДатаПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата приказа</value>
+    </synonym>
+    <references>Document.ПодтверждениеРазрядаСпортсмена.Attribute.ДатаПодтверждающегоДокумента</references>
+    <references>Document.ПрисвоениеРазряда.Attribute.ДатаПодтверждающегоДокумента</references>
+  </columns>
+  <columns uuid="09ab646f-92cf-4dd1-9875-41d14ef95ca0">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <references>Document.ПодтверждениеРазрядаСпортсмена.Attribute.НомерПодтверждающегоДокумента</references>
+    <references>Document.ПрисвоениеРазряда.Attribute.НомерПодтверждающегоДокумента</references>
+  </columns>
+  <columns uuid="7aa2506f-0346-4ac5-b2f9-e91c21decd16">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПодтверждениеРазрядаСпортсмена.Attribute.Организация</references>
+    <references>Document.ПрисвоениеРазряда.Attribute.Организация</references>
+  </columns>
+  <columns uuid="354e79a2-945c-45e9-b632-8b2d4a92f004">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.ПодтверждениеРазрядаСпортсмена.Attribute.ВидСпорта</references>
+    <references>Document.ПрисвоениеРазряда.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="0a089ee9-1fe7-4e07-b104-51f1befe3806">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПодтверждениеРазрядаСпортсмена.Attribute.Комментарий</references>
+    <references>Document.ПрисвоениеРазряда.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="230e3347-0ff4-4eff-9cbb-7624c7b9ea5b">
+    <name>КраткийСоставСпортсмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмены</value>
+    </synonym>
+    <references>Document.ПодтверждениеРазрядаСпортсмена.Attribute.КраткийСоставСпортсмены</references>
+    <references>Document.ПрисвоениеРазряда.Attribute.КраткийСоставСпортсмены</references>
+  </columns>
+  <forms uuid="ecaa61d5-1ff2-490e-af61-8e6c50a9a785">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="b382b9d0-8459-4aed-b13e-de6fab632c58">
+    <name>РазрядыИЗвания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разряды и звания</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Спортсмены</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

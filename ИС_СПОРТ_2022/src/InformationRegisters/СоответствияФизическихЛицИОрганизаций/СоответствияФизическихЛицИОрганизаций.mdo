@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4061b9bb-8fd8-4e68-bf3a-696d0471412f">
+  <producedTypes>
+    <selectionType typeId="3d04e7d4-1b8e-4252-865a-b3a9207a1c10" valueTypeId="9ab35f5f-c168-4a3a-a665-4549e2bf0f12"/>
+    <listType typeId="3f08ef52-2242-40f6-ac08-03a327af17e1" valueTypeId="cc43a1b9-2e89-472f-a9db-11bc11963bd3"/>
+    <managerType typeId="883b13c0-557c-443b-8d66-5383ad31aa65" valueTypeId="ac9755c0-3660-4fd6-bbd1-95ee2f179dcd"/>
+    <recordSetType typeId="b95976ed-c9ab-4d1c-96ad-42dcd5c354e6" valueTypeId="6ce77aeb-1bfc-46b1-85c8-94eee0a34131"/>
+    <recordKeyType typeId="e946dfd1-567c-4735-bcbd-e27c90ffd9ce" valueTypeId="c19275a1-a5f3-4155-abf6-306c7ce7486e"/>
+    <recordType typeId="e416c83f-b945-452f-86db-d72e5e08004e" valueTypeId="60d7ab9c-36f5-4edc-a9c9-278e0949c648"/>
+    <recordManagerType typeId="7a7f2a7a-4a78-4489-9493-cc5fe33f508d" valueTypeId="385c7647-750b-4085-90f3-e79728e13870"/>
+  </producedTypes>
+  <name>СоответствияФизическихЛицИОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия физических лиц и организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="db214736-a071-4801-948a-7362ac85daaa">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de284984-e147-4a50-8340-400300e00e0a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

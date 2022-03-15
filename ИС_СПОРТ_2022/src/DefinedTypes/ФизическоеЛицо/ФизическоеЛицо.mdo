@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8df99d7-c762-4b74-81e5-d2cf02643ffd">
+  <producedTypes>
+    <containerType typeId="058e9016-3c00-401a-9cf1-4a2d46ad0c0f" valueTypeId="bb7d74c5-db5f-4e98-b519-bd8d74e21e36"/>
+  </producedTypes>
+  <name>ФизическоеЛицо</name>
+  <synonym>
+    <key>ru</key>
+    <value>Физическое лицо</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ФизическиеЛица</types>
+  </type>
+</mdclass:DefinedType>

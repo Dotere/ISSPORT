@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8f82c50-5dcf-4e22-af7b-675007066032">
+  <producedTypes>
+    <refType typeId="71d0e747-bc62-4fad-b5da-0b6fe6cc5024" valueTypeId="70b37c24-abaf-4868-970c-18e5e5029723"/>
+    <listType typeId="24141b3e-753e-4713-a10e-28ab1d635e1f" valueTypeId="1fe096dc-a81f-45c0-9878-4feec8f935ee"/>
+    <managerType typeId="97e1b064-ea5d-4b3c-ab34-33a2c94825ef" valueTypeId="e9c28fab-9c4a-4162-a9b9-6f02428731cc"/>
+  </producedTypes>
+  <name>РолиАвторизацииФизлиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли авторизации физлиц</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="51355e7d-dabe-429e-a93d-4817e6f2baf5">
+    <name>ЗаконныйПредставитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Законный представитель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9281adcb-1211-4bba-9384-4bb578ce4ad1">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="45be2cdc-ec17-4742-8cb7-15b4cf1a49bd">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5caddae7-763c-45e5-9437-899eba7d6bbf">
+    <name>Судья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Судья</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

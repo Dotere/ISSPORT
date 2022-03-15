@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3570d0f9-e99e-4e46-9ed9-497a282bb4a5">
+  <name>ТренерскийСостав</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тренерский состав</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ЗванияТренеров</content>
+  <content>Catalog.ВидыДокументовОбОбразовании</content>
+  <content>Catalog.ВидыОбразования</content>
+  <content>Catalog.ОбразованиеТренеров</content>
+  <content>Catalog.Тренеры</content>
+  <content>InformationRegister.СпортивныеЗванияТренеров</content>
+  <content>Catalog.КвалификационныеКатегорииТренеров</content>
+  <content>InformationRegister.КвалификационныеКатегорииТренеров</content>
+  <content>InformationRegister.КатегорииСпортивныхСудей</content>
+  <content>Catalog.Награды</content>
+  <content>Report.ЛичнаяКарточкаТренера</content>
+  <content>Report.ОтчетПоКоличествуТренеров</content>
+  <parentSubsystem>Subsystem.Методист.Subsystem.СпортивныеУчреждения</parentSubsystem>
+</mdclass:Subsystem>

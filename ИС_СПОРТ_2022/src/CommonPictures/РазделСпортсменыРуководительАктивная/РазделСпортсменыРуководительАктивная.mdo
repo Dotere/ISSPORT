@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aef21849-b475-441b-8336-1cb72e8f72a3">
+  <name>РазделСпортсменыРуководительАктивная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раздел спортсмены</value>
+  </synonym>
+</mdclass:CommonPicture>

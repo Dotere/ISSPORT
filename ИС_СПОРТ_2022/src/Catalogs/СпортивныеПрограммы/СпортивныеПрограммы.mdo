@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b88899b-149b-4456-b134-8d9ed83e5797">
+  <producedTypes>
+    <objectType typeId="61114733-3007-41aa-8927-5f45981968cd" valueTypeId="4ab26b54-c8c7-44a2-89aa-1290c3f982c6"/>
+    <refType typeId="6e3229c5-78dd-4e86-985b-af55c2278408" valueTypeId="1bc5c398-9394-4a14-865f-8a2a72cdf457"/>
+    <selectionType typeId="7093bfe3-cb1c-4ee9-a51f-f59cb2f0b399" valueTypeId="00f7c21d-09ce-4e7e-8f9b-8020780d98d9"/>
+    <listType typeId="94162bd5-677f-4526-b9fb-cf4366378395" valueTypeId="7820b1e2-1291-401e-bf13-18cb3e6c8d9b"/>
+    <managerType typeId="e3eca6b6-855c-4570-8ae7-1f2e79b555c6" valueTypeId="23692b8a-e32a-475d-aebf-b76cdaf120c8"/>
+  </producedTypes>
+  <name>СпортивныеПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортивные программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СпортивныеПрограммы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СпортивныеПрограммы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СпортивныеПрограммы.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="ae716f22-cdf6-428c-928e-2bca79dcd03e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

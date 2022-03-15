@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b93e37bd-5518-4068-b41f-0819e5823924">
+  <name>Спортсмен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спортсмен</value>
+  </synonym>
+  <transparentPixel>
+    <x>10</x>
+    <y>7</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

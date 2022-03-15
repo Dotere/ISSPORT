@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71bf4f5d-a5f0-4e08-b015-7f1834fec5ac">
+  <producedTypes>
+    <selectionType typeId="b3f2e991-ebe0-4973-81e8-232a0397360e" valueTypeId="a43a56fb-0057-45f6-8e4c-6c6b12ebd85d"/>
+    <listType typeId="d4b9089f-460c-4ed7-b2c1-5c37bf707bb1" valueTypeId="a7bb1f85-fe35-4910-b5ee-81805e2061b0"/>
+    <managerType typeId="5a60b79c-0b20-4a9c-8e63-5dad15c42e3b" valueTypeId="fd084b2a-e98d-4b9a-bc93-d7cf0ea0782f"/>
+    <recordSetType typeId="b4f61eaa-1ac0-443a-835f-9e362705b2ef" valueTypeId="27fd343f-3d4c-44aa-a6b8-b31c82943d70"/>
+    <recordKeyType typeId="30935cf1-00b2-44b2-a01c-a2a0136d2a79" valueTypeId="8fa7f1d5-1544-4a29-b5c1-7eeae3440118"/>
+    <recordType typeId="7324d786-cf4d-4f79-a813-afaa5212f9aa" valueTypeId="d41f3c92-2bc8-4336-86a2-c00fa75b5ffc"/>
+    <recordManagerType typeId="ca231f42-a461-421a-b8eb-fd6f29e313e4" valueTypeId="1d1d89e3-3102-4035-b0db-529ce14b4552"/>
+  </producedTypes>
+  <name>СоставыСемейСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Составы семей спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СоставыСемейСпортсменов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СоставыСемейСпортсменов.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="892724b6-47fa-4b93-bf3a-0f5ecb1d3a7d">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="87905896-7221-4081-ad75-1b771c614b4e">
+    <name>Родитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РодителиЗаконныеПредставителиСпортсменов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.СоставыСемейСпортсменов.Dimension.Спортсмен</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9b5206bb-08ff-4c7f-9faa-7dd9ec9d7966">
+    <name>СтепеньРодства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Степень родства</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтепениРодстваФизическихЛиц</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="562d94dc-48b3-47df-a3fb-27fbbc9ad54e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9b638eaa-32fd-4ac7-81f9-c39342afc58d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2463d5ce-2946-4cb3-bfdc-ed724e9da431">
+    <name>СоставСемьи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав семьи</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Спортсмены</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

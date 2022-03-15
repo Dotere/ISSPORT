@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb6c6b6d-8d6f-4dab-9a66-6acc1a251c34">
+  <producedTypes>
+    <objectType typeId="12da4748-589e-4249-9f84-0a223408525e" valueTypeId="a4f9e73e-2c18-4714-9890-d53d8892f495"/>
+    <managerType typeId="badc64a7-6959-4058-b03e-533a5088a5f6" valueTypeId="7e5d1457-4829-4b45-a0b3-47f764720fd5"/>
+  </producedTypes>
+  <name>ПодсчетРейтингов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсчет рейтингов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПодсчетРейтингов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПодсчетРейтингов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ПодсчетРейтингов.Form.ФормаНастроек</defaultSettingsForm>
+  <defaultVariantForm>Report.ПодсчетРейтингов.Form.ФормаВарианта</defaultVariantForm>
+  <forms uuid="730f124b-d9e8-43a6-baff-eca8cb83d595">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e7d189c7-4d40-4c17-926e-936ccba497d1">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="30503c2e-24d5-411f-941f-93158ea36980">
+    <name>ФормаВарианта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a08eae5e-bca2-4de9-b68c-aa6c94a9f3bd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="eee03722-8f58-4ada-8f30-53a36d9ef80b">
+    <name>ПодсчетРейтингов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсчет рейтингов</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

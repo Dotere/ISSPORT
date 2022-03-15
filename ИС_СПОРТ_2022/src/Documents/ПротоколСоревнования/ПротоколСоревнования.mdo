@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="871313d1-026a-4c9d-ba26-72760708694c">
+  <producedTypes>
+    <objectType typeId="c731008e-0048-4311-baa2-2ac219c555b9" valueTypeId="ac9343ae-7e02-4966-b58b-1cb6b5958a06"/>
+    <refType typeId="de86dafd-38af-4a08-9fc7-1e7e47329dcc" valueTypeId="12a70c76-908c-4093-9d5f-f5a9df575576"/>
+    <selectionType typeId="bdffee97-a272-4778-869c-de4c1e2d94ef" valueTypeId="05003c09-b7c1-4fb3-8af9-b03c51905792"/>
+    <listType typeId="44898b4b-cae0-4df2-85cc-52ceeeb8485c" valueTypeId="039d522b-acaf-47ab-9a8c-97a5ffb633c2"/>
+    <managerType typeId="15d58081-ad11-4cd6-855b-57631fe76e82" valueTypeId="ad6c43d9-eaf6-4136-b321-30ac3be991aa"/>
+  </producedTypes>
+  <name>ПротоколСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протокол соревнования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПротоколСоревнования.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.Соревнование</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПротоколСоревнования.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПротоколСоревнования.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.РезультатыПараметровСпортсменов</registerRecords>
+  <registerRecords>InformationRegister.ДостиженияСпортсменовПоПротоколу</registerRecords>
+  <registerRecords>InformationRegister.ИтоговыеРезультатыСоревнования</registerRecords>
+  <registerRecords>AccumulationRegister.ПодсчетРейтингов</registerRecords>
+  <registerRecords>InformationRegister.ЗачетныеКнижкиСпортсменов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="fd92318a-0458-421d-b883-da1ea6231b12">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c0dc39ec-699b-4e97-a60f-ab070093dcfb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивное учреждение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a76e35f2-6967-4b4b-a1c6-0d526cb897f3">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da11d575-f0be-4fd0-aba2-4798986aaae2">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соревнование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ПротоколСоревнования.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c685cf8f-1a00-487a-9fb9-3cc72e32b8ce">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ПротоколСоревнования.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c31150f7-b9fc-4af3-926d-0bf884b62968">
+    <name>ЗагруженИзВнешнейСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружен из внешней системы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2e5a4ce4-3a1e-4cf5-9e61-cd719bc87435">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7eb622c7-80e7-439e-b903-780c38d1d631">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef9feda0-a730-4a9c-ad95-43e2c38fdc41">
+    <name>ТипРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип результата</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыРезультатов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8fa03134-8d19-47df-a05c-0c910f927d2b">
+    <name>ОрганизаторСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организатор соревнования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОрганизаторыСоревнований</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="65c11479-31a3-471a-af02-1207aeb7286b">
+    <name>СпособПодсчетаРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ подсчета результата</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипПодсчетаРезультата</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="27dc87e4-0384-4712-ac94-bb4321150ebe">
+    <name>ДатаНачалаСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7ccd2e0c-e02e-49ee-80ad-8cce8c247082">
+    <name>ДатаОкончанияСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8e1c381c-3fc1-4dbd-91a8-2ec61bfd6fd0">
+    <name>МестоПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место проведения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e727bf88-8e20-4442-abeb-9e2a3455be24">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c011c50d-e882-4110-937f-9438b609d32f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="cc953545-05b5-4c23-a752-ffb3d8fe745f">
+    <producedTypes>
+      <objectType typeId="851ca618-e665-40af-af37-c353c5d6a14f" valueTypeId="d40fa48d-91f4-4e64-8edf-13a431d034a7"/>
+      <rowType typeId="e6b72ae0-a0a7-4360-ace5-c402021fe7c6" valueTypeId="43f65ec0-6111-4a4c-b68a-63500dda9e4d"/>
+    </producedTypes>
+    <name>СоставУчастников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав участников</value>
+    </synonym>
+    <attributes uuid="e9e53560-f24b-4083-93e3-a1c597ce6dca">
+      <name>GUIDУчастника</name>
+      <synonym>
+        <key>ru</key>
+        <value>GUIDУчастника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="83435c59-0030-4791-a3c7-616e17e73523">
+      <name>Спортсмен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спортсмен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Спортсмены</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e11dfef4-3874-429d-aea2-7f8000a085cf">
+      <name>Дисциплина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дисциплина</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпортивныеДисциплины</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bea39949-23ab-4c13-8e60-9ca543373bc8">
+      <name>СтартовыйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стартовый номер</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="88df85b2-8f65-4253-a093-b404e8e62558">
+      <name>Место</name>
+      <synonym>
+        <key>ru</key>
+        <value>Место</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a8d3d69f-c60d-4227-b88c-95cdcfd55181">
+      <name>МеждународнаяВозрастнаяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Возрастная группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2fab4217-4e8b-4043-8ea1-b3d381a10d0e">
+      <name>Команда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Команда</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Команды</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0484905a-73d3-4d32-8621-7efd32c9ce6f">
+      <name>ОтставаниеМилСек</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отставание мил сек</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>27</precision>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧН=00</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ЧН=00</value>
+      </editFormat>
+      <minValue xsi:type="core:StringValue">
+        <value>0</value>
+      </minValue>
+      <maxValue xsi:type="core:StringValue">
+        <value>59</value>
+      </maxValue>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d2501582-686a-4863-9e03-bb72d2b1c90f">
+      <name>РезультатЧисло</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат число</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>25</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="64da41aa-e211-4ce4-a6ef-b7bd15d7c1c4">
+      <name>РезультатБулево</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат булево</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>БЛ='Не выполнил'; БИ=Выполнил</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>БЛ='Не выполнил'; БИ=Выполнил</value>
+      </editFormat>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8ca44fab-1411-40fd-b74d-6ee3173c492d">
+    <producedTypes>
+      <objectType typeId="96ce588b-f9f5-4f37-b0c2-c91bebac03d2" valueTypeId="fe978b53-1650-4b91-8399-3e36196843b4"/>
+      <rowType typeId="e3acc856-19bd-43a7-b7e5-d6437545d54f" valueTypeId="35edf1f4-48e3-4d3e-9e8b-0707e07cb373"/>
+    </producedTypes>
+    <name>ПараметрыСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры соревнования</value>
+    </synonym>
+    <attributes uuid="ffdd1346-246c-49e2-911b-6361e19a1b90">
+      <name>Параметр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:StringValue">
+        <value>1</value>
+      </minValue>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c1e61d90-a83e-4186-9da4-d8786d7cfd36">
+      <name>GUIDУчастника</name>
+      <synonym>
+        <key>ru</key>
+        <value>GUIDУчастника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="10850823-d369-4022-b3eb-1a8b1e82142e">
+      <name>РезультатЧисло</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат число</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>25</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d7d46762-9726-4b87-b2b0-a09a18e87181">
+      <name>РезультатБулево</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат булево</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="06ca3684-a75c-46a7-8b68-b491a75f0904">
+      <name>Состояние</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СостоянияПопыток</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="743bcb1b-c8cd-4edc-99e0-aae3c7ee52be">
+      <name>Дисциплина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дисциплина</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпортивныеДисциплины</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

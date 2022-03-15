@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e47d70f6-6111-486b-879a-95661b60861d">
+  <producedTypes>
+    <objectType typeId="c94bd90a-8dab-43e2-8c41-baf34073152e" valueTypeId="1e57f403-2bd7-4303-9b26-b85c07e9d160"/>
+    <refType typeId="933a7d41-b4f0-4db8-89dc-88c53cb45f78" valueTypeId="60057bae-c8f2-47fe-946b-b8908adb8705"/>
+    <selectionType typeId="014bb589-9092-47a2-8fae-daa38b47fcc2" valueTypeId="04c72ec1-7e93-4176-859e-1bbca3d7f274"/>
+    <listType typeId="4bb38dcf-fb6c-4b18-aae4-03b0d87557d7" valueTypeId="c013d248-b9d4-43a5-837a-168a3362a93c"/>
+    <managerType typeId="c173a077-a8d5-45fe-8be9-c1a81c36e45e" valueTypeId="0831b5bc-bab4-4f33-a38f-928e21af5a77"/>
+  </producedTypes>
+  <name>ПоказателиФизическогоЗдоровья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели физического здоровья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПоказателиФизическогоЗдоровья.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПоказателиФизическогоЗдоровья.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Спортсмены</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

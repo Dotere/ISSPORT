@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac295d7d-31d3-4f8e-b0b2-8171cc806c37">
+  <name>ЦветТекстаЗаголовкаТабеляПосещений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвет текста заголовка табеля посещений</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorDef">
+      <red>7</red>
+      <green>55</green>
+      <blue>99</blue>
+    </value>
+  </value>
+</mdclass:StyleItem>

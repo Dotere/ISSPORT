@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b67bfd5-ef23-4205-b7ba-9466517e9999">
+  <producedTypes>
+    <containerType typeId="315ef181-e743-44aa-91b7-263684edae4a" valueTypeId="55aaba3d-0c41-406e-8a7d-6aeccc730f39"/>
+  </producedTypes>
+  <name>ПрисоединенныйФайлОбъект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенный файл объект</value>
+  </synonym>
+  <type>
+    <types>CatalogObject.СообщениеSMSПрисоединенныеФайлы</types>
+    <types>CatalogObject.ФормированиеГруппыПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПодтверждениеРазрядаСпортсменаПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗачислениеСпортсменовНаЭтапПрисоединенныеФайлы</types>
+    <types>CatalogObject.ВерсииФайлов</types>
+    <types>CatalogObject.ПротоколСоревнованияПрисоединенныеФайлы</types>
+    <types>CatalogObject.ИсключениеСпортсменовИзГруппыПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФППрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявленияНаПриемВСпортивноеУчреждениеПрисоединенныеФайлы</types>
+    <types>CatalogObject.РегистрацияДостиженийСпортсменовПрисоединенныеФайлы</types>
+    <types>CatalogObject.НазначениеОпросовПрисоединенныеФайлы</types>
+    <types>CatalogObject.ВстречаПрисоединенныеФайлы</types>
+    <types>CatalogObject.ТренерыПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПереводСпортсменовМеждуГруппамиПрисоединенныеФайлы</types>
+    <types>CatalogObject.ИсключениеИзСпортивногоУчрежденияПрисоединенныеФайлы</types>
+    <types>CatalogObject.ДопускиУчастниковКСпортивнымСоревнованиямПрисоединенныеФайлы</types>
+    <types>CatalogObject.СпортсменыПрисоединенныеФайлы</types>
+    <types>CatalogObject.ТелефонныйЗвонокПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаНаПроведениеСоревнованияПрисоединенныеФайлы</types>
+    <types>CatalogObject.ОтзывСогласияНаОбработкуПерсональныхДанныхПрисоединенныеФайлы</types>
+    <types>CatalogObject.ШаблоныСообщенийПрисоединенныеФайлы</types>
+    <types>CatalogObject.СтраховойПолисСпортсменаПрисоединенныеФайлы</types>
+    <types>CatalogObject.АнкетаПрисоединенныеФайлы</types>
+    <types>CatalogObject.СоревнованиеОФПСдачаНормативовПрисоединенныеФайлы</types>
+    <types>CatalogObject.ВключениеСпортсменовВГруппуПрисоединенныеФайлы</types>
+    <types>CatalogObject.РодителиЗаконныеПредставителиСпортсменовПрисоединенныеФайлы</types>
+    <types>CatalogObject.СогласиеНаОбработкуПерсональныхДанныхПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗапланированноеВзаимодействиеПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</types>
+    <types>CatalogObject.СоревнованиеПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПереводСпортсменовНаЭтапПрисоединенныеФайлы</types>
+    <types>CatalogObject.Файлы</types>
+    <types>CatalogObject.ПротоколОФПСдачаНормативовПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПрисвоениеРазрядаПрисоединенныеФайлы</types>
+  </type>
+</mdclass:DefinedType>

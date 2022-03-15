@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23865109-cb35-42c3-8f81-879bd73e03c4">
+  <producedTypes>
+    <selectionType typeId="77543935-4a85-49d9-bbc3-f4d8d34a03cc" valueTypeId="a766f3b6-212b-48c8-bbd6-ece208ac54f6"/>
+    <listType typeId="5d9b0140-ebb8-49dc-8e38-50f3a9bc0d58" valueTypeId="bf992168-4ed6-4c39-a6cd-9ce1a564cdb3"/>
+    <managerType typeId="625dabf8-1939-48f8-867c-7ac1efc0bc93" valueTypeId="90def27f-b88a-4dc3-9706-7cd35032855b"/>
+  </producedTypes>
+  <name>Соревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соревнования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.Соревнование</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Проводимые соревнования</value>
+  </listPresentation>
+  <columns uuid="b4148c15-d07a-4361-8f6a-7eb275d273d2">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.Соревнование.Attribute.Организация</references>
+  </columns>
+  <columns uuid="177a5f81-6078-4e42-9b02-6172b8d27e1b">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <references>Document.Соревнование.Attribute.Соревнование</references>
+  </columns>
+  <columns uuid="80e50e97-8016-4d1a-adff-75bff5b03533">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <references>Document.Соревнование.Attribute.УчебныйГод</references>
+  </columns>
+  <columns uuid="2faf7a7f-7ca6-46f1-853c-98ca447a9e22">
+    <name>ДатаНачалаСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало соревнования</value>
+    </synonym>
+    <references>Document.Соревнование.Attribute.ДатаНачалаСоревнования</references>
+  </columns>
+  <columns uuid="fc4e33a9-de03-4942-950f-144f61526a52">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.Соревнование.Attribute.ВидСпорта</references>
+  </columns>
+</mdclass:DocumentJournal>

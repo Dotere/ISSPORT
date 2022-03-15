@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7647095e-445b-423f-8a0e-d3f290eba736">
+  <producedTypes>
+    <selectionType typeId="c7ebc00a-3d0a-4fc8-b82e-7f50a9cabbf6" valueTypeId="cd8e0133-283c-43b8-a0e7-b41debc895a0"/>
+    <listType typeId="cef0666c-9559-4a3d-97dd-9335d0414322" valueTypeId="4614dc64-ecb2-468a-88c4-5d1ea5acf4c4"/>
+    <managerType typeId="f3ed4c61-a0ab-4e82-a28e-16de4fcb18d8" valueTypeId="0f38b76b-b962-4fd0-be3e-ac2d5c91f064"/>
+    <recordSetType typeId="8ef89329-3592-45c3-b3f9-45dc7a8e219a" valueTypeId="f34ad9a4-e57a-49ac-888b-a76deaf17fa2"/>
+    <recordKeyType typeId="81efe6a9-078c-437c-85ce-5f6fe77c855a" valueTypeId="bf4b8137-52e4-4ce8-bb2c-197b969d7c14"/>
+    <recordType typeId="83932a52-e8c6-4f26-b568-e3fb7fa79b53" valueTypeId="39ca5808-6c08-4a12-9541-1c69a92d046e"/>
+    <recordManagerType typeId="566a14c5-4209-4618-a78b-6607f6f62125" valueTypeId="f7a37456-8a8c-4224-879d-e3e7fa7cee8b"/>
+  </producedTypes>
+  <name>ПоказателиФизическогоЗдоровьяСпортсмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели физического здоровья спортсмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПоказателиФизическогоЗдоровьяСпортсмена.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПоказателиФизическогоЗдоровьяСпортсмена.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d5b5e15c-1bcc-4001-a7a5-cffd6fdf37d9">
+    <name>ПоказательФизическогоРазвития</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель физического развития</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>5-ти балльная шкала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="527e5b72-1d23-41b3-8fea-d46c7a2ad9ee">
+    <name>Рост</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рост</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>см.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ac0ed64e-ba81-4344-bf01-819b5dc036a5">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>кг.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d88321c5-7c71-4854-a170-30775865a2bd">
+    <name>Быстрота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Быстрота</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="961f9283-bcd6-4b82-99b3-69b47400294a">
+    <name>Выносливость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выносливость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f5df25f2-3d9c-4e8c-875d-42dcb939109f">
+    <name>Сила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сила</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dce4d87b-425b-438c-9cd2-1945b6906114">
+    <name>Реакция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реакция</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="50edef7d-1417-4852-92ed-de1efe0f223d">
+    <name>ДатаМедОбследования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата мед. обследования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="463682c0-c123-4d25-b16b-765c210c9b95">
+    <name>ЗаключениеВрача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заключение врача</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="cb87456f-9979-4093-9740-5e9065ce3fda">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6c6daeff-05a9-4641-83fd-2622f56a27a0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f6b8fde7-25b6-438d-90f6-a7d23628814c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

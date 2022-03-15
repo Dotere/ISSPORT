@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23b3a116-c907-4feb-a52e-337dc10cdd66">
+  <producedTypes>
+    <objectType typeId="902b4dc8-67f2-4db9-bb7a-99dde8aab744" valueTypeId="c8c688f6-6467-4b38-8dc8-a5d1342a9ac4"/>
+    <refType typeId="1be9db57-4edc-4ea2-bc04-5e58072c4794" valueTypeId="5e8e3bee-ddb9-447b-8d72-5aecc5380aa2"/>
+    <selectionType typeId="4edecdb9-3e69-41b9-ac4f-780527f955fd" valueTypeId="debb7200-7029-4bad-998b-ee404f9100bc"/>
+    <listType typeId="e52cf048-063b-492c-9459-a5e49f984af1" valueTypeId="fca23dad-3a4b-4350-9b72-39e67c5d3e35"/>
+    <managerType typeId="dc60fc87-a770-428f-93bf-94ea1b8617ca" valueTypeId="b2bfa705-eb47-4630-84e3-33998b47643e"/>
+  </producedTypes>
+  <name>БроньСпортивногоОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бронь спортивного объекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.БроньСпортивногоОбъекта.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.БроньСпортивногоОбъекта.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="81ee1f02-984d-4c5e-81d7-618fb01b700b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f01da480-355f-4db1-8206-eff21361c438">
+    <name>СпортивныйОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортивный объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивныеОбъекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d65b6d6-73b4-4060-8d16-cc202d856349">
+    <name>МестоЗанятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место занятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МестаЗанятий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="60a74a25-3fb3-46a6-aeb3-54406e378a07">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="af11fdf5-d146-42bd-8046-aabb6a5f0665">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тренеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26e969b1-5f9e-4ef4-858a-c3cd21441674">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыСпортивнойПодготовки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="779508bc-778c-47ad-b08e-594a1e2304d1">
+    <name>ВесьДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Весь день</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b6ec960-a63e-4050-a3fa-96fe6ff44291">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e0a2b02-6978-42f3-8ab8-7737195736f4">
+    <name>ДатаНачалаПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала повторения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, с которой повторяется бронь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="267cb490-6fb6-4846-b5ec-5097e1da06e4">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="59900108-b9c8-418e-a4e7-01f9d9d6e1db">
+    <name>ДатаОкончанияПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания повторения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, по которую повторяется бронь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0475eaf-1254-44e9-b24d-33f86a8a7d43">
+    <name>ИнтервалПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал повторения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Интервал с которым повторяется бронь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="741475ce-ed5c-45f9-b391-bfc6cc5fa15c">
+    <name>КоличествоПовторов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество повторов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество повторов брони</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="059d5d79-8f1e-42bb-b353-5132f2a26a22">
+    <name>ПовторениеПоДнямМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторение по дням месяца</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дни месяца, по которым повторяется бронь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb077373-5fe6-4989-b238-78257b2a081e">
+    <name>ПовторениеПоМесяцам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторение по месяцам</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Месяца, по которым повторяется бронь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="87f597a3-bd79-48a5-bb70-6a936276b9ef">
+    <name>ПравилоОкончанияПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило окончания повторения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПравилаОкончанияПовторения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Правило окончания повторения брони</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a5183cf3-912c-4ede-929a-f75aba6742e8">
+    <name>СпособСозданияБрони</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ создания брони</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыСозданияБрони</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ, которым была создана бронь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="928e88d5-e7e3-4356-8a34-e794386df6d8">
+    <name>ТипЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип записи</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипЗаписиКалендаря</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26db7abb-b87b-4e21-8f2f-179c34cc02a0">
+    <name>ЧастотаПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Частота повторения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЧастотаПовторения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Частота повторения брони</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c2765e31-4bbb-4144-a6c5-62c9f502bb8a">
+    <name>Зеленый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет элемента</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a93f944f-8db4-41ad-8fff-281d0eedeb22">
+    <name>Красный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Красный</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0be3c6cf-4562-487a-bc1a-4f4863bb60a0">
+    <name>Синий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синий</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="87d21991-8894-4472-9e65-822f2a806f32">
+    <name>ЦветЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет элемента</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0c600578-2225-4255-8b9f-e442f8b70b1f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6e48314c-5752-4ae6-9478-dbb1ea5acfad">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2cdf5f69-ec42-445a-bf3e-dfb88cde218b">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="51aa11d4-e5da-4e83-9dcf-db5168fccdd2">
+    <name>ВыборРекомендованногоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор рекомендованного времени</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4da24c7b-b508-4230-903a-8aea7d3f341f">
+    <name>ФормаНастройкиПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка повторения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="2b2aab1e-6f8c-4421-934a-5bafb84d34ea">
+    <producedTypes>
+      <objectType typeId="76bc1719-cd0c-4a6f-8bb4-bd63b41d55e4" valueTypeId="a2c4054a-9a28-4584-9a22-7e26d0e0e47a"/>
+      <rowType typeId="46413fdc-de61-4a88-9d42-7f493bb15fbf" valueTypeId="488250c8-e80d-4f68-89f1-e1df520d43a7"/>
+    </producedTypes>
+    <name>ИсключенияПовторения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исключения повторения</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Даты, по которым бронь не повторяется</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b162ad79-80ab-4364-9d37-de3a91059435">
+      <name>ДатаИсключения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата исключения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата, по которой бронь не повторяется</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d1d0ba9a-e96b-4759-8343-0fd76835fcb6">
+      <name>ЗаписьИсключения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запись исключения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Бронь, которая заменяет бронь на данную дату</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="c52c0fa6-f339-40b7-83f1-1577f39bf43d">
+    <producedTypes>
+      <objectType typeId="b4bd4f6e-aeb4-456f-af99-bc61d0984954" valueTypeId="651a795f-6729-4261-bab2-42b7e1366668"/>
+      <rowType typeId="fcd13b51-c20f-40b2-8a81-a5fd53918d58" valueTypeId="91c19992-d106-41b9-93bd-e8d6cf97a221"/>
+    </producedTypes>
+    <name>ПовторениеПоДням</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторение по дням</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дни недели, по которым повторяется бронь</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="758dc5e9-ac3d-4a67-a173-30264f4c1bcf">
+      <name>ДеньНедели</name>
+      <synonym>
+        <key>ru</key>
+        <value>День недели</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>День недели, в который повторяется бронь</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d872d962-eda3-4c7a-9ac7-84ea87879929">
+      <name>НомерВхождения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер вхождения</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер дня недели, в который повторяется бронь</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

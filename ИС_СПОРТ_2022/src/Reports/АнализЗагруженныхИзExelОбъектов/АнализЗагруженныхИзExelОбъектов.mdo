@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c4c8a72-d603-4dae-a1af-0d28835dd752">
+  <producedTypes>
+    <objectType typeId="6cfa8368-3e20-4c5f-b144-1d4ef0ec6737" valueTypeId="15ef984f-314c-42a0-8921-9e515bc0244f"/>
+    <managerType typeId="699bee81-e584-4b68-9f54-4c2b02758469" valueTypeId="6c46ae85-dc6f-43dd-81c9-1bd31f280a4f"/>
+  </producedTypes>
+  <name>АнализЗагруженныхИзExelОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ загруженных из exel объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализЗагруженныхИзExelОбъектов.Template.МакетСозданныхОбъектов</mainDataCompositionSchema>
+  <templates uuid="e07597b2-5850-49fc-8ed2-bc6ede151109">
+    <name>МакетСозданныхОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет созданных объектов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

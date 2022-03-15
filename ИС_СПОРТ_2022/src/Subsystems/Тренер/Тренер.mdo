@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f06e37c8-7781-443e-8d20-1e3b54755f9f">
+  <name>Тренер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тренер</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.РабочийСтолТренера</content>
+  <content>Catalog.СпортивныеОбъекты</content>
+  <content>InformationRegister.СпортивныеОбъекты</content>
+  <content>AccumulationRegister.КоличествоВидовСпортаТренеров</content>
+  <content>Document.УдалениеВидаСпортаВручную</content>
+  <content>Document.ВводВидаСпортаВручную</content>
+</mdclass:Subsystem>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="966dedf0-18e3-4c64-943d-52926882b1eb">
+  <producedTypes>
+    <objectType typeId="483c7bcd-5ade-40c9-aca2-27632bd4b334" valueTypeId="d4320c23-7d58-43af-b3e7-44c1b604f9e8"/>
+    <refType typeId="8c5e4276-ca07-4853-add7-48bbdbe1eb30" valueTypeId="52ed6736-76d5-46b4-aa70-577b6bef345e"/>
+    <selectionType typeId="3e950999-7a4c-4374-922d-93f2064a0fd2" valueTypeId="0914b83d-61b7-46fa-b922-c7ff6ccb3ed3"/>
+    <listType typeId="2a05f809-87b6-46db-984f-a7f2a9bf2897" valueTypeId="fb164d65-f4b6-487d-bf5b-d50e9c63be42"/>
+    <managerType typeId="3f836082-4330-44d1-9bde-0bba60aafa41" valueTypeId="b8e7180b-cb75-401e-b0b0-f471033b3227"/>
+  </producedTypes>
+  <name>Финансирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансирование</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Финансирование.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Финансирование.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

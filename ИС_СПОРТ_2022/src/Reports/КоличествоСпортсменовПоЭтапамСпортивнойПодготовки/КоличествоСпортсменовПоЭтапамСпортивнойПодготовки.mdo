@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a1bb701-ceeb-4a0f-8556-a205a9315c6a">
+  <producedTypes>
+    <objectType typeId="8970ac29-210b-465f-a79b-98e218eb1461" valueTypeId="2a5046ed-82db-4e5f-aabb-3174600074a7"/>
+    <managerType typeId="fcfe082d-15ad-4821-9b7d-813bd7c1556f" valueTypeId="93f09e36-0d67-46e9-8dcc-38f25a4e7102"/>
+  </producedTypes>
+  <name>КоличествоСпортсменовПоЭтапамСпортивнойПодготовки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные о спортсменах на этапах спортивной подготовки по видам спорта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КоличествоСпортсменовПоЭтапамСпортивнойПодготовки.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.КоличествоСпортсменовПоЭтапамСпортивнойПодготовки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.КоличествоСпортсменовПоЭтапамСпортивнойПодготовки.Form.ФормаНастроек</defaultSettingsForm>
+  <forms uuid="b079c4a1-301e-4f0e-ae1e-40f9a514b3c5">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9bdf4fc2-4b80-498b-9789-3e2ef8b1f5b2">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="888e7bc8-8f4e-4609-a67e-afb1cbb597d2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>InformationRegister.СпортивныеОбъекты.StandardCommand.OpenList</command>
+      <visible>
+        <for>
+          <value>true</value>
+          <role>Role.АдминистраторСистемы</role>
+        </for>
+        <for>
+          <value>true</value>
+          <role>Role.Администрирование</role>
+        </for>
+        <for>
+          <value>true</value>
+          <role>Role.ПолныеПрава</role>
+        </for>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.РабочийСтолТренера.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Document.ВводВидаСпортаВручную.StandardCommand.OpenList</commands>
+      <commands>AccumulationRegister.КоличествоВидовСпортаТренеров.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СпортивныеОбъекты.StandardCommand.OpenList</commands>
+      <commands>Catalog.СпортивныеОбъекты.StandardCommand.OpenList</commands>
+      <commands>Document.УдалениеВидаСпортаВручную.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

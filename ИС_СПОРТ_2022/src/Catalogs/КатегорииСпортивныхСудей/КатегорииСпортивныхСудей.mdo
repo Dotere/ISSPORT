@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d764e911-71af-497a-adad-5db6d14f3bf6">
+  <producedTypes>
+    <objectType typeId="3dd4ce32-4ba6-403a-a742-84f3535ba8b7" valueTypeId="af0f0155-4bcc-4627-bf57-fba93c7a509b"/>
+    <refType typeId="fc7ab988-dc92-4aed-b330-a3dea199700f" valueTypeId="48e835c0-a3c1-436f-b20e-21cd907a642e"/>
+    <selectionType typeId="428766d4-3f7d-4fa7-a28b-d7e3cd340f86" valueTypeId="1710dea0-5826-44a1-bc83-82a02923f6a4"/>
+    <listType typeId="767e5b9f-c123-4b76-b9b8-0a1f7aa7d6eb" valueTypeId="3fc663b4-46e7-432b-a91f-9c1c88bce0b4"/>
+    <managerType typeId="90d6cf12-9059-461d-acfd-e104f142aad4" valueTypeId="8761014b-a5b5-4990-b4db-376327bdcfd3"/>
+  </producedTypes>
+  <name>КатегорииСпортивныхСудей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории спортивных судей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииСпортивныхСудей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорииСпортивныхСудей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="63348b8b-5684-4aca-895c-c498a8d50b1a">
+      <name>СпортивныйСудьяПервойКатегории</name>
+      <description>Спортивный судья 1К</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="d2715ec6-5f25-43c3-a654-4fce0d27977e">
+      <name>СпортивныйСудьяВторойКатегории</name>
+      <description>Спортивный судья 2К</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="3faf6b51-4b5c-43da-8414-e3a2192c1379">
+      <name>СпортивныйСудьяТретьейКатегории</name>
+      <description>Спортивный судья 3К</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="3e2fc415-eb35-46ef-b92c-b03770f36498">
+      <name>СпортивныйСудьяВсероссийскойКатегории</name>
+      <description>Спортивный судья ВК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="c453b61f-e2e7-40cc-9eac-93539ce71cb9">
+      <name>ЮныйСпортивныйСудья</name>
+      <description>Юный спортивный судья</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="12312c64-37eb-4387-bf44-b27add5cf512">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

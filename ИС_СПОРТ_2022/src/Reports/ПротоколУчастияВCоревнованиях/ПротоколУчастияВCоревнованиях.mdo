@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8e36b0f-941b-4507-a5d6-5663d76289c5">
+  <producedTypes>
+    <objectType typeId="17920180-63b9-449b-9b48-ddcf90b0368a" valueTypeId="10699b98-dba9-4124-877c-66dd3260d39a"/>
+    <managerType typeId="aa7355b4-ad89-406a-9247-28f1071b6bd6" valueTypeId="9684b4ff-0326-44ba-83cc-e1854792b683"/>
+  </producedTypes>
+  <name>ПротоколУчастияВCоревнованиях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протокол участия в cоревнованиях</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПротоколУчастияВCоревнованиях.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="77b7cd50-4afc-4fcd-941f-b70efe6d7147">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

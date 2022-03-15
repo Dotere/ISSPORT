@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7af46881-7c4e-4fe3-8ad5-0c97a3e0282f">
+  <producedTypes>
+    <refType typeId="7ab5374b-e742-4c44-a9f6-682b0c0537ca" valueTypeId="805a3278-0826-4b11-95cc-aa40796dafa4"/>
+    <listType typeId="e23a84b9-e4ff-4a80-8e0c-24c59fdda233" valueTypeId="d41dc676-7f4e-4b4e-975b-746ba73e4851"/>
+    <managerType typeId="64dbb7fe-e708-426a-ba6e-68e4ab3de7ec" valueTypeId="9ee210cd-ab2b-4795-a4b7-4121708e2d91"/>
+  </producedTypes>
+  <name>ВидыДопусковКСпортивнойДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды допусков к спортивной деятельности</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a5b33598-6e15-4537-93db-6ad33c927692">
+    <name>ДопускКСпортивнымСоревнованиям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допуск к спортивным соревнованиям</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0cee66d2-5354-425f-b612-70a94549a85f">
+    <name>ДопускКТренировочномуПроцессу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допуск к тренировочному процессу</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

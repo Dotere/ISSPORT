@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96c94d5c-31a2-4eb6-b425-15c69d63f794">
+  <producedTypes>
+    <objectType typeId="c3c2b171-3bed-4d90-8966-e451dbba24d4" valueTypeId="2ac8bfd6-1ee3-43c8-82a4-7a0ff4700757"/>
+    <managerType typeId="ca46a19b-10c5-439c-b156-682791aa01cd" valueTypeId="522bf6ec-b70d-4ee8-aa57-a5dc6ff7f3f8"/>
+  </producedTypes>
+  <name>ЗачетнаяКнижка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зачетная книжка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗачетнаяКнижка.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="bc774eb7-d394-43c8-ae88-7ce79115c4f9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

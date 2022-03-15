@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2bb37f7f-7711-4227-8169-dc1ff8f44704">
+  <producedTypes>
+    <selectionType typeId="1b60e942-c553-48af-9351-a201bd216388" valueTypeId="6e816f9b-89e6-41fd-9952-099db5fb6731"/>
+    <listType typeId="806f6ba6-dd16-423d-9492-f73e564812ac" valueTypeId="0f93a340-b9de-4bd0-890c-d79049d9544d"/>
+    <managerType typeId="7b108438-dfe1-4c59-96c2-2dc5560d30ec" valueTypeId="50bdbf43-33c0-4c66-bc42-bf3f7efdb830"/>
+  </producedTypes>
+  <name>СоставЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав заявок</value>
+  </synonym>
+  <defaultForm>DocumentJournal.СоставЗаявок.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЗаявкаНаПроведениеСоревнования</registeredDocuments>
+  <listPresentation>
+    <key>ru</key>
+    <value>Заявки на участие в соревнованиях</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Заявки на участие в соревнованиях</value>
+  </extendedListPresentation>
+  <columns uuid="41fea785-2d99-4555-a726-1571b3e0302a">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <references>Document.ЗаявкаНаПроведениеСоревнования.Attribute.УчебныйГод</references>
+  </columns>
+  <columns uuid="a2669266-0bd1-4519-a6bc-1abeb183341d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЗаявкаНаПроведениеСоревнования.Attribute.Организация</references>
+  </columns>
+  <columns uuid="c8490206-1632-490b-a6aa-352eb8844ca3">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <references>Document.ЗаявкаНаПроведениеСоревнования.Attribute.Тренер</references>
+  </columns>
+  <columns uuid="abab3efe-d742-4860-b24a-4dfe1d43efa5">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <references>Document.ЗаявкаНаПроведениеСоревнования.Attribute.ВидСпорта</references>
+  </columns>
+  <columns uuid="53f4b3b7-f76c-472b-9cf3-ee2ef9d64744">
+    <name>ТипСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип соревнования</value>
+    </synonym>
+    <references>Document.ЗаявкаНаПроведениеСоревнования.Attribute.Соревнование</references>
+  </columns>
+  <forms uuid="257057e9-14ab-47d9-9107-cf0943b848e6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

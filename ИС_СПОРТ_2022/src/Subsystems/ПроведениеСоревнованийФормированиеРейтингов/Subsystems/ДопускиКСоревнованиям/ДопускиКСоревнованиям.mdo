@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="292f2509-7cfe-4f02-9a01-568de12522d4">
+  <name>ДопускиКСоревнованиям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Допуски к соревнованиям</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ДопускиУчастниковКСпортивнымСоревнованиям</content>
+  <content>InformationRegister.РегистрацияДопусковКСпортивнымСоревнованиям</content>
+  <parentSubsystem>Subsystem.ПроведениеСоревнованийФормированиеРейтингов</parentSubsystem>
+</mdclass:Subsystem>

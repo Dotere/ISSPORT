@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dafdfd0e-c036-49c7-b622-bfa259de730e">
+  <name>ArrowLeft</name>
+  <synonym>
+    <key>ru</key>
+    <value>Arrow left</value>
+  </synonym>
+</mdclass:CommonPicture>

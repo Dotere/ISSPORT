@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="206c040e-7fba-4772-ace4-17f290520ed8">
+  <name>РазделВидыСпортаРуководитель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раздел виды спорта</value>
+  </synonym>
+</mdclass:CommonPicture>

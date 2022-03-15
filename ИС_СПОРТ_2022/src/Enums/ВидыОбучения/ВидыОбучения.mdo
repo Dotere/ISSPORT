@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10ad0bc3-c0a4-414e-b6a9-e75f6689b008">
+  <producedTypes>
+    <refType typeId="b459efab-579c-4a4a-a21b-6c97d7a94307" valueTypeId="08dc4498-e9e4-4533-af11-d1f90c89a134"/>
+    <listType typeId="872661fa-deac-4ae0-8e98-1cbaccb67a03" valueTypeId="a3e74a5f-81ba-4a12-82fb-d679ffb5de98"/>
+    <managerType typeId="8db3f1a6-5676-4167-a274-981e430d66fa" valueTypeId="24eb5631-b576-4ef2-920f-ee6b1cf2b2b0"/>
+  </producedTypes>
+  <name>ВидыОбучения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды обучения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ec62f38e-a77d-4951-8f04-c336795c1638">
+    <name>Переподготовка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переподготовка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bfb6d6cc-8d7b-4537-a5bc-6a8bc370f81f">
+    <name>ПовышениеКвалификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повышение квалификации</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

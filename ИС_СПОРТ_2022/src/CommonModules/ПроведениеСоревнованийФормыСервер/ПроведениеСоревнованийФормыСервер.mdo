@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36ae3715-5f36-4fe5-99f1-4f57b9d41f26">
+  <name>ПроведениеСоревнованийФормыСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проведение соревнований формы сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

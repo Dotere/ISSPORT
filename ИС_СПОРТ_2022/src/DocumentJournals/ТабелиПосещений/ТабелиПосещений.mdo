@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0eb0ad07-dea4-4879-9fc9-cc388f2f784b">
+  <producedTypes>
+    <selectionType typeId="14db205e-b8dd-43f9-a941-650729d86d99" valueTypeId="d7bbd664-1e90-49c8-b4af-289b0baaa969"/>
+    <listType typeId="710cbc89-ecf9-4722-8463-462f55d5539b" valueTypeId="f3048088-c8b4-4350-897a-4f8c2dc686a6"/>
+    <managerType typeId="f1a9f27f-8c7e-4913-987a-e70f2568a5d6" valueTypeId="c961be33-7146-4845-ab8e-3198b0d3bd54"/>
+  </producedTypes>
+  <name>ТабелиПосещений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Табели посещений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ТабельПосещения</registeredDocuments>
+  <listPresentation>
+    <key>ru</key>
+    <value>Табели учета посещаемости спортсменов</value>
+  </listPresentation>
+  <columns uuid="9e4f6a14-bceb-448d-a7aa-e9a7d568a4be">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ТабельПосещения.Attribute.Организация</references>
+  </columns>
+  <columns uuid="5d80f4e7-6ce3-4f6e-8000-33cf361b0fcb">
+    <name>Тренер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер</value>
+    </synonym>
+    <references>Document.ТабельПосещения.Attribute.Тренер</references>
+  </columns>
+  <columns uuid="8cea93f4-4f1b-4826-a4d8-657c628e91ae">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <references>Document.ТабельПосещения.Attribute.Этап</references>
+  </columns>
+  <columns uuid="072d4144-42e7-4eb4-b9b4-0ef5a24beffb">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <references>Document.ТабельПосещения.Attribute.ПериодРегистрации</references>
+  </columns>
+</mdclass:DocumentJournal>

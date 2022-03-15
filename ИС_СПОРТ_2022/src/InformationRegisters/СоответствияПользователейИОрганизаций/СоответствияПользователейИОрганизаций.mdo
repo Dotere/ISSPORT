@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e82d8bf5-b3a6-4963-99bb-2c3572b19bdd">
+  <producedTypes>
+    <selectionType typeId="8a96ef39-7cd0-4107-b1dd-b0e60292e1e3" valueTypeId="4c5abf76-15bb-44a0-8c33-5f4ec4113d09"/>
+    <listType typeId="cdb810a3-d0c1-4975-ae3b-6f0f120659bd" valueTypeId="9d934cd1-01f1-40ff-85c8-f4d39f2110fc"/>
+    <managerType typeId="685e4f97-180e-47bf-85e8-123074bbce5f" valueTypeId="2320eb89-cccb-4d2c-a7c7-08cc860ac75e"/>
+    <recordSetType typeId="d89c7357-ad17-4c01-ac05-056b07bb55fa" valueTypeId="3158d9d0-4be9-45fe-8ab6-58e4f8c5bd1d"/>
+    <recordKeyType typeId="c8da4fe6-febf-47c3-8ce3-e351c657f125" valueTypeId="aac52504-cf0a-4e6e-bccc-fbd5846d5676"/>
+    <recordType typeId="7e616e39-e654-4a4e-a14d-247803aec033" valueTypeId="23a37497-1af6-41d9-854b-d659373e754d"/>
+    <recordManagerType typeId="06777373-1044-4471-9ff6-299329dabacf" valueTypeId="5f487901-1e63-4250-989d-49681ed01c66"/>
+  </producedTypes>
+  <name>СоответствияПользователейИОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия пользователей и организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5bf0a44e-f8df-4b2e-a846-774969b8eafc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a8fffa05-7749-4383-b491-4ee7aa81a799">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

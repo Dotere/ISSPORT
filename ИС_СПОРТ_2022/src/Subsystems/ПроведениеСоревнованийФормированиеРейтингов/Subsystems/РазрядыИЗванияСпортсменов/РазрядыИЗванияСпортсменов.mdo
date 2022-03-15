@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5196e34-35b8-493c-b03f-35199a330c4f">
+  <name>РазрядыИЗванияСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разряды и звания спортсменов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПрисвоениеРазряда</content>
+  <content>InformationRegister.ПодтвержденныеРазрядыСпортсменов</content>
+  <content>Catalog.СпортивнаяКлассификация</content>
+  <content>Document.ПодтверждениеРазрядаСпортсмена</content>
+  <content>DocumentJournal.РазрядыИЗванияСпортсменов</content>
+  <content>Report.ВыполнениеРазрядовСпортсменами</content>
+  <content>Report.ДанныеПоСпортивнымРазрядамИЗваниям</content>
+  <content>Report.СрокиПодтвержденияРазрядовСпортсменов</content>
+  <parentSubsystem>Subsystem.ПроведениеСоревнованийФормированиеРейтингов</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df31f4ee-393b-4bfc-bede-e8b6fa6c1b11">
+  <producedTypes>
+    <objectType typeId="a47f25a0-f74b-4c13-99c2-e1ce6e31d649" valueTypeId="d2d3a53f-59ba-414e-a03b-eb11c0476555"/>
+    <refType typeId="d684ed06-b215-4ecc-b9d9-e625d5bd9a95" valueTypeId="5cfb3bbf-7134-4e60-a139-a847d5120420"/>
+    <selectionType typeId="7838defe-2465-4493-9899-bf5c07c1e1c5" valueTypeId="e0508b34-c57f-44d1-b8f3-f2dc303ae336"/>
+    <listType typeId="4945a0e8-9335-4fd3-a0f6-7d937bcc3a8c" valueTypeId="781791df-d873-43de-bc9a-7c9dc7aa40af"/>
+    <managerType typeId="ba851487-c71b-437c-be25-8b09db7d0d19" valueTypeId="a8e8ef2e-adeb-4074-a6c0-8eb4c77cf64a"/>
+  </producedTypes>
+  <name>КвалификационныеКатегорииТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Квалификационные категории тренеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КвалификационныеКатегорииТренеров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КвалификационныеКатегорииТренеров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Квалификационные категории тренеров</value>
+  </extendedObjectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="5a03c445-4f7e-485e-949c-0abef6c03bf3">
+      <name>ТренерПервойКатегории</name>
+      <description>Тренер 1К</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="1dca2951-458e-48ea-ae9b-fded4fee04b7">
+      <name>ТренерВторойКатегории</name>
+      <description>Тренер 2К</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="8d64804e-f3ad-4d98-8f39-1b9394d73de7">
+      <name>ТренерВысшейКатегории</name>
+      <description>Тренер ВК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КвалификационныеКатегорииТренеров.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КвалификационныеКатегорииТренеров.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="535bb1a0-9eaf-4a0d-8ebb-11beee828a8f">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6b38c139-20d8-4a33-8282-2c8dc3738a7f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc7be3a4-309a-4d34-9952-cc3c4abcecc6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

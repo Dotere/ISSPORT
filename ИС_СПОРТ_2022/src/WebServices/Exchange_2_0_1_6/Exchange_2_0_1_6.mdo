@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b71cd3b-d5b8-4632-9678-0ab1e1d2ea91">
+  <name>Exchange_2_0_1_6</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange 2.0.1.6</value>
+  </synonym>
+  <namespace>http://www.1c.ru/SSL/Exchange_2_0_1_6</namespace>
+  <xdtoPackages xsi:type="core:StringValue">
+    <value>http://v8.1c.ru/8.1/data/core</value>
+  </xdtoPackages>
+  <descriptorFileName>exchange_2_0_1_6.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+</mdclass:WebService>

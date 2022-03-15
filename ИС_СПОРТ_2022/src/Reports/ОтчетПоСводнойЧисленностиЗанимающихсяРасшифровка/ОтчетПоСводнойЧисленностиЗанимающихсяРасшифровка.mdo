@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3f2b6de-7997-4293-9f66-26a4cb8b97b0">
+  <producedTypes>
+    <objectType typeId="338d9fa7-0ed0-4d22-b7eb-5ca09f8a12d7" valueTypeId="8460e285-3c30-4046-a659-33580f3b7c06"/>
+    <managerType typeId="2618f9a5-4689-4e3f-814b-d8c45d2f6bb9" valueTypeId="acde63a8-30a8-45d1-86f3-7325eefbed17"/>
+  </producedTypes>
+  <name>ОтчетПоСводнойЧисленностиЗанимающихсяРасшифровка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводная численность спортсменов (Расшифровка)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоСводнойЧисленностиЗанимающихсяРасшифровка.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="12425a10-23b1-4f99-85c0-acd5dbc2e511">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="903817fa-aa64-46e7-982a-5bea20fcc3fd">
+  <producedTypes>
+    <objectType typeId="e5a7bd8e-b5ea-402a-9708-ecd2e1a37b81" valueTypeId="d1e76749-28c3-4d9c-911a-01fc8959781b"/>
+    <managerType typeId="83e809fc-de9b-4626-8ca1-51082484bf3e" valueTypeId="b22c9ced-b51e-411a-8dbd-1ad656bec071"/>
+  </producedTypes>
+  <name>ВыездыСпортсменовНаМероприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выезды спортсменов на мероприятия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Report>

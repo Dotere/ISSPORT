@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9811beb7-9260-4ec9-8818-d5219a3257f9">
+  <name>ОбычныйШрифт13</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обычный шрифт13</value>
+  </synonym>
+  <type>Font</type>
+  <value xsi:type="core:FontValue">
+    <value xsi:type="core:FontRef">
+      <font>Style.NormalTextFont</font>
+      <height>13.0</height>
+      <bold>false</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </value>
+  </value>
+</mdclass:StyleItem>

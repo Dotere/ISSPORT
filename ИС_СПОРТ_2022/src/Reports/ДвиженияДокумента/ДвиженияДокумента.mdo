@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77218619-8f76-451d-9c68-004d431da962">
+  <producedTypes>
+    <objectType typeId="1a97d388-4ce2-4df3-9136-fee5ae353b41" valueTypeId="66eb2f34-7eb5-4987-b468-d78f1118cbfe"/>
+    <managerType typeId="402261b8-91bc-4dad-bb3e-83ce0a87b8f1" valueTypeId="6e312777-6982-46ff-a688-9a0701f7895e"/>
+  </producedTypes>
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДвиженияДокумента.Template.ПустаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="3c305f89-e453-46c7-987b-f01dc964efdb">
+    <name>ПустаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустая схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="1809ff43-2af2-44d1-ac7b-91d5bbe4f0ce">
+    <name>Заголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </synonym>
+  </templates>
+  <commands uuid="b946a9eb-7380-4e0f-9f46-45a4656fc48f">
+    <name>ДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа</value>
+    </synonym>
+    <comment>Отчет по движениям документа</comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.СтраховойПолисСпортсмена</types>
+      <types>DocumentRef.ПереводСпортсменовНаЭтап</types>
+      <types>DocumentRef.ПодтверждениеРазрядаСпортсмена</types>
+      <types>DocumentRef.ЗаявленияНаПриемВСпортивноеУчреждение</types>
+      <types>DocumentRef.ПрисвоениеРазряда</types>
+      <types>DocumentRef.ИсключениеСпортсменовИзГруппы</types>
+      <types>DocumentRef.ЗачислениеСпортсменовНаЭтап</types>
+      <types>DocumentRef.РезультатыСдачиКонтрольноПереводныхНормативов</types>
+      <types>DocumentRef.Соревнование</types>
+      <types>DocumentRef.ДопускиУчастниковКСпортивнымСоревнованиям</types>
+      <types>DocumentRef.ФормированиеГруппы</types>
+      <types>DocumentRef.СоревнованиеОФПСдачаНормативов</types>
+      <types>DocumentRef.ПротоколОФПСдачаНормативов</types>
+      <types>DocumentRef.ПереводСпортсменовМеждуГруппами</types>
+      <types>DocumentRef.УправлениеУчебнымГодом</types>
+      <types>DocumentRef.ПротоколСоревнования</types>
+      <types>DocumentRef.РегистрацияДостиженийСпортсменов</types>
+      <types>DocumentRef.ЗаявкаНаПроведениеСоревнования</types>
+      <types>DocumentRef.ЗаявкаНаПроведениеСоревнованияСдачаНормативаОФП</types>
+      <types>DocumentRef.УстановкаМеждународнойВозрастнойГруппы</types>
+      <types>DocumentRef.ВключениеСпортсменовВГруппу</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+  </commands>
+</mdclass:Report>

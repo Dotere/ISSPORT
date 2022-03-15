@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Style xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b74185d1-6bdd-4666-b1a7-6ab665bce16c">
+  <name>СтильАльфа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стиль альфа</value>
+  </synonym>
+</mdclass:Style>

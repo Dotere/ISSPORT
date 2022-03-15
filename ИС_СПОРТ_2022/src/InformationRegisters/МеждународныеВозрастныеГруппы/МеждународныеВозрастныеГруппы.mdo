@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07dc0e4c-e24d-4a6f-acfa-bdcfd81a6fe3">
+  <producedTypes>
+    <selectionType typeId="5145322b-5822-49eb-adf6-9487207e7f24" valueTypeId="0555da46-946c-422c-a055-5581fdb9e39e"/>
+    <listType typeId="87b6b32b-7773-4417-bd21-b9dbf58ea621" valueTypeId="fbffbdcf-d232-454c-9794-2c3b0183c65a"/>
+    <managerType typeId="e860fae4-91a1-4a3c-a7dd-f16ac5a09247" valueTypeId="bbee2960-f926-4a68-86d6-3e622fd9ce44"/>
+    <recordSetType typeId="1be24013-2fad-4fe3-8d64-09b3accf9803" valueTypeId="37e675f7-45a2-4247-904e-89182094dec6"/>
+    <recordKeyType typeId="d652dd2a-76a1-4dbe-9652-86c61ad7c722" valueTypeId="bb0d8452-a686-4758-8acd-3319ca68deb7"/>
+    <recordType typeId="9ff94977-59c4-4414-900d-7f21a07c0f8a" valueTypeId="8649c38e-c8cd-4704-a3a4-65093527353d"/>
+    <recordManagerType typeId="4b9c4177-a37b-45d4-b7b0-28f69b465fcd" valueTypeId="f43aac01-864d-4fd3-a211-d924ae234e1e"/>
+  </producedTypes>
+  <name>МеждународныеВозрастныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возрастные группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a2471816-faad-4a79-80d7-666d0162df1b">
+    <name>МеждународнаяВозрастнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МеждународныеВозрастныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ab34df4b-3a6c-428f-830f-3487ee5efb12">
+    <name>УчебныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный год</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныйГод</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e8641971-d359-49b5-8abe-bd530207ee82">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="63af7cf4-d9ad-400d-9abc-067e2258c43d">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7aee78c9-8d38-4f80-bae6-e5ac58887714">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

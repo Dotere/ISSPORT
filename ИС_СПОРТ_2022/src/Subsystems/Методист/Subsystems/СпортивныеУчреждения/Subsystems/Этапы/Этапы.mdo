@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="656557d1-46be-4d21-8d7c-7cb9c0aeed4c">
+  <name>Этапы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ЭтапыСпортивнойПодготовки</content>
+  <content>Document.ЗачислениеСпортсменовНаЭтап</content>
+  <content>Document.ПереводСпортсменовНаЭтап</content>
+  <content>DocumentJournal.ЭтапыСпортивнойПодготовкиСпортсменов</content>
+  <content>InformationRegister.ЭтапыСпортивнойПодготовкиСпортсменов</content>
+  <content>InformationRegister.ОценкиПрохожденияНаЭтап</content>
+  <content>Document.РезультатыСдачиКонтрольноПереводныхНормативов</content>
+  <content>InformationRegister.РезультатыСдачиКонтрольноПереводныхНормативов</content>
+  <content>AccumulationRegister.ИтоговыеРезультатыСдачиКонтрольноПереводныхНормативов</content>
+  <content>Enum.ВидФизическойПодготовки</content>
+  <content>InformationRegister.НастройкиЭтаповПоОрганизациям</content>
+  <content>InformationRegister.НастройкаКоличестваПодэтапов</content>
+  <content>Report.КоличествоСпортсменовПоЭтапамСпортивнойПодготовки</content>
+  <content>Report.СписокСпортсменовПоЭтапам</content>
+  <parentSubsystem>Subsystem.Методист.Subsystem.СпортивныеУчреждения</parentSubsystem>
+</mdclass:Subsystem>

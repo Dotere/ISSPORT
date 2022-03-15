@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5e557d1-3944-4bc6-ad73-40868f2dac39">
+  <name>Методист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Методист</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаМетодист</picture>
+  </picture>
+  <content>Catalog.УчебныйГод</content>
+  <content>Catalog.Спортсмены</content>
+  <content>Catalog.СтепениРодстваФизическихЛиц</content>
+  <content>Catalog.СтраныМира</content>
+  <content>Catalog.ТомаХраненияФайлов</content>
+  <content>Catalog.Группа</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.МеждународныеВозрастныеГруппы</content>
+  <content>Document.УправлениеУчебнымГодом</content>
+  <content>Document.ФормированиеГруппы</content>
+  <content>Document.ВключениеСпортсменовВГруппу</content>
+  <content>Document.ИсключениеСпортсменовИзГруппы</content>
+  <content>Document.УстановкаМеждународнойВозрастнойГруппы</content>
+  <content>DataProcessor.МастерЗаполненияУчебногоГода</content>
+  <content>InformationRegister.ЛичныйТренерСпортсмена</content>
+  <content>InformationRegister.СоставыСемейСпортсменов</content>
+  <content>InformationRegister.СоставГруппы</content>
+  <content>InformationRegister.МеждународныеВозрастныеГруппы</content>
+  <content>Catalog.КвалификационныеКатегорииТренеров</content>
+  <content>Catalog.ВидыСпорта</content>
+  <content>Catalog.СтраховыеКомпании</content>
+  <content>InformationRegister.РегистрацияСтраховыхПолисовСпортсменов</content>
+  <content>Catalog.ВидыДокументовДляПриемаВСпортивноеУчреждение</content>
+  <content>Catalog.УчебныеУчреждения</content>
+  <content>Enum.ОснованияДляОтчисленияСпортсменов</content>
+  <content>Document.ПереводСпортсменовМеждуГруппами</content>
+  <content>ChartOfCharacteristicTypes.ХарактеристикиДостиженийСпортсменов</content>
+  <content>Catalog.ВидыДокументовФизическихЛиц</content>
+  <content>Catalog.СпортивныеДисциплины</content>
+  <content>Catalog.СпортивныеПрограммы</content>
+  <content>ChartOfCharacteristicTypes.СвойстваПоказателейФизическогоЗдоровья</content>
+  <subsystems>УправлениеУчебнымиГодами</subsystems>
+  <subsystems>СпортивныеУчреждения</subsystems>
+  <subsystems>УстановкаМеждународныхВозрастныхГрупп</subsystems>
+</mdclass:Subsystem>

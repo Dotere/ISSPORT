@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba9001c5-df9d-4f8d-867d-860d7acb2277">
+  <producedTypes>
+    <objectType typeId="28ddc321-b378-4497-ae63-d12818565ca5" valueTypeId="7b65cf4b-883c-41ab-b40a-3945cd5b2315"/>
+    <managerType typeId="07a388ef-1b9b-4364-9674-d287fbd5289d" valueTypeId="3a56da71-7a94-46f6-98e8-dbd66745f36a"/>
+  </producedTypes>
+  <name>ОтчетПоКоличествуТренеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные о тренерском составе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоКоличествуТренеров.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоКоличествуТренеров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ОтчетПоКоличествуТренеров.Form.ФормаНастроек</defaultSettingsForm>
+  <forms uuid="41dc01a9-0b0f-4cac-8914-a5c4a48fdbd2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a3a86287-9b57-4816-99a4-51aae2a21dc0">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="56b13c5c-6ab0-4ba9-b4b1-86560c9bd912">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

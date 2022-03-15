@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8cec1bdc-a2ce-4b5c-a205-61de415cb046">
+  <producedTypes>
+    <objectType typeId="6a0c7157-79dc-453f-a806-b8c064662e45" valueTypeId="058ef16c-ffa0-4a60-8563-1ace46e70466"/>
+    <managerType typeId="ff55e386-5517-48ce-b124-e1609c7cfdbe" valueTypeId="ddfe87c1-d1f8-49fd-a001-bc9f3efd54ec"/>
+  </producedTypes>
+  <name>ВсероссийскиеСпортивныеСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Всероссийские спортивные соревнования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ВсероссийскиеСпортивныеСоревнования.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ВсероссийскиеСпортивныеСоревнования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="7f8458a6-2c83-4b0b-947d-5c72f3517f69">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e6c0048b-e9bb-42cf-bf90-1d61b188404f">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d0c72267-054d-49d3-8ced-896f25662961">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f7c46f28-f25b-497b-99f6-ae861dd922a5">
+    <name>РасшифровкаНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка новый</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

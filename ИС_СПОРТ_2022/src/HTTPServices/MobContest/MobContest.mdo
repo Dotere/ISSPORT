@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="624f6c56-b455-40c9-91d8-b6150b756421">
+  <name>MobContest</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mob contest</value>
+  </synonym>
+  <rootURL>mobcontest</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="139e5a9e-af71-436c-a69a-7e3d0afbd13d">
+    <name>datacontest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Datacontest</value>
+    </synonym>
+    <template>/datacontest/*</template>
+    <methods uuid="5629a6d6-7cbb-4f86-9f95-0914f3abe9b6">
+      <name>data</name>
+      <synonym>
+        <key>ru</key>
+        <value>Data</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>datacontestdata</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8354b02a-8c6c-49ab-a240-020406ab1b7f">
+    <name>resultcontest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Resultcontest</value>
+    </synonym>
+    <template>/resultcontest/*</template>
+    <methods uuid="dd72ccba-1cd0-4a43-9988-4152ea94fe60">
+      <name>result</name>
+      <synonym>
+        <key>ru</key>
+        <value>Result</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>resultcontestresult</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="fb91dace-e954-4310-bcec-9029fcfd1e50">
+    <name>dataresult</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dataresult</value>
+    </synonym>
+    <template>/dataresult/{Мероприятие}/{ОФП}</template>
+    <methods uuid="f6d9c0d0-3f3d-4c9a-9e33-222f30044145">
+      <name>datares</name>
+      <synonym>
+        <key>ru</key>
+        <value>Datares</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>dataresultdatares</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="9e2c3668-971d-4a67-aa55-3048dd68cdb3">
+    <name>authoriz</name>
+    <synonym>
+      <key>ru</key>
+      <value>Authoriz</value>
+    </synonym>
+    <template>/authoriz/{Логин}/{Пароль}</template>
+    <methods uuid="4ba2414c-6bcf-42ee-bb8e-bc846dd23a6f">
+      <name>auth</name>
+      <synonym>
+        <key>ru</key>
+        <value>Auth</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>authorizauth</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c499ed1d-2100-46f7-9eb6-7b5b71cd8fe2">
+    <name>request</name>
+    <synonym>
+      <key>ru</key>
+      <value>Request</value>
+    </synonym>
+    <template>/request/*</template>
+    <methods uuid="0db4b34f-cceb-4b1e-9e28-2b425580a80e">
+      <name>req</name>
+      <synonym>
+        <key>ru</key>
+        <value>Req</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>requestreq</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

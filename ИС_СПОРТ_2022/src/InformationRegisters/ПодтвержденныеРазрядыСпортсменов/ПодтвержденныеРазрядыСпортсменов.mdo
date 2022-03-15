@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0d71425-5a93-476c-b827-88ff6114ea5e">
+  <producedTypes>
+    <selectionType typeId="c8440954-6519-4a20-a92a-edc5ee07366a" valueTypeId="93284b8e-204e-4220-a6ff-9269179ac227"/>
+    <listType typeId="a4ff15ba-5eea-47e4-ab71-b2ccaa5fb21a" valueTypeId="0d69b3d8-c9c3-4814-ab8a-65c3922b72a3"/>
+    <managerType typeId="c1244d6f-d0b3-44fb-b815-fb9c7abe49c1" valueTypeId="038d574f-066c-452b-a9aa-85ae5676fcca"/>
+    <recordSetType typeId="260bc8a1-64d5-48c9-8b2c-d26859ac9241" valueTypeId="3f76586f-ed37-41c8-b5de-2af3295535d8"/>
+    <recordKeyType typeId="57bdde58-65a1-45ad-93ca-b0b30dfd71a5" valueTypeId="0a44508b-aa11-4519-8dd1-6a025be26e84"/>
+    <recordType typeId="2afda79a-f711-48a6-971e-9cd5cef767df" valueTypeId="20e06476-1584-4e82-90fd-ecebf58c9cf5"/>
+    <recordManagerType typeId="890ab8b9-a513-42a9-8d86-aaf72765d88c" valueTypeId="8c374f23-d563-4ece-be4d-d8d63446864d"/>
+  </producedTypes>
+  <name>ПодтвержденныеРазрядыСпортсменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подтвержденные разряды спортсменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6ef905fd-5436-42d8-9538-f6c445f07c2c">
+    <name>ДатаПрисвоения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата присвоения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8aa3cc15-64be-4b81-a886-272efb8b85b8">
+    <name>ДатаПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подтверждения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="265568a4-c3b1-4b15-94ca-5327ea5239e9">
+    <name>Разряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разряд</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивнаяКлассификация</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="49d5d49c-411b-4882-9eca-487708c8fc18">
+    <name>ДатаПодтверждающегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подтверждающего документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3d6f15bd-6595-4613-b949-3529bf5290e3">
+    <name>НомерПодтверждающегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер подтверждающего документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="44260e57-abae-45dc-a409-a7dd255c7520">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c31b5e14-1255-46e9-a962-9ac4238451b1">
+    <name>Спортсмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спортсмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Спортсмены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cb6e69a2-1ef1-465c-bed1-970782700d6b">
+    <name>РазрядУдалить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разряд удалить</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпортивнаяКлассификация</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="96834720-9e64-4410-baed-8e4db290c1e7">
+    <name>ВидСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид спорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыСпорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
